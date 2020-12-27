@@ -6,6 +6,8 @@ Transpiled using https://github.com/VADIMREX/JassToTs
 
 Source map from http://max.slid.free.fr/maxEscapeCreation
 
+Hamiltonian path generator source from https://github.com/oysterCrusher/hampath (Edited to make it work in this project)
+
 # Some TS notes
 
 Don't create array objects as `let a = [0, 1]`, instead use `let a = {x: 0, y: 1}`
@@ -14,7 +16,7 @@ Don't create array objects as `let a = [0, 1]`, instead use `let a = {x: 0, y: 1
 
 The transpiler doesn't understand that "\\\\" is a valid string and throws an error, I replaced this with @@@@ (something unique) transpiled it and then replaced it back in the transpiled code.
 
-Minimized code produces code like `var a+=-5`. This transpiler thinks +=- is an operator so to solve this just string replace `+=-` to `+= -`. Goes for other operators as well.
+Minimized code produces code like `var a+=-5`. This transpiler thinks `+=-` is an operator so to solve this just string replace `+=-` to `+= -`. Goes for other operators as well.
 
 # Some notes on the transpiled code
 
