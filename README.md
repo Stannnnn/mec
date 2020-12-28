@@ -20,7 +20,7 @@ Minimized code produces code like `var a+=-5`. This transpiler thinks `+=-` is a
 
 # Some notes on the transpiled code
 
-## new is reserverd keyword
+## new is reserved keyword
 
 ```lua
 new: string

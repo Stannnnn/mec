@@ -42,38 +42,11 @@ function tsMain() {
         TerrainTypeString2TerrainTypeId("'Nsnw'"),
         '',
         0.2,
-        80
+        40
     )
 
-    new Timer().start(1, false, () => {
-        const level = 1
-
-        // // Spawns a rock
-        // s__MonsterNoMove_setId(
-        //     s__MonsterNoMoveArray_new(
-        //         s__Level_monstersNoMove[level],
-        //         s__MonsterTypeArray_get(udg_monsterTypes, 'rock'),
-        //         1425,
-        //         6012,
-        //         -1,
-        //         false
-        //     ),
-        //     44
-        // )
-
-        // // Spawns a patrol
-        // s__MonsterSimplePatrol_setId(
-        //     s__MonsterSimplePatrolArray_new(
-        //         s__Level_monstersSimplePatrol[level],
-        //         s__MonsterTypeArray_get(udg_monsterTypes, 'troll'),
-        //         -163,
-        //         6514,
-        //         -163,
-        //         5773,
-        //         false
-        //     ),
-        //     62
-        // )
+    new Timer().start(0.5, false, () => {
+        // Setup terrain
 
         const worldRect = GetWorldBounds()
 
@@ -90,15 +63,6 @@ function tsMain() {
         print(tilesX)
         print(tilesY)
 
-        // let path: {
-        //     start: [number, number]
-        //     end: [number, number]
-        //     data: [number, number][]
-        // } = hamPath.generate({
-        //     width: 4,
-        //     height: 4,
-        // })
-
         NB_MAX_TILES_MODIFIED = 1000000
 
         s__MakeTerrainCreateAction_create(
@@ -113,6 +77,16 @@ function tsMain() {
 
         let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY, quality: 2 })
 
+        const getTile = ({ tile, tileTo }: { tile: { x: number; y: number }; tileTo?: { x: number; y: number } }) => {
+            const x = mapOffsetX + tile.x * tileSize * slideWidth
+            const y = mapOffsetY + tile.y * tileSize * slideWidth
+
+            const xTo = mapOffsetX + (tileTo ? tileTo.x : tile.x) * tileSize * slideWidth + tileSize
+            const yTo = mapOffsetY + (tileTo ? tileTo.y : tile.y) * tileSize * slideWidth + tileSize
+
+            return { x, y, xTo, yTo }
+        }
+
         const createTile = ({
             terrain,
             tile,
@@ -122,43 +96,181 @@ function tsMain() {
             tile: { x: number; y: number }
             tileTo?: { x: number; y: number }
         }) => {
-            const x = mapOffsetX + tile.x * tileSize * slideWidth
-            const y = mapOffsetY + tile.y * tileSize * slideWidth
+            const { x, y, xTo, yTo } = getTile({ tile, tileTo })
 
-            const xTo = mapOffsetX + (tileTo ? tileTo.x : tile.x) * tileSize * slideWidth
-            const yTo = mapOffsetY + (tileTo ? tileTo.y : tile.y) * tileSize * slideWidth
-
-            s__MakeTerrainCreateAction_create(terrain, x, y, xTo + tileSize, yTo + tileSize)
+            s__MakeTerrainCreateAction_create(terrain, x, y, xTo, yTo)
         }
 
-        let prev: { x: number; y: number }
+        // Create terrain
+        {
+            let prev: { x: number; y: number }
 
-        path.data.forEach(d => {
-            if (!prev) {
+            path.data.forEach(d => {
+                if (!prev) {
+                    prev = d
+                    return
+                }
+
+                print(`Dumpin terrain from: x:${prev.x} y:${prev.y} to x:${d.x} y:${d.y}`)
+
+                createTile({ terrain: slideTerrain, tile: prev, tileTo: d })
+
                 prev = d
-                return
-            }
-
-            print(`Dumpin terrain from: x:${prev.x} y:${prev.y} to x:${d.x} y:${d.y}`)
-
-            createTile({ terrain: slideTerrain, tile: prev, tileTo: d })
-
-            prev = d
-        })
+            })
+        }
 
         createTile({ terrain: walkTerrain, tile: path.start })
         createTile({ terrain: walkTerrain, tile: path.end })
 
         FogModifierStart(udg_viewAll)
 
-        // spawn terrain?
-        // s__MakeTerrainCreateAction_create(
-        //     slideTerrain,
-        //     (mapSize - mapSize / 2) * tileSize,
-        //     (mapSize - mapSize / 2) * tileSize,
-        //     (mapSize / 2) * tileSize,
-        //     (mapSize / 2) * tileSize
+        // Autorevive
+        udg_autoreviveDelay = 0.3
+
+        s___EscaperArray_escapers.map((_, i) => {
+            s__Escaper_hasAutoreviveB[s___EscaperArray_escapers[s__EscaperArray_escapers[udg_escapers] + i]] = true
+        })
+
+        // Setup level
+
+        const level = s__LevelArray_create()
+
+        // Region
+
+        // TODO; Move region to startTile
+
+        const startTile = getTile({ tile: path.start })
+        s__Level_newStart(level, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+        gg_rct_departLvl_0 = Rect(startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+        SetRect(gg_rct_departLvl_0, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+
+        print(`StartTile
+            ${startTile.x}
+            ${startTile.y}
+            ${startTile.xTo}
+            ${startTile.yTo}
+        `)
+
+        const endTile = getTile({ tile: path.end })
+        s__Level_newEnd(level, endTile.x, endTile.y, endTile.xTo, endTile.yTo)
+
+        // // Spawns a rock
+        // s__MonsterNoMove_setId(
+        //     s__MonsterNoMoveArray_new(
+        //         s__Level_monstersNoMove[level],
+        //         s__MonsterTypeArray_get(udg_monsterTypes, 'rock'),
+        //         1425,
+        //         6012,
+        //         -1,
+        //         false
+        //     ),
+        //     44
         // )
+
+        const monsterTypeId = s__MonsterTypeArray_new(
+            udg_monsterTypes,
+            'm',
+            String2Ascii(SubStringBJ("'hfoo'", 2, 5)),
+            1,
+            80,
+            500,
+            false
+        )
+
+        // Create monsters
+        {
+            let prev: { x: number; y: number }
+            let current: { x: number; y: number }
+
+            path.data.slice(1, path.data.length - 1).forEach(next => {
+                if (!current) {
+                    current = next
+                    return
+                }
+
+                if (!prev) {
+                    prev = current
+                    current = next
+                    return
+                }
+
+                let direction: 'NN' | 'NE' | 'NW' | 'EN' | 'EE' | 'ES' | 'SE' | 'SS' | 'SW' | 'WN' | 'WS' | 'WW'
+                let directionFrom: 'N' | 'E' | 'S' | 'W'
+                let directionTo: 'N' | 'E' | 'S' | 'W'
+
+                if (prev.x < current.x) {
+                    directionFrom = 'E'
+                } else if (prev.x > current.x) {
+                    directionFrom = 'W'
+                } else if (prev.y < current.y) {
+                    directionFrom = 'N'
+                } else {
+                    directionFrom = 'S'
+                }
+
+                if (current.x < next.x) {
+                    directionTo = 'E'
+                } else if (current.x > next.x) {
+                    directionTo = 'W'
+                } else if (current.y < next.y) {
+                    directionTo = 'N'
+                } else {
+                    directionTo = 'S'
+                }
+
+                direction = (directionFrom + directionTo) as any
+
+                const tile = getTile({ tile: current })
+
+                const tileCenter = { x: tile.x + tileSize / 2, y: tile.y + tileSize / 2 }
+                const patrolOffset = 32
+
+                let patrol: { x: number; y: number; x2: number; y2: number }
+
+                if (direction === 'EE' || direction === 'WW') {
+                    patrol = {
+                        x: tileCenter.x,
+                        y: tileCenter.y - tileSize - patrolOffset,
+                        x2: tileCenter.x,
+                        y2: tileCenter.y + tileSize + patrolOffset,
+                    }
+                } else if (direction === 'NN' || direction === 'SS') {
+                    patrol = {
+                        x: tileCenter.x - tileSize - patrolOffset,
+                        y: tileCenter.y,
+                        x2: tileCenter.x + tileSize + patrolOffset,
+                        y2: tileCenter.y,
+                    }
+                } else if (direction === 'NE' || direction === 'EN' || direction === 'SW' || direction === 'WS') {
+                    patrol = {
+                        x: tileCenter.x - tileSize - patrolOffset,
+                        y: tileCenter.y + tileSize + patrolOffset,
+                        x2: tileCenter.x + tileSize + patrolOffset,
+                        y2: tileCenter.y - tileSize - patrolOffset,
+                    }
+                } else {
+                    patrol = {
+                        x: tileCenter.x + tileSize + patrolOffset,
+                        y: tileCenter.y + tileSize + patrolOffset,
+                        x2: tileCenter.x - tileSize - patrolOffset,
+                        y2: tileCenter.y - tileSize - patrolOffset,
+                    }
+                }
+
+                s__MonsterSimplePatrolArray_new(
+                    s__Level_monstersSimplePatrol[level],
+                    monsterTypeId,
+                    patrol.x,
+                    patrol.y,
+                    patrol.x2,
+                    patrol.y2,
+                    true
+                )
+
+                prev = current
+                current = next
+            })
+        }
 
         print('OK')
     })
