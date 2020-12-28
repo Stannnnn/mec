@@ -1,6 +1,5 @@
 import { hamiltonianPathGenerator } from 'hamiltonianPathGenerator'
-import { Timer, Unit } from 'w3ts'
-import { Players } from 'w3ts/globals'
+import { Timer } from 'w3ts'
 import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
 
 const BUILD_DATE = compiletime(() => new Date().toUTCString())
@@ -14,12 +13,12 @@ function tsMain() {
     print(' ')
     print('Welcome to TypeScript!')
 
-    const unit = new Unit(Players[0], FourCC('hfoo'), 0, 0, 270)
-    unit.name = 'TypeScript'
+    // const unit = new Unit(Players[0], FourCC('hfoo'), 0, 0, 270)
+    // unit.name = 'TypeScript'
 
-    new Timer().start(1.0, true, () => {
-        unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color
-    })
+    // new Timer().start(1.0, true, () => {
+    //     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color
+    // })
 
     const walkTerrain = sc__TerrainTypeArray_newWalk(
         udg_terrainTypes,
@@ -60,9 +59,6 @@ function tsMain() {
         const mapOffsetX = GetRectMinX(worldRect) + tileOffset * tileSize
         const mapOffsetY = GetRectMinY(worldRect) + tileOffset * tileSize
 
-        print(tilesX)
-        print(tilesY)
-
         NB_MAX_TILES_MODIFIED = 1000000
 
         s__MakeTerrainCreateAction_create(
@@ -75,7 +71,7 @@ function tsMain() {
 
         NB_MAX_TILES_MODIFIED = 1000
 
-        let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY, quality: 2 })
+        let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY })
 
         const getTile = ({ tile, tileTo }: { tile: { x: number; y: number }; tileTo?: { x: number; y: number } }) => {
             const x = mapOffsetX + tile.x * tileSize * slideWidth
@@ -111,8 +107,6 @@ function tsMain() {
                     return
                 }
 
-                print(`Dumpin terrain from: x:${prev.x} y:${prev.y} to x:${d.x} y:${d.y}`)
-
                 createTile({ terrain: slideTerrain, tile: prev, tileTo: d })
 
                 prev = d
@@ -122,60 +116,41 @@ function tsMain() {
         createTile({ terrain: walkTerrain, tile: path.start })
         createTile({ terrain: walkTerrain, tile: path.end })
 
-        FogModifierStart(udg_viewAll)
-
-        // Autorevive
-        udg_autoreviveDelay = 0.3
-
-        s___EscaperArray_escapers.map((_, i) => {
-            s__Escaper_hasAutoreviveB[s___EscaperArray_escapers[s__EscaperArray_escapers[udg_escapers] + i]] = true
-        })
-
         // Setup level
 
-        const level = s__LevelArray_create()
+        const level = ForceGetLevel(0)
 
         // Region
 
-        // TODO; Move region to startTile
-
         const startTile = getTile({ tile: path.start })
         s__Level_newStart(level, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
-        gg_rct_departLvl_0 = Rect(startTile.x, startTile.y, startTile.xTo, startTile.yTo)
-        SetRect(gg_rct_departLvl_0, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
 
-        print(`StartTile
-            ${startTile.x}
-            ${startTile.y}
-            ${startTile.xTo}
-            ${startTile.yTo}
-        `)
+        // Force start position
+        SetRect(gg_rct_departLvl_0, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+        Init_Heroes()
 
         const endTile = getTile({ tile: path.end })
         s__Level_newEnd(level, endTile.x, endTile.y, endTile.xTo, endTile.yTo)
 
-        // // Spawns a rock
-        // s__MonsterNoMove_setId(
-        //     s__MonsterNoMoveArray_new(
-        //         s__Level_monstersNoMove[level],
-        //         s__MonsterTypeArray_get(udg_monsterTypes, 'rock'),
-        //         1425,
-        //         6012,
-        //         -1,
-        //         false
-        //     ),
-        //     44
+        // Spawns a rock
+        // s__MonsterNoMoveArray_new(
+        //     s__Level_monstersNoMove[level],
+        //     s__MonsterTypeArray_get(udg_monsterTypes, 'rock'),
+        //     1425,
+        //     6012,
+        //     -1,
+        //     true
         // )
 
-        const monsterTypeId = s__MonsterTypeArray_new(
-            udg_monsterTypes,
-            'm',
-            String2Ascii(SubStringBJ("'hfoo'", 2, 5)),
-            1,
-            80,
-            500,
-            false
+        const monsterIds = ['hfoo', 'hpea', 'hmpr', 'hsor', 'hrif']
+
+        const monsterTypes = monsterIds.map(id =>
+            s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 50, 400, false)
         )
+
+        // monsterTypes.map(id => s__MonsterType_setImmolation(id, 60))
+
+        const getPatrolRandom = () => GetRandomInt(-4, 4)
 
         // Create monsters
         {
@@ -218,6 +193,7 @@ function tsMain() {
                     directionTo = 'S'
                 }
 
+                // This is safe since direction type only excluded NS/SN/EW/WE (You can't go back to a tile you came from)
                 direction = (directionFrom + directionTo) as any
 
                 const tile = getTile({ tile: current })
@@ -259,11 +235,11 @@ function tsMain() {
 
                 s__MonsterSimplePatrolArray_new(
                     s__Level_monstersSimplePatrol[level],
-                    monsterTypeId,
-                    patrol.x,
-                    patrol.y,
-                    patrol.x2,
-                    patrol.y2,
+                    monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
+                    patrol.x + getPatrolRandom(),
+                    patrol.y + getPatrolRandom(),
+                    patrol.x2 + getPatrolRandom(),
+                    patrol.y2 + getPatrolRandom(),
                     true
                 )
 
@@ -271,6 +247,18 @@ function tsMain() {
                 current = next
             })
         }
+
+        FogModifierStart(udg_viewAll)
+
+        // Autorevive
+        udg_autoreviveDelay = 0.3
+
+        s___EscaperArray_escapers.map((_, i) => {
+            s__Escaper_hasAutoreviveB[s___EscaperArray_escapers[s__EscaperArray_escapers[udg_escapers] + i]] = true
+        })
+
+        TIME_BEFORE_HERO_SPAWN = 1
+        TIME_BETWEEN_EACH_HERO_SPAWN = 0.1
 
         print('OK')
     })

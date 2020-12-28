@@ -288,8 +288,8 @@ declare global {
     var startPositions: location[]
     var startPositionsRandomized: location[]
     var playerIdsRandomized: number[]
-    const TIME_BEFORE_HERO_SPAWN: number
-    const TIME_BETWEEN_EACH_HERO_SPAWN: number
+    var TIME_BEFORE_HERO_SPAWN: number
+    var TIME_BETWEEN_EACH_HERO_SPAWN: number
     const HERO_START_ANGLE: number
     const EFFECT_FOR_MISSING_HEROES: string
     const Heroes___NB_COLUMNS: number
