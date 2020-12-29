@@ -25,14 +25,14 @@ const tsMain = () => {
         udg_terrainTypes,
         'w',
         TerrainTypeString2TerrainTypeId("'Ngrs'"),
-        525
+        522
     )
 
     const slideTerrain = sc__TerrainTypeArray_newSlide(
         udg_terrainTypes,
         's',
         TerrainTypeString2TerrainTypeId("'Nice'"),
-        525,
+        550,
         true
     )
 
@@ -42,7 +42,7 @@ const tsMain = () => {
         TerrainTypeString2TerrainTypeId("'Nsnw'"),
         '',
         0.2,
-        40
+        20
     )
 
     const monsterIds = [
@@ -102,22 +102,30 @@ const tsMain = () => {
                     print(`Difficulty changed to: ${lvl}`)
                     generateSlide(true)
                 } else {
-                    print('Unknown difficulty')
+                    print(`Unknown difficulty, options: newbie, easy, normal, hard, insane`)
                 }
             },
         ],
     })
 
     const difficultyLevels = {
-        easy: {
+        newbie: {
             gridWidth: 5,
             slideWidth: 4,
         },
-        normal: {
-            gridWidth: 4,
+        easy: {
+            gridWidth: 5,
             slideWidth: 3,
         },
+        normal: {
+            gridWidth: 5,
+            slideWidth: 2,
+        },
         hard: {
+            gridWidth: 4,
+            slideWidth: 2,
+        },
+        insane: {
             gridWidth: 3,
             slideWidth: 2,
         },
@@ -125,7 +133,7 @@ const tsMain = () => {
 
     const worldRect = GetWorldBounds()
 
-    let difficultyLevel = difficultyLevels['easy']
+    let difficultyLevel = difficultyLevels['newbie']
 
     const generatedEvents: trigger[] = []
 
