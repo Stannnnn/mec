@@ -19,3 +19,9 @@ export const createEvent = ({
 
     return t
 }
+
+export const forRange = (j: number, cb: (i: number) => void) => {
+    for (let i = 0; i < j; i++) {
+        cb(i)
+    }
+}

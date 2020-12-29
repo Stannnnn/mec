@@ -1,5 +1,5 @@
 import { hamiltonianPathGenerator } from 'hamiltonianPathGenerator'
-import { createEvent } from 'utils'
+import { createEvent, forRange } from 'utils'
 import { Timer } from 'w3ts'
 import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
 
@@ -20,6 +20,42 @@ const tsMain = () => {
     // new Timer().start(1.0, true, () => {
     //     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color
     // })
+
+    const themes = {
+        magic: {
+            walkTerrain: 'Ngrs',
+            slideTerrain: 'Nice',
+            deathTerrain: 'Nsnw',
+            monsterIds: [
+                'hfoo',
+                'hpea',
+                'hmpr',
+                'hsor',
+                'hrif',
+                'opeo',
+                'ogru',
+                'ohun',
+                'uaco',
+                'ugho',
+                'ewsp',
+                'earc',
+                'esen',
+                'edry',
+            ],
+        },
+        fullskill: {
+            walkTerrain: 'Ngrs',
+            slideTerrain: 'Nice',
+            deathTerrain: 'Nsnw',
+            monsterIds: ['hfoo'],
+        },
+        murloc: {
+            walkTerrain: 'Ngrs',
+            slideTerrain: 'Nice',
+            deathTerrain: 'Nsnw',
+            monsterIds: ['hfoo'],
+        },
+    }
 
     const walkTerrain = sc__TerrainTypeArray_newWalk(
         udg_terrainTypes,
@@ -47,33 +83,32 @@ const tsMain = () => {
 
     const monsterIds = [
         'hfoo',
-        'hpea',
-        'hmpr',
-        'hsor',
-        'hrif',
-        'opeo',
-        'ogru',
-        'ohun',
-        'uaco',
-        'ugho',
-        'ewsp',
-        'earc',
-        'esen',
-        'edry',
+        // 'hpea',
+        // 'hmpr',
+        // 'hsor',
+        // 'hrif',
+        // 'opeo',
+        // 'ogru',
+        // 'ohun',
+        // 'uaco',
+        // 'ugho',
+        // 'ewsp',
+        // 'earc',
+        // 'esen',
+        // 'edry',
     ]
 
     const monsterTypes = monsterIds.map(id =>
         s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 50, 400, false)
     )
 
-    const getPatrolRandom = () => GetRandomInt(-4, 4)
+    // TODO; Replace this with diff starting angle on patrol
+    const getPatrolRandom = () => 0 //GetRandomInt(-4, 4)
 
     createEvent({
         events: [
             t => {
-                for (let i = 0; i <= bj_MAX_PLAYER_SLOTS; i++) {
-                    TriggerRegisterPlayerChatEvent(t, Player(i), '-magic', true)
-                }
+                forRange(bj_MAX_PLAYER_SLOTS, i => TriggerRegisterPlayerChatEvent(t, Player(i), '-magic', true))
             },
         ],
         actions: [
@@ -86,10 +121,10 @@ const tsMain = () => {
     createEvent({
         events: [
             t => {
-                for (let i = 0; i <= bj_MAX_PLAYER_SLOTS; i++) {
+                forRange(bj_MAX_PLAYER_SLOTS, i => {
                     TriggerRegisterPlayerChatEvent(t, Player(i), '-difficulty', false)
                     TriggerRegisterPlayerChatEvent(t, Player(i), '-diff', false)
-                }
+                })
             },
         ],
         actions: [
@@ -108,26 +143,33 @@ const tsMain = () => {
         ],
     })
 
+    // TODO; gridPatrols: 1-5
+
     const difficultyLevels = {
         newbie: {
             gridWidth: 5,
             slideWidth: 4,
+            gridPatrols: 1,
         },
         easy: {
             gridWidth: 5,
             slideWidth: 3,
+            gridPatrols: 1,
         },
         normal: {
             gridWidth: 5,
             slideWidth: 2,
+            gridPatrols: 1,
         },
         hard: {
             gridWidth: 4,
             slideWidth: 2,
+            gridPatrols: 1,
         },
         insane: {
             gridWidth: 3,
             slideWidth: 2,
+            gridPatrols: 1,
         },
     }
 
@@ -295,16 +337,6 @@ const tsMain = () => {
             })
         )
 
-        // Spawns a rock
-        // s__MonsterNoMoveArray_new(
-        //     s__Level_monstersNoMove[level],
-        //     s__MonsterTypeArray_get(udg_monsterTypes, 'rock'),
-        //     1425,
-        //     6012,
-        //     -1,
-        //     true
-        // )
-
         // Create monsters
         {
             let prev: { x: number; y: number }
@@ -365,89 +397,137 @@ const tsMain = () => {
                     y: prevTile.y + prevTileRadius,
                 }
 
-                // Rocks in center random?
-                // s__MonsterNoMoveArray_new(
-                //     s__Level_monstersNoMove[level],
-                //     monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                //     tileCenter.x,
-                //     tileCenter.y,
-                //     -1,
-                //     true
-                // )
-
                 const patrolOffset = 32
 
-                let patrol: { x: number; y: number; x2: number; y2: number }
+                // Patrols to spawn is a bit buggy (Mostly because connectors and grid aren't connected so it looks really off)
+                const patrolsToSpawnGrid = 1
+                const patrolsToSpawnConnector = 1
 
-                if (direction === 'EE' || direction === 'WW') {
-                    patrol = {
-                        x: currentTileCenter.x,
-                        y: currentTileCenter.y - currentTileRadius - patrolOffset,
-                        x2: currentTileCenter.x,
-                        y2: currentTileCenter.y + currentTileRadius + patrolOffset,
-                    }
-                } else if (direction === 'NN' || direction === 'SS') {
-                    patrol = {
-                        x: currentTileCenter.x - currentTileRadius - patrolOffset,
-                        y: currentTileCenter.y,
-                        x2: currentTileCenter.x + currentTileRadius + patrolOffset,
-                        y2: currentTileCenter.y,
-                    }
-                } else if (direction === 'NE' || direction === 'EN' || direction === 'SW' || direction === 'WS') {
-                    patrol = {
-                        x: currentTileCenter.x - currentTileRadius - patrolOffset,
-                        y: currentTileCenter.y + currentTileRadius + patrolOffset,
-                        x2: currentTileCenter.x + currentTileRadius + patrolOffset,
-                        y2: currentTileCenter.y - currentTileRadius - patrolOffset,
-                    }
-                } else {
-                    patrol = {
-                        x: currentTileCenter.x + currentTileRadius + patrolOffset,
-                        y: currentTileCenter.y + currentTileRadius + patrolOffset,
-                        x2: currentTileCenter.x - currentTileRadius - patrolOffset,
-                        y2: currentTileCenter.y - currentTileRadius - patrolOffset,
-                    }
+                let patrols: { x: number; y: number; x2: number; y2: number }[] = []
+
+                // Grid patrols
+                {
+                    // Rocks
+                    // {
+                    //     s__MonsterNoMoveArray_new(
+                    //         s__Level_monstersNoMove[level],
+                    //         monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
+                    //         currentTileCenter.x,
+                    //         currentTileCenter.y,
+                    //         -1,
+                    //         true
+                    //     )
+                    // }
+
+                    forRange(patrolsToSpawnGrid, i => {
+                        const patrolWidth = slideWidth * tileSize
+                        const iOffset =
+                            // Offset based on i
+                            (patrolWidth / patrolsToSpawnGrid) * (i + 1) -
+                            // Initial offset
+                            patrolWidth / patrolsToSpawnGrid / 2
+
+                        if (direction === 'EE' || direction === 'WW') {
+                            patrols.push({
+                                x: currentTile.x + iOffset,
+                                y: currentTileCenter.y - currentTileRadius - patrolOffset,
+                                x2: currentTile.x + iOffset,
+                                y2: currentTileCenter.y + currentTileRadius + patrolOffset,
+                            })
+                        } else if (direction === 'NN' || direction === 'SS') {
+                            patrols.push({
+                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
+                                y: currentTile.y + iOffset,
+                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+                                y2: currentTile.y + iOffset,
+                            })
+                        } else if (
+                            direction === 'NE' ||
+                            direction === 'EN' ||
+                            direction === 'SW' ||
+                            direction === 'WS'
+                        ) {
+                            patrols.push({
+                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
+                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
+                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+                            })
+                        } else {
+                            patrols.push({
+                                x: currentTileCenter.x + currentTileRadius + patrolOffset,
+                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
+                                x2: currentTileCenter.x - currentTileRadius - patrolOffset,
+                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+                            })
+                        }
+                    })
                 }
 
-                s__MonsterSimplePatrolArray_new(
-                    s__Level_monstersSimplePatrol[level],
-                    monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                    patrol.x + getPatrolRandom(),
-                    patrol.y + getPatrolRandom(),
-                    patrol.x2 + getPatrolRandom(),
-                    patrol.y2 + getPatrolRandom(),
-                    true
-                )
+                // Connector patrols
+                {
+                    const diffTile = getCenterTile({ tile: prevTileCenter, tileTo: currentTileCenter })
 
-                let patrolDiff: { x: number; y: number; x2: number; y2: number }
+                    // Rocks
+                    // {
+                    //     s__MonsterNoMoveArray_new(
+                    //         s__Level_monstersNoMove[level],
+                    //         monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
+                    //         diffTile.x,
+                    //         diffTile.y,
+                    //         -1,
+                    //         true
+                    //     )
+                    // }
 
-                const diffTile = getCenterTile({ tile: prevTileCenter, tileTo: currentTileCenter })
+                    forRange(patrolsToSpawnConnector, i => {
+                        if (directionFrom === 'N' || directionFrom === 'S') {
+                            const patrolWidth = Math.abs(prevTileCenter.y - currentTileCenter.y) / 2
+                            const iOffset =
+                                // Offset based on i
+                                (patrolWidth / patrolsToSpawnConnector) * (i + 1) -
+                                // Move patrols to the left of grid
+                                patrolWidth / 2 -
+                                // Initial offset
+                                patrolWidth / patrolsToSpawnConnector / 2
 
-                if (directionFrom === 'N' || directionFrom === 'S') {
-                    patrolDiff = {
-                        x: diffTile.x - currentTileRadius - patrolOffset,
-                        y: diffTile.y,
-                        x2: diffTile.x + currentTileRadius + patrolOffset,
-                        y2: diffTile.y,
-                    }
-                } else {
-                    patrolDiff = {
-                        x: diffTile.x,
-                        y: diffTile.y - currentTileRadius - patrolOffset,
-                        x2: diffTile.x,
-                        y2: diffTile.y + currentTileRadius + patrolOffset,
-                    }
+                            patrols.push({
+                                x: diffTile.x - currentTileRadius - patrolOffset,
+                                y: diffTile.y + iOffset,
+                                x2: diffTile.x + currentTileRadius + patrolOffset,
+                                y2: diffTile.y + iOffset,
+                            })
+                        } else {
+                            const patrolWidth = Math.abs(prevTileCenter.x - currentTileCenter.x) / 2
+                            const iOffset =
+                                // Offset based on i
+                                (patrolWidth / patrolsToSpawnConnector) * (i + 1) -
+                                // Move patrols to the left of grid
+                                patrolWidth / 2 -
+                                // Initial offset
+                                patrolWidth / patrolsToSpawnConnector / 2
+
+                            patrols.push({
+                                x: diffTile.x + iOffset,
+                                y: diffTile.y - currentTileRadius - patrolOffset,
+                                x2: diffTile.x + iOffset,
+                                y2: diffTile.y + currentTileRadius + patrolOffset,
+                            })
+                        }
+                    })
                 }
 
-                s__MonsterSimplePatrolArray_new(
-                    s__Level_monstersSimplePatrol[level],
-                    monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                    patrolDiff.x + getPatrolRandom(),
-                    patrolDiff.y + getPatrolRandom(),
-                    patrolDiff.x2 + getPatrolRandom(),
-                    patrolDiff.y2 + getPatrolRandom(),
-                    true
-                )
+                patrols.forEach(patrol => {
+                    s__MonsterSimplePatrolArray_new(
+                        s__Level_monstersSimplePatrol[level],
+                        monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
+                        patrol.x + getPatrolRandom(),
+                        patrol.y + getPatrolRandom(),
+                        patrol.x2 + getPatrolRandom(),
+                        patrol.y2 + getPatrolRandom(),
+                        true
+                    )
+                })
 
                 prev = current
                 current = next
@@ -457,9 +537,10 @@ const tsMain = () => {
         print('OK')
     }
 
-    // new Timer().start(0.5, false, () => {
-    generateSlide()
-    // })
+    // Need timer while debugging so that prints appear on f12
+    new Timer().start(0.5, false, () => {
+        generateSlide()
+    })
 
     FogModifierStart(udg_viewAll)
 
