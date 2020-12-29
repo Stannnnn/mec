@@ -21,11 +21,87 @@ const tsMain = () => {
     //     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color
     // })
 
+    const w1 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w1', TerrainTypeString2TerrainTypeId("'Ngrs'"), 522)
+
+    const w2 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w2', TerrainTypeString2TerrainTypeId("'Lgrd'"), 522)
+
+    const w3 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w3', TerrainTypeString2TerrainTypeId("'Yblm'"), 522)
+
+    const s1 = sc__TerrainTypeArray_newSlide(
+        udg_terrainTypes,
+        's1',
+        TerrainTypeString2TerrainTypeId("'Nice'"),
+        550,
+        true
+    )
+
+    const s2 = sc__TerrainTypeArray_newSlide(
+        udg_terrainTypes,
+        's2',
+        TerrainTypeString2TerrainTypeId("'Nsnw'"),
+        550,
+        true
+    )
+
+    const d1 = sc__TerrainTypeArray_newDeath(
+        udg_terrainTypes,
+        'd1',
+        TerrainTypeString2TerrainTypeId("'cNc1'"),
+        '',
+        0.2,
+        20
+    )
+
+    const d2 = sc__TerrainTypeArray_newDeath(
+        udg_terrainTypes,
+        'd2',
+        TerrainTypeString2TerrainTypeId("'Ywmb'"),
+        '',
+        0.2,
+        20
+    )
+
+    const d3 = sc__TerrainTypeArray_newDeath(
+        udg_terrainTypes,
+        'd3',
+        TerrainTypeString2TerrainTypeId("'Avin'"),
+        '',
+        0.2,
+        20
+    )
+
+    const allMonsterIds = [
+        'hfoo',
+        'hpea',
+        'hmpr',
+        'hsor',
+        'hrif',
+        'opeo',
+        'ogru',
+        'ohun',
+        'uaco',
+        'ugho',
+        'ewsp',
+        'earc',
+        'esen',
+        'edry',
+        'nmrl',
+        'nmrr',
+        'nmpg',
+        'nmfs',
+        'nmrm',
+        'nmmu',
+    ]
+
+    const allMonsterTypes = allMonsterIds.map(id =>
+        s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 50, 400, false)
+    )
+
     const themes = {
         magic: {
-            walkTerrain: 'Ngrs',
-            slideTerrain: 'Nice',
-            deathTerrain: 'Nsnw',
+            walkTerrain: w1,
+            slideTerrain: s1,
+            deathTerrain: d1,
             monsterIds: [
                 'hfoo',
                 'hpea',
@@ -44,66 +120,26 @@ const tsMain = () => {
             ],
         },
         fullskill: {
-            walkTerrain: 'Ngrs',
-            slideTerrain: 'Nice',
-            deathTerrain: 'Nsnw',
+            walkTerrain: w2,
+            slideTerrain: s1,
+            deathTerrain: d2,
             monsterIds: ['hfoo'],
         },
         murloc: {
-            walkTerrain: 'Ngrs',
-            slideTerrain: 'Nice',
-            deathTerrain: 'Nsnw',
-            monsterIds: ['hfoo'],
+            walkTerrain: w3,
+            slideTerrain: s2,
+            deathTerrain: d3,
+            monsterIds: ['nmrl', 'nmrr', 'nmfs', 'nmrm', 'nmmu'],
         },
     }
 
-    const walkTerrain = sc__TerrainTypeArray_newWalk(
-        udg_terrainTypes,
-        'w',
-        TerrainTypeString2TerrainTypeId("'Ngrs'"),
-        522
-    )
+    // -setto d3 w3 s1 w1 d1 s2 w2 d2
+    // -setto s1 s2 w1 w2 w3 d1 d2 d3
 
-    const slideTerrain = sc__TerrainTypeArray_newSlide(
-        udg_terrainTypes,
-        's',
-        TerrainTypeString2TerrainTypeId("'Nice'"),
-        550,
-        true
-    )
-
-    const deathTerrain = sc__TerrainTypeArray_newDeath(
-        udg_terrainTypes,
-        'd',
-        TerrainTypeString2TerrainTypeId("'Nsnw'"),
-        '',
-        0.2,
-        20
-    )
-
-    const monsterIds = [
-        'hfoo',
-        // 'hpea',
-        // 'hmpr',
-        // 'hsor',
-        // 'hrif',
-        // 'opeo',
-        // 'ogru',
-        // 'ohun',
-        // 'uaco',
-        // 'ugho',
-        // 'ewsp',
-        // 'earc',
-        // 'esen',
-        // 'edry',
-    ]
-
-    const monsterTypes = monsterIds.map(id =>
-        s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 50, 400, false)
-    )
+    let theme = themes['magic']
 
     // TODO; Replace this with diff starting angle on patrol
-    const getPatrolRandom = () => 0 //GetRandomInt(-4, 4)
+    const getPatrolRandom = () => GetRandomInt(-4, 4)
 
     createEvent({
         events: [
@@ -138,6 +174,30 @@ const tsMain = () => {
                     generateSlide(true)
                 } else {
                     print(`Unknown difficulty, options: newbie, easy, normal, hard, insane`)
+                }
+            },
+        ],
+    })
+
+    createEvent({
+        events: [
+            t => {
+                forRange(bj_MAX_PLAYER_SLOTS, i => {
+                    TriggerRegisterPlayerChatEvent(t, Player(i), '-theme', false)
+                })
+            },
+        ],
+        actions: [
+            () => {
+                const t = GetEventPlayerChatString().split(' ')[1]
+
+                if (!!themes[t as keyof typeof themes]) {
+                    theme = themes[t as keyof typeof themes]
+
+                    print(`Theme changed to: ${t}`)
+                    generateSlide(true)
+                } else {
+                    print(`Unknown theme, options: magic, fullskill, murloc`)
                 }
             },
         ],
@@ -180,6 +240,9 @@ const tsMain = () => {
     const generatedEvents: trigger[] = []
 
     const generateSlide = (regenerate?: boolean) => {
+        const { monsterIds, walkTerrain, slideTerrain, deathTerrain } = theme
+        const { gridWidth, slideWidth } = difficultyLevel
+
         const tileSize = 128
         const mapTileOffset = 4
 
@@ -232,8 +295,6 @@ const tsMain = () => {
             }
         }
 
-        const { gridWidth, slideWidth } = difficultyLevel
-
         const tilesX = Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth)
         const tilesY = Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth)
 
@@ -242,7 +303,7 @@ const tsMain = () => {
         const level = ForceGetLevel(0)
 
         if (regenerate) {
-            monsterTypes.map(m => {
+            allMonsterTypes.map(m => {
                 s__Level_removeMonstersOfType(s__Level_monstersNoMove[level], m)
             })
 
@@ -518,15 +579,20 @@ const tsMain = () => {
                 }
 
                 patrols.forEach(patrol => {
-                    s__MonsterSimplePatrolArray_new(
-                        s__Level_monstersSimplePatrol[level],
-                        monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                        patrol.x + getPatrolRandom(),
-                        patrol.y + getPatrolRandom(),
-                        patrol.x2 + getPatrolRandom(),
-                        patrol.y2 + getPatrolRandom(),
-                        true
-                    )
+                    new Timer().start(GetRandomReal(0, 2), false, () => {
+                        s__MonsterSimplePatrolArray_new(
+                            s__Level_monstersSimplePatrol[level],
+                            s__MonsterTypeArray_get(
+                                udg_monsterTypes,
+                                monsterIds[GetRandomInt(0, monsterIds.length - 1)]
+                            ),
+                            patrol.x + getPatrolRandom(),
+                            patrol.y + getPatrolRandom(),
+                            patrol.x2 + getPatrolRandom(),
+                            patrol.y2 + getPatrolRandom(),
+                            true
+                        )
+                    })
                 })
 
                 prev = current
@@ -538,9 +604,9 @@ const tsMain = () => {
     }
 
     // Need timer while debugging so that prints appear on f12
-    new Timer().start(0.5, false, () => {
-        generateSlide()
-    })
+    // new Timer().start(0.5, false, () => {
+    generateSlide()
+    // })
 
     FogModifierStart(udg_viewAll)
 
