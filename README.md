@@ -12,6 +12,16 @@ Hamiltonian path generator source from https://github.com/oysterCrusher/hampath 
 
 Don't create array objects as `let a = [0, 1]`, instead use `let a = {x: 0, y: 1}`
 
+Don't loop through an array and use the key to index the array again, the transpiler always adds a +1 to the key, if the key already matches the exact index then it'll go wrong.
+
+```ts
+;[].map(item, key, () => {
+    item[key]
+})
+```
+
+Don't use `?.`, optional chaining is not supported by the transpiler
+
 # Some notes on the transpiler
 
 The transpiler doesn't understand that "\\\\" is a valid string and throws an error, I replaced this with @@@@ (something unique) transpiled it and then replaced it back in the transpiled code.

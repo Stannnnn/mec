@@ -5365,7 +5365,7 @@ declare global {
     var f__arg_player1: player
     var f__arg_timer1: timer
     var f__arg_sound1: sound
-    var f__arg_thiss: number
+    var f__arg_this: number
     var f__result_boolean: boolean
     var f__result_integer: number
     var f__result_leaderboard: leaderboard
