@@ -1,4 +1,5 @@
 import { hamiltonianPathGenerator } from 'hamiltonianPathGenerator'
+import { enableAutoRevive, killEscapers, spawnMonster } from 'mec'
 import { createEvent, forRange } from 'utils'
 import { Timer } from 'w3ts'
 import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
@@ -237,7 +238,8 @@ const tsMain = () => {
 
     let difficultyLevel = difficultyLevels['newbie']
 
-    const generatedEvents: trigger[] = []
+    let generatedEvents: trigger[] = []
+    let activeTimers: Timer[] = []
 
     const generateSlide = (regenerate?: boolean) => {
         const { monsterIds, walkTerrain, slideTerrain, deathTerrain } = theme
@@ -299,6 +301,9 @@ const tsMain = () => {
         const tilesY = Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth)
 
         generatedEvents.forEach(t => DestroyTrigger(t))
+        generatedEvents = []
+        activeTimers.forEach(t => t.destroy())
+        activeTimers = []
 
         const level = ForceGetLevel(0)
 
@@ -307,18 +312,10 @@ const tsMain = () => {
                 s__Level_removeMonstersOfType(s__Level_monstersNoMove[level], m)
             })
 
-            // Code from s__Escaper_kill which doesn't work because it thinks the hero is already dead for some reason.
-            s___EscaperArray_escapers.map((_, i) => {
-                s__Escaper_resetItem(i)
-                KillUnit(s__Escaper_hero[i])
-                s__Escaper_lastTerrainType[i] = 0
-                ShowUnit(s__Escaper_invisUnit[i], false)
-                s__Escaper_enableCheckTerrain(i, false)
-                StopAfk(GetPlayerId(s__Escaper_p[i]))
-                s__Escaper_isHeroSelectedB[i] = false
-            })
+            // Reset monster arrays
+            sg__MonsterSimplePatrolArray_set_lastInstance(0, 0)
 
-            //sc__LevelArray_restartTheGame(udg_levels)
+            killEscapers()
         }
 
         // Setup terrain
@@ -579,20 +576,18 @@ const tsMain = () => {
                 }
 
                 patrols.forEach(patrol => {
-                    new Timer().start(GetRandomReal(0, 2), false, () => {
-                        s__MonsterSimplePatrolArray_new(
-                            s__Level_monstersSimplePatrol[level],
-                            s__MonsterTypeArray_get(
-                                udg_monsterTypes,
-                                monsterIds[GetRandomInt(0, monsterIds.length - 1)]
-                            ),
-                            patrol.x + getPatrolRandom(),
-                            patrol.y + getPatrolRandom(),
-                            patrol.x2 + getPatrolRandom(),
-                            patrol.y2 + getPatrolRandom(),
-                            true
-                        )
-                    })
+                    activeTimers.push(
+                        new Timer().start(GetRandomReal(0, 2), false, () => {
+                            spawnMonster({
+                                level,
+                                monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+                                x1: patrol.x + getPatrolRandom(),
+                                y1: patrol.y + getPatrolRandom(),
+                                x2: patrol.x2 + getPatrolRandom(),
+                                y2: patrol.y2 + getPatrolRandom(),
+                            })
+                        })
+                    )
                 })
 
                 prev = current
@@ -610,12 +605,7 @@ const tsMain = () => {
 
     FogModifierStart(udg_viewAll)
 
-    // Autorevive
-    udg_autoreviveDelay = 0.3
-
-    s___EscaperArray_escapers.map((_, i) => {
-        s__Escaper_hasAutoreviveB[s___EscaperArray_escapers[s__EscaperArray_escapers[udg_escapers] + i]] = true
-    })
+    enableAutoRevive()
 
     TIME_BEFORE_HERO_SPAWN = 1
     TIME_BETWEEN_EACH_HERO_SPAWN = 0.1
