@@ -1,8 +1,31 @@
+import { Commands } from 'commands'
 import { hamiltonianPathGenerator } from 'hamiltonianPathGenerator'
 import { enableAutoRevive, killEscapers, spawnMonster } from 'mec'
+import { DifficultyLevels } from 'Settings/Difficulty'
+import { Themes } from 'Settings/themes'
 import { createEvent, forRange } from 'utils'
 import { Timer } from 'w3ts'
 import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
+
+/*
+    [ ] = TODO
+    [O] = WIP
+    [?] = Possibly fixed
+    [X] = Done
+*
+    [?] BUG: Autorevive not working from start
+    [ ] Terrain order for themes is wrong
+    [X] Specific commands to override difficulty levels
+    [X] Help command
+    [X] Use diff command trigger so that mec doesn't trigger
+    [ ] BUG: Init_heroes breaks heroes, they won't die by killEscapers on new level
+    [O] yarn transpile - to transpile the basemap again so that we can actually edit it (Should also regenerate the war3map.lua)
+    [ ] Patrols in corner should have a tiny offset so that they match terrain and that it doesn't look like that they walk out too far
+    [O] Implement https://github.com/voces/w3ts-jsx
+    [O] Decide first which blocks on the size of a grid can have patrols, then use thatto spawn em based on config amount
+    [ ] Random rocks on the map
+    [ ] Multiple diagonal patrols on the same tile
+*/
 
 const BUILD_DATE = compiletime(() => new Date().toUTCString())
 const TS_VERSION = compiletime(() => require('typescript').version)
@@ -15,61 +38,16 @@ const tsMain = () => {
     print(' ')
     print('Welcome to TypeScript!')
 
+    const tileSize = 128
+    const mapTileOffset = 4
+    const patrolOffset = 32
+
     // const unit = new Unit(Players[0], FourCC('hfoo'), 0, 0, 270)
     // unit.name = 'TypeScript'
 
     // new Timer().start(1.0, true, () => {
     //     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color
     // })
-
-    const w1 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w1', TerrainTypeString2TerrainTypeId("'Ngrs'"), 522)
-
-    const w2 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w2', TerrainTypeString2TerrainTypeId("'Lgrd'"), 522)
-
-    const w3 = sc__TerrainTypeArray_newWalk(udg_terrainTypes, 'w3', TerrainTypeString2TerrainTypeId("'Yblm'"), 522)
-
-    const s1 = sc__TerrainTypeArray_newSlide(
-        udg_terrainTypes,
-        's1',
-        TerrainTypeString2TerrainTypeId("'Nice'"),
-        550,
-        true
-    )
-
-    const s2 = sc__TerrainTypeArray_newSlide(
-        udg_terrainTypes,
-        's2',
-        TerrainTypeString2TerrainTypeId("'Nsnw'"),
-        550,
-        true
-    )
-
-    const d1 = sc__TerrainTypeArray_newDeath(
-        udg_terrainTypes,
-        'd1',
-        TerrainTypeString2TerrainTypeId("'cNc1'"),
-        '',
-        0.2,
-        20
-    )
-
-    const d2 = sc__TerrainTypeArray_newDeath(
-        udg_terrainTypes,
-        'd2',
-        TerrainTypeString2TerrainTypeId("'Ywmb'"),
-        '',
-        0.2,
-        20
-    )
-
-    const d3 = sc__TerrainTypeArray_newDeath(
-        udg_terrainTypes,
-        'd3',
-        TerrainTypeString2TerrainTypeId("'Avin'"),
-        '',
-        0.2,
-        20
-    )
 
     const allMonsterIds = [
         'hfoo',
@@ -95,148 +73,82 @@ const tsMain = () => {
     ]
 
     const allMonsterTypes = allMonsterIds.map(id =>
-        s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 50, 400, false)
+        s__MonsterTypeArray_new(udg_monsterTypes, id, String2Ascii(id), 1, 40, 380, false)
     )
 
-    const themes = {
-        magic: {
-            walkTerrain: w1,
-            slideTerrain: s1,
-            deathTerrain: d1,
-            monsterIds: [
-                'hfoo',
-                'hpea',
-                'hmpr',
-                'hsor',
-                'hrif',
-                'opeo',
-                'ogru',
-                'ohun',
-                'uaco',
-                'ugho',
-                'ewsp',
-                'earc',
-                'esen',
-                'edry',
-            ],
-        },
-        fullskill: {
-            walkTerrain: w2,
-            slideTerrain: s1,
-            deathTerrain: d2,
-            monsterIds: ['hfoo'],
-        },
-        murloc: {
-            walkTerrain: w3,
-            slideTerrain: s2,
-            deathTerrain: d3,
-            monsterIds: ['nmrl', 'nmrr', 'nmfs', 'nmrm', 'nmmu'],
-        },
-    }
+    const themes = Themes()
+    const difficulty = DifficultyLevels()
 
-    // -setto d3 w3 s1 w1 d1 s2 w2 d2
-    // -setto s1 s2 w1 w2 w3 d1 d2 d3
+    let theme = themes.magic
+    let difficultyLevel = difficulty.newbie
 
-    let theme = themes['magic']
-
-    // TODO; Replace this with diff starting angle on patrol
     const getPatrolRandom = () => GetRandomInt(-4, 4)
 
-    createEvent({
-        events: [
-            t => {
-                forRange(bj_MAX_PLAYER_SLOTS, i => TriggerRegisterPlayerChatEvent(t, Player(i), '-magic', true))
-            },
-        ],
-        actions: [
-            () => {
+    const { registerCommand } = Commands()
+
+    registerCommand({
+        cmd: 'magic',
+        exactMatchOnly: true,
+        cb: () => {
+            // renderInterface()
+
+            generateSlide(true)
+        },
+    })
+
+    registerCommand({
+        cmd: 'diff',
+        exactMatchOnly: false,
+        cb: () => {
+            const lvl = GetEventPlayerChatString().split(' ')[1]
+
+            if (!!difficulty[lvl as keyof typeof difficulty]) {
+                difficultyLevel = difficulty[lvl as keyof typeof difficulty]
+
+                print(`Difficulty changed to: ${lvl}`)
+                generateSlide(true)
+            } else {
+                print(`Unknown difficulty, options: newbie, easy, normal, hard, insane`)
+            }
+        },
+    })
+
+    registerCommand({
+        cmd: 'theme',
+        exactMatchOnly: false,
+        cb: () => {
+            const t = GetEventPlayerChatString().split(' ')[1]
+
+            if (!!themes[t as keyof typeof themes]) {
+                theme = themes[t as keyof typeof themes]
+
+                print(`Theme changed to: ${t}`)
+                generateSlide(true)
+            } else {
+                print(`Unknown theme, options: magic, fullskill, murloc`)
+            }
+        },
+    })
+    ;['gridWidth', 'slideWidth'].forEach(s =>
+        registerCommand({
+            cmd: s,
+            exactMatchOnly: false,
+            cb: () => {
+                const n = Number(GetEventPlayerChatString().split(' ')[1])
+
+                if (!n) {
+                    print('Invalid value')
+                    return
+                }
+
+                print(`${s} changed to: ${n}`)
+                difficultyLevel[s as keyof typeof difficultyLevel] = n
                 generateSlide(true)
             },
-        ],
-    })
-
-    createEvent({
-        events: [
-            t => {
-                forRange(bj_MAX_PLAYER_SLOTS, i => {
-                    TriggerRegisterPlayerChatEvent(t, Player(i), '-difficulty', false)
-                    TriggerRegisterPlayerChatEvent(t, Player(i), '-diff', false)
-                })
-            },
-        ],
-        actions: [
-            () => {
-                const lvl = GetEventPlayerChatString().split(' ')[1]
-
-                if (!!difficultyLevels[lvl as keyof typeof difficultyLevels]) {
-                    difficultyLevel = difficultyLevels[lvl as keyof typeof difficultyLevels]
-
-                    print(`Difficulty changed to: ${lvl}`)
-                    generateSlide(true)
-                } else {
-                    print(`Unknown difficulty, options: newbie, easy, normal, hard, insane`)
-                }
-            },
-        ],
-    })
-
-    createEvent({
-        events: [
-            t => {
-                forRange(bj_MAX_PLAYER_SLOTS, i => {
-                    TriggerRegisterPlayerChatEvent(t, Player(i), '-theme', false)
-                })
-            },
-        ],
-        actions: [
-            () => {
-                const t = GetEventPlayerChatString().split(' ')[1]
-
-                if (!!themes[t as keyof typeof themes]) {
-                    theme = themes[t as keyof typeof themes]
-
-                    print(`Theme changed to: ${t}`)
-                    generateSlide(true)
-                } else {
-                    print(`Unknown theme, options: magic, fullskill, murloc`)
-                }
-            },
-        ],
-    })
-
-    // TODO; gridPatrols: 1-5
-
-    const difficultyLevels = {
-        newbie: {
-            gridWidth: 5,
-            slideWidth: 4,
-            gridPatrols: 1,
-        },
-        easy: {
-            gridWidth: 5,
-            slideWidth: 3,
-            gridPatrols: 1,
-        },
-        normal: {
-            gridWidth: 5,
-            slideWidth: 2,
-            gridPatrols: 1,
-        },
-        hard: {
-            gridWidth: 4,
-            slideWidth: 2,
-            gridPatrols: 1,
-        },
-        insane: {
-            gridWidth: 3,
-            slideWidth: 2,
-            gridPatrols: 1,
-        },
-    }
+        })
+    )
 
     const worldRect = GetWorldBounds()
-
-    let difficultyLevel = difficultyLevels['newbie']
 
     let generatedEvents: trigger[] = []
     let activeTimers: Timer[] = []
@@ -244,9 +156,6 @@ const tsMain = () => {
     const generateSlide = (regenerate?: boolean) => {
         const { monsterIds, walkTerrain, slideTerrain, deathTerrain } = theme
         const { gridWidth, slideWidth } = difficultyLevel
-
-        const tileSize = 128
-        const mapTileOffset = 4
 
         // Tiles around the corner of the map are only rendered for half
         const mapOffsetX = GetRectMinX(worldRect) + mapTileOffset * tileSize + tileSize / 2
@@ -297,8 +206,8 @@ const tsMain = () => {
             }
         }
 
-        const tilesX = Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth)
-        const tilesY = Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth)
+        const tilesX = Math.min(8, Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth))
+        const tilesY = Math.min(8, Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth))
 
         generatedEvents.forEach(t => DestroyTrigger(t))
         generatedEvents = []
@@ -332,11 +241,10 @@ const tsMain = () => {
 
         NB_MAX_TILES_MODIFIED = 1000
 
-        print(`Debug:
+        print(`Level info:
     gridWidth: ${gridWidth}
     slideWidth: ${slideWidth}
-    tilesX: ${tilesX}
-    tilesY: ${tilesY}
+    tiles: ${tilesX}x${tilesY}
     `)
 
         let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY })
@@ -360,21 +268,18 @@ const tsMain = () => {
         createTile({ terrain: walkTerrain, tile: path.start })
         createTile({ terrain: walkTerrain, tile: path.end })
 
-        // Setup level
-
         // Region
 
         s__Level_setNbLivesEarned(level, 100000)
 
         const startTile = getTile({ tile: path.start })
-        s__Level_newStart(level, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+        s__Level_newStart(level, startTile.x + 64, startTile.y + 64, startTile.xTo - 64, startTile.yTo - 64)
 
         // Force start position
-        SetRect(gg_rct_departLvl_0, startTile.x, startTile.y, startTile.xTo, startTile.yTo)
+        SetRect(gg_rct_departLvl_0, startTile.x + 64, startTile.y + 64, startTile.xTo - 64, startTile.yTo - 64)
         Init_Heroes()
 
         const endTile = getTile({ tile: path.end })
-        // s__Level_newEnd(level, endTile.x, endTile.y, endTile.xTo, endTile.yTo)
 
         generatedEvents.push(
             createEvent({
@@ -382,7 +287,7 @@ const tsMain = () => {
                     t =>
                         TriggerRegisterEnterRectSimple(
                             t,
-                            Rect(endTile.x + 32, endTile.y + 32, endTile.xTo - 32, endTile.yTo - 32)
+                            Rect(endTile.x + 64, endTile.y + 64, endTile.xTo - 64, endTile.yTo - 64)
                         ),
                 ],
                 conditions: [() => GetUnitName(GetTriggerUnit()) === 'Slider'],
@@ -400,7 +305,7 @@ const tsMain = () => {
             let prev: { x: number; y: number }
             let current: { x: number; y: number }
 
-            path.data.slice(1, path.data.length).forEach(next => {
+            path.data.slice(1, path.data.length).forEach((next, k) => {
                 if (!current) {
                     current = next
                     return
@@ -455,11 +360,10 @@ const tsMain = () => {
                     y: prevTile.y + prevTileRadius,
                 }
 
-                const patrolOffset = 32
-
-                // Patrols to spawn is a bit buggy (Mostly because connectors and grid aren't connected so it looks really off)
-                const patrolsToSpawnGrid = 1
-                const patrolsToSpawnConnector = 1
+                // TODO; Use tilesPerPatrol and k to decide wether or not a patrol should spawn
+                const tilesPerPatrol = 4
+                const patrolsToSpawnGrid = slideWidth
+                const patrolsToSpawnConnector = gridWidth - slideWidth
 
                 let patrols: { x: number; y: number; x2: number; y2: number }[] = []
 
@@ -478,6 +382,10 @@ const tsMain = () => {
                     // }
 
                     forRange(patrolsToSpawnGrid, i => {
+                        // if ((k * patrolsToSpawnGrid + i) % patrolsToSpawnGrid !== 0) {
+                        //     return
+                        // }
+
                         const patrolWidth = slideWidth * tileSize
                         const iOffset =
                             // Offset based on i
@@ -505,6 +413,10 @@ const tsMain = () => {
                             direction === 'SW' ||
                             direction === 'WS'
                         ) {
+                            if (i > 0) {
+                                return
+                            }
+
                             patrols.push({
                                 x: currentTileCenter.x - currentTileRadius - patrolOffset,
                                 y: currentTileCenter.y + currentTileRadius + patrolOffset,
@@ -512,6 +424,10 @@ const tsMain = () => {
                                 y2: currentTileCenter.y - currentTileRadius - patrolOffset,
                             })
                         } else {
+                            if (i > 0) {
+                                return
+                            }
+
                             patrols.push({
                                 x: currentTileCenter.x + currentTileRadius + patrolOffset,
                                 y: currentTileCenter.y + currentTileRadius + patrolOffset,
@@ -539,16 +455,13 @@ const tsMain = () => {
                     // }
 
                     forRange(patrolsToSpawnConnector, i => {
-                        if (directionFrom === 'N' || directionFrom === 'S') {
-                            const patrolWidth = Math.abs(prevTileCenter.y - currentTileCenter.y) / 2
-                            const iOffset =
-                                // Offset based on i
-                                (patrolWidth / patrolsToSpawnConnector) * (i + 1) -
-                                // Move patrols to the left of grid
-                                patrolWidth / 2 -
-                                // Initial offset
-                                patrolWidth / patrolsToSpawnConnector / 2
+                        const iOffset = tileSize * i - (patrolsToSpawnConnector / 2) * tileSize + tileSize / 2
 
+                        // if ((k * patrolsToSpawnConnector + i) % patrolsToSpawnConnector !== 0) {
+                        //     return
+                        // }
+
+                        if (directionFrom === 'N' || directionFrom === 'S') {
                             patrols.push({
                                 x: diffTile.x - currentTileRadius - patrolOffset,
                                 y: diffTile.y + iOffset,
@@ -556,15 +469,6 @@ const tsMain = () => {
                                 y2: diffTile.y + iOffset,
                             })
                         } else {
-                            const patrolWidth = Math.abs(prevTileCenter.x - currentTileCenter.x) / 2
-                            const iOffset =
-                                // Offset based on i
-                                (patrolWidth / patrolsToSpawnConnector) * (i + 1) -
-                                // Move patrols to the left of grid
-                                patrolWidth / 2 -
-                                // Initial offset
-                                patrolWidth / patrolsToSpawnConnector / 2
-
                             patrols.push({
                                 x: diffTile.x + iOffset,
                                 y: diffTile.y - currentTileRadius - patrolOffset,

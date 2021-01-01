@@ -3,7 +3,7 @@
         "baseUrl": "./src",
         "allowJs": true,
         "target": "es6",
-        "lib": ["es6"],
+        "lib": ["es6", "es2020"],
         "noImplicitAny": true,
         "strict": true,
         "moduleResolution": "classic",
@@ -37,10 +37,13 @@
             "war3-types/core/commonai",
             "war3-types/core/polyfill",
             "war3-types/special/w3ts",
-            "mdx-m3-viewer/src/types"
-        ]
+            "mdx-m3-viewer/src/types",
+            "w3ts-jsx/dist/src/types" // Add `frame` to your known global types
+        ],
+        "jsx": "react",
+        "skipLibCheck": true
     },
-    "include": ["src"],
+    "include": ["src", "node_modules/w3ts-jsx/dist", "node_modules/w3ts-jsx/dist/node_modules/basic-pragma"],
     "exclude": [],
     "tstl": {
         "luaTarget": "5.3",
@@ -48,6 +51,12 @@
         "luaLibImport": "require",
         "noImplicitSelf": true,
         "luaBundle": "dist/tstl_output.lua",
-        "luaBundleEntry": "./src/main.ts"
+        "luaBundleEntry": "./src/main.ts",
+        "luaPlugins": [
+            {
+                "name": "tstl-jsx",
+                "import": "JsxTransformer"
+            }
+        ]
     }
 }
