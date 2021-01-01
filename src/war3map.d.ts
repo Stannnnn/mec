@@ -11,9 +11,9 @@ declare global {
 	var afkModeTextTags: texttag[]
 	var killAllAfkTimer: timer
 	var LIBRARY_Ascii: boolean
-	var Ascii__TABLE_ASCII: string
-	var Ascii__DEBUT_TABLE_ASCII: number
-	var Ascii__TAILLE_TABLE_ASCII: number
+	var Ascii___TABLE_ASCII: string
+	var Ascii___DEBUT_TABLE_ASCII: number
+	var Ascii___TAILLE_TABLE_ASCII: number
 	var LIBRARY_AutoContinueAfterSliding: boolean
 	var lastClickedX: number[]
 	var lastClickedY: number[]
@@ -27,9 +27,9 @@ declare global {
 	var LIBRARY_Disco: boolean
 	var LIBRARY_FunctionsOnNumbers: boolean
 	var LIBRARY_GameTime: boolean
-	var GameTime___hours: number
-	var GameTime___minuts: number
-	var GameTime___seconds: number
+	var GameTime__hours: number
+	var GameTime__minuts: number
+	var GameTime__seconds: number
 	var TIME_PLAYER: player
 	var LIBRARY_Gravity: boolean
 	var Gravity__gravity: number
@@ -41,7 +41,7 @@ declare global {
 	var METEOR_NORMAL: number
 	var METEOR_CHEAT: number
 	var LIBRARY_MonsterOrCasterStack: boolean
-	var MonsterOrCasterStack___udg_enumMoc: number
+	var MonsterOrCasterStack__udg_enumMoc: number
 	var LIBRARY_MonstersClickableSetLife: boolean
 	var monstersClickable: group
 	var trigMonstersClickableSetLife: trigger
@@ -51,9 +51,9 @@ declare global {
 	var LIBRARY_StringLib: boolean
 	var STRING_INDEX_NONE: number
 	var STRING_INVALID_SEGMENT: string
-	var StringLib__ht_hash: hashtable
-	var StringLib__KEY_ASCII: number
-	var StringLib__KEY_UTF8: number
+	var StringLib___ht_hash: hashtable
+	var StringLib___KEY_ASCII: number
+	var StringLib___KEY_UTF8: number
 	var LIBRARY_TerrainModifyingTrig: boolean
 	var y: number
 	var TerrainModifyingTrig___wasCheckTerrainTriggerOn: boolean[]
@@ -69,16 +69,16 @@ declare global {
 	var Text_posX: number
 	var Text_posY: number
 	var LIBRARY_TimerUtils: boolean
-	var TimerUtils__USE_HASH_TABLE: boolean
-	var TimerUtils__USE_FLEXIBLE_OFFSET: boolean
-	var TimerUtils__OFFSET: number
-	var TimerUtils__VOFFSET: number
-	var TimerUtils__QUANTITY: number
-	var TimerUtils__ARRAY_SIZE: number
-	var TimerUtils__ht: hashtable
-	var TimerUtils__tN: number
-	var TimerUtils__HELD: number
-	var TimerUtils__didinit: boolean
+	var TimerUtils___USE_HASH_TABLE: boolean
+	var TimerUtils___USE_FLEXIBLE_OFFSET: boolean
+	var TimerUtils___OFFSET: number
+	var TimerUtils___VOFFSET: number
+	var TimerUtils___QUANTITY: number
+	var TimerUtils___ARRAY_SIZE: number
+	var TimerUtils___ht: hashtable
+	var TimerUtils___tN: number
+	var TimerUtils___HELD: number
+	var TimerUtils___didinit: boolean
 	var LIBRARY_Triggers: boolean
 	var LIBRARY_ViewAllHideAll: boolean
 	var udg_hideAll: fogmodifier
@@ -88,9 +88,9 @@ declare global {
 	var WATER_TYPE_NONE: number
 	var WATER_TYPE_SHALLOW: number
 	var WATER_TYPE_DEEP: number
-	var ZLibrary__PLATFORM: number
-	var ZLibrary__PLATFORM_HEIGHT: number
-	var ZLibrary__p: location
+	var ZLibrary___PLATFORM: number
+	var ZLibrary___PLATFORM_HEIGHT: number
+	var ZLibrary___p: location
 	var LIBRARY_BasicFunctions: boolean
 	var udg_currentMonsterPlayerId: number
 	var LIBRARY_CasterType: boolean
@@ -119,9 +119,9 @@ declare global {
 	var MessageHeroDies___isSoundPlaying: boolean
 	var MessageHeroDies___DUREE_SON: number
 	var LIBRARY_MeteorArray: boolean
-	var MeteorArray___MAX_NB_METEORS: number
+	var MeteorArray__MAX_NB_METEORS: number
 	var LIBRARY_MeteorFunctions: boolean
-	var MeteorFunctions___meteor: item
+	var MeteorFunctions__meteor: item
 	var LIBRARY_MonsterType: boolean
 	var LIBRARY_SaveLevels: boolean
 	var SaveLevels___levelId: number
@@ -138,10 +138,10 @@ declare global {
 	var SaveLevels___trg_startSaveNextLevel: trigger
 	var LIBRARY_SaveTerrainConfigInCache: boolean
 	var LIBRARY_SoundUtils: boolean
-	var SoundUtils__ht: hashtable
-	var SoundUtils__st: hashtable
-	var SoundUtils__rt: hashtable
-	var SoundUtils__kt: hashtable
+	var SoundUtils___ht: hashtable
+	var SoundUtils___st: hashtable
+	var SoundUtils___rt: hashtable
+	var SoundUtils___kt: hashtable
 	var LIBRARY_StringArrayForCache: boolean
 	var CACHE_SEPARATEUR_ITEM: string
 	var CACHE_SEPARATEUR_PARAM: string
@@ -153,27 +153,27 @@ declare global {
 	var nbClicsOnSlide: number[]
 	var timeOnSlide: number[]
 	var LIBRARY_CasterFunctions: boolean
-	var CasterFunctions___escaper: number
-	var CasterFunctions___caster: number
-	var CasterFunctions___PRECISION_TIR: number
-	var CasterFunctions___PRECISION_DIFF_POS_HERO: number
-	var CasterFunctions___ECART_CHECK: number
-	var CasterFunctions___x1: number
-	var CasterFunctions___y1: number
-	var CasterFunctions___angleSlider: number
-	var CasterFunctions___sliderSpeed: number
-	var CasterFunctions___x2: number
-	var CasterFunctions___y2: number
-	var CasterFunctions___x3: number
-	var CasterFunctions___y3: number
-	var CasterFunctions___k1: number
-	var CasterFunctions___k2: number
-	var CasterFunctions___Xk1: number
-	var CasterFunctions___Yk1: number
-	var CasterFunctions___Xk2: number
-	var CasterFunctions___Yk2: number
-	var CasterFunctions___XintersectionDevantHeros: number
-	var CasterFunctions___YintersectionDevantHeros: number
+	var CasterFunctions__escaper: number
+	var CasterFunctions__caster: number
+	var CasterFunctions__PRECISION_TIR: number
+	var CasterFunctions__PRECISION_DIFF_POS_HERO: number
+	var CasterFunctions__ECART_CHECK: number
+	var CasterFunctions__x1: number
+	var CasterFunctions__y1: number
+	var CasterFunctions__angleSlider: number
+	var CasterFunctions__sliderSpeed: number
+	var CasterFunctions__x2: number
+	var CasterFunctions__y2: number
+	var CasterFunctions__x3: number
+	var CasterFunctions__y3: number
+	var CasterFunctions__k1: number
+	var CasterFunctions__k2: number
+	var CasterFunctions__Xk1: number
+	var CasterFunctions__Yk1: number
+	var CasterFunctions__Xk2: number
+	var CasterFunctions__Yk2: number
+	var CasterFunctions__XintersectionDevantHeros: number
+	var CasterFunctions__YintersectionDevantHeros: number
 	var LIBRARY_CasterTypeArray: boolean
 	var LIBRARY_CheckTerrainTrigger: boolean
 	var CheckTerrainTrigger__TOLERANCE_ANGLE_DIFF: number
@@ -189,7 +189,7 @@ declare global {
 	var D_shortcutCommand: string[]
 	var F_shortcutCommand: string[]
 	var LIBRARY_Lives: boolean
-	var Lives___LIVES_PLAYER: player
+	var Lives__LIVES_PLAYER: player
 	var LIBRARY_MonsterTypeArray: boolean
 	var LIBRARY_SaveCasterTypes: boolean
 	var LIBRARY_TeleportOnceOnly: boolean
@@ -216,17 +216,17 @@ declare global {
 	var LIBRARY_TerrainTypeFromString: boolean
 	var LIBRARY_AllTerrainFunctions: boolean
 	var LIBRARY_CasterShot: boolean
-	var CasterShot___shotsHashtable: hashtable
-	var CasterShot___PERIOD: number
+	var CasterShot__shotsHashtable: hashtable
+	var CasterShot__PERIOD: number
 	var LIBRARY_EscaperEffect: boolean
 	var LIBRARY_MakeTerrainCopyPasteAction: boolean
 	var LIBRARY_MakeTerrainCreateAction: boolean
 	var LIBRARY_MakeTerrainHorizontalSymmetryAction: boolean
 	var LIBRARY_MakeTerrainVerticalSymmetryAction: boolean
 	var LIBRARY_MonsterSpawn: boolean
-	var MonsterSpawn___ht: hashtable
-	var MonsterSpawn___DECALAGE_UNSPAWN: number
-	var MonsterSpawn___DELAY_BETWEEN_SPAWN_AND_MOVEMENT: number
+	var MonsterSpawn__ht: hashtable
+	var MonsterSpawn__DECALAGE_UNSPAWN: number
+	var MonsterSpawn__DELAY_BETWEEN_SPAWN_AND_MOVEMENT: number
 	var LIBRARY_SaveWater: boolean
 	var SaveWater___y: number
 	var LIBRARY_TerrainTypeDeathFunctions: boolean
@@ -270,7 +270,7 @@ declare global {
 	var LIBRARY_TerrainTypeDeathKillingTimers: boolean
 	var LIBRARY_Escaper: boolean
 	var SHOW_REVIVE_EFFECTS: boolean
-	var Escaper___heroToSelect: unit
+	var Escaper__heroToSelect: unit
 	var LIBRARY_SaveTerrainHeights: boolean
 	var SaveTerrainHeights___y: number
 	var LIBRARY_TerrainTypeDeath: boolean
@@ -299,13 +299,13 @@ declare global {
 	var LIBRARY_MMMultiplePatrolsActions: boolean
 	var LIBRARY_MMNoMoveActions: boolean
 	var LIBRARY_MMSimplePatrolActions: boolean
-	var MMSimplePatrolActions___MIN_DIST: number
-	var MMSimplePatrolActions___MAX_DIST: number
-	var MMSimplePatrolActions___ECART_DIST: number
-	var MMSimplePatrolActions___ECART_ANGLE: number
-	var MMSimplePatrolActions___DIST_ON_TERRAIN_MAX: number
-	var MMSimplePatrolActions___DIST_ON_TERRAIN_DEFAULT: number
-	var MMSimplePatrolActions___distOnTerrain: number
+	var MMSimplePatrolActions__MIN_DIST: number
+	var MMSimplePatrolActions__MAX_DIST: number
+	var MMSimplePatrolActions__ECART_DIST: number
+	var MMSimplePatrolActions__ECART_ANGLE: number
+	var MMSimplePatrolActions__DIST_ON_TERRAIN_MAX: number
+	var MMSimplePatrolActions__DIST_ON_TERRAIN_DEFAULT: number
+	var MMSimplePatrolActions__distOnTerrain: number
 	var LIBRARY_MMTeleportActions: boolean
 	var LIBRARY_MakeExchangeTerrainsActions: boolean
 	var LIBRARY_MakeGetUnitTeleportPeriodActions: boolean
@@ -374,15 +374,15 @@ declare global {
 	var trigSaveMapInCache: trigger
 	var LIBRARY_TerrainTypeArray: boolean
 	var LIBRARY_ClearMob: boolean
-	var ClearMob___htClearMob: hashtable
+	var ClearMob__htClearMob: hashtable
 	var CLEAR_MOB_MAX_DURATION: number
-	var ClearMob___TRIGGER_MOB: number
-	var ClearMob___TIMER_ACTIVATED: number
-	var ClearMob___TIMER_FRONT_MONTANT: number
+	var ClearMob__TRIGGER_MOB: number
+	var ClearMob__TIMER_ACTIVATED: number
+	var ClearMob__TIMER_FRONT_MONTANT: number
 	var ClearMob_FRONT_MONTANT_DURATION: number
-	var ClearMob___udp_currentTimer: timer
+	var ClearMob__udp_currentTimer: timer
 	var MAX_NB_CLEAR_MOB_BY_LEVEL: number
-	var ClearMob___TRIGGER_MOB_PERMANENT_EFFECT: string
+	var ClearMob__TRIGGER_MOB_PERMANENT_EFFECT: string
 	var LIBRARY_CommandMax: boolean
 	var LIBRARY_LevelArray: boolean
 	var NB_MAX_LEVELS: number
@@ -982,27 +982,27 @@ declare global {
 	var s__MonsterType_killingEffectStr: string[]
 	var s__MonsterType_maxLife: number[]
 	var s__MonsterType_height: number[]
-	var si__SoundUtils__soundhelper: number
-	var si__SoundUtils__soundhelper_F: number
-	var si__SoundUtils__soundhelper_I: number
-	var si__SoundUtils__soundhelper_V: number[]
-	var s__SoundUtils__soundhelper_sta: number[]
-	var s__SoundUtils__soundhelper_fileName: string[]
-	var s__SoundUtils__soundhelper_duration: number[]
-	var s__SoundUtils__soundhelper_looping: boolean[]
-	var s__SoundUtils__soundhelper_is3D: boolean[]
-	var s__SoundUtils__soundhelper_stopwhenoutofrange: boolean[]
-	var s__SoundUtils__soundhelper_fadeInRate: number[]
-	var s__SoundUtils__soundhelper_fadeOutRate: number[]
-	var s__SoundUtils__soundhelper_eaxSetting: string[]
-	var si__SoundUtils__soundrecycler: number
-	var si__SoundUtils__soundrecycler_F: number
-	var si__SoundUtils__soundrecycler_I: number
-	var si__SoundUtils__soundrecycler_V: number[]
-	var s__SoundUtils__soundrecycler_t: timer[]
-	var s__SoundUtils__soundrecycler_s: sound[]
-	var s__SoundUtils__soundrecycler_sh: number[]
-	var s__SoundUtils__soundrecycler_stopped: boolean[]
+	var si__SoundUtils___soundhelper: number
+	var si__SoundUtils___soundhelper_F: number
+	var si__SoundUtils___soundhelper_I: number
+	var si__SoundUtils___soundhelper_V: number[]
+	var s__SoundUtils___soundhelper_sta: number[]
+	var s__SoundUtils___soundhelper_fileName: string[]
+	var s__SoundUtils___soundhelper_duration: number[]
+	var s__SoundUtils___soundhelper_looping: boolean[]
+	var s__SoundUtils___soundhelper_is3D: boolean[]
+	var s__SoundUtils___soundhelper_stopwhenoutofrange: boolean[]
+	var s__SoundUtils___soundhelper_fadeInRate: number[]
+	var s__SoundUtils___soundhelper_fadeOutRate: number[]
+	var s__SoundUtils___soundhelper_eaxSetting: string[]
+	var si__SoundUtils___soundrecycler: number
+	var si__SoundUtils___soundrecycler_F: number
+	var si__SoundUtils___soundrecycler_I: number
+	var si__SoundUtils___soundrecycler_V: number[]
+	var s__SoundUtils___soundrecycler_t: timer[]
+	var s__SoundUtils___soundrecycler_s: sound[]
+	var s__SoundUtils___soundrecycler_sh: number[]
+	var s__SoundUtils___soundrecycler_stopped: boolean[]
 	var si__StringArrayForCache: number
 	var si__StringArrayForCache_F: number
 	var si__StringArrayForCache_I: number
@@ -4899,8 +4899,8 @@ declare global {
 	var si__EscaperSavedCommands_I: number
 	var si__EscaperSavedCommands_V: number[]
 	var s__EscaperSavedCommands_savedCommands: hashtable[]
-	var s__TimerUtils__data: number[]
-	var s__TimerUtils__tT: timer[]
+	var s__TimerUtils___data: number[]
+	var s__TimerUtils___tT: timer[]
 	var s__ReinitTerrainsPositions___TERRAIN_SAVE: number[]
 	var s__2ReinitTerrainsPositions___TERRAIN_SAVE: number[]
 	var s__3ReinitTerrainsPositions___TERRAIN_SAVE: number[]
@@ -4981,7 +4981,7 @@ declare global {
 	var st__MeteorArray_setMeteorNull: trigger
 	var st__MeteorArray_onDestroy: trigger
 	var st__MonsterType_onDestroy: trigger
-	var st__SoundUtils__soundrecycler_onDestroy: trigger
+	var st__SoundUtils___soundrecycler_onDestroy: trigger
 	var st__StringArrayForCache_create: trigger
 	var st__StringArrayForCache_push: trigger
 	var st__StringArrayForCache_writeInCache: trigger
@@ -5375,589 +5375,387 @@ declare global {
 	var f__result_player: player
 	var f__result_timer: timer
 	var f__result_trigger: trigger
-	var rf__return_integer: number
-	var rf__return_real: number
-	var rf__return_timer: timer
-	var rf__return_unit: unit
-	var rf__return_trigger: trigger
-	var rf__return_boolean: boolean
-	var rf__return_region: region
-	var rf__return_code: Function
-	var rf__return_string: string
-	var rf__return_sound: sound
-	function rf__sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(i: number): void
 	function sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(i: number): number
 	function sg__ReinitTerrainsPositions___TERRAIN_SAVE_set(i: number, v: number): void
-	function rf__sg__SaveLoadTerrainWithoutName___terrainSave_get(i: number): void
 	function sg__SaveLoadTerrainWithoutName___terrainSave_get(i: number): number
 	function sg__SaveLoadTerrainWithoutName___terrainSave_set(i: number, v: number): void
-	function rf__sg___CasterArray_casters_get(i: number): void
 	function sg___CasterArray_casters_get(i: number): number
 	function sg___CasterArray_casters_set(i: number, v: number): void
-	function rf__sg__CasterArray_get_casters(i: number): void
 	function sg__CasterArray_get_casters(i: number): number
 	function sg__CasterArray_set_casters(i: number, v: number): void
-	function rf__sg__CasterArray_get_lastInstance(i: number): void
 	function sg__CasterArray_get_lastInstance(i: number): number
 	function sg__CasterArray_set_lastInstance(i: number, v: number): void
-	function rf__sg___MonsterTeleportArray_monsters_get(i: number): void
 	function sg___MonsterTeleportArray_monsters_get(i: number): number
 	function sg___MonsterTeleportArray_monsters_set(i: number, v: number): void
-	function rf__sg__MonsterTeleportArray_get_monsters(i: number): void
 	function sg__MonsterTeleportArray_get_monsters(i: number): number
 	function sg__MonsterTeleportArray_set_monsters(i: number, v: number): void
-	function rf__sg__MonsterTeleportArray_get_lastInstance(i: number): void
 	function sg__MonsterTeleportArray_get_lastInstance(i: number): number
 	function sg__MonsterTeleportArray_set_lastInstance(i: number, v: number): void
-	function rf__sg___MonsterSimplePatrolArray_monsters_get(i: number): void
 	function sg___MonsterSimplePatrolArray_monsters_get(i: number): number
 	function sg___MonsterSimplePatrolArray_monsters_set(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrolArray_get_monsters(i: number): void
 	function sg__MonsterSimplePatrolArray_get_monsters(i: number): number
 	function sg__MonsterSimplePatrolArray_set_monsters(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrolArray_get_lastInstance(i: number): void
 	function sg__MonsterSimplePatrolArray_get_lastInstance(i: number): number
 	function sg__MonsterSimplePatrolArray_set_lastInstance(i: number, v: number): void
-	function rf__sg___MonsterNoMoveArray_monsters_get(i: number): void
 	function sg___MonsterNoMoveArray_monsters_get(i: number): number
 	function sg___MonsterNoMoveArray_monsters_set(i: number, v: number): void
-	function rf__sg__MonsterNoMoveArray_get_monsters(i: number): void
 	function sg__MonsterNoMoveArray_get_monsters(i: number): number
 	function sg__MonsterNoMoveArray_set_monsters(i: number, v: number): void
-	function rf__sg__MonsterNoMoveArray_get_lastInstance(i: number): void
 	function sg__MonsterNoMoveArray_get_lastInstance(i: number): number
 	function sg__MonsterNoMoveArray_set_lastInstance(i: number, v: number): void
-	function rf__sg___MonsterMultiplePatrolsArray_monsters_get(i: number): void
 	function sg___MonsterMultiplePatrolsArray_monsters_get(i: number): number
 	function sg___MonsterMultiplePatrolsArray_monsters_set(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrolsArray_get_monsters(i: number): void
 	function sg__MonsterMultiplePatrolsArray_get_monsters(i: number): number
 	function sg__MonsterMultiplePatrolsArray_set_monsters(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrolsArray_get_lastInstance(i: number): void
 	function sg__MonsterMultiplePatrolsArray_get_lastInstance(i: number): number
 	function sg__MonsterMultiplePatrolsArray_set_lastInstance(i: number, v: number): void
-	function rf__sg__MonsterOrCasterStack_get_monsterOrCaster(i: number): void
 	function sg__MonsterOrCasterStack_get_monsterOrCaster(i: number): number
 	function sg__MonsterOrCasterStack_set_monsterOrCaster(i: number, v: number): void
-	function rf__sg__MonsterOrCasterStack_get_nextElement(i: number): void
 	function sg__MonsterOrCasterStack_get_nextElement(i: number): number
 	function sg__MonsterOrCasterStack_set_nextElement(i: number, v: number): void
-	function rf__sg___Caster_escapersInRange_get(i: number): void
 	function sg___Caster_escapersInRange_get(i: number): number
 	function sg___Caster_escapersInRange_set(i: number, v: number): void
-	function rf__sg__Caster_get_id(i: number): void
 	function sg__Caster_get_id(i: number): number
 	function sg__Caster_set_id(i: number, v: number): void
-	function rf__sg__Caster_get_level(i: number): void
 	function sg__Caster_get_level(i: number): number
 	function sg__Caster_set_level(i: number, v: number): void
-	function rf__sg__Caster_get_arrayId(i: number): void
 	function sg__Caster_get_arrayId(i: number): number
 	function sg__Caster_set_arrayId(i: number, v: number): void
-	function rf__sg__Caster_get_casterType(i: number): void
 	function sg__Caster_get_casterType(i: number): number
 	function sg__Caster_set_casterType(i: number, v: number): void
-	function rf__sg__Caster_get_x(i: number): void
 	function sg__Caster_get_x(i: number): number
 	function sg__Caster_set_x(i: number, v: number): void
-	function rf__sg__Caster_get_y(i: number): void
 	function sg__Caster_get_y(i: number): number
 	function sg__Caster_set_y(i: number, v: number): void
-	function rf__sg__Caster_get_angle(i: number): void
 	function sg__Caster_get_angle(i: number): number
 	function sg__Caster_set_angle(i: number, v: number): void
-	function rf__sg__Caster_get_disablingTimer(i: number): void
 	function sg__Caster_get_disablingTimer(i: number): timer
 	function sg__Caster_set_disablingTimer(i: number, v: timer): void
-	function rf__sg__Caster_get_baseColorId(i: number): void
 	function sg__Caster_get_baseColorId(i: number): number
 	function sg__Caster_set_baseColorId(i: number, v: number): void
-	function rf__sg__Caster_get_vcRed(i: number): void
 	function sg__Caster_get_vcRed(i: number): number
 	function sg__Caster_set_vcRed(i: number, v: number): void
-	function rf__sg__Caster_get_vcGreen(i: number): void
 	function sg__Caster_get_vcGreen(i: number): number
 	function sg__Caster_set_vcGreen(i: number, v: number): void
-	function rf__sg__Caster_get_vcBlue(i: number): void
 	function sg__Caster_get_vcBlue(i: number): number
 	function sg__Caster_set_vcBlue(i: number, v: number): void
-	function rf__sg__Caster_get_vcTransparency(i: number): void
 	function sg__Caster_get_vcTransparency(i: number): number
 	function sg__Caster_set_vcTransparency(i: number, v: number): void
-	function rf__sg__Caster_get_casterUnit(i: number): void
 	function sg__Caster_get_casterUnit(i: number): unit
 	function sg__Caster_set_casterUnit(i: number, v: unit): void
-	function rf__sg__Caster_get_trg_unitWithinRange(i: number): void
 	function sg__Caster_get_trg_unitWithinRange(i: number): trigger
 	function sg__Caster_set_trg_unitWithinRange(i: number, v: trigger): void
-	function rf__sg__Caster_get_escapersInRange(i: number): void
 	function sg__Caster_get_escapersInRange(i: number): number
 	function sg__Caster_set_escapersInRange(i: number, v: number): void
-	function rf__sg__Caster_get_nbEscapersInRange(i: number): void
 	function sg__Caster_get_nbEscapersInRange(i: number): number
 	function sg__Caster_set_nbEscapersInRange(i: number, v: number): void
-	function rf__sg__Caster_get_canShoot(i: number): void
 	function sg__Caster_get_canShoot(i: number): boolean
 	function sg__Caster_set_canShoot(i: number, v: boolean): void
-	function rf__sg__Caster_get_t(i: number): void
 	function sg__Caster_get_t(i: number): timer
 	function sg__Caster_set_t(i: number, v: timer): void
-	function rf__sg__Caster_get_enabled(i: number): void
 	function sg__Caster_get_enabled(i: number): boolean
 	function sg__Caster_set_enabled(i: number, v: boolean): void
-	function rf__sg__MonsterOrCaster_get_monster(i: number): void
 	function sg__MonsterOrCaster_get_monster(i: number): number
 	function sg__MonsterOrCaster_set_monster(i: number, v: number): void
-	function rf__sg__MonsterOrCaster_get_caster(i: number): void
 	function sg__MonsterOrCaster_get_caster(i: number): number
 	function sg__MonsterOrCaster_set_caster(i: number, v: number): void
-	function rf__sg__Monster_get_id(i: number): void
 	function sg__Monster_get_id(i: number): number
 	function sg__Monster_set_id(i: number, v: number): void
-	function rf__sg__Monster_get_u(i: number): void
 	function sg__Monster_get_u(i: number): unit
 	function sg__Monster_set_u(i: number, v: unit): void
-	function rf__sg__Monster_get_mt(i: number): void
 	function sg__Monster_get_mt(i: number): number
 	function sg__Monster_set_mt(i: number, v: number): void
-	function rf__sg__Monster_get_level(i: number): void
 	function sg__Monster_get_level(i: number): number
 	function sg__Monster_set_level(i: number, v: number): void
-	function rf__sg__Monster_get_arrayId(i: number): void
 	function sg__Monster_get_arrayId(i: number): number
 	function sg__Monster_set_arrayId(i: number, v: number): void
-	function rf__sg__Monster_get_life(i: number): void
 	function sg__Monster_get_life(i: number): number
 	function sg__Monster_set_life(i: number, v: number): void
-	function rf__sg__Monster_get_disablingTimer(i: number): void
 	function sg__Monster_get_disablingTimer(i: number): timer
 	function sg__Monster_set_disablingTimer(i: number, v: timer): void
-	function rf__sg__Monster_get_baseColorId(i: number): void
 	function sg__Monster_get_baseColorId(i: number): number
 	function sg__Monster_set_baseColorId(i: number, v: number): void
-	function rf__sg__Monster_get_vcRed(i: number): void
 	function sg__Monster_get_vcRed(i: number): number
 	function sg__Monster_set_vcRed(i: number, v: number): void
-	function rf__sg__Monster_get_vcGreen(i: number): void
 	function sg__Monster_get_vcGreen(i: number): number
 	function sg__Monster_set_vcGreen(i: number, v: number): void
-	function rf__sg__Monster_get_vcBlue(i: number): void
 	function sg__Monster_get_vcBlue(i: number): number
 	function sg__Monster_set_vcBlue(i: number, v: number): void
-	function rf__sg__Monster_get_vcTransparency(i: number): void
 	function sg__Monster_get_vcTransparency(i: number): number
 	function sg__Monster_set_vcTransparency(i: number, v: number): void
-	function rf__si__Monster_getType(thisv: number): void
 	function si__Monster_getType(thisv: number): number
-	function rf__sg__MonsterMultiplePatrols_get_lastLocInd(i: number): void
 	function sg__MonsterMultiplePatrols_get_lastLocInd(i: number): number
 	function sg__MonsterMultiplePatrols_set_lastLocInd(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_currentMove(i: number): void
 	function sg__MonsterMultiplePatrols_get_currentMove(i: number): number
 	function sg__MonsterMultiplePatrols_set_currentMove(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_sens(i: number): void
 	function sg__MonsterMultiplePatrols_get_sens(i: number): number
 	function sg__MonsterMultiplePatrols_set_sens(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_x0(i: number): void
 	function sg__MonsterMultiplePatrols_get_x0(i: number): number
 	function sg__MonsterMultiplePatrols_set_x0(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y0(i: number): void
 	function sg__MonsterMultiplePatrols_get_y0(i: number): number
 	function sg__MonsterMultiplePatrols_set_y0(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r0(i: number): void
 	function sg__MonsterMultiplePatrols_get_r0(i: number): region
 	function sg__MonsterMultiplePatrols_set_r0(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t0(i: number): void
 	function sg__MonsterMultiplePatrols_get_t0(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t0(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x1(i: number): void
 	function sg__MonsterMultiplePatrols_get_x1(i: number): number
 	function sg__MonsterMultiplePatrols_set_x1(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y1(i: number): void
 	function sg__MonsterMultiplePatrols_get_y1(i: number): number
 	function sg__MonsterMultiplePatrols_set_y1(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r1(i: number): void
 	function sg__MonsterMultiplePatrols_get_r1(i: number): region
 	function sg__MonsterMultiplePatrols_set_r1(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t1(i: number): void
 	function sg__MonsterMultiplePatrols_get_t1(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t1(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x2(i: number): void
 	function sg__MonsterMultiplePatrols_get_x2(i: number): number
 	function sg__MonsterMultiplePatrols_set_x2(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y2(i: number): void
 	function sg__MonsterMultiplePatrols_get_y2(i: number): number
 	function sg__MonsterMultiplePatrols_set_y2(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r2(i: number): void
 	function sg__MonsterMultiplePatrols_get_r2(i: number): region
 	function sg__MonsterMultiplePatrols_set_r2(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t2(i: number): void
 	function sg__MonsterMultiplePatrols_get_t2(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t2(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x3(i: number): void
 	function sg__MonsterMultiplePatrols_get_x3(i: number): number
 	function sg__MonsterMultiplePatrols_set_x3(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y3(i: number): void
 	function sg__MonsterMultiplePatrols_get_y3(i: number): number
 	function sg__MonsterMultiplePatrols_set_y3(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r3(i: number): void
 	function sg__MonsterMultiplePatrols_get_r3(i: number): region
 	function sg__MonsterMultiplePatrols_set_r3(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t3(i: number): void
 	function sg__MonsterMultiplePatrols_get_t3(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t3(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x4(i: number): void
 	function sg__MonsterMultiplePatrols_get_x4(i: number): number
 	function sg__MonsterMultiplePatrols_set_x4(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y4(i: number): void
 	function sg__MonsterMultiplePatrols_get_y4(i: number): number
 	function sg__MonsterMultiplePatrols_set_y4(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r4(i: number): void
 	function sg__MonsterMultiplePatrols_get_r4(i: number): region
 	function sg__MonsterMultiplePatrols_set_r4(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t4(i: number): void
 	function sg__MonsterMultiplePatrols_get_t4(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t4(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x5(i: number): void
 	function sg__MonsterMultiplePatrols_get_x5(i: number): number
 	function sg__MonsterMultiplePatrols_set_x5(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y5(i: number): void
 	function sg__MonsterMultiplePatrols_get_y5(i: number): number
 	function sg__MonsterMultiplePatrols_set_y5(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r5(i: number): void
 	function sg__MonsterMultiplePatrols_get_r5(i: number): region
 	function sg__MonsterMultiplePatrols_set_r5(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t5(i: number): void
 	function sg__MonsterMultiplePatrols_get_t5(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t5(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x6(i: number): void
 	function sg__MonsterMultiplePatrols_get_x6(i: number): number
 	function sg__MonsterMultiplePatrols_set_x6(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y6(i: number): void
 	function sg__MonsterMultiplePatrols_get_y6(i: number): number
 	function sg__MonsterMultiplePatrols_set_y6(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r6(i: number): void
 	function sg__MonsterMultiplePatrols_get_r6(i: number): region
 	function sg__MonsterMultiplePatrols_set_r6(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t6(i: number): void
 	function sg__MonsterMultiplePatrols_get_t6(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t6(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x7(i: number): void
 	function sg__MonsterMultiplePatrols_get_x7(i: number): number
 	function sg__MonsterMultiplePatrols_set_x7(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y7(i: number): void
 	function sg__MonsterMultiplePatrols_get_y7(i: number): number
 	function sg__MonsterMultiplePatrols_set_y7(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r7(i: number): void
 	function sg__MonsterMultiplePatrols_get_r7(i: number): region
 	function sg__MonsterMultiplePatrols_set_r7(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t7(i: number): void
 	function sg__MonsterMultiplePatrols_get_t7(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t7(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x8(i: number): void
 	function sg__MonsterMultiplePatrols_get_x8(i: number): number
 	function sg__MonsterMultiplePatrols_set_x8(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y8(i: number): void
 	function sg__MonsterMultiplePatrols_get_y8(i: number): number
 	function sg__MonsterMultiplePatrols_set_y8(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r8(i: number): void
 	function sg__MonsterMultiplePatrols_get_r8(i: number): region
 	function sg__MonsterMultiplePatrols_set_r8(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t8(i: number): void
 	function sg__MonsterMultiplePatrols_get_t8(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t8(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x9(i: number): void
 	function sg__MonsterMultiplePatrols_get_x9(i: number): number
 	function sg__MonsterMultiplePatrols_set_x9(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y9(i: number): void
 	function sg__MonsterMultiplePatrols_get_y9(i: number): number
 	function sg__MonsterMultiplePatrols_set_y9(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r9(i: number): void
 	function sg__MonsterMultiplePatrols_get_r9(i: number): region
 	function sg__MonsterMultiplePatrols_set_r9(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t9(i: number): void
 	function sg__MonsterMultiplePatrols_get_t9(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t9(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x10(i: number): void
 	function sg__MonsterMultiplePatrols_get_x10(i: number): number
 	function sg__MonsterMultiplePatrols_set_x10(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y10(i: number): void
 	function sg__MonsterMultiplePatrols_get_y10(i: number): number
 	function sg__MonsterMultiplePatrols_set_y10(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r10(i: number): void
 	function sg__MonsterMultiplePatrols_get_r10(i: number): region
 	function sg__MonsterMultiplePatrols_set_r10(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t10(i: number): void
 	function sg__MonsterMultiplePatrols_get_t10(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t10(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x11(i: number): void
 	function sg__MonsterMultiplePatrols_get_x11(i: number): number
 	function sg__MonsterMultiplePatrols_set_x11(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y11(i: number): void
 	function sg__MonsterMultiplePatrols_get_y11(i: number): number
 	function sg__MonsterMultiplePatrols_set_y11(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r11(i: number): void
 	function sg__MonsterMultiplePatrols_get_r11(i: number): region
 	function sg__MonsterMultiplePatrols_set_r11(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t11(i: number): void
 	function sg__MonsterMultiplePatrols_get_t11(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t11(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x12(i: number): void
 	function sg__MonsterMultiplePatrols_get_x12(i: number): number
 	function sg__MonsterMultiplePatrols_set_x12(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y12(i: number): void
 	function sg__MonsterMultiplePatrols_get_y12(i: number): number
 	function sg__MonsterMultiplePatrols_set_y12(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r12(i: number): void
 	function sg__MonsterMultiplePatrols_get_r12(i: number): region
 	function sg__MonsterMultiplePatrols_set_r12(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t12(i: number): void
 	function sg__MonsterMultiplePatrols_get_t12(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t12(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x13(i: number): void
 	function sg__MonsterMultiplePatrols_get_x13(i: number): number
 	function sg__MonsterMultiplePatrols_set_x13(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y13(i: number): void
 	function sg__MonsterMultiplePatrols_get_y13(i: number): number
 	function sg__MonsterMultiplePatrols_set_y13(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r13(i: number): void
 	function sg__MonsterMultiplePatrols_get_r13(i: number): region
 	function sg__MonsterMultiplePatrols_set_r13(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t13(i: number): void
 	function sg__MonsterMultiplePatrols_get_t13(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t13(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x14(i: number): void
 	function sg__MonsterMultiplePatrols_get_x14(i: number): number
 	function sg__MonsterMultiplePatrols_set_x14(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y14(i: number): void
 	function sg__MonsterMultiplePatrols_get_y14(i: number): number
 	function sg__MonsterMultiplePatrols_set_y14(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r14(i: number): void
 	function sg__MonsterMultiplePatrols_get_r14(i: number): region
 	function sg__MonsterMultiplePatrols_set_r14(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t14(i: number): void
 	function sg__MonsterMultiplePatrols_get_t14(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t14(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x15(i: number): void
 	function sg__MonsterMultiplePatrols_get_x15(i: number): number
 	function sg__MonsterMultiplePatrols_set_x15(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y15(i: number): void
 	function sg__MonsterMultiplePatrols_get_y15(i: number): number
 	function sg__MonsterMultiplePatrols_set_y15(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r15(i: number): void
 	function sg__MonsterMultiplePatrols_get_r15(i: number): region
 	function sg__MonsterMultiplePatrols_set_r15(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t15(i: number): void
 	function sg__MonsterMultiplePatrols_get_t15(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t15(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x16(i: number): void
 	function sg__MonsterMultiplePatrols_get_x16(i: number): number
 	function sg__MonsterMultiplePatrols_set_x16(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y16(i: number): void
 	function sg__MonsterMultiplePatrols_get_y16(i: number): number
 	function sg__MonsterMultiplePatrols_set_y16(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r16(i: number): void
 	function sg__MonsterMultiplePatrols_get_r16(i: number): region
 	function sg__MonsterMultiplePatrols_set_r16(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t16(i: number): void
 	function sg__MonsterMultiplePatrols_get_t16(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t16(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x17(i: number): void
 	function sg__MonsterMultiplePatrols_get_x17(i: number): number
 	function sg__MonsterMultiplePatrols_set_x17(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y17(i: number): void
 	function sg__MonsterMultiplePatrols_get_y17(i: number): number
 	function sg__MonsterMultiplePatrols_set_y17(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r17(i: number): void
 	function sg__MonsterMultiplePatrols_get_r17(i: number): region
 	function sg__MonsterMultiplePatrols_set_r17(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t17(i: number): void
 	function sg__MonsterMultiplePatrols_get_t17(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t17(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x18(i: number): void
 	function sg__MonsterMultiplePatrols_get_x18(i: number): number
 	function sg__MonsterMultiplePatrols_set_x18(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y18(i: number): void
 	function sg__MonsterMultiplePatrols_get_y18(i: number): number
 	function sg__MonsterMultiplePatrols_set_y18(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r18(i: number): void
 	function sg__MonsterMultiplePatrols_get_r18(i: number): region
 	function sg__MonsterMultiplePatrols_set_r18(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t18(i: number): void
 	function sg__MonsterMultiplePatrols_get_t18(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t18(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_x19(i: number): void
 	function sg__MonsterMultiplePatrols_get_x19(i: number): number
 	function sg__MonsterMultiplePatrols_set_x19(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_y19(i: number): void
 	function sg__MonsterMultiplePatrols_get_y19(i: number): number
 	function sg__MonsterMultiplePatrols_set_y19(i: number, v: number): void
-	function rf__sg__MonsterMultiplePatrols_get_r19(i: number): void
 	function sg__MonsterMultiplePatrols_get_r19(i: number): region
 	function sg__MonsterMultiplePatrols_set_r19(i: number, v: region): void
-	function rf__sg__MonsterMultiplePatrols_get_t19(i: number): void
 	function sg__MonsterMultiplePatrols_get_t19(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_t19(i: number, v: trigger): void
-	function rf__sg__MonsterMultiplePatrols_get_currentTrigger(i: number): void
 	function sg__MonsterMultiplePatrols_get_currentTrigger(i: number): trigger
 	function sg__MonsterMultiplePatrols_set_currentTrigger(i: number, v: trigger): void
-	function rf__sg__MonsterNoMove_get_x(i: number): void
 	function sg__MonsterNoMove_get_x(i: number): number
 	function sg__MonsterNoMove_set_x(i: number, v: number): void
-	function rf__sg__MonsterNoMove_get_y(i: number): void
 	function sg__MonsterNoMove_get_y(i: number): number
 	function sg__MonsterNoMove_set_y(i: number, v: number): void
-	function rf__sg__MonsterNoMove_get_angle(i: number): void
 	function sg__MonsterNoMove_get_angle(i: number): number
 	function sg__MonsterNoMove_set_angle(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrol_get_x1(i: number): void
 	function sg__MonsterSimplePatrol_get_x1(i: number): number
 	function sg__MonsterSimplePatrol_set_x1(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrol_get_y1(i: number): void
 	function sg__MonsterSimplePatrol_get_y1(i: number): number
 	function sg__MonsterSimplePatrol_set_y1(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrol_get_x2(i: number): void
 	function sg__MonsterSimplePatrol_get_x2(i: number): number
 	function sg__MonsterSimplePatrol_set_x2(i: number, v: number): void
-	function rf__sg__MonsterSimplePatrol_get_y2(i: number): void
 	function sg__MonsterSimplePatrol_get_y2(i: number): number
 	function sg__MonsterSimplePatrol_set_y2(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_period(i: number): void
 	function sg__MonsterTeleport_get_period(i: number): number
 	function sg__MonsterTeleport_set_period(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_angle(i: number): void
 	function sg__MonsterTeleport_get_angle(i: number): number
 	function sg__MonsterTeleport_set_angle(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_lastLocInd(i: number): void
 	function sg__MonsterTeleport_get_lastLocInd(i: number): number
 	function sg__MonsterTeleport_set_lastLocInd(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_currentLoc(i: number): void
 	function sg__MonsterTeleport_get_currentLoc(i: number): number
 	function sg__MonsterTeleport_set_currentLoc(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_sens(i: number): void
 	function sg__MonsterTeleport_get_sens(i: number): number
 	function sg__MonsterTeleport_set_sens(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x0(i: number): void
 	function sg__MonsterTeleport_get_x0(i: number): number
 	function sg__MonsterTeleport_set_x0(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y0(i: number): void
 	function sg__MonsterTeleport_get_y0(i: number): number
 	function sg__MonsterTeleport_set_y0(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x1(i: number): void
 	function sg__MonsterTeleport_get_x1(i: number): number
 	function sg__MonsterTeleport_set_x1(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y1(i: number): void
 	function sg__MonsterTeleport_get_y1(i: number): number
 	function sg__MonsterTeleport_set_y1(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x2(i: number): void
 	function sg__MonsterTeleport_get_x2(i: number): number
 	function sg__MonsterTeleport_set_x2(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y2(i: number): void
 	function sg__MonsterTeleport_get_y2(i: number): number
 	function sg__MonsterTeleport_set_y2(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x3(i: number): void
 	function sg__MonsterTeleport_get_x3(i: number): number
 	function sg__MonsterTeleport_set_x3(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y3(i: number): void
 	function sg__MonsterTeleport_get_y3(i: number): number
 	function sg__MonsterTeleport_set_y3(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x4(i: number): void
 	function sg__MonsterTeleport_get_x4(i: number): number
 	function sg__MonsterTeleport_set_x4(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y4(i: number): void
 	function sg__MonsterTeleport_get_y4(i: number): number
 	function sg__MonsterTeleport_set_y4(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x5(i: number): void
 	function sg__MonsterTeleport_get_x5(i: number): number
 	function sg__MonsterTeleport_set_x5(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y5(i: number): void
 	function sg__MonsterTeleport_get_y5(i: number): number
 	function sg__MonsterTeleport_set_y5(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x6(i: number): void
 	function sg__MonsterTeleport_get_x6(i: number): number
 	function sg__MonsterTeleport_set_x6(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y6(i: number): void
 	function sg__MonsterTeleport_get_y6(i: number): number
 	function sg__MonsterTeleport_set_y6(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x7(i: number): void
 	function sg__MonsterTeleport_get_x7(i: number): number
 	function sg__MonsterTeleport_set_x7(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y7(i: number): void
 	function sg__MonsterTeleport_get_y7(i: number): number
 	function sg__MonsterTeleport_set_y7(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x8(i: number): void
 	function sg__MonsterTeleport_get_x8(i: number): number
 	function sg__MonsterTeleport_set_x8(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y8(i: number): void
 	function sg__MonsterTeleport_get_y8(i: number): number
 	function sg__MonsterTeleport_set_y8(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x9(i: number): void
 	function sg__MonsterTeleport_get_x9(i: number): number
 	function sg__MonsterTeleport_set_x9(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y9(i: number): void
 	function sg__MonsterTeleport_get_y9(i: number): number
 	function sg__MonsterTeleport_set_y9(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x10(i: number): void
 	function sg__MonsterTeleport_get_x10(i: number): number
 	function sg__MonsterTeleport_set_x10(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y10(i: number): void
 	function sg__MonsterTeleport_get_y10(i: number): number
 	function sg__MonsterTeleport_set_y10(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x11(i: number): void
 	function sg__MonsterTeleport_get_x11(i: number): number
 	function sg__MonsterTeleport_set_x11(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y11(i: number): void
 	function sg__MonsterTeleport_get_y11(i: number): number
 	function sg__MonsterTeleport_set_y11(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x12(i: number): void
 	function sg__MonsterTeleport_get_x12(i: number): number
 	function sg__MonsterTeleport_set_x12(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y12(i: number): void
 	function sg__MonsterTeleport_get_y12(i: number): number
 	function sg__MonsterTeleport_set_y12(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x13(i: number): void
 	function sg__MonsterTeleport_get_x13(i: number): number
 	function sg__MonsterTeleport_set_x13(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y13(i: number): void
 	function sg__MonsterTeleport_get_y13(i: number): number
 	function sg__MonsterTeleport_set_y13(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x14(i: number): void
 	function sg__MonsterTeleport_get_x14(i: number): number
 	function sg__MonsterTeleport_set_x14(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y14(i: number): void
 	function sg__MonsterTeleport_get_y14(i: number): number
 	function sg__MonsterTeleport_set_y14(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x15(i: number): void
 	function sg__MonsterTeleport_get_x15(i: number): number
 	function sg__MonsterTeleport_set_x15(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y15(i: number): void
 	function sg__MonsterTeleport_get_y15(i: number): number
 	function sg__MonsterTeleport_set_y15(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x16(i: number): void
 	function sg__MonsterTeleport_get_x16(i: number): number
 	function sg__MonsterTeleport_set_x16(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y16(i: number): void
 	function sg__MonsterTeleport_get_y16(i: number): number
 	function sg__MonsterTeleport_set_y16(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x17(i: number): void
 	function sg__MonsterTeleport_get_x17(i: number): number
 	function sg__MonsterTeleport_set_x17(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y17(i: number): void
 	function sg__MonsterTeleport_get_y17(i: number): number
 	function sg__MonsterTeleport_set_y17(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x18(i: number): void
 	function sg__MonsterTeleport_get_x18(i: number): number
 	function sg__MonsterTeleport_set_x18(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y18(i: number): void
 	function sg__MonsterTeleport_get_y18(i: number): number
 	function sg__MonsterTeleport_set_y18(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_x19(i: number): void
 	function sg__MonsterTeleport_get_x19(i: number): number
 	function sg__MonsterTeleport_set_x19(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_y19(i: number): void
 	function sg__MonsterTeleport_get_y19(i: number): number
 	function sg__MonsterTeleport_set_y19(i: number, v: number): void
-	function rf__sg__MonsterTeleport_get_t(i: number): void
 	function sg__MonsterTeleport_get_t(i: number): timer
 	function sg__MonsterTeleport_set_t(i: number, v: timer): void
 	function sc__MakeAction_cancel(thisv: number): boolean
@@ -5967,7 +5765,6 @@ declare global {
 	function sc__MakeAction_deallocate(thisv: number): void
 	function sc__EscaperSavedCommands_new(thisv: number, escaper: number, commandName: string, command: string): void
 	function sc__EscaperSavedCommands_execute(thisv: number, escaper: number, commandName: string): boolean
-	function rf__s__EscaperSavedCommands__allocate(): void
 	function s__EscaperSavedCommands__allocate(): number
 	function s__EscaperSavedCommands_deallocate(thisv: number): void
 	function sc__CasterArray_create(): number
@@ -5982,7 +5779,6 @@ declare global {
 	function sc__CasterArray_removeCasters(thisv: number): void
 	function sc__CasterArray_refreshCastersOfType(thisv: number, casterType: number): void
 	function sc__CasterArray_removeCastersOfType(thisv: number, casterType: number): void
-	function rf__s__CasterArray__allocate(): void
 	function s__CasterArray__allocate(): number
 	function sc__CasterArray_deallocate(thisv: number): void
 	function sc__MonsterTeleportArray_create(): number
@@ -5997,7 +5793,6 @@ declare global {
 	function sc__MonsterTeleportArray_removeMonsters(thisv: number): void
 	function sc__MonsterTeleportArray_recreateMonstersOfType(thisv: number, mt: number): void
 	function sc__MonsterTeleportArray_removeMonstersOfType(thisv: number, mt: number): void
-	function rf__s__MonsterTeleportArray__allocate(): void
 	function s__MonsterTeleportArray__allocate(): number
 	function sc__MonsterTeleportArray_deallocate(thisv: number): void
 	function sc__MonsterSimplePatrolArray_create(): number
@@ -6012,7 +5807,6 @@ declare global {
 	function sc__MonsterSimplePatrolArray_removeMonsters(thisv: number): void
 	function sc__MonsterSimplePatrolArray_recreateMonstersOfType(thisv: number, mt: number): void
 	function sc__MonsterSimplePatrolArray_removeMonstersOfType(thisv: number, mt: number): void
-	function rf__s__MonsterSimplePatrolArray__allocate(): void
 	function s__MonsterSimplePatrolArray__allocate(): number
 	function sc__MonsterSimplePatrolArray_deallocate(thisv: number): void
 	function sc__MonsterNoMoveArray_create(): number
@@ -6027,7 +5821,6 @@ declare global {
 	function sc__MonsterNoMoveArray_removeMonsters(thisv: number): void
 	function sc__MonsterNoMoveArray_recreateMonstersOfType(thisv: number, mt: number): void
 	function sc__MonsterNoMoveArray_removeMonstersOfType(thisv: number, mt: number): void
-	function rf__s__MonsterNoMoveArray__allocate(): void
 	function s__MonsterNoMoveArray__allocate(): number
 	function sc__MonsterNoMoveArray_deallocate(thisv: number): void
 	function sc__MonsterMultiplePatrolsArray_create(): number
@@ -6042,22 +5835,18 @@ declare global {
 	function sc__MonsterMultiplePatrolsArray_removeMonsters(thisv: number): void
 	function sc__MonsterMultiplePatrolsArray_recreateMonstersOfType(thisv: number, mt: number): void
 	function sc__MonsterMultiplePatrolsArray_removeMonstersOfType(thisv: number, mt: number): void
-	function rf__s__MonsterMultiplePatrolsArray__allocate(): void
 	function s__MonsterMultiplePatrolsArray__allocate(): number
 	function sc__MonsterMultiplePatrolsArray_deallocate(thisv: number): void
 	function sc__Meteor_onDestroy(thisv: number): void
-	function rf__s__Meteor__allocate(): void
 	function s__Meteor__allocate(): number
 	function sc__Meteor_deallocate(thisv: number): void
 	function sc__MonsterOrCasterStack_onDestroy(thisv: number): void
-	function rf__s__MonsterOrCasterStack__allocate(): void
 	function s__MonsterOrCasterStack__allocate(): number
 	function sc__MonsterOrCasterStack_deallocate(thisv: number): void
 	function sc__ClearMobArray_create(): number
 	function sc__ClearMobArray_onDestroy(thisv: number): void
 	function sc__ClearMobArray_setClearMobNull(thisv: number, clearMobArrayId: number): void
 	function sc__ClearMobArray_initializeClearMobs(thisv: number): void
-	function rf__s__ClearMobArray__allocate(): void
 	function s__ClearMobArray__allocate(): number
 	function sc__ClearMobArray_deallocate(thisv: number): void
 	function sc__Caster_isEnabled(thisv: number): boolean
@@ -6082,14 +5871,11 @@ declare global {
 	function sc__Caster_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function sc__Caster_reinitColor(thisv: number): void
 	function sc__Caster_toString(thisv: number): string
-	function rf__s__Caster__allocate(): void
 	function s__Caster__allocate(): number
 	function sc__Caster_deallocate(thisv: number): void
 	function sc__Stack_onDestroy(thisv: number): void
-	function rf__s__Stack__allocate(): void
 	function s__Stack__allocate(): number
 	function sc__Stack_deallocate(thisv: number): void
-	function rf__s__StringSegments__allocate(): void
 	function s__StringSegments__allocate(): number
 	function s__StringSegments_deallocate(thisv: number): void
 	function sc__MonsterOrCaster_create(mobId: number): number
@@ -6103,92 +5889,73 @@ declare global {
 	function sc__MonsterOrCaster_getUnit(thisv: number): unit
 	function sc__MonsterOrCaster_copy(thisv: number): number
 	function sc__MonsterOrCaster_getMonsterType(thisv: number): number
-	function rf__s__MonsterOrCaster__allocate(): void
 	function s__MonsterOrCaster__allocate(): number
 	function s__MonsterOrCaster_deallocate(thisv: number): void
 	function sc__Trigger_onDestroy(thisv: number): void
-	function rf__s__Trigger__allocate(): void
 	function s__Trigger__allocate(): number
 	function sc__Trigger_deallocate(thisv: number): void
 	function sc__TriggerArray_onDestroy(thisv: number): void
-	function rf__s__TriggerArray__allocate(): void
 	function s__TriggerArray__allocate(): number
 	function sc__TriggerArray_deallocate(thisv: number): void
 	function sc__VisibilityModifier_onDestroy(thisv: number): void
-	function rf__s__VisibilityModifier__allocate(): void
 	function s__VisibilityModifier__allocate(): number
 	function sc__VisibilityModifier_deallocate(thisv: number): void
 	function sc__CasterType_onDestroy(thisv: number): void
-	function rf__s__CasterType__allocate(): void
 	function s__CasterType__allocate(): number
 	function sc__CasterType_deallocate(thisv: number): void
 	function sc__MakeCasterAction_onDestroy(thisv: number): void
 	function sc__MakeCasterAction_cancel(thisv: number): boolean
 	function sc__MakeCasterAction_redo(thisv: number): boolean
-	function rf__s__MakeCasterAction__allocate(): void
 	function s__MakeCasterAction__allocate(): number
 	function sc__MakeDeleteCastersAction_onDestroy(thisv: number): void
 	function sc__MakeDeleteCastersAction_cancel(thisv: number): boolean
 	function sc__MakeDeleteCastersAction_redo(thisv: number): boolean
-	function rf__s__MakeDeleteCastersAction__allocate(): void
 	function s__MakeDeleteCastersAction__allocate(): number
 	function sc__MakeDeleteMeteorsAction_onDestroy(thisv: number): void
 	function sc__MakeDeleteMeteorsAction_cancel(thisv: number): boolean
 	function sc__MakeDeleteMeteorsAction_redo(thisv: number): boolean
-	function rf__s__MakeDeleteMeteorsAction__allocate(): void
 	function s__MakeDeleteMeteorsAction__allocate(): number
 	function sc__MakeDeleteMonstersAction_onDestroy(thisv: number): void
 	function sc__MakeDeleteMonstersAction_cancel(thisv: number): boolean
 	function sc__MakeDeleteMonstersAction_redo(thisv: number): boolean
-	function rf__s__MakeDeleteMonstersAction__allocate(): void
 	function s__MakeDeleteMonstersAction__allocate(): number
 	function sc__MakeLastActions_onDestroy(thisv: number): void
-	function rf__s__MakeLastActions__allocate(): void
 	function s__MakeLastActions__allocate(): number
 	function sc__MakeLastActions_deallocate(thisv: number): void
 	function sc__MakeMeteorAction_getLevel(thisv: number): number
 	function sc__MakeMeteorAction_onDestroy(thisv: number): void
 	function sc__MakeMeteorAction_cancel(thisv: number): boolean
 	function sc__MakeMeteorAction_redo(thisv: number): boolean
-	function rf__s__MakeMeteorAction__allocate(): void
 	function s__MakeMeteorAction__allocate(): number
 	function sc__MakeMonsterAction_getLevel(thisv: number): number
 	function sc__MakeMonsterAction_onDestroy(thisv: number): void
 	function sc__MakeMonsterAction_cancel(thisv: number): boolean
 	function sc__MakeMonsterAction_redo(thisv: number): boolean
-	function rf__s__MakeMonsterAction__allocate(): void
 	function s__MakeMonsterAction__allocate(): number
 	function sc__MakeTerrainHeightAction_apply(thisv: number): void
 	function sc__MakeTerrainHeightAction_cancel(thisv: number): boolean
 	function sc__MakeTerrainHeightAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainHeightAction__allocate(): void
 	function s__MakeTerrainHeightAction__allocate(): number
 	function sc__MakeVisibilityModifierAction_getLevel(thisv: number): number
 	function sc__MakeVisibilityModifierAction_onDestroy(thisv: number): void
 	function sc__MakeVisibilityModifierAction_cancel(thisv: number): boolean
 	function sc__MakeVisibilityModifierAction_redo(thisv: number): boolean
-	function rf__s__MakeVisibilityModifierAction__allocate(): void
 	function s__MakeVisibilityModifierAction__allocate(): number
 	function sc__MeteorArray_setMeteorNull(thisv: number, arrayId: number): void
 	function sc__MeteorArray_onDestroy(thisv: number): void
-	function rf__s__MeteorArray__allocate(): void
 	function s__MeteorArray__allocate(): number
 	function sc__MeteorArray_deallocate(thisv: number): void
 	function sc__MonsterType_onDestroy(thisv: number): void
-	function rf__s__MonsterType__allocate(): void
 	function s__MonsterType__allocate(): number
 	function sc__MonsterType_deallocate(thisv: number): void
-	function rf__s__SoundUtils__soundhelper__allocate(): void
-	function s__SoundUtils__soundhelper__allocate(): number
-	function s__SoundUtils__soundhelper_deallocate(thisv: number): void
-	function sc__SoundUtils__soundrecycler_onDestroy(thisv: number): void
-	function rf__s__SoundUtils__soundrecycler__allocate(): void
-	function s__SoundUtils__soundrecycler__allocate(): number
-	function sc__SoundUtils__soundrecycler_deallocate(thisv: number): void
+	function s__SoundUtils___soundhelper__allocate(): number
+	function s__SoundUtils___soundhelper_deallocate(thisv: number): void
+	function sc__SoundUtils___soundrecycler_onDestroy(thisv: number): void
+	function s__SoundUtils___soundrecycler__allocate(): number
+	function sc__SoundUtils___soundrecycler_deallocate(thisv: number): void
 	function sc__StringArrayForCache_create(category: string, variableName: string, avecSeparateur: boolean): number
 	function sc__StringArrayForCache_push(thisv: number, str: string): void
 	function sc__StringArrayForCache_writeInCache(thisv: number): void
-	function rf__s__StringArrayForCache__allocate(): void
 	function s__StringArrayForCache__allocate(): number
 	function s__StringArrayForCache_deallocate(thisv: number): void
 	function sc__VisibilityModifierArray_onDestroy(thisv: number): void
@@ -6196,10 +5963,8 @@ declare global {
 	function sc__VisibilityModifierArray_get(thisv: number, visibilityId: number): number
 	function sc__VisibilityModifierArray_getLastInstanceId(thisv: number): number
 	function sc__VisibilityModifierArray_setNull(thisv: number, arrayId: number): void
-	function rf__s__VisibilityModifierArray__allocate(): void
 	function s__VisibilityModifierArray__allocate(): number
 	function sc__VisibilityModifierArray_deallocate(thisv: number): void
-	function rf__s__CasterTypeArray__allocate(): void
 	function s__CasterTypeArray__allocate(): number
 	function s__CasterTypeArray_deallocate(thisv: number): void
 	function sc__LevelArray_goToLevel(thisv: number, finisher: number, levelId: number): boolean
@@ -6217,7 +5982,6 @@ declare global {
 	function sc__LevelArray_removeCastersOfType(thisv: number, ct: number): void
 	function sc__LevelArray_getLastLevelId(thisv: number): number
 	function sc__LevelArray_getNbMonsters(thisv: number, mode: string): number
-	function rf__s__LevelArray__allocate(): void
 	function s__LevelArray__allocate(): number
 	function s__LevelArray_deallocate(thisv: number): void
 	function sc__ClearMob_getTriggerMob(thisv: number): number
@@ -6225,7 +5989,6 @@ declare global {
 	function sc__ClearMob_initialize(thisv: number): void
 	function sc__ClearMob_onDestroy(thisv: number): void
 	function sc__ClearMob_isBeingActivated(thisv: number): boolean
-	function rf__s__ClearMob__allocate(): void
 	function s__ClearMob__allocate(): number
 	function sc__ClearMob_deallocate(thisv: number): void
 	function sc__TerrainTypeArray_get(thisv: number, label: string): number
@@ -6242,7 +6005,6 @@ declare global {
 	function sc__TerrainTypeArray_saveInCache(thisv: number): void
 	function sc__TerrainTypeArray_count(thisv: number): number
 	function sc__TerrainTypeArray_getMainTileset(thisv: number): string
-	function rf__s__TerrainTypeArray__allocate(): void
 	function s__TerrainTypeArray__allocate(): number
 	function s__TerrainTypeArray_deallocate(thisv: number): void
 	function sc__Monster_getId(thisv: number): number
@@ -6299,12 +6061,10 @@ declare global {
 	function sc__Level_activateVisibilities(thisv: number, activate: boolean): void
 	function sc__Level_setStartMessage(thisv: number, str: string): void
 	function sc__Level_getStartMessage(thisv: number): string
-	function rf__s__Level__allocate(): void
 	function s__Level__allocate(): number
 	function sc__Level_deallocate(thisv: number): void
 	function sc__Lives_getLeaderboard(thisv: number): leaderboard
 	function sc__Lives_onDestroy(thisv: number): void
-	function rf__s__Lives__allocate(): void
 	function s__Lives__allocate(): number
 	function sc__Lives_deallocate(thisv: number): void
 	function sc__RectInterface_toString(thisv: number): string
@@ -6312,10 +6072,8 @@ declare global {
 	function sc__RectInterface_deallocate(thisv: number): void
 	function sc__EscaperArray_get(thisv: number, id: number): number
 	function sc__EscaperArray_nullify(thisv: number, id: number): void
-	function rf__s__EscaperArray__allocate(): void
 	function s__EscaperArray__allocate(): number
 	function s__EscaperArray_deallocate(thisv: number): void
-	function rf__s__MonsterTypeArray__allocate(): void
 	function s__MonsterTypeArray__allocate(): number
 	function s__MonsterTypeArray_deallocate(thisv: number): void
 	function sc__Escaper_onDestroy(thisv: number): void
@@ -6364,11 +6122,9 @@ declare global {
 	function sc__Escaper_setSpeedZ(thisv: number, speedZ: number): void
 	function sc__Escaper_setCoopInvul(thisv: number, invul: boolean): void
 	function sc__Escaper_refreshCerclePosition(thisv: number): void
-	function rf__s__Escaper__allocate(): void
 	function s__Escaper__allocate(): number
 	function sc__Escaper_deallocate(thisv: number): void
 	function sc__KillingTimers_onDestroy(thisv: number): void
-	function rf__s__KillingTimers__allocate(): void
 	function s__KillingTimers__allocate(): number
 	function sc__KillingTimers_deallocate(thisv: number): void
 	function sc__MonsterSpawnArray_get(thisv: number, arrayId: number): number
@@ -6376,53 +6132,43 @@ declare global {
 	function sc__MonsterSpawnArray_count(thisv: number): number
 	function sc__MonsterSpawnArray_onDestroy(thisv: number): void
 	function sc__MonsterSpawnArray_setMonsterSpawnNull(thisv: number, monsterSpawnArrayId: number): void
-	function rf__s__MonsterSpawnArray__allocate(): void
 	function s__MonsterSpawnArray__allocate(): number
 	function sc__MonsterSpawnArray_deallocate(thisv: number): void
 	function sc__EscaperEffectArray_onDestroy(thisv: number): void
-	function rf__s__EscaperEffectArray__allocate(): void
 	function s__EscaperEffectArray__allocate(): number
 	function sc__EscaperEffectArray_deallocate(thisv: number): void
 	function sc__TerrainType_getTerrainTypeId(thisv: number): number
 	function sc__TerrainType_getKind(thisv: number): string
 	function sc__TerrainType_onDestroy(thisv: number): void
-	function rf__s__TerrainType__allocate(): void
 	function s__TerrainType__allocate(): number
 	function sc__TerrainType_deallocate(thisv: number): void
 	function sc__MonsterSpawn_onDestroy(thisv: number): void
 	function sc__MonsterSpawn_startMobMovement(thisv: number, mobUnit: unit): void
 	function sc__MonsterSpawn_createMob(thisv: number): unit
 	function sc__MonsterSpawn_toString(thisv: number): string
-	function rf__s__MonsterSpawn__allocate(): void
 	function s__MonsterSpawn__allocate(): number
 	function sc__MonsterSpawn_deallocate(thisv: number): void
 	function sc__MakeTerrainVerticalSymmetryAction_applySymmetry(thisv: number): void
 	function sc__MakeTerrainVerticalSymmetryAction_cancel(thisv: number): boolean
 	function sc__MakeTerrainVerticalSymmetryAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetryAction__allocate(): void
 	function s__MakeTerrainVerticalSymmetryAction__allocate(): number
 	function sc__MakeTerrainHorizontalSymmetryAction_applySymmetry(thisv: number): void
 	function sc__MakeTerrainHorizontalSymmetryAction_cancel(thisv: number): boolean
 	function sc__MakeTerrainHorizontalSymmetryAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetryAction__allocate(): void
 	function s__MakeTerrainHorizontalSymmetryAction__allocate(): number
 	function sc__MakeTerrainCreateAction_onDestroy(thisv: number): void
 	function sc__MakeTerrainCreateAction_cancel(thisv: number): boolean
 	function sc__MakeTerrainCreateAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainCreateAction__allocate(): void
 	function s__MakeTerrainCreateAction__allocate(): number
 	function sc__MakeTerrainCopyPasteAction_onDestroy(thisv: number): void
 	function sc__MakeTerrainCopyPasteAction_cancel(thisv: number): boolean
 	function sc__MakeTerrainCopyPasteAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainCopyPasteAction__allocate(): void
 	function s__MakeTerrainCopyPasteAction__allocate(): number
 	function sc__EscaperEffect_onDestroy(thisv: number): void
-	function rf__s__EscaperEffect__allocate(): void
 	function s__EscaperEffect__allocate(): number
 	function sc__EscaperEffect_deallocate(thisv: number): void
 	function sc__CasterShot_create(monsterType: number, Xdep: number, Ydep: number, angle: number, speed: number, portee: number): number
 	function sc__CasterShot_onDestroy(thisv: number): void
-	function rf__s__CasterShot__allocate(): void
 	function s__CasterShot__allocate(): number
 	function sc__CasterShot_deallocate(thisv: number): void
 	function sc__MakeDeleteClearMob_create(maker: unit): number
@@ -6430,14 +6176,11 @@ declare global {
 	function sc__MakeDeleteClearMob_clickMade(thisv: number, monsterOrCasterId: number): void
 	function sc__MakeDeleteClearMob_cancelLastAction(thisv: number): boolean
 	function sc__MakeDeleteClearMob_redoLastAction(thisv: number): boolean
-	function rf__s__MakeDeleteClearMob__allocate(): void
 	function s__MakeDeleteClearMob__allocate(): number
 	function sc__TerrainTypeSlide_getSlideSpeed(thisv: number): number
 	function sc__TerrainTypeSlide_getCanTurn(thisv: number): boolean
-	function rf__s__TerrainTypeSlide__allocate(): void
 	function s__TerrainTypeSlide__allocate(): number
 	function sc__TerrainTypeWalk_getWalkSpeed(thisv: number): number
-	function rf__s__TerrainTypeWalk__allocate(): void
 	function s__TerrainTypeWalk__allocate(): number
 	function sc__TerrainTypeDeath_onDestroy(thisv: number): void
 	function sc__TerrainTypeDeath_getKillingEffectStr(thisv: number): string
@@ -6445,17 +6188,14 @@ declare global {
 	function sc__TerrainTypeDeath_killEscaper(thisv: number, escaper: number): void
 	function sc__TerrainTypeDeath_getTimer(thisv: number, escaperId: number): timer
 	function sc__TerrainTypeDeath_getToleranceDist(thisv: number): number
-	function rf__s__TerrainTypeDeath__allocate(): void
 	function s__TerrainTypeDeath__allocate(): number
 	function sc__Start_onDestroy(thisv: number): void
 	function sc__Start_getRandomX(thisv: number): number
 	function sc__Start_getRandomY(thisv: number): number
 	function sc__Start_toString(thisv: number): string
-	function rf__s__Start__allocate(): void
 	function s__Start__allocate(): number
 	function sc__End_onDestroy(thisv: number): void
 	function sc__End_toString(thisv: number): string
-	function rf__s__End__allocate(): void
 	function s__End__allocate(): number
 	function sc__MakeCaster_getCasterType(thisv: number): number
 	function sc__MakeCaster_getAngle(thisv: number): number
@@ -6463,7 +6203,6 @@ declare global {
 	function sc__MakeCaster_onDestroy(thisv: number): void
 	function sc__MakeCaster_cancelLastAction(thisv: number): boolean
 	function sc__MakeCaster_redoLastAction(thisv: number): boolean
-	function rf__s__MakeCaster__allocate(): void
 	function s__MakeCaster__allocate(): number
 	function sc__MakeDeleteCasters_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeDeleteCasters_create(maker: unit, mode: string): number
@@ -6473,7 +6212,6 @@ declare global {
 	function sc__MakeDeleteCasters_cancelLastAction(thisv: number): boolean
 	function sc__MakeDeleteCasters_redoLastAction(thisv: number): boolean
 	function sc__MakeDeleteCasters_getMode(thisv: number): string
-	function rf__s__MakeDeleteCasters__allocate(): void
 	function s__MakeDeleteCasters__allocate(): number
 	function sc__MakeDeleteMeteors_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeDeleteMeteors_create(maker: unit, mode: string): number
@@ -6483,7 +6221,6 @@ declare global {
 	function sc__MakeDeleteMeteors_cancelLastAction(thisv: number): boolean
 	function sc__MakeDeleteMeteors_redoLastAction(thisv: number): boolean
 	function sc__MakeDeleteMeteors_getMode(thisv: number): string
-	function rf__s__MakeDeleteMeteors__allocate(): void
 	function s__MakeDeleteMeteors__allocate(): number
 	function sc__MakeDeleteMonsters_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeDeleteMonsters_create(maker: unit, mode: string): number
@@ -6493,7 +6230,6 @@ declare global {
 	function sc__MakeDeleteMonsters_cancelLastAction(thisv: number): boolean
 	function sc__MakeDeleteMonsters_redoLastAction(thisv: number): boolean
 	function sc__MakeDeleteMonsters_getMode(thisv: number): string
-	function rf__s__MakeDeleteMonsters__allocate(): void
 	function s__MakeDeleteMonsters__allocate(): number
 	function sc__MakeEnd_create(maker: unit): number
 	function sc__MakeEnd_onDestroy(thisv: number): void
@@ -6501,7 +6237,6 @@ declare global {
 	function sc__MakeEnd_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeEnd_cancelLastAction(thisv: number): boolean
 	function sc__MakeEnd_redoLastAction(thisv: number): boolean
-	function rf__s__MakeEnd__allocate(): void
 	function s__MakeEnd__allocate(): number
 	function sc__MakeExchangeTerrains_create(maker: unit): number
 	function sc__MakeExchangeTerrains_onDestroy(thisv: number): void
@@ -6510,25 +6245,21 @@ declare global {
 	function sc__MakeExchangeTerrains_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeExchangeTerrains_cancelLastAction(thisv: number): boolean
 	function sc__MakeExchangeTerrains_redoLastAction(thisv: number): boolean
-	function rf__s__MakeExchangeTerrains__allocate(): void
 	function s__MakeExchangeTerrains__allocate(): number
 	function sc__MakeGetTerrainType_create(maker: unit): number
 	function sc__MakeGetTerrainType_onDestroy(thisv: number): void
 	function sc__MakeGetTerrainType_cancelLastAction(thisv: number): boolean
 	function sc__MakeGetTerrainType_redoLastAction(thisv: number): boolean
-	function rf__s__MakeGetTerrainType__allocate(): void
 	function s__MakeGetTerrainType__allocate(): number
 	function sc__MakeGetUnitTeleportPeriod_create(maker: unit): number
 	function sc__MakeGetUnitTeleportPeriod_onDestroy(thisv: number): void
 	function sc__MakeGetUnitTeleportPeriod_cancelLastAction(thisv: number): boolean
 	function sc__MakeGetUnitTeleportPeriod_redoLastAction(thisv: number): boolean
-	function rf__s__MakeGetUnitTeleportPeriod__allocate(): void
 	function s__MakeGetUnitTeleportPeriod__allocate(): number
 	function sc__MakeMeteor_create(maker: unit): number
 	function sc__MakeMeteor_onDestroy(thisv: number): void
 	function sc__MakeMeteor_cancelLastAction(thisv: number): boolean
 	function sc__MakeMeteor_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMeteor__allocate(): void
 	function s__MakeMeteor__allocate(): number
 	function sc__MakeMonsterMultiplePatrols_getMonsterType(thisv: number): number
 	function sc__MakeMonsterMultiplePatrols_getMode(thisv: number): string
@@ -6541,7 +6272,6 @@ declare global {
 	function sc__MakeMonsterMultiplePatrols_setMonster(thisv: number, monster: number): void
 	function sc__MakeMonsterMultiplePatrols_cancelLastAction(thisv: number): boolean
 	function sc__MakeMonsterMultiplePatrols_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterMultiplePatrols__allocate(): void
 	function s__MakeMonsterMultiplePatrols__allocate(): number
 	function sc__MakeMonsterNoMove_getMonsterType(thisv: number): number
 	function sc__MakeMonsterNoMove_getFacingAngle(thisv: number): number
@@ -6549,7 +6279,6 @@ declare global {
 	function sc__MakeMonsterNoMove_onDestroy(thisv: number): void
 	function sc__MakeMonsterNoMove_cancelLastAction(thisv: number): boolean
 	function sc__MakeMonsterNoMove_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterNoMove__allocate(): void
 	function s__MakeMonsterNoMove__allocate(): number
 	function sc__MakeMonsterSimplePatrol_getMonsterType(thisv: number): number
 	function sc__MakeMonsterSimplePatrol_create(maker: unit, mode: string, mt: number): number
@@ -6561,7 +6290,6 @@ declare global {
 	function sc__MakeMonsterSimplePatrol_cancelLastAction(thisv: number): boolean
 	function sc__MakeMonsterSimplePatrol_redoLastAction(thisv: number): boolean
 	function sc__MakeMonsterSimplePatrol_getMode(thisv: number): string
-	function rf__s__MakeMonsterSimplePatrol__allocate(): void
 	function s__MakeMonsterSimplePatrol__allocate(): number
 	function sc__MakeMonsterSpawn_create(maker: unit, label: string, mt: number, sens: string, frequence: number): number
 	function sc__MakeMonsterSpawn_onDestroy(thisv: number): void
@@ -6569,7 +6297,6 @@ declare global {
 	function sc__MakeMonsterSpawn_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeMonsterSpawn_cancelLastAction(thisv: number): boolean
 	function sc__MakeMonsterSpawn_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterSpawn__allocate(): void
 	function s__MakeMonsterSpawn__allocate(): number
 	function sc__MakeMonsterTeleport_getMonsterType(thisv: number): number
 	function sc__MakeMonsterTeleport_getPeriod(thisv: number): number
@@ -6586,7 +6313,6 @@ declare global {
 	function sc__MakeMonsterTeleport_setMonster(thisv: number, monster: number): void
 	function sc__MakeMonsterTeleport_cancelLastAction(thisv: number): boolean
 	function sc__MakeMonsterTeleport_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterTeleport__allocate(): void
 	function s__MakeMonsterTeleport__allocate(): number
 	function sc__MakeSetUnitMonsterType_getMonsterType(thisv: number): number
 	function sc__MakeSetUnitMonsterType_isLastLocSavedUsed(thisv: number): boolean
@@ -6597,7 +6323,6 @@ declare global {
 	function sc__MakeSetUnitMonsterType_cancelLastAction(thisv: number): boolean
 	function sc__MakeSetUnitMonsterType_redoLastAction(thisv: number): boolean
 	function sc__MakeSetUnitMonsterType_getMode(thisv: number): string
-	function rf__s__MakeSetUnitMonsterType__allocate(): void
 	function s__MakeSetUnitMonsterType__allocate(): number
 	function sc__MakeSetUnitTeleportPeriod_getPeriod(thisv: number): number
 	function sc__MakeSetUnitTeleportPeriod_isLastLocSavedUsed(thisv: number): boolean
@@ -6608,7 +6333,6 @@ declare global {
 	function sc__MakeSetUnitTeleportPeriod_cancelLastAction(thisv: number): boolean
 	function sc__MakeSetUnitTeleportPeriod_redoLastAction(thisv: number): boolean
 	function sc__MakeSetUnitTeleportPeriod_getMode(thisv: number): string
-	function rf__s__MakeSetUnitTeleportPeriod__allocate(): void
 	function s__MakeSetUnitTeleportPeriod__allocate(): number
 	function sc__MakeStart_create(maker: unit, forNext: boolean): number
 	function sc__MakeStart_onDestroy(thisv: number): void
@@ -6617,14 +6341,12 @@ declare global {
 	function sc__MakeStart_cancelLastAction(thisv: number): boolean
 	function sc__MakeStart_redoLastAction(thisv: number): boolean
 	function sc__MakeStart_forNext(thisv: number): boolean
-	function rf__s__MakeStart__allocate(): void
 	function s__MakeStart__allocate(): number
 	function sc__MakeTerrainCopyPaste_create(maker: unit): number
 	function sc__MakeTerrainCopyPaste_onDestroy(thisv: number): void
 	function sc__MakeTerrainCopyPaste_saveLoc(thisv: number, x: number, l__y: number): void
 	function sc__MakeTerrainCopyPaste_cancelLastAction(thisv: number): boolean
 	function sc__MakeTerrainCopyPaste_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainCopyPaste__allocate(): void
 	function s__MakeTerrainCopyPaste__allocate(): number
 	function sc__MakeTerrainCreate_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeTerrainCreate_getTerrainType(thisv: number): number
@@ -6634,7 +6356,6 @@ declare global {
 	function sc__MakeTerrainCreate_unsaveLocDefinitely(thisv: number): void
 	function sc__MakeTerrainCreate_cancelLastAction(thisv: number): boolean
 	function sc__MakeTerrainCreate_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainCreate__allocate(): void
 	function s__MakeTerrainCreate__allocate(): number
 	function sc__MakeTerrainHeight_create(maker: unit, radius: number, height: number): number
 	function sc__MakeTerrainHeight_getRadius(thisv: number): number
@@ -6642,7 +6363,6 @@ declare global {
 	function sc__MakeTerrainHeight_onDestroy(thisv: number): void
 	function sc__MakeTerrainHeight_cancelLastAction(thisv: number): boolean
 	function sc__MakeTerrainHeight_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainHeight__allocate(): void
 	function s__MakeTerrainHeight__allocate(): number
 	function sc__MakeTerrainHorizontalSymmetry_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeTerrainHorizontalSymmetry_create(maker: unit): number
@@ -6651,7 +6371,6 @@ declare global {
 	function sc__MakeTerrainHorizontalSymmetry_unsaveLocDefinitely(thisv: number): void
 	function sc__MakeTerrainHorizontalSymmetry_cancelLastAction(thisv: number): boolean
 	function sc__MakeTerrainHorizontalSymmetry_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetry__allocate(): void
 	function s__MakeTerrainHorizontalSymmetry__allocate(): number
 	function sc__MakeTerrainVerticalSymmetry_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeTerrainVerticalSymmetry_create(maker: unit): number
@@ -6660,7 +6379,6 @@ declare global {
 	function sc__MakeTerrainVerticalSymmetry_unsaveLocDefinitely(thisv: number): void
 	function sc__MakeTerrainVerticalSymmetry_cancelLastAction(thisv: number): boolean
 	function sc__MakeTerrainVerticalSymmetry_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetry__allocate(): void
 	function s__MakeTerrainVerticalSymmetry__allocate(): number
 	function sc__MakeVisibilityModifier_create(maker: unit): number
 	function sc__MakeVisibilityModifier_onDestroy(thisv: number): void
@@ -6669,7 +6387,6 @@ declare global {
 	function sc__MakeVisibilityModifier_isLastLocSavedUsed(thisv: number): boolean
 	function sc__MakeVisibilityModifier_cancelLastAction(thisv: number): boolean
 	function sc__MakeVisibilityModifier_redoLastAction(thisv: number): boolean
-	function rf__s__MakeVisibilityModifier__allocate(): void
 	function s__MakeVisibilityModifier__allocate(): number
 	function sc__MonsterMultiplePatrols_storeNewLoc(x: number, l__y: number): boolean
 	function sc__MonsterMultiplePatrols_destroyLocs(): void
@@ -6692,7 +6409,6 @@ declare global {
 	function sc__MonsterMultiplePatrols_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function sc__MonsterMultiplePatrols_reinitColor(thisv: number): void
 	function sc__MonsterMultiplePatrols_toString(thisv: number): string
-	function rf__s__MonsterMultiplePatrols__allocate(): void
 	function s__MonsterMultiplePatrols__allocate(): number
 	function sc__MonsterNoMove_getId(thisv: number): number
 	function sc__MonsterNoMove_removeUnit(thisv: number): void
@@ -6709,7 +6425,6 @@ declare global {
 	function sc__MonsterNoMove_setBaseColor(thisv: number, colorString: string): void
 	function sc__MonsterNoMove_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function sc__MonsterNoMove_reinitColor(thisv: number): void
-	function rf__s__MonsterNoMove__allocate(): void
 	function s__MonsterNoMove__allocate(): number
 	function sc__MonsterSimplePatrol_getId(thisv: number): number
 	function sc__MonsterSimplePatrol_removeUnit(thisv: number): void
@@ -6726,7 +6441,6 @@ declare global {
 	function sc__MonsterSimplePatrol_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function sc__MonsterSimplePatrol_reinitColor(thisv: number): void
 	function sc__MonsterSimplePatrol_toString(thisv: number): string
-	function rf__s__MonsterSimplePatrol__allocate(): void
 	function s__MonsterSimplePatrol__allocate(): number
 	function sc__MonsterTeleport_storeNewLoc(x: number, l__y: number): boolean
 	function sc__MonsterTeleport_destroyLocs(): void
@@ -6752,14 +6466,12 @@ declare global {
 	function sc__MonsterTeleport_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function sc__MonsterTeleport_reinitColor(thisv: number): void
 	function sc__MonsterTeleport_toString(thisv: number): string
-	function rf__s__MonsterTeleport__allocate(): void
 	function s__MonsterTeleport__allocate(): number
 	function sc__MakeClearMob_create(maker: unit, disableDuration: number): number
 	function sc__MakeClearMob_onDestroy(thisv: number): void
 	function sc__MakeClearMob_clickMade(thisv: number, monsterOrCasterId: number): void
 	function sc__MakeClearMob_cancelLastAction(thisv: number): boolean
 	function sc__MakeClearMob_redoLastAction(thisv: number): boolean
-	function rf__s__MakeClearMob__allocate(): void
 	function s__MakeClearMob__allocate(): number
 	function sc___prototype2_execute(i: number): void
 	function sc___prototype2_evaluate(i: number): void
@@ -6768,7 +6480,6 @@ declare global {
 	function sc___prototype51_execute(i: number, a1: sound, a2: boolean, a3: boolean): void
 	function sc___prototype51_evaluate(i: number, a1: sound, a2: boolean, a3: boolean): void
 	function h__StopSound(a0: sound, a1: boolean, a2: boolean): void
-	function rf__AreAllAliveHeroesAfk(): void
 	function AreAllAliveHeroesAfk(): boolean
 	function KillAllHeroesIfAfk(): void
 	function KillAllHeroesAfkInFiveSeconds(): void
@@ -6786,16 +6497,11 @@ declare global {
 	function AfkModeTimerExpires_9(): void
 	function AfkModeTimerExpires_10(): void
 	function AfkModeTimerExpires_11(): void
-	function rf__GetAfkModeTimeExpiresCodeFromId(id: number): void
 	function GetAfkModeTimeExpiresCodeFromId(id: number): Function
 	function Init_AfkMode(): void
-	function rf__Ascii__CaractereVersAscii(caractere: string): void
-	function Ascii__CaractereVersAscii(caractere: string): number
-	function rf__Ascii__AsciiVersCaractere(source: number): void
-	function Ascii__AsciiVersCaractere(source: number): string
-	function rf__String2Ascii(source: string): void
+	function Ascii___CaractereVersAscii(caractere: string): number
+	function Ascii___AsciiVersCaractere(source: number): string
 	function String2Ascii(source: string): number
-	function rf__Ascii2String(source: number): void
 	function Ascii2String(source: number): string
 	function AutoContinueAfterSliding(n: number): void
 	function ClearLastClickSave(n: number): void
@@ -6803,15 +6509,11 @@ declare global {
 	function DeplacementHeroHorsDeathPath(hero: unit): void
 	function ApplyRandomColor(n: number): void
 	function Disco_Actions(): void
-	function rf__EstChiffre(str: string): void
 	function EstChiffre(str: string): boolean
-	function rf__IsInteger(str: string): void
 	function IsInteger(str: string): boolean
 	function IsPositiveInteger(str: string): boolean
 	function IsPercentage(str: string): boolean
-	function rf__PercentageStringOrX2Integer(str: string): void
 	function PercentageStringOrX2Integer(str: string): number
-	function rf__I2HexaString(n: number): void
 	function I2HexaString(n: number): string
 	function Trig_time_of_game_Actions(): void
 	function Init_GameTime(): void
@@ -6820,7 +6522,6 @@ declare global {
 	function GetRealGravity(): number
 	function InitGravity(): void
 	function Init_ImmolationSkills(): void
-	function rf__IsLevelBeingMade(level: number): void
 	function IsLevelBeingMade(level: number): boolean
 	function s__Meteor_getItem(thisv: number): item
 	function s__Meteor_create(x: number, l__y: number): number
@@ -6831,17 +6532,13 @@ declare global {
 	function s__Meteor_replace(thisv: number): void
 	function s__Meteor_toString(thisv: number): string
 	function GetEnumMoc(): number
-	function rf__s__MonsterOrCasterStack_create(monsterOrCaster: number): void
 	function s__MonsterOrCasterStack_create(monsterOrCaster: number): number
-	function rf__s__MonsterOrCasterStack_addMonsterOrCaster(thisv: number, monsterOrCaster: number): void
 	function s__MonsterOrCasterStack_addMonsterOrCaster(thisv: number, monsterOrCaster: number): boolean
 	function s__MonsterOrCasterStack_onDestroy(thisv: number): void
 	function s__MonsterOrCasterStack_deallocate(thisv: number): void
 	function s__MonsterOrCasterStack_executeForAll(thisv: number, functionName: string): void
-	function rf__s__MonsterOrCasterStack_containsMob(thisv: number, mobId: number): void
 	function s__MonsterOrCasterStack_containsMob(thisv: number, mobId: number): boolean
 	function s__MonsterOrCasterStack_getLast(thisv: number): number
-	function rf__s__MonsterOrCasterStack_removeLast(thisv: number): void
 	function s__MonsterOrCasterStack_removeLast(thisv: number): boolean
 	function MonstersClickableSetLifeForEach(): void
 	function MonstersClickableSetLife_Actions(): void
@@ -6858,22 +6555,17 @@ declare global {
 	function Slide_9_Actions(): void
 	function Slide_10_Actions(): void
 	function Slide_11_Actions(): void
-	function rf__GetSlideActions(n: number): void
 	function GetSlideActions(n: number): Function
 	function CreateSlideTrigger(playerId: number): trigger
 	function s__Stack_push(thisv: number, i: number): void
-	function rf__s__Stack_pop(thisv: number): void
 	function s__Stack_pop(thisv: number): number
 	function s__Stack_peek(thisv: number): number
 	function s__Stack_add(thisv: number, value: number): void
-	function rf__s__Stack_contains(thisv: number, value: number): void
 	function s__Stack_contains(thisv: number, value: number): boolean
 	function s__Stack_count(thisv: number, value: number): number
 	function s__Stack__get_first(thisv: number): number
 	function s__Stack__get_random(thisv: number): number
-	function rf__s__Stack_remove(thisv: number, value: number): void
 	function s__Stack_remove(thisv: number, value: number): boolean
-	function rf__s__Stack_purge(thisv: number, value: number): void
 	function s__Stack_purge(thisv: number, value: number): number
 	function s__Stack_enum(thisv: number, f: number, top2bottom: boolean): void
 	function s__Stack_copy(thisv: number): number
@@ -6884,50 +6576,33 @@ declare global {
 	function s__StringSegments_create(s: string, delim: string): number
 	function s__StringSegments_countSegments(thisv: number): number
 	function s__StringSegments_hasMoreSegments(thisv: number): boolean
-	function rf__s__StringSegments_nextSegment(thisv: number): void
 	function s__StringSegments_nextSegment(thisv: number): string
 	function s__StringSegments_nextSegmentEx(thisv: number, delim: string): string
-	function rf__StringTrimLeft(str: string): void
 	function StringTrimLeft(str: string): string
-	function rf__StringTrimRight(str: string): void
 	function StringTrimRight(str: string): string
-	function rf__StringTrim(str: string): void
 	function StringTrim(str: string): string
-	function rf__StringIndexOf(source: string, toFind: string, caseSensitive: boolean): void
 	function StringIndexOf(source: string, toFind: string, caseSensitive: boolean): number
-	function rf__StringIndexOfReverse(source: string, toFind: string, caseSensitive: boolean): void
 	function StringIndexOfReverse(source: string, toFind: string, caseSensitive: boolean): number
 	function StringReplace(source: string, old: string, newv: string, caseSensitive: boolean): string
 	function StringHashCS(s: string): number
-	function rf__IsStringAscii(s: string): void
 	function IsStringAscii(s: string): boolean
 	function StringAsciiAt(s: string, index: number): number
-	function rf__StringLengthUtf8(s: string): void
 	function StringLengthUtf8(s: string): number
-	function rf__IsStringValidUtf8(s: string): void
 	function IsStringValidUtf8(s: string): boolean
-	function StringLib__InitAsciiHash(): void
-	function StringLib__InitUtf8Hash(): void
-	function StringLib__Init(): void
+	function StringLib___InitAsciiHash(): void
+	function StringLib___InitUtf8Hash(): void
+	function StringLib___Init(): void
 	function Init_TerrainModifyingTrig(): void
 	function StopEnabledCheckTerrainTriggers(): void
 	function RestartEnabledCheckTerrainTriggers(): void
-	function rf__TerrainTypeId2TerrainTypeAsciiString(terrainType: number): void
 	function TerrainTypeId2TerrainTypeAsciiString(terrainType: number): string
-	function rf__TerrainTypeAsciiString2TerrainTypeId(terrainTypeAsciiString: string): void
 	function TerrainTypeAsciiString2TerrainTypeId(terrainTypeAsciiString: string): number
-	function rf__TerrainTypeId2TerrainType(terrainTypeId: number): void
 	function TerrainTypeId2TerrainType(terrainTypeId: number): number
-	function rf__IsTerrainTypeOfKind(terrainTypeId: number, terrainTypeKind: string): void
 	function IsTerrainTypeOfKind(terrainTypeId: number, terrainTypeKind: string): boolean
-	function rf__TerrainTypeMaxId2TerrainTypeId(maxId: number): void
 	function TerrainTypeMaxId2TerrainTypeId(maxId: number): number
-	function rf__TerrainTypeId2TerrainTypeMaxId(terrainTypeId: number): void
 	function TerrainTypeId2TerrainTypeMaxId(terrainTypeId: number): number
-	function rf__Text__ForPlayer_timed_withColorCode(p: player, duration: number, colorcode: string, message: string): void
-	function Text__ForPlayer_timed_withColorCode(p: player, duration: number, colorcode: string, message: string): boolean
-	function rf__Text__ForAll_timed_withColorCode(duration: number, colorcode: string, message: string): void
-	function Text__ForAll_timed_withColorCode(duration: number, colorcode: string, message: string): boolean
+	function Text___ForPlayer_timed_withColorCode(p: player, duration: number, colorcode: string, message: string): boolean
+	function Text___ForAll_timed_withColorCode(duration: number, colorcode: string, message: string): boolean
 	function Text_P_timed(p: player, duration: number, message: string): boolean
 	function Text_P(p: player, message: string): boolean
 	function Text_erP_timed(p: player, duration: number, message: string): boolean
@@ -6946,7 +6621,7 @@ declare global {
 	function NewTimerEx(value: number): timer
 	function NewTimer(): timer
 	function ReleaseTimer(t: timer): void
-	function TimerUtils__init(): void
+	function TimerUtils___init(): void
 	function s__Trigger_onDestroy(thisv: number): void
 	function s__Trigger_deallocate(thisv: number): void
 	function s__Trigger_create(): number
@@ -6965,13 +6640,10 @@ declare global {
 	function s__VisibilityModifier_toString(thisv: number): string
 	function GetSurfaceZ(x: number, l__y: number): number
 	function GetTerrainZ(x: number, l__y: number): number
-	function rf__GetUnitZ(u: unit): void
 	function GetUnitZ(u: unit): number
 	function SetUnitZ(u: unit, z: number): void
-	function CreateUnitZ(l__ZLibrary__p: player, unitid: number, x: number, l__y: number, z: number, face: number): unit
-	function rf__GetWaterDepth(x: number, l__y: number): void
+	function CreateUnitZ(l__ZLibrary___p: player, unitid: number, x: number, l__y: number, z: number, face: number): unit
 	function GetWaterDepth(x: number, l__y: number): number
-	function rf__GetWaterType(x: number, l__y: number): void
 	function GetWaterType(x: number, l__y: number): number
 	function IsUnitBetweenLocs(u: unit, x1: number, y1: number, x2: number, y2: number): boolean
 	function IsItemBetweenLocs(i: item, x1: number, y1: number, x2: number, y2: number): boolean
@@ -6983,23 +6655,17 @@ declare global {
 	function GetCurrentMonsterPlayer(): player
 	function IsUnitInvulnerable(u: unit): boolean
 	function StopUnit(U: unit): void
-	function rf__IsHero(U: unit): void
 	function IsHero(U: unit): boolean
 	function ClearTextForPlayer(p: player): void
 	function MoveCamExceptForPlayer(p: player, x: number, l__y: number): void
-	function rf__StringContainsChar(str: string, char: string): void
 	function StringContainsChar(str: string, char: string): boolean
 	function IsBoolString(S: string): boolean
 	function S2B(S: string): boolean
-	function rf__B2S(b: boolean): void
 	function B2S(b: boolean): string
 	function IsOnGround(slider: unit): boolean
 	function IsNearBounds(x: number, l__y: number): boolean
-	function rf__tileset2tilesetChar(tileset: string): void
 	function tileset2tilesetChar(tileset: string): string
-	function rf__tileset2tilesetString(tileset: string): void
 	function tileset2tilesetString(tileset: string): string
-	function rf__s__CasterType_create(label: string, casterMonsterType: number, projectileMonsterType: number, range: number, projectileSpeed: number, loadTime: number, animation: string): void
 	function s__CasterType_create(label: string, casterMonsterType: number, projectileMonsterType: number, range: number, projectileSpeed: number, loadTime: number, animation: string): number
 	function s__CasterType_setLabel(thisv: number, label: string): void
 	function s__CasterType_setAlias(thisv: number, theAlias: string): number
@@ -7011,109 +6677,77 @@ declare global {
 	function s__CasterType_getProjectileMonsterType(thisv: number): number
 	function s__CasterType_setProjectileMonsterType(thisv: number, newProjectileMonsterType: number): void
 	function s__CasterType_getRange(thisv: number): number
-	function rf__s__CasterType_setRange(thisv: number, newRange: number): void
 	function s__CasterType_setRange(thisv: number, newRange: number): boolean
 	function s__CasterType_getProjectileSpeed(thisv: number): number
-	function rf__s__CasterType_setProjectileSpeed(thisv: number, newSpeed: number): void
 	function s__CasterType_setProjectileSpeed(thisv: number, newSpeed: number): boolean
 	function s__CasterType_getLoadTime(thisv: number): number
-	function rf__s__CasterType_setLoadTime(thisv: number, loadTime: number): void
 	function s__CasterType_setLoadTime(thisv: number, loadTime: number): boolean
 	function s__CasterType_getAnimation(thisv: number): string
 	function s__CasterType_setAnimation(thisv: number, animation: string): void
 	function s__CasterType_displayForPlayer(thisv: number, p: player): void
 	function s__CasterType_toString(thisv: number): string
-	function rf__DecodeString__DecodeChar(char: string): void
-	function DecodeString__DecodeChar(char: string): string
+	function DecodeString___DecodeChar(char: string): string
 	function DecodeString(strIn: string): string
 	function ColorInfo(escaperToGetInfo: number, playerToDisplay: player): void
-	function rf__Hero2Escaper(hero: unit): void
 	function Hero2Escaper(hero: unit): number
 	function s__MakeCasterAction_getLevel(thisv: number): number
-	function rf__s__MakeCasterAction_create(level: number, caster: number): void
 	function s__MakeCasterAction_create(level: number, caster: number): number
 	function s__MakeCasterAction_onDestroy(thisv: number): void
-	function rf__s__MakeCasterAction_cancel(thisv: number): void
 	function s__MakeCasterAction_cancel(thisv: number): boolean
-	function rf__s__MakeCasterAction_redo(thisv: number): void
 	function s__MakeCasterAction_redo(thisv: number): boolean
 	function s__MakeDeleteCastersAction_onInit(): void
 	function s__MakeDeleteCastersAction_newSuppression(suppression: hashtable): number
 	function s__MakeDeleteCastersAction_removeSuppression(suppressionId: number): void
 	function s__MakeDeleteCastersAction_getLevel(thisv: number): number
-	function rf__s__MakeDeleteCastersAction_create(level: number, suppression: hashtable): void
 	function s__MakeDeleteCastersAction_create(level: number, suppression: hashtable): number
 	function s__MakeDeleteCastersAction_onDestroy(thisv: number): void
-	function rf__s__MakeDeleteCastersAction_cancel(thisv: number): void
 	function s__MakeDeleteCastersAction_cancel(thisv: number): boolean
-	function rf__s__MakeDeleteCastersAction_redo(thisv: number): void
 	function s__MakeDeleteCastersAction_redo(thisv: number): boolean
 	function s__MakeDeleteMeteorsAction_onInit(): void
 	function s__MakeDeleteMeteorsAction_newSuppression(suppression: hashtable): number
 	function s__MakeDeleteMeteorsAction_removeSuppression(suppressionId: number): void
 	function s__MakeDeleteMeteorsAction_getLevel(thisv: number): number
-	function rf__s__MakeDeleteMeteorsAction_create(level: number, suppression: hashtable): void
 	function s__MakeDeleteMeteorsAction_create(level: number, suppression: hashtable): number
 	function s__MakeDeleteMeteorsAction_onDestroy(thisv: number): void
-	function rf__s__MakeDeleteMeteorsAction_cancel(thisv: number): void
 	function s__MakeDeleteMeteorsAction_cancel(thisv: number): boolean
-	function rf__s__MakeDeleteMeteorsAction_redo(thisv: number): void
 	function s__MakeDeleteMeteorsAction_redo(thisv: number): boolean
 	function s__MakeDeleteMonstersAction_onInit(): void
 	function s__MakeDeleteMonstersAction_newSuppression(suppression: hashtable): number
 	function s__MakeDeleteMonstersAction_removeSuppression(suppressionId: number): void
 	function s__MakeDeleteMonstersAction_getLevel(thisv: number): number
-	function rf__s__MakeDeleteMonstersAction_create(level: number, suppression: hashtable): void
 	function s__MakeDeleteMonstersAction_create(level: number, suppression: hashtable): number
 	function s__MakeDeleteMonstersAction_onDestroy(thisv: number): void
-	function rf__s__MakeDeleteMonstersAction_cancel(thisv: number): void
 	function s__MakeDeleteMonstersAction_cancel(thisv: number): boolean
-	function rf__s__MakeDeleteMonstersAction_redo(thisv: number): void
 	function s__MakeDeleteMonstersAction_redo(thisv: number): boolean
 	function s__MakeLastActions_create(owner: number): number
 	function s__MakeLastActions_onDestroy(thisv: number): void
 	function s__MakeLastActions_deallocate(thisv: number): void
 	function s__MakeLastActions_newAction(thisv: number, action: number): number
-	function rf__s__MakeLastActions_cancelLastAction(thisv: number): void
 	function s__MakeLastActions_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeLastActions_redoLastAction(thisv: number): void
 	function s__MakeLastActions_redoLastAction(thisv: number): boolean
 	function s__MakeLastActions_deleteSpecificActionsForLevel(thisv: number, level: number): void
 	function s__MakeLastActions_destroyCancelledActions(thisv: number): void
 	function s__MakeLastActions_destroyAllActions(thisv: number): void
 	function s__MakeMeteorAction_getLevel(thisv: number): number
-	function rf__s__MakeMeteorAction_create(level: number, meteor: number): void
 	function s__MakeMeteorAction_create(level: number, meteor: number): number
 	function s__MakeMeteorAction_onDestroy(thisv: number): void
-	function rf__s__MakeMeteorAction_cancel(thisv: number): void
 	function s__MakeMeteorAction_cancel(thisv: number): boolean
-	function rf__s__MakeMeteorAction_redo(thisv: number): void
 	function s__MakeMeteorAction_redo(thisv: number): boolean
 	function s__MakeMonsterAction_getLevel(thisv: number): number
-	function rf__s__MakeMonsterAction_create(level: number, monster: number): void
 	function s__MakeMonsterAction_create(level: number, monster: number): number
 	function s__MakeMonsterAction_onDestroy(thisv: number): void
-	function rf__s__MakeMonsterAction_cancel(thisv: number): void
 	function s__MakeMonsterAction_cancel(thisv: number): boolean
-	function rf__s__MakeMonsterAction_redo(thisv: number): void
 	function s__MakeMonsterAction_redo(thisv: number): boolean
 	function s__MakeTerrainHeightAction_create(radius: number, height: number, x: number, l__y: number): number
 	function s__MakeTerrainHeightAction_apply(thisv: number): void
-	function rf__s__MakeTerrainHeightAction_cancel(thisv: number): void
 	function s__MakeTerrainHeightAction_cancel(thisv: number): boolean
-	function rf__s__MakeTerrainHeightAction_redo(thisv: number): void
 	function s__MakeTerrainHeightAction_redo(thisv: number): boolean
 	function s__MakeVisibilityModifierAction_getLevel(thisv: number): number
-	function rf__s__MakeVisibilityModifierAction_create(level: number, visibilityModifier: number): void
 	function s__MakeVisibilityModifierAction_create(level: number, visibilityModifier: number): number
 	function s__MakeVisibilityModifierAction_onDestroy(thisv: number): void
-	function rf__s__MakeVisibilityModifierAction_cancel(thisv: number): void
 	function s__MakeVisibilityModifierAction_cancel(thisv: number): boolean
-	function rf__s__MakeVisibilityModifierAction_redo(thisv: number): void
 	function s__MakeVisibilityModifierAction_redo(thisv: number): boolean
-	function rf__MessageHeroDies___GetRandomSoundHeroDies(): void
 	function MessageHeroDies___GetRandomSoundHeroDies(): sound
-	function rf__MessageHeroDies___GetRandomSoundAllyHeroDies(): void
 	function MessageHeroDies___GetRandomSoundAllyHeroDies(): sound
 	function MessageHeroDies___SoundEnd(): void
 	function MessageHeroDies___PlaySoundHeroDies(fallenPlayer: player): void
@@ -7132,19 +6766,15 @@ declare global {
 	function DisplayDeathMessagePlayer(p: player): void
 	function s__MeteorArray_create(): number
 	function s__MeteorArray_getFirstEmpty(thisv: number): number
-	function rf__s__MeteorArray_get(thisv: number, arrayId: number): void
 	function s__MeteorArray_get(thisv: number, arrayId: number): number
-	function rf__s__MeteorArray_new(thisv: number, x: number, l__y: number, createMeteor: boolean): void
 	function s__MeteorArray_new(thisv: number, x: number, l__y: number, createMeteor: boolean): number
 	function s__MeteorArray_setMeteorNull(thisv: number, arrayId: number): void
 	function s__MeteorArray_count(thisv: number): number
 	function s__MeteorArray_onDestroy(thisv: number): void
 	function s__MeteorArray_deallocate(thisv: number): void
-	function rf__s__MeteorArray_clearMeteor(thisv: number, meteorId: number): void
 	function s__MeteorArray_clearMeteor(thisv: number, meteorId: number): boolean
 	function s__MeteorArray_createMeteors(thisv: number): void
 	function s__MeteorArray_removeMeteors(thisv: number): void
-	function rf__s__MeteorArray_getMeteorNear(thisv: number, x: number, l__y: number): void
 	function s__MeteorArray_getMeteorNear(thisv: number, x: number, l__y: number): number
 	function s__MeteorArray_getLastInstanceId(thisv: number): number
 	function HeroAddCheatMeteor(hero: unit): item
@@ -7153,33 +6783,25 @@ declare global {
 	function ExecuteRightClicOnUnit(hero: unit, u: unit): void
 	function s__MonsterType_setLabel(thisv: number, label: string): void
 	function s__MonsterType_setAlias(thisv: number, theAlias: string): number
-	function rf__s__MonsterType_create(label: string, unitTypeId: number, scale: number, immolationRadius: number, speed: number, isClickable: boolean): void
 	function s__MonsterType_create(label: string, unitTypeId: number, scale: number, immolationRadius: number, speed: number, isClickable: boolean): number
 	function s__MonsterType_refresh(thisv: number): void
 	function s__MonsterType_onDestroy(thisv: number): void
 	function s__MonsterType_deallocate(thisv: number): void
 	function s__MonsterType_getUnitTypeId(thisv: number): number
-	function rf__s__MonsterType_setUnitTypeId(thisv: number, unitTypeId: number): void
 	function s__MonsterType_setUnitTypeId(thisv: number, unitTypeId: number): boolean
 	function s__MonsterType_getScale(thisv: number): number
-	function rf__s__MonsterType_setScale(thisv: number, scale: number): void
 	function s__MonsterType_setScale(thisv: number, scale: number): boolean
 	function s__MonsterType_getImmolationSkill(thisv: number): number
-	function rf__s__MonsterType_setImmolation(thisv: number, immolationRadius: number): void
 	function s__MonsterType_setImmolation(thisv: number, immolationRadius: number): boolean
 	function s__MonsterType_getUnitMoveSpeed(thisv: number): number
-	function rf__s__MonsterType_setUnitMoveSpeed(thisv: number, speed: number): void
 	function s__MonsterType_setUnitMoveSpeed(thisv: number, speed: number): boolean
 	function s__MonsterType_isClickable(thisv: number): boolean
-	function rf__s__MonsterType_setIsClickable(thisv: number, isClickable: boolean): void
 	function s__MonsterType_setIsClickable(thisv: number, isClickable: boolean): boolean
 	function s__MonsterType_getKillingEffectStr(thisv: number): string
 	function s__MonsterType_setKillingEffectStr(thisv: number, effectStr: string): number
-	function rf__s__MonsterType_setNbMeteorsToKill(thisv: number, nbMeteorsToKill: number): void
 	function s__MonsterType_setNbMeteorsToKill(thisv: number, nbMeteorsToKill: number): number
 	function s__MonsterType_getMaxLife(thisv: number): number
 	function s__MonsterType_getHeight(thisv: number): number
-	function rf__s__MonsterType_setHeight(thisv: number, height: number): void
 	function s__MonsterType_setHeight(thisv: number, height: number): boolean
 	function s__MonsterType_getImmolationRadiusStr(thisv: number): string
 	function s__MonsterType_displayForPlayer(thisv: number, p: player): void
@@ -7208,19 +6830,17 @@ declare global {
 	function StartSaveNextLevel_Actions(): void
 	function InitStartSaveNextLevel(): void
 	function SaveTerrainConfig(): void
-	function s__SoundUtils__soundhelper_create(fileName: string, duration: number, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: number, fadeOutRate: number, eaxSetting: string): number
-	function s__SoundUtils__soundrecycler_create(whichSound: sound, soundRef: number): number
-	function s__SoundUtils__soundrecycler_onDestroy(thisv: number): void
-	function s__SoundUtils__soundrecycler_deallocate(thisv: number): void
-	function SoundUtils__HookStopSound(soundHandle: sound, killWhenDone: boolean, fadeOut: boolean): void
-	function SoundUtils__HookKillSoundWhenDone(soundHandle: sound): void
+	function s__SoundUtils___soundhelper_create(fileName: string, duration: number, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: number, fadeOutRate: number, eaxSetting: string): number
+	function s__SoundUtils___soundrecycler_create(whichSound: sound, soundRef: number): number
+	function s__SoundUtils___soundrecycler_onDestroy(thisv: number): void
+	function s__SoundUtils___soundrecycler_deallocate(thisv: number): void
+	function SoundUtils___HookStopSound(soundHandle: sound, killWhenDone: boolean, fadeOut: boolean): void
+	function SoundUtils___HookKillSoundWhenDone(soundHandle: sound): void
 	function DefineSoundEx(fileName: string, duration: number, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: number, fadeOutRate: number, eaxSetting: string): number
 	function DefineSound(fileName: string, duration: number, looping: boolean, is3D: boolean): number
-	function rf__ReleaseSound(s: sound): void
 	function ReleaseSound(s: sound): boolean
-	function SoundUtils__Recycle(): void
-	function SoundUtils__Run(): void
-	function rf__RunSound(soundRef: number): void
+	function SoundUtils___Recycle(): void
+	function SoundUtils___Run(): void
 	function RunSound(soundRef: number): sound
 	function RunSoundOnUnit(soundRef: number, whichUnit: unit): sound
 	function RunSoundAtPoint(soundRef: number, x: number, l__y: number, z: number): sound
@@ -7229,20 +6849,15 @@ declare global {
 	function s__StringArrayForCache_nextString(thisv: number): void
 	function s__StringArrayForCache_push(thisv: number, str: string): void
 	function s__StringArrayForCache_writeInCache(thisv: number): void
-	function rf__TerrainTypeGrassId2MaxId(grassId: number): void
 	function TerrainTypeGrassId2MaxId(grassId: number): number
-	function rf__TerrainTypeMaxId2GrassId(maxId: number): void
 	function TerrainTypeMaxId2GrassId(maxId: number): number
 	function TerrainTypeGrassId2TerrainTypeId(grassId: number): number
 	function s__VisibilityModifierArray_create(): number
 	function s__VisibilityModifierArray_onDestroy(thisv: number): void
 	function s__VisibilityModifierArray_deallocate(thisv: number): void
-	function rf__s__VisibilityModifierArray_new(thisv: number, x1: number, y1: number, x2: number, y2: number): void
 	function s__VisibilityModifierArray_new(thisv: number, x1: number, y1: number, x2: number, y2: number): number
-	function rf__s__VisibilityModifierArray_newFromExisting(thisv: number, vm: number): void
 	function s__VisibilityModifierArray_newFromExisting(thisv: number, vm: number): number
 	function s__VisibilityModifierArray_count(thisv: number): number
-	function rf__s__VisibilityModifierArray_get(thisv: number, visibilityId: number): void
 	function s__VisibilityModifierArray_get(thisv: number, visibilityId: number): number
 	function s__VisibilityModifierArray_getLastInstanceId(thisv: number): number
 	function s__VisibilityModifierArray_setNull(thisv: number, arrayId: number): void
@@ -7252,17 +6867,14 @@ declare global {
 	function Init_Apm(): void
 	function DisplayApm(playerId: number): void
 	function DisplayApmAll(playerId: number): void
-	function CasterFunctions___CalculerPointsIntersections(): void
-	function CasterFunctions___TrouverTempsIdeal(tempsMax: number): number
-	function CasterFunctions___CasterTryToShoot(): void
+	function CasterFunctions__CalculerPointsIntersections(): void
+	function CasterFunctions__TrouverTempsIdeal(tempsMax: number): number
+	function CasterFunctions__CasterTryToShoot(): void
 	function CasterUnitWithinRange_Actions(): void
 	function s__CasterTypeArray_create(): number
-	function rf__s__CasterTypeArray_get(thisv: number, label: string): void
 	function s__CasterTypeArray_get(thisv: number, label: string): number
 	function s__CasterTypeArray_isLabelAlreadyUsed(thisv: number, label: string): boolean
-	function rf__s__CasterTypeArray_new(thisv: number, label: string, casterMonsterType: number, projectileMonsterType: number, range: number, projectileSpeed: number, loadTime: number, animation: string): void
 	function s__CasterTypeArray_new(thisv: number, label: string, casterMonsterType: number, projectileMonsterType: number, range: number, projectileSpeed: number, loadTime: number, animation: string): number
-	function rf__s__CasterTypeArray_remove(thisv: number, label: string): void
 	function s__CasterTypeArray_remove(thisv: number, label: string): boolean
 	function s__CasterTypeArray_displayForPlayer(thisv: number, p: player): void
 	function s__CasterTypeArray_saveInCache(thisv: number): void
@@ -7278,15 +6890,12 @@ declare global {
 	function CheckTerrain_9_Actions(): void
 	function CheckTerrain_10_Actions(): void
 	function CheckTerrain_11_Actions(): void
-	function rf__GetCheckTerrainActions(n: number): void
 	function GetCheckTerrainActions(n: number): Function
 	function CreateCheckTerrainTrigger(playerId: number): trigger
 	function InitShortcutSkills(playerId: number): void
 	function AssignShortcut(playerId: number, shortcut: string, command: string): void
 	function UnassignShortcut(playerId: number, shortcut: string): void
-	function rf__IsShortcut(S: string): void
 	function IsShortcut(S: string): boolean
-	function rf__GetStringAssignedFromCommand(command: string): void
 	function GetStringAssignedFromCommand(command: string): string
 	function DisplayShortcuts(playerId: number): void
 	function s__Lives_display(thisv: number, show: boolean): void
@@ -7296,55 +6905,41 @@ declare global {
 	function s__Lives_onDestroy(thisv: number): void
 	function s__Lives_deallocate(thisv: number): void
 	function s__Lives_get(thisv: number): number
-	function rf__s__Lives_setNb(thisv: number, nbLives: number): void
 	function s__Lives_setNb(thisv: number, nbLives: number): boolean
 	function s__Lives_add(thisv: number, n: number): void
 	function s__Lives_loseALife(thisv: number): void
 	function s__MonsterTypeArray_create(): number
-	function rf__s__MonsterTypeArray_get(thisv: number, label: string): void
 	function s__MonsterTypeArray_get(thisv: number, label: string): number
 	function s__MonsterTypeArray_isLabelAlreadyUsed(thisv: number, label: string): boolean
-	function rf__s__MonsterTypeArray_new(thisv: number, label: string, unitTypeId: number, scale: number, immolationRadius: number, speed: number, isClickable: boolean): void
 	function s__MonsterTypeArray_new(thisv: number, label: string, unitTypeId: number, scale: number, immolationRadius: number, speed: number, isClickable: boolean): number
-	function rf__s__MonsterTypeArray_remove(thisv: number, label: string): void
 	function s__MonsterTypeArray_remove(thisv: number, label: string): boolean
 	function s__MonsterTypeArray_displayForPlayer(thisv: number, p: player): void
 	function s__MonsterTypeArray_monsterUnit2KillEffectStr(thisv: number, monsterUnit: unit): string
-	function rf__s__MonsterTypeArray_monsterUnit2MonsterType(thisv: number, monsterUnit: unit): void
 	function s__MonsterTypeArray_monsterUnit2MonsterType(thisv: number, monsterUnit: unit): number
 	function s__MonsterTypeArray_saveInCache(thisv: number): void
 	function StartSaveCasterTypes(): void
 	function TeleportOnceOnly_Actions(): void
 	function ActivateTeleportOnceOnly(hero: unit): void
-	function rf__IsTerrainAlreadyUsed(terrainType: number): void
 	function IsTerrainAlreadyUsed(terrainType: number): boolean
 	function IsTerrainsLimitNumberReached(): boolean
-	function rf__AddNewTerrain(newTerrain: number): void
 	function AddNewTerrain(newTerrain: number): boolean
-	function rf__CanUseTerrain(terrainType: number): void
 	function CanUseTerrain(terrainType: number): boolean
 	function GetRandomTerrain(): number
 	function GetRandomUsedTerrain(): number
 	function GetRandomNotUsedTerrain(): number
-	function rf__GetTerrainName(terrain: number): void
 	function GetTerrainName(terrain: number): string
-	function rf__GetTerrainData(terrain: number): void
 	function GetTerrainData(terrain: number): string
 	function DisplayTerrainDataToPlayer(p: player, terrain: number): void
 	function Init_TerrainTypeNamesAndData(): void
-	function rf__String2BodyPartStr(S: string): void
 	function String2BodyPartStr(S: string): string
 	function IsBodyPartStr(s: string): boolean
-	function rf__String2EffectStr(str: string): void
 	function String2EffectStr(str: string): string
 	function IsEffectStr(str: string): boolean
 	function GetNbCaseBetween(minX: number, minY: number, maxX: number, maxY: number): number
 	function ChangeTerrainType(x: number, l__y: number, terrainTypeId: number): void
-	function rf__ChangeTerrainBetween(terrainType: number, x1: number, y1: number, x2: number, y2: number): void
 	function ChangeTerrainBetween(terrainType: number, x1: number, y1: number, x2: number, y2: number): boolean
 	function MonsterCreationFunctions__UnitAddRemoveLifeAbility(u: unit, lifeAbility: number): void
 	function UnitAddMaxLife(u: unit, lifeToAdd: number): void
-	function rf__SetUnitMaxLife(u: unit, newMaxLife: number): void
 	function SetUnitMaxLife(u: unit, newMaxLife: number): boolean
 	function NewImmobileMonsterForPlayer(mt: number, p: player, x: number, l__y: number, angle: number): unit
 	function NewImmobileMonster(mt: number, x: number, l__y: number, angle: number): unit
@@ -7358,15 +6953,13 @@ declare global {
 	function s__TerrainType_setLabel(thisv: number, label: string): void
 	function s__TerrainType_setAlias(thisv: number, theAlias: string): number
 	function s__TerrainType_getTerrainTypeId(thisv: number): number
-	function rf__s__TerrainType_setTerrainTypeId(thisv: number, terrainTypeId: number): void
 	function s__TerrainType_setTerrainTypeId(thisv: number, terrainTypeId: number): boolean
 	function s__TerrainType_getKind(thisv: number): string
 	function s__TerrainType_onDestroy(thisv: number): void
 	function s__TerrainType_displayForPlayer(thisv: number, p: player): void
 	function s__TerrainType_toString(thisv: number): string
-	function rf__TerrainTypeString2TerrainTypeId(str: string): void
 	function TerrainTypeString2TerrainTypeId(str: string): number
-	function CasterShot___CasterShot_Actions(): void
+	function CasterShot__CasterShot_Actions(): void
 	function s__CasterShot_create(monsterType: number, Xdep: number, Ydep: number, angle: number, speed: number, portee: number): number
 	function s__CasterShot_onDestroy(thisv: number): void
 	function s__CasterShot_deallocate(thisv: number): void
@@ -7379,45 +6972,33 @@ declare global {
 	function s__MakeTerrainCopyPasteAction_onInit(): void
 	function s__MakeTerrainCopyPasteAction_newTerrainSaveId(): number
 	function s__MakeTerrainCopyPasteAction_removeTerrainSave(terrainSaveId: number): void
-	function rf__s__MakeTerrainCopyPasteAction_create(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, x4: number, y4: number): void
 	function s__MakeTerrainCopyPasteAction_create(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, x4: number, y4: number): number
 	function s__MakeTerrainCopyPasteAction_onDestroy(thisv: number): void
 	function s__MakeTerrainCopyPasteAction_terrainModificationCancel(thisv: number): void
 	function s__MakeTerrainCopyPasteAction_terrainModificationRedo(thisv: number): void
-	function rf__s__MakeTerrainCopyPasteAction_cancel(thisv: number): void
 	function s__MakeTerrainCopyPasteAction_cancel(thisv: number): boolean
-	function rf__s__MakeTerrainCopyPasteAction_redo(thisv: number): void
 	function s__MakeTerrainCopyPasteAction_redo(thisv: number): boolean
 	function s__MakeTerrainCreateAction_onInit(): void
 	function s__MakeTerrainCreateAction_newTerrainSaveId(): number
 	function s__MakeTerrainCreateAction_removeTerrainSave(terrainSaveId: number): void
-	function rf__s__MakeTerrainCreateAction_create(terrainTypeNew: number, x1: number, y1: number, x2: number, y2: number): void
 	function s__MakeTerrainCreateAction_create(terrainTypeNew: number, x1: number, y1: number, x2: number, y2: number): number
 	function s__MakeTerrainCreateAction_onDestroy(thisv: number): void
 	function s__MakeTerrainCreateAction_terrainModificationCancel(thisv: number): void
 	function s__MakeTerrainCreateAction_terrainModificationRedo(thisv: number): void
-	function rf__s__MakeTerrainCreateAction_cancel(thisv: number): void
 	function s__MakeTerrainCreateAction_cancel(thisv: number): boolean
-	function rf__s__MakeTerrainCreateAction_redo(thisv: number): void
 	function s__MakeTerrainCreateAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetryAction_create(x1: number, y1: number, x2: number, y2: number): void
 	function s__MakeTerrainHorizontalSymmetryAction_create(x1: number, y1: number, x2: number, y2: number): number
 	function s__MakeTerrainHorizontalSymmetryAction_applySymmetry(thisv: number): void
-	function rf__s__MakeTerrainHorizontalSymmetryAction_cancel(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetryAction_cancel(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetryAction_redo(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetryAction_redo(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetryAction_create(x1: number, y1: number, x2: number, y2: number): void
 	function s__MakeTerrainVerticalSymmetryAction_create(x1: number, y1: number, x2: number, y2: number): number
 	function s__MakeTerrainVerticalSymmetryAction_applySymmetry(thisv: number): void
-	function rf__s__MakeTerrainVerticalSymmetryAction_cancel(thisv: number): void
 	function s__MakeTerrainVerticalSymmetryAction_cancel(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetryAction_redo(thisv: number): void
 	function s__MakeTerrainVerticalSymmetryAction_redo(thisv: number): boolean
-	function MonsterSpawn___RemoveEnumMonster(): void
-	function MonsterSpawn___MonsterStartMovement(): void
-	function MonsterSpawn___MonsterSpawn_Actions(): void
-	function MonsterSpawn___UnspawMonster_Actions(): void
+	function MonsterSpawn__RemoveEnumMonster(): void
+	function MonsterSpawn__MonsterStartMovement(): void
+	function MonsterSpawn__MonsterSpawn_Actions(): void
+	function MonsterSpawn__UnspawMonster_Actions(): void
 	function s__MonsterSpawn_onInit(): void
 	function s__MonsterSpawn_getLabel(thisv: number): string
 	function s__MonsterSpawn_desactivate(thisv: number): void
@@ -7437,17 +7018,13 @@ declare global {
 	function SaveWater___SaveWaterHeights_Actions(): void
 	function StartSaveWaterHeights(): void
 	function StartSaveWater(): void
-	function rf__TerrainKillTimer2Escaper(theTimer: timer): void
 	function TerrainKillTimer2Escaper(theTimer: timer): number
 	function DeathTerrainKillEscaper_Actions(): void
-	function rf__s__TerrainTypeSlide_create(label: string, terrainTypeId: number, slideSpeed: number, canTurn: boolean): void
 	function s__TerrainTypeSlide_create(label: string, terrainTypeId: number, slideSpeed: number, canTurn: boolean): number
 	function s__TerrainTypeSlide_getSlideSpeed(thisv: number): number
 	function s__TerrainTypeSlide_setSlideSpeed(thisv: number, slideSpeed: number): void
 	function s__TerrainTypeSlide_getCanTurn(thisv: number): boolean
-	function rf__s__TerrainTypeSlide_setCanTurn(thisv: number, canTurn: boolean): void
 	function s__TerrainTypeSlide_setCanTurn(thisv: number, canTurn: boolean): boolean
-	function rf__s__TerrainTypeWalk_create(label: string, terrainTypeId: number, walkSpeed: number): void
 	function s__TerrainTypeWalk_create(label: string, terrainTypeId: number, walkSpeed: number): number
 	function s__TerrainTypeWalk_getWalkSpeed(thisv: number): number
 	function s__TerrainTypeWalk_setWalkSpeed(thisv: number, walkSpeed: number): void
@@ -7456,11 +7033,9 @@ declare global {
 	function ChangeAllTerrains___GetRandomTerrain_checked(): number
 	function ChangeAllTerrains___GetRandomKnownTerrain_checked(): number
 	function ChangeAllTerrains___GetRandomNotKnownTerrain_checked(): number
-	function rf__ChangeAllTerrains(mode: string): void
 	function ChangeAllTerrains(mode: string): boolean
 	function ChangeAppearanceOfOneTerrain_Actions(): void
 	function ChangeOneTerrain___StartTerrainModifying(): void
-	function rf__ChangeOneTerrain(terrainTypeLabel: string, newTerrainType: string): void
 	function ChangeOneTerrain(terrainTypeLabel: string, newTerrainType: string): string
 	function s__EscaperEffectArray_create(): number
 	function s__EscaperEffectArray_new(thisv: number, efStr: string, u: unit, bodyPart: string): void
@@ -7472,33 +7047,24 @@ declare global {
 	function s__EscaperEffectArray_showEffects(thisv: number, u: unit): void
 	function ExchangeTerrains_Actions(): void
 	function ExchangeTerrains___StartTerrainModifying(): void
-	function rf__ExchangeTerrains(terrainTypeLabelA: string, terrainTypeLabelB: string): void
 	function ExchangeTerrains(terrainTypeLabelA: string, terrainTypeLabelB: string): boolean
 	function s__MonsterSpawnArray_create(): number
 	function s__MonsterSpawnArray_getFirstEmpty(thisv: number): number
-	function rf__s__MonsterSpawnArray_get(thisv: number, arrayId: number): void
 	function s__MonsterSpawnArray_get(thisv: number, arrayId: number): number
-	function rf__s__MonsterSpawnArray_getFromLabel(thisv: number, label: string): void
 	function s__MonsterSpawnArray_getFromLabel(thisv: number, label: string): number
 	function s__MonsterSpawnArray_getLastInstanceId(thisv: number): number
-	function rf__s__MonsterSpawnArray_new(thisv: number, label: string, mt: number, sens: string, frequence: number, x1: number, y1: number, x2: number, y2: number, activate: boolean): void
 	function s__MonsterSpawnArray_new(thisv: number, label: string, mt: number, sens: string, frequence: number, x1: number, y1: number, x2: number, y2: number, activate: boolean): number
 	function s__MonsterSpawnArray_count(thisv: number): number
 	function s__MonsterSpawnArray_onDestroy(thisv: number): void
 	function s__MonsterSpawnArray_deallocate(thisv: number): void
 	function s__MonsterSpawnArray_setMonsterSpawnNull(thisv: number, monsterSpawnArrayId: number): void
-	function rf__s__MonsterSpawnArray_clearMonsterSpawn(thisv: number, label: string): void
 	function s__MonsterSpawnArray_clearMonsterSpawn(thisv: number, label: string): boolean
-	function rf__s__MonsterSpawnArray_setMonsterType(thisv: number, label: string, mt: number): void
 	function s__MonsterSpawnArray_setMonsterType(thisv: number, label: string, mt: number): boolean
-	function rf__s__MonsterSpawnArray_setSens(thisv: number, label: string, sens: string): void
 	function s__MonsterSpawnArray_setSens(thisv: number, label: string, sens: string): boolean
-	function rf__s__MonsterSpawnArray_setFrequence(thisv: number, label: string, frequence: number): void
 	function s__MonsterSpawnArray_setFrequence(thisv: number, label: string, frequence: number): boolean
 	function s__MonsterSpawnArray_activate(thisv: number): void
 	function s__MonsterSpawnArray_desactivate(thisv: number): void
 	function s__MonsterSpawnArray_displayForPlayer(thisv: number, p: player): void
-	function rf__s__MonsterSpawnArray_changeLabel(thisv: number, oldLabel: string, newLabel: string): void
 	function s__MonsterSpawnArray_changeLabel(thisv: number, oldLabel: string, newLabel: string): boolean
 	function RandomizeTerrains_Actions(): void
 	function RandomizeTerrains___StartTerrainModifying(): void
@@ -7516,10 +7082,8 @@ declare global {
 	function ReinitTerrainsPosition(): void
 	function SaveLoadTerrainWithName___SaveTerrain_Actions(): void
 	function SaveTerrainWithName(saveName: string): void
-	function rf__DeleteTerrainSaveWithName(saveName: string): void
 	function DeleteTerrainSaveWithName(saveName: string): boolean
 	function SaveLoadTerrainWithName___LoadTerrain_Actions(): void
-	function rf__LoadTerrainWithName(saveName: string): void
 	function LoadTerrainWithName(saveName: string): boolean
 	function SaveLoadTerrainWithoutName___SaveTerrain_Actions(): void
 	function SaveTerrainWithoutName(): void
@@ -7532,25 +7096,20 @@ declare global {
 	function s__KillingTimers_create(): number
 	function s__KillingTimers_start(thisv: number, timerId: number, time: number): void
 	function s__KillingTimers_get(thisv: number, id: number): timer
-	function rf__s__Escaper_resetItem(thisv: number): void
 	function s__Escaper_resetItem(thisv: number): boolean
 	function s__Escaper_addEffectMeteor(thisv: number): void
 	function s__Escaper_removeEffectMeteor(thisv: number): void
 	function s__Escaper_selectHero(thisv: number): void
-	function rf__s__Escaper_createHero(thisv: number, x: number, l__y: number, angle: number): void
 	function s__Escaper_createHero(thisv: number, x: number, l__y: number, angle: number): boolean
 	function s__Escaper_createHeroAtStart(thisv: number): boolean
 	function s__Escaper_create(playerId: number): number
 	function s__Escaper_removeHero(thisv: number): void
 	function s__Escaper_onDestroy(thisv: number): void
 	function s__Escaper_deallocate(thisv: number): void
-	function rf__s__Escaper_getId(thisv: number): void
 	function s__Escaper_getId(thisv: number): number
-	function rf__s__Escaper_enableSlide(thisv: number, doEnable: boolean): void
 	function s__Escaper_enableSlide(thisv: number, doEnable: boolean): boolean
 	function s__Escaper_setSlideLastAngleOrder(thisv: number, angle: number): void
 	function s__Escaper_getSlideLastAngleOrder(thisv: number): number
-	function rf__s__Escaper_enableCheckTerrain(thisv: number, doEnable: boolean): void
 	function s__Escaper_enableCheckTerrain(thisv: number, doEnable: boolean): boolean
 	function s__Escaper_isSliding(thisv: number): boolean
 	function s__Escaper_doesCheckTerrain(thisv: number): boolean
@@ -7559,12 +7118,9 @@ declare global {
 	function s__Escaper_getHero(thisv: number): unit
 	function s__Escaper_isAlive(thisv: number): boolean
 	function s__Escaper_isPaused(thisv: number): boolean
-	function rf__s__Escaper_kill(thisv: number): void
 	function s__Escaper_kill(thisv: number): boolean
-	function rf__s__Escaper_pause(thisv: number, doPause: boolean): void
 	function s__Escaper_pause(thisv: number, doPause: boolean): boolean
 	function s__Escaper_specialIllidan(thisv: number): void
-	function rf__s__Escaper_revive(thisv: number, x: number, l__y: number): void
 	function s__Escaper_revive(thisv: number, x: number, l__y: number): boolean
 	function s__Escaper_reviveAtStart(thisv: number): boolean
 	function s__Escaper_turnInstantly(thisv: number, angle: number): void
@@ -7595,18 +7151,12 @@ declare global {
 	function s__Escaper_setGodModeKills(thisv: number, godModeKills: boolean): void
 	function s__Escaper_isGodModeOn(thisv: number): boolean
 	function s__Escaper_doesGodModeKills(thisv: number): boolean
-	function rf__s__Escaper_setBaseColor(thisv: number, baseColorId: number): void
 	function s__Escaper_setBaseColor(thisv: number, baseColorId: number): boolean
-	function rf__s__Escaper_setBaseColorDisco(thisv: number, baseColorId: number): void
 	function s__Escaper_setBaseColorDisco(thisv: number, baseColorId: number): boolean
 	function s__Escaper_getBaseColor(thisv: number): number
-	function rf__s__Escaper_setVcRed(thisv: number, vcRed: number): void
 	function s__Escaper_setVcRed(thisv: number, vcRed: number): boolean
-	function rf__s__Escaper_setVcGreen(thisv: number, vcGreen: number): void
 	function s__Escaper_setVcGreen(thisv: number, vcGreen: number): boolean
-	function rf__s__Escaper_setVcBlue(thisv: number, vcBlue: number): void
 	function s__Escaper_setVcBlue(thisv: number, vcBlue: number): boolean
-	function rf__s__Escaper_setVcTransparency(thisv: number, vcTransparency: number): void
 	function s__Escaper_setVcTransparency(thisv: number, vcTransparency: number): boolean
 	function s__Escaper_getVcRed(thisv: number): number
 	function s__Escaper_getVcGreen(thisv: number): number
@@ -7630,22 +7180,16 @@ declare global {
 	function s__Escaper_setHasAutorevive(thisv: number, hasAutorevive: boolean): void
 	function s__Escaper_getMake(thisv: number): number
 	function s__Escaper_destroyMakeIfForSpecificLevel(thisv: number): void
-	function rf__s__Escaper_setMakingLevel(thisv: number, level: number): void
 	function s__Escaper_setMakingLevel(thisv: number, level: number): boolean
-	function rf__s__Escaper_getMakingLevel(thisv: number): void
 	function s__Escaper_getMakingLevel(thisv: number): number
 	function s__Escaper_isMakingCurrentLevel(thisv: number): boolean
-	function rf__s__Escaper_destroyMake(thisv: number): void
 	function s__Escaper_destroyMake(thisv: number): boolean
 	function s__Escaper_makeCreateNoMoveMonsters(thisv: number, mt: number, facingAngle: number): void
 	function s__Escaper_makeCreateSimplePatrolMonsters(thisv: number, mode: string, mt: number): void
 	function s__Escaper_makeCreateMultiplePatrolsMonsters(thisv: number, mode: string, mt: number): void
 	function s__Escaper_makeCreateTeleportMonsters(thisv: number, mode: string, mt: number, period: number, angle: number): void
-	function rf__s__Escaper_makeMmpOrMtNext(thisv: number): void
 	function s__Escaper_makeMmpOrMtNext(thisv: number): boolean
-	function rf__s__Escaper_makeMonsterTeleportWait(thisv: number): void
 	function s__Escaper_makeMonsterTeleportWait(thisv: number): boolean
-	function rf__s__Escaper_makeMonsterTeleportHide(thisv: number): void
 	function s__Escaper_makeMonsterTeleportHide(thisv: number): boolean
 	function s__Escaper_makeCreateMonsterSpawn(thisv: number, label: string, mt: number, sens: string, frequence: number): void
 	function s__Escaper_makeDeleteMonsters(thisv: number, mode: string): void
@@ -7668,9 +7212,7 @@ declare global {
 	function s__Escaper_makeCreateStart(thisv: number, forNext: boolean): void
 	function s__Escaper_makeCreateEnd(thisv: number): void
 	function s__Escaper_makeCreateVisibilityModifier(thisv: number): void
-	function rf__s__Escaper_cancelLastAction(thisv: number): void
 	function s__Escaper_cancelLastAction(thisv: number): boolean
-	function rf__s__Escaper_redoLastAction(thisv: number): void
 	function s__Escaper_redoLastAction(thisv: number): boolean
 	function s__Escaper_deleteSpecificActionsForLevel(thisv: number, level: number): void
 	function s__Escaper_newAction(thisv: number, action: number): number
@@ -7691,31 +7233,25 @@ declare global {
 	function StartSaveTerrainCliffs(): void
 	function SaveTerrainHeights___SaveTerrainHeights_Actions(): void
 	function StartSaveTerrainHeights(): void
-	function rf__s__TerrainTypeDeath_create(label: string, terrainTypeId: number, killingEffectStr: string, timeToKill: number, toleranceDist: number): void
 	function s__TerrainTypeDeath_create(label: string, terrainTypeId: number, killingEffectStr: string, timeToKill: number, toleranceDist: number): number
 	function s__TerrainTypeDeath_onDestroy(thisv: number): void
 	function s__TerrainTypeDeath_setKillingEffectStr(thisv: number, killingEffectStr: string): void
 	function s__TerrainTypeDeath_getKillingEffectStr(thisv: number): string
-	function rf__s__TerrainTypeDeath_setTimeToKill(thisv: number, newTimeToKill: number): void
 	function s__TerrainTypeDeath_setTimeToKill(thisv: number, newTimeToKill: number): boolean
 	function s__TerrainTypeDeath_getTimeToKill(thisv: number): number
 	function s__TerrainTypeDeath_killEscaper(thisv: number, escaper: number): void
 	function s__TerrainTypeDeath_getTimer(thisv: number, escaperId: number): timer
 	function s__TerrainTypeDeath_getToleranceDist(thisv: number): number
-	function rf__s__TerrainTypeDeath_setToleranceDist(thisv: number, toleranceDist: number): void
 	function s__TerrainTypeDeath_setToleranceDist(thisv: number, toleranceDist: number): boolean
 	function Trig_Trig_checkpoint_revive_heroes_Actions(): void
 	function Init_Trig_checkpoint_revive_heroes(): void
 	function CasterDelete_Actions(): void
 	function CasterMaking_Actions(): void
-	function rf__CmdName(str: string): void
 	function CmdName(str: string): string
 	function IsCmd(str: string): boolean
-	function rf__CmdParam(str: string, paramNumber: number): void
 	function CmdParam(str: string, paramNumber: number): string
 	function NbParam(str: string): number
 	function NoParam(str: string): boolean
-	function rf__ColorString2Id(colorString: string): void
 	function ColorString2Id(colorString: string): number
 	function IsColorString(colorString: string): boolean
 	function IsPlayerColorString(colorString: string): boolean
@@ -7736,7 +7272,6 @@ declare global {
 	function ClearMobDelete_Actions(): void
 	function MonsterMakingMultiplePatrols_Actions(): void
 	function MonsterMakingNoMove_Actions(): void
-	function rf__MakeSimplePatrolAuto_ChangeDistOnTerrain(newDist: number): void
 	function MakeSimplePatrolAuto_ChangeDistOnTerrain(newDist: number): boolean
 	function MakeSimplePatrolAuto_ChangeDistOnTerrainDefault(): void
 	function MonsterMakingSimplePatrol_Actions(): void
@@ -7751,7 +7286,6 @@ declare global {
 	function MonsterSpawnMaking_Actions(): void
 	function SaveTerrain___SaveTerrainsUsed(): void
 	function SaveTerrain___SaveMapDimensionsAndCenterOffset(): void
-	function rf__SaveTerrain___GetTerrainId(x: number, l__SaveTerrain___y: number): void
 	function SaveTerrain___GetTerrainId(x: number, l__SaveTerrain___y: number): string
 	function GererOrdreTerrains(): void
 	function SaveTerrain___SaveTerrain_Actions(): void
@@ -7781,15 +7315,10 @@ declare global {
 	function Trig_to_turn_to_widget_Actions(): void
 	function Init_ToTurnOnSlide(): void
 	function VisibilityModifierMaking_Actions(): void
-	function rf__ExecuteCommandAll(escaper: number, cmd: string): void
 	function ExecuteCommandAll(escaper: number, cmd: string): boolean
-	function rf__ExecuteCommandCheat(escaper: number, cmd: string): void
 	function ExecuteCommandCheat(escaper: number, cmd: string): boolean
-	function rf__ExecuteCommandMake(escaper: number, cmd: string): void
 	function ExecuteCommandMake(escaper: number, cmd: string): boolean
-	function rf__ExecuteCommandRed(escaper: number, cmd: string): void
 	function ExecuteCommandRed(escaper: number, cmd: string): boolean
-	function rf__ExecuteCommandTrueMax(escaper: number, cmd: string): void
 	function ExecuteCommandTrueMax(escaper: number, cmd: string): boolean
 	function s__Level_create(): number
 	function s__Level_activate(thisv: number, activ: boolean): void
@@ -7807,11 +7336,9 @@ declare global {
 	function s__Level_removeMonstersOfType(thisv: number, mt: number): void
 	function s__Level_refreshCastersOfType(thisv: number, ct: number): void
 	function s__Level_removeCastersOfType(thisv: number, ct: number): void
-	function rf__s__Level_getId(thisv: number): void
 	function s__Level_getId(thisv: number): number
 	function s__Level_isActivated(thisv: number): boolean
 	function s__Level_setIsActivated(thisv: number, activated: boolean): void
-	function rf__s__Level_setNbLivesEarned(thisv: number, nbLives: number): void
 	function s__Level_setNbLivesEarned(thisv: number, nbLives: number): boolean
 	function s__Level_getNbLives(thisv: number): number
 	function s__Level_newVisibilityModifier(thisv: number, x1: number, y1: number, x2: number, y2: number): number
@@ -7820,7 +7347,6 @@ declare global {
 	function s__Level_activateVisibilities(thisv: number, activate: boolean): void
 	function s__Level_setStartMessage(thisv: number, str: string): void
 	function s__Level_getStartMessage(thisv: number): string
-	function rf__Make_GetActions(kind: string): void
 	function Make_GetActions(kind: string): Function
 	function MonsterInterface__InitHtMonster(): void
 	function GetNextMonsterId(): number
@@ -7834,20 +7360,13 @@ declare global {
 	function StartSaveMapInCache(): void
 	function Init_SaveMapInCache(): void
 	function s__TerrainTypeArray_create(): number
-	function rf__s__TerrainTypeArray_get(thisv: number, label: string): void
 	function s__TerrainTypeArray_get(thisv: number, label: string): number
-	function rf__s__TerrainTypeArray_getTerrainType(thisv: number, x: number, l__y: number): void
 	function s__TerrainTypeArray_getTerrainType(thisv: number, x: number, l__y: number): number
-	function rf__s__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(thisv: number, terrainTypeId: number): void
 	function s__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(thisv: number, terrainTypeId: number): boolean
 	function s__TerrainTypeArray_isLabelAlreadyUsed(thisv: number, label: string): boolean
-	function rf__s__TerrainTypeArray_newWalk(thisv: number, label: string, terrainTypeId: number, walkspeed: number): void
 	function s__TerrainTypeArray_newWalk(thisv: number, label: string, terrainTypeId: number, walkspeed: number): number
-	function rf__s__TerrainTypeArray_newDeath(thisv: number, label: string, terrainTypeId: number, killingEffectStr: string, timeToKill: number, toleranceDist: number): void
 	function s__TerrainTypeArray_newDeath(thisv: number, label: string, terrainTypeId: number, killingEffectStr: string, timeToKill: number, toleranceDist: number): number
-	function rf__s__TerrainTypeArray_newSlide(thisv: number, label: string, terrainTypeId: number, slideSpeed: number, canTurn: boolean): void
 	function s__TerrainTypeArray_newSlide(thisv: number, label: string, terrainTypeId: number, slideSpeed: number, canTurn: boolean): number
-	function rf__s__TerrainTypeArray_remove(thisv: number, label: string): void
 	function s__TerrainTypeArray_remove(thisv: number, label: string): boolean
 	function s__TerrainTypeArray_getWalk(thisv: number, id: number): number
 	function s__TerrainTypeArray_getDeath(thisv: number, id: number): number
@@ -7855,9 +7374,7 @@ declare global {
 	function s__TerrainTypeArray_displayForPlayer(thisv: number, p: player): void
 	function s__TerrainTypeArray_saveInCache(thisv: number): void
 	function s__TerrainTypeArray_count(thisv: number): number
-	function rf__s__TerrainTypeArray_setOrder(thisv: number, cmd: string): void
 	function s__TerrainTypeArray_setOrder(thisv: number, cmd: string): boolean
-	function rf__s__TerrainTypeArray_setMainTileset(thisv: number, tileset: string): void
 	function s__TerrainTypeArray_setMainTileset(thisv: number, tileset: string): boolean
 	function s__TerrainTypeArray_getMainTileset(thisv: number): string
 	function ClearTriggerMobId2ClearMob(triggerMobId: number): number
@@ -7866,20 +7383,16 @@ declare global {
 	function KillMonsterOrCasterEach(): void
 	function TemporarilyDisableMonsterOrCasterEach(): void
 	function TemporarilyEnableMonsterOrCasterEach(): void
-	function ClearMob___InitClearMob(): void
+	function ClearMob__InitClearMob(): void
 	function s__ClearMob_getDisableDuration(thisv: number): number
-	function rf__s__ClearMob_setDisableDuration(thisv: number, disableDuration: number): void
 	function s__ClearMob_setDisableDuration(thisv: number, disableDuration: number): boolean
 	function s__ClearMob_getTriggerMob(thisv: number): number
-	function rf__s__ClearMob_setTriggerMob(thisv: number, newTriggerMob: number): void
 	function s__ClearMob_setTriggerMob(thisv: number, newTriggerMob: number): boolean
 	function s__ClearMob_getBlockMobs(thisv: number): number
-	function rf__s__ClearMob_create(triggerMobId: number, disableDuration: number): void
 	function s__ClearMob_create(triggerMobId: number, disableDuration: number): number
 	function s__ClearMob_initialize(thisv: number): void
 	function s__ClearMob_close(thisv: number): void
 	function s__ClearMob_redoTriggerMobPermanentEffect(thisv: number): void
-	function rf__s__ClearMob_addBlockMob(thisv: number, blockMobId: number): void
 	function s__ClearMob_addBlockMob(thisv: number, blockMobId: number): boolean
 	function s__ClearMob_removeLastBlockMob(thisv: number): boolean
 	function s__ClearMob_removeAllBlockMobs(thisv: number): void
@@ -7887,121 +7400,86 @@ declare global {
 	function s__ClearMob_deallocate(thisv: number): void
 	function s__ClearMob_isBeingActivated(thisv: number): boolean
 	function s__ClearMob_activate(thisv: number): void
-	function rf__ExecuteCommandMax(escaper: number, cmd: string): void
 	function ExecuteCommandMax(escaper: number, cmd: string): boolean
 	function s__LevelArray_create(): number
-	function rf__s__LevelArray_goToLevel(thisv: number, finisher: number, levelId: number): void
 	function s__LevelArray_goToLevel(thisv: number, finisher: number, levelId: number): boolean
-	function rf__s__LevelArray_goToNextLevel(thisv: number, finisher: number): void
 	function s__LevelArray_goToNextLevel(thisv: number, finisher: number): boolean
 	function s__LevelArray_restartTheGame(thisv: number): void
-	function rf__s__LevelArray_new(thisv: number): void
 	function s__LevelArray_new(thisv: number): boolean
-	function rf__s__LevelArray_destroyLastLevel(thisv: number): void
 	function s__LevelArray_destroyLastLevel(thisv: number): boolean
 	function s__LevelArray_count(thisv: number): number
 	function s__LevelArray_getCurrentLevel(thisv: number): number
-	function rf__s__LevelArray_get(thisv: number, levelId: number): void
 	function s__LevelArray_get(thisv: number, levelId: number): number
-	function rf__s__LevelArray_getLevelFromMonsterNoMoveArray(thisv: number, ma: number): void
 	function s__LevelArray_getLevelFromMonsterNoMoveArray(thisv: number, ma: number): number
-	function rf__s__LevelArray_getLevelFromMonsterSimplePatrolArray(thisv: number, ma: number): void
 	function s__LevelArray_getLevelFromMonsterSimplePatrolArray(thisv: number, ma: number): number
-	function rf__s__LevelArray_getLevelFromMonsterMultiplePatrolsArray(thisv: number, ma: number): void
 	function s__LevelArray_getLevelFromMonsterMultiplePatrolsArray(thisv: number, ma: number): number
-	function rf__s__LevelArray_getLevelFromMonsterTeleportArray(thisv: number, ma: number): void
 	function s__LevelArray_getLevelFromMonsterTeleportArray(thisv: number, ma: number): number
-	function rf__s__LevelArray_getLevelFromMonsterSpawnArray(thisv: number, msa: number): void
 	function s__LevelArray_getLevelFromMonsterSpawnArray(thisv: number, msa: number): number
-	function rf__s__LevelArray_getLevelFromMeteorArray(thisv: number, ma: number): void
 	function s__LevelArray_getLevelFromMeteorArray(thisv: number, ma: number): number
-	function rf__s__LevelArray_getLevelFromVisibilityModifierArray(thisv: number, vma: number): void
 	function s__LevelArray_getLevelFromVisibilityModifierArray(thisv: number, vma: number): number
-	function rf__s__LevelArray_getLevelFromCasterArray(thisv: number, casterArray: number): void
 	function s__LevelArray_getLevelFromCasterArray(thisv: number, casterArray: number): number
-	function rf__s__LevelArray_getLevelFromClearMobArray(thisv: number, clearMobArray: number): void
 	function s__LevelArray_getLevelFromClearMobArray(thisv: number, clearMobArray: number): number
 	function s__LevelArray_removeMonstersOfType(thisv: number, mt: number): void
 	function s__LevelArray_removeCastersOfType(thisv: number, ct: number): void
 	function s__LevelArray_getLastLevelId(thisv: number): number
 	function s__LevelArray_getNbMonsters(thisv: number, mode: string): number
-	function rf__ForceGetLevel(levelId: number): void
 	function ForceGetLevel(levelId: number): number
 	function s__MakeCaster_getCasterType(thisv: number): number
 	function s__MakeCaster_getAngle(thisv: number): number
-	function rf__s__MakeCaster_create(maker: unit, casterType: number, angle: number): void
 	function s__MakeCaster_create(maker: unit, casterType: number, angle: number): number
 	function s__MakeCaster_onDestroy(thisv: number): void
 	function s__MakeCaster_cancelLastAction(thisv: number): boolean
 	function s__MakeCaster_redoLastAction(thisv: number): boolean
 	function s__MakeDeleteCasters_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeDeleteCasters_create(maker: unit, mode: string): void
 	function s__MakeDeleteCasters_create(maker: unit, mode: string): number
 	function s__MakeDeleteCasters_onDestroy(thisv: number): void
 	function s__MakeDeleteCasters_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeDeleteCasters_unsaveLoc(thisv: number): void
 	function s__MakeDeleteCasters_unsaveLoc(thisv: number): boolean
 	function s__MakeDeleteCasters_unsaveLocDefinitely(thisv: number): void
 	function s__MakeDeleteCasters_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeDeleteCasters_redoLastAction(thisv: number): void
 	function s__MakeDeleteCasters_redoLastAction(thisv: number): boolean
 	function s__MakeDeleteCasters_getMode(thisv: number): string
 	function s__MakeDeleteMeteors_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeDeleteMeteors_create(maker: unit, mode: string): void
 	function s__MakeDeleteMeteors_create(maker: unit, mode: string): number
 	function s__MakeDeleteMeteors_onDestroy(thisv: number): void
 	function s__MakeDeleteMeteors_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeDeleteMeteors_unsaveLoc(thisv: number): void
 	function s__MakeDeleteMeteors_unsaveLoc(thisv: number): boolean
 	function s__MakeDeleteMeteors_unsaveLocDefinitely(thisv: number): void
 	function s__MakeDeleteMeteors_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeDeleteMeteors_redoLastAction(thisv: number): void
 	function s__MakeDeleteMeteors_redoLastAction(thisv: number): boolean
 	function s__MakeDeleteMeteors_getMode(thisv: number): string
 	function s__MakeDeleteMonsters_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeDeleteMonsters_create(maker: unit, mode: string): void
 	function s__MakeDeleteMonsters_create(maker: unit, mode: string): number
 	function s__MakeDeleteMonsters_onDestroy(thisv: number): void
 	function s__MakeDeleteMonsters_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeDeleteMonsters_unsaveLoc(thisv: number): void
 	function s__MakeDeleteMonsters_unsaveLoc(thisv: number): boolean
 	function s__MakeDeleteMonsters_unsaveLocDefinitely(thisv: number): void
 	function s__MakeDeleteMonsters_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeDeleteMonsters_redoLastAction(thisv: number): void
 	function s__MakeDeleteMonsters_redoLastAction(thisv: number): boolean
 	function s__MakeDeleteMonsters_getMode(thisv: number): string
-	function rf__s__MakeEnd_create(maker: unit): void
 	function s__MakeEnd_create(maker: unit): number
 	function s__MakeEnd_onDestroy(thisv: number): void
 	function s__MakeEnd_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeEnd_unsaveLoc(thisv: number): void
 	function s__MakeEnd_unsaveLoc(thisv: number): boolean
 	function s__MakeEnd_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeEnd_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeEnd_redoLastAction(thisv: number): void
 	function s__MakeEnd_redoLastAction(thisv: number): boolean
-	function rf__s__MakeExchangeTerrains_create(maker: unit): void
 	function s__MakeExchangeTerrains_create(maker: unit): number
 	function s__MakeExchangeTerrains_onDestroy(thisv: number): void
 	function s__MakeExchangeTerrains_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeExchangeTerrains_unsaveLoc(thisv: number): void
 	function s__MakeExchangeTerrains_unsaveLoc(thisv: number): boolean
 	function s__MakeExchangeTerrains_unsaveLocDefinitely(thisv: number): void
 	function s__MakeExchangeTerrains_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeExchangeTerrains_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeExchangeTerrains_redoLastAction(thisv: number): void
 	function s__MakeExchangeTerrains_redoLastAction(thisv: number): boolean
-	function rf__s__MakeGetTerrainType_create(maker: unit): void
 	function s__MakeGetTerrainType_create(maker: unit): number
 	function s__MakeGetTerrainType_onDestroy(thisv: number): void
 	function s__MakeGetTerrainType_cancelLastAction(thisv: number): boolean
 	function s__MakeGetTerrainType_redoLastAction(thisv: number): boolean
-	function rf__s__MakeGetUnitTeleportPeriod_create(maker: unit): void
 	function s__MakeGetUnitTeleportPeriod_create(maker: unit): number
 	function s__MakeGetUnitTeleportPeriod_onDestroy(thisv: number): void
 	function s__MakeGetUnitTeleportPeriod_cancelLastAction(thisv: number): boolean
 	function s__MakeGetUnitTeleportPeriod_redoLastAction(thisv: number): boolean
-	function rf__s__MakeMeteor_create(maker: unit): void
 	function s__MakeMeteor_create(maker: unit): number
 	function s__MakeMeteor_onDestroy(thisv: number): void
 	function s__MakeMeteor_cancelLastAction(thisv: number): boolean
@@ -8009,110 +7487,84 @@ declare global {
 	function s__MakeMonsterMultiplePatrols_getMonsterType(thisv: number): number
 	function s__MakeMonsterMultiplePatrols_getMode(thisv: number): string
 	function s__MakeMonsterMultiplePatrols_getMonster(thisv: number): number
-	function rf__s__MakeMonsterMultiplePatrols_create(maker: unit, mode: string, mt: number): void
 	function s__MakeMonsterMultiplePatrols_create(maker: unit, mode: string, mt: number): number
 	function s__MakeMonsterMultiplePatrols_onDestroy(thisv: number): void
 	function s__MakeMonsterMultiplePatrols_nextMonster(thisv: number): void
 	function s__MakeMonsterMultiplePatrols_getLocPointeur(thisv: number): number
 	function s__MakeMonsterMultiplePatrols_setUnitLastClicPosition(thisv: number, x: number, l__y: number): void
 	function s__MakeMonsterMultiplePatrols_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeMonsterMultiplePatrols_unsaveLoc(thisv: number): void
 	function s__MakeMonsterMultiplePatrols_unsaveLoc(thisv: number): boolean
 	function s__MakeMonsterMultiplePatrols_setMonster(thisv: number, monster: number): void
 	function s__MakeMonsterMultiplePatrols_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterMultiplePatrols_redoLastAction(thisv: number): void
 	function s__MakeMonsterMultiplePatrols_redoLastAction(thisv: number): boolean
 	function s__MakeMonsterNoMove_getMonsterType(thisv: number): number
 	function s__MakeMonsterNoMove_getFacingAngle(thisv: number): number
-	function rf__s__MakeMonsterNoMove_create(maker: unit, mt: number, facingAngle: number): void
 	function s__MakeMonsterNoMove_create(maker: unit, mt: number, facingAngle: number): number
 	function s__MakeMonsterNoMove_onDestroy(thisv: number): void
 	function s__MakeMonsterNoMove_cancelLastAction(thisv: number): boolean
 	function s__MakeMonsterNoMove_redoLastAction(thisv: number): boolean
 	function s__MakeMonsterSimplePatrol_getMonsterType(thisv: number): number
-	function rf__s__MakeMonsterSimplePatrol_create(maker: unit, mode: string, mt: number): void
 	function s__MakeMonsterSimplePatrol_create(maker: unit, mode: string, mt: number): number
 	function s__MakeMonsterSimplePatrol_onDestroy(thisv: number): void
 	function s__MakeMonsterSimplePatrol_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeMonsterSimplePatrol_unsaveLoc(thisv: number): void
 	function s__MakeMonsterSimplePatrol_unsaveLoc(thisv: number): boolean
 	function s__MakeMonsterSimplePatrol_unsaveLocDefinitely(thisv: number): void
 	function s__MakeMonsterSimplePatrol_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeMonsterSimplePatrol_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterSimplePatrol_redoLastAction(thisv: number): void
 	function s__MakeMonsterSimplePatrol_redoLastAction(thisv: number): boolean
 	function s__MakeMonsterSimplePatrol_getMode(thisv: number): string
-	function rf__s__MakeMonsterSpawn_create(maker: unit, label: string, mt: number, sens: string, frequence: number): void
 	function s__MakeMonsterSpawn_create(maker: unit, label: string, mt: number, sens: string, frequence: number): number
 	function s__MakeMonsterSpawn_onDestroy(thisv: number): void
 	function s__MakeMonsterSpawn_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeMonsterSpawn_unsaveLoc(thisv: number): void
 	function s__MakeMonsterSpawn_unsaveLoc(thisv: number): boolean
 	function s__MakeMonsterSpawn_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeMonsterSpawn_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterSpawn_redoLastAction(thisv: number): void
 	function s__MakeMonsterSpawn_redoLastAction(thisv: number): boolean
 	function s__MakeMonsterTeleport_getMonsterType(thisv: number): number
 	function s__MakeMonsterTeleport_getPeriod(thisv: number): number
 	function s__MakeMonsterTeleport_getAngle(thisv: number): number
 	function s__MakeMonsterTeleport_getMode(thisv: number): string
 	function s__MakeMonsterTeleport_getMonster(thisv: number): number
-	function rf__s__MakeMonsterTeleport_create(maker: unit, mode: string, mt: number, period: number, angle: number): void
 	function s__MakeMonsterTeleport_create(maker: unit, mode: string, mt: number, period: number, angle: number): number
 	function s__MakeMonsterTeleport_onDestroy(thisv: number): void
 	function s__MakeMonsterTeleport_nextMonster(thisv: number): void
-	function rf__s__MakeMonsterTeleport_addWaitPeriod(thisv: number): void
 	function s__MakeMonsterTeleport_addWaitPeriod(thisv: number): boolean
-	function rf__s__MakeMonsterTeleport_addHidePeriod(thisv: number): void
 	function s__MakeMonsterTeleport_addHidePeriod(thisv: number): boolean
 	function s__MakeMonsterTeleport_getLocPointeur(thisv: number): number
 	function s__MakeMonsterTeleport_setUnitLastClicPosition(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeMonsterTeleport_saveLoc(thisv: number, x: number, l__y: number): void
 	function s__MakeMonsterTeleport_saveLoc(thisv: number, x: number, l__y: number): boolean
-	function rf__s__MakeMonsterTeleport_unsaveLoc(thisv: number): void
 	function s__MakeMonsterTeleport_unsaveLoc(thisv: number): boolean
 	function s__MakeMonsterTeleport_setMonster(thisv: number, monster: number): void
 	function s__MakeMonsterTeleport_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeMonsterTeleport_redoLastAction(thisv: number): void
 	function s__MakeMonsterTeleport_redoLastAction(thisv: number): boolean
 	function s__MakeSetUnitMonsterType_getMonsterType(thisv: number): number
 	function s__MakeSetUnitMonsterType_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeSetUnitMonsterType_create(maker: unit, mode: string, mt: number): void
 	function s__MakeSetUnitMonsterType_create(maker: unit, mode: string, mt: number): number
 	function s__MakeSetUnitMonsterType_onDestroy(thisv: number): void
 	function s__MakeSetUnitMonsterType_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeSetUnitMonsterType_unsaveLoc(thisv: number): void
 	function s__MakeSetUnitMonsterType_unsaveLoc(thisv: number): boolean
 	function s__MakeSetUnitMonsterType_unsaveLocDefinitely(thisv: number): void
 	function s__MakeSetUnitMonsterType_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeSetUnitMonsterType_redoLastAction(thisv: number): void
 	function s__MakeSetUnitMonsterType_redoLastAction(thisv: number): boolean
 	function s__MakeSetUnitMonsterType_getMode(thisv: number): string
 	function s__MakeSetUnitTeleportPeriod_getPeriod(thisv: number): number
 	function s__MakeSetUnitTeleportPeriod_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeSetUnitTeleportPeriod_create(maker: unit, mode: string, period: number): void
 	function s__MakeSetUnitTeleportPeriod_create(maker: unit, mode: string, period: number): number
 	function s__MakeSetUnitTeleportPeriod_onDestroy(thisv: number): void
 	function s__MakeSetUnitTeleportPeriod_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeSetUnitTeleportPeriod_unsaveLoc(thisv: number): void
 	function s__MakeSetUnitTeleportPeriod_unsaveLoc(thisv: number): boolean
 	function s__MakeSetUnitTeleportPeriod_unsaveLocDefinitely(thisv: number): void
 	function s__MakeSetUnitTeleportPeriod_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeSetUnitTeleportPeriod_redoLastAction(thisv: number): void
 	function s__MakeSetUnitTeleportPeriod_redoLastAction(thisv: number): boolean
 	function s__MakeSetUnitTeleportPeriod_getMode(thisv: number): string
-	function rf__s__MakeStart_create(maker: unit, forNext: boolean): void
 	function s__MakeStart_create(maker: unit, forNext: boolean): number
 	function s__MakeStart_onDestroy(thisv: number): void
 	function s__MakeStart_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeStart_unsaveLoc(thisv: number): void
 	function s__MakeStart_unsaveLoc(thisv: number): boolean
 	function s__MakeStart_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeStart_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeStart_redoLastAction(thisv: number): void
 	function s__MakeStart_redoLastAction(thisv: number): boolean
 	function s__MakeStart_forNext(thisv: number): boolean
-	function rf__s__MakeTerrainCopyPaste_create(maker: unit): void
 	function s__MakeTerrainCopyPaste_create(maker: unit): number
 	function s__MakeTerrainCopyPaste_onDestroy(thisv: number): void
 	function s__MakeTerrainCopyPaste_createUnitClic(thisv: number, u: unit, x: number, l__y: number): unit
@@ -8120,23 +7572,17 @@ declare global {
 	function s__MakeTerrainCopyPaste_unsaveLocDefinitely(thisv: number, locId: number): void
 	function s__MakeTerrainCopyPaste_unsaveLocsDefinitely(thisv: number): void
 	function s__MakeTerrainCopyPaste_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeTerrainCopyPaste_cancelLastAction(thisv: number): void
 	function s__MakeTerrainCopyPaste_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainCopyPaste_redoLastAction(thisv: number): void
 	function s__MakeTerrainCopyPaste_redoLastAction(thisv: number): boolean
 	function s__MakeTerrainCreate_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeTerrainCreate_getTerrainType(thisv: number): number
-	function rf__s__MakeTerrainCreate_create(maker: unit, terrainType: number): void
 	function s__MakeTerrainCreate_create(maker: unit, terrainType: number): number
 	function s__MakeTerrainCreate_onDestroy(thisv: number): void
 	function s__MakeTerrainCreate_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeTerrainCreate_unsaveLoc(thisv: number): void
 	function s__MakeTerrainCreate_unsaveLoc(thisv: number): boolean
 	function s__MakeTerrainCreate_unsaveLocDefinitely(thisv: number): void
 	function s__MakeTerrainCreate_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainCreate_redoLastAction(thisv: number): void
 	function s__MakeTerrainCreate_redoLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainHeight_create(maker: unit, radius: number, height: number): void
 	function s__MakeTerrainHeight_create(maker: unit, radius: number, height: number): number
 	function s__MakeTerrainHeight_getRadius(thisv: number): number
 	function s__MakeTerrainHeight_getHeight(thisv: number): number
@@ -8144,46 +7590,35 @@ declare global {
 	function s__MakeTerrainHeight_cancelLastAction(thisv: number): boolean
 	function s__MakeTerrainHeight_redoLastAction(thisv: number): boolean
 	function s__MakeTerrainHorizontalSymmetry_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetry_create(maker: unit): void
 	function s__MakeTerrainHorizontalSymmetry_create(maker: unit): number
 	function s__MakeTerrainHorizontalSymmetry_onDestroy(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetry_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeTerrainHorizontalSymmetry_unsaveLoc(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetry_unsaveLoc(thisv: number): boolean
 	function s__MakeTerrainHorizontalSymmetry_unsaveLocDefinitely(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetry_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainHorizontalSymmetry_redoLastAction(thisv: number): void
 	function s__MakeTerrainHorizontalSymmetry_redoLastAction(thisv: number): boolean
 	function s__MakeTerrainVerticalSymmetry_isLastLocSavedUsed(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetry_create(maker: unit): void
 	function s__MakeTerrainVerticalSymmetry_create(maker: unit): number
 	function s__MakeTerrainVerticalSymmetry_onDestroy(thisv: number): void
 	function s__MakeTerrainVerticalSymmetry_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeTerrainVerticalSymmetry_unsaveLoc(thisv: number): void
 	function s__MakeTerrainVerticalSymmetry_unsaveLoc(thisv: number): boolean
 	function s__MakeTerrainVerticalSymmetry_unsaveLocDefinitely(thisv: number): void
 	function s__MakeTerrainVerticalSymmetry_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeTerrainVerticalSymmetry_redoLastAction(thisv: number): void
 	function s__MakeTerrainVerticalSymmetry_redoLastAction(thisv: number): boolean
-	function rf__s__MakeVisibilityModifier_create(maker: unit): void
 	function s__MakeVisibilityModifier_create(maker: unit): number
 	function s__MakeVisibilityModifier_onDestroy(thisv: number): void
 	function s__MakeVisibilityModifier_saveLoc(thisv: number, x: number, l__y: number): void
-	function rf__s__MakeVisibilityModifier_unsaveLoc(thisv: number): void
 	function s__MakeVisibilityModifier_unsaveLoc(thisv: number): boolean
 	function s__MakeVisibilityModifier_unsaveLocDefinitely(thisv: number): void
 	function s__MakeVisibilityModifier_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeVisibilityModifier_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeVisibilityModifier_redoLastAction(thisv: number): void
 	function s__MakeVisibilityModifier_redoLastAction(thisv: number): boolean
 	function MonsterMultiplePatrols__NewRegion(x: number, l__y: number): region
 	function MonsterMultiplePatrols_move_Actions(): void
 	function s__MonsterMultiplePatrols_count(): number
-	function rf__s__MonsterMultiplePatrols_storeNewLoc(x: number, l__y: number): void
 	function s__MonsterMultiplePatrols_storeNewLoc(x: number, l__y: number): boolean
 	function s__MonsterMultiplePatrols_destroyLocs(): void
 	function s__MonsterMultiplePatrols_getId(thisv: number): number
-	function rf__s__MonsterMultiplePatrols_setId(thisv: number, id: number): void
 	function s__MonsterMultiplePatrols_setId(thisv: number, id: number): number
 	function s__MonsterMultiplePatrols_getCurrentTrigger(thisv: number): trigger
 	function s__MonsterMultiplePatrols_removeUnit(thisv: number): void
@@ -8192,33 +7627,25 @@ declare global {
 	function s__MonsterMultiplePatrols_disableTrigger(thisv: number, id: number): void
 	function s__MonsterMultiplePatrols_activateMove(thisv: number, id: number): void
 	function s__MonsterMultiplePatrols_nextMove(thisv: number): void
-	function rf__s__MonsterMultiplePatrols_create(mt: number, mode: string): void
 	function s__MonsterMultiplePatrols_create(mt: number, mode: string): number
 	function s__MonsterMultiplePatrols_createUnit(thisv: number): void
 	function s__MonsterMultiplePatrols_getLife(thisv: number): number
 	function s__MonsterMultiplePatrols_setLife(thisv: number, life: number): void
-	function rf__s__MonsterMultiplePatrols_getX(thisv: number, id: number): void
 	function s__MonsterMultiplePatrols_getX(thisv: number, id: number): number
-	function rf__s__MonsterMultiplePatrols_getY(thisv: number, id: number): void
 	function s__MonsterMultiplePatrols_getY(thisv: number, id: number): number
-	function rf__s__MonsterMultiplePatrols_destroyLastLoc(thisv: number): void
 	function s__MonsterMultiplePatrols_destroyLastLoc(thisv: number): boolean
 	function s__MonsterMultiplePatrols_addNewLocAt(thisv: number, id: number, x: number, l__y: number): void
-	function rf__s__MonsterMultiplePatrols_addNewLoc(thisv: number, x: number, l__y: number): void
 	function s__MonsterMultiplePatrols_addNewLoc(thisv: number, x: number, l__y: number): number
 	function s__MonsterMultiplePatrols_getMonsterType(thisv: number): number
-	function rf__s__MonsterMultiplePatrols_setMonsterType(thisv: number, mt: number): void
 	function s__MonsterMultiplePatrols_setMonsterType(thisv: number, mt: number): boolean
 	function s__MonsterMultiplePatrols_temporarilyDisable(thisv: number, disablingTimer: timer): void
 	function s__MonsterMultiplePatrols_temporarilyEnable(thisv: number, disablingTimer: timer): void
 	function s__MonsterMultiplePatrols_setBaseColor(thisv: number, colorString: string): void
 	function s__MonsterMultiplePatrols_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function s__MonsterMultiplePatrols_reinitColor(thisv: number): void
-	function rf__s__MonsterMultiplePatrols_toString(thisv: number): void
 	function s__MonsterMultiplePatrols_toString(thisv: number): string
 	function s__MonsterNoMove_count(): number
 	function s__MonsterNoMove_getId(thisv: number): number
-	function rf__s__MonsterNoMove_setId(thisv: number, id: number): void
 	function s__MonsterNoMove_setId(thisv: number, id: number): number
 	function s__MonsterNoMove_removeUnit(thisv: number): void
 	function s__MonsterNoMove_killUnit(thisv: number): void
@@ -8228,7 +7655,6 @@ declare global {
 	function s__MonsterNoMove_getLife(thisv: number): number
 	function s__MonsterNoMove_setLife(thisv: number, life: number): void
 	function s__MonsterNoMove_getMonsterType(thisv: number): number
-	function rf__s__MonsterNoMove_setMonsterType(thisv: number, mt: number): void
 	function s__MonsterNoMove_setMonsterType(thisv: number, mt: number): boolean
 	function s__MonsterNoMove_toString(thisv: number): string
 	function s__MonsterNoMove_temporarilyDisable(thisv: number, disablingTimer: timer): void
@@ -8237,7 +7663,6 @@ declare global {
 	function s__MonsterNoMove_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function s__MonsterNoMove_reinitColor(thisv: number): void
 	function s__MonsterOrCaster_create(mobId: number): number
-	function rf__s__MonsterOrCaster_getId(thisv: number): void
 	function s__MonsterOrCaster_getId(thisv: number): number
 	function s__MonsterOrCaster_killUnit(thisv: number): void
 	function s__MonsterOrCaster_temporarilyDisable(thisv: number, disablingTimer: timer): void
@@ -8245,17 +7670,14 @@ declare global {
 	function s__MonsterOrCaster_setBaseColor(thisv: number, colorString: string): void
 	function s__MonsterOrCaster_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function s__MonsterOrCaster_reinitColor(thisv: number): void
-	function rf__s__MonsterOrCaster_getUnit(thisv: number): void
 	function s__MonsterOrCaster_getUnit(thisv: number): unit
 	function s__MonsterOrCaster_copy(thisv: number): number
-	function rf__s__MonsterOrCaster_getMonsterType(thisv: number): void
 	function s__MonsterOrCaster_getMonsterType(thisv: number): number
 	function MonsterSimplePatrol__CheckSimplePatrolMobsEnum(): void
 	function MonsterSimplePatrol__CheckSimplePatrolMobs_Actions(): void
 	function Init_MonsterSimplePatrol(): void
 	function s__MonsterSimplePatrol_count(): number
 	function s__MonsterSimplePatrol_getId(thisv: number): number
-	function rf__s__MonsterSimplePatrol_setId(thisv: number, id: number): void
 	function s__MonsterSimplePatrol_setId(thisv: number, id: number): number
 	function s__MonsterSimplePatrol_removeUnit(thisv: number): void
 	function s__MonsterSimplePatrol_killUnit(thisv: number): void
@@ -8265,7 +7687,6 @@ declare global {
 	function s__MonsterSimplePatrol_getLife(thisv: number): number
 	function s__MonsterSimplePatrol_setLife(thisv: number, life: number): void
 	function s__MonsterSimplePatrol_getMonsterType(thisv: number): number
-	function rf__s__MonsterSimplePatrol_setMonsterType(thisv: number, mt: number): void
 	function s__MonsterSimplePatrol_setMonsterType(thisv: number, mt: number): boolean
 	function s__MonsterSimplePatrol_temporarilyDisable(thisv: number, disablingTimer: timer): void
 	function s__MonsterSimplePatrol_temporarilyEnable(thisv: number, disablingTimer: timer): void
@@ -8275,47 +7696,36 @@ declare global {
 	function s__MonsterSimplePatrol_toString(thisv: number): string
 	function MonsterTeleport_move_Actions(): void
 	function s__MonsterTeleport_count(): number
-	function rf__s__MonsterTeleport_storeNewLoc(x: number, l__y: number): void
 	function s__MonsterTeleport_storeNewLoc(x: number, l__y: number): boolean
 	function s__MonsterTeleport_destroyLocs(): void
 	function s__MonsterTeleport_getId(thisv: number): number
-	function rf__s__MonsterTeleport_setId(thisv: number, id: number): void
 	function s__MonsterTeleport_setId(thisv: number, id: number): number
 	function s__MonsterTeleport_removeUnit(thisv: number): void
 	function s__MonsterTeleport_killUnit(thisv: number): void
 	function s__MonsterTeleport_onDestroy(thisv: number): void
-	function rf__s__MonsterTeleport_create(mt: number, period: number, angle: number, mode: string): void
 	function s__MonsterTeleport_create(mt: number, period: number, angle: number, mode: string): number
-	function rf__s__MonsterTeleport_setPeriod(thisv: number, period: number): void
 	function s__MonsterTeleport_setPeriod(thisv: number, period: number): boolean
 	function s__MonsterTeleport_getPeriod(thisv: number): number
 	function s__MonsterTeleport_createUnit(thisv: number): void
 	function s__MonsterTeleport_nextMove(thisv: number): void
 	function s__MonsterTeleport_getLife(thisv: number): number
 	function s__MonsterTeleport_setLife(thisv: number, life: number): void
-	function rf__s__MonsterTeleport_getX(thisv: number, id: number): void
 	function s__MonsterTeleport_getX(thisv: number, id: number): number
-	function rf__s__MonsterTeleport_getY(thisv: number, id: number): void
 	function s__MonsterTeleport_getY(thisv: number, id: number): number
 	function s__MonsterTeleport_addNewLocAt(thisv: number, id: number, x: number, l__y: number): void
-	function rf__s__MonsterTeleport_addNewLoc(thisv: number, x: number, l__y: number): void
 	function s__MonsterTeleport_addNewLoc(thisv: number, x: number, l__y: number): boolean
-	function rf__s__MonsterTeleport_destroyLastLoc(thisv: number): void
 	function s__MonsterTeleport_destroyLastLoc(thisv: number): boolean
 	function s__MonsterTeleport_getMonsterType(thisv: number): number
-	function rf__s__MonsterTeleport_setMonsterType(thisv: number, mt: number): void
 	function s__MonsterTeleport_setMonsterType(thisv: number, mt: number): boolean
 	function s__MonsterTeleport_temporarilyDisable(thisv: number, disablingTimer: timer): void
 	function s__MonsterTeleport_temporarilyEnable(thisv: number, disablingTimer: timer): void
 	function s__MonsterTeleport_setBaseColor(thisv: number, colorString: string): void
 	function s__MonsterTeleport_setVertexColor(thisv: number, vcRed: number, vcGreen: number, vcBlue: number): void
 	function s__MonsterTeleport_reinitColor(thisv: number): void
-	function rf__s__MonsterTeleport_toString(thisv: number): void
 	function s__MonsterTeleport_toString(thisv: number): string
 	function InitMonsterTeleport(): void
 	function s__Caster_isEnabled(thisv: number): boolean
 	function s__Caster_getId(thisv: number): number
-	function rf__s__Caster_setId(thisv: number, id: number): void
 	function s__Caster_setId(thisv: number, id: number): number
 	function s__Caster_getX(thisv: number): number
 	function s__Caster_getY(thisv: number): number
@@ -8343,18 +7753,14 @@ declare global {
 	function InitCaster(): void
 	function s__ClearMobArray_create(): number
 	function s__ClearMobArray_getFirstEmpty(thisv: number): number
-	function rf__s__ClearMobArray_get(thisv: number, arrayId: number): void
 	function s__ClearMobArray_get(thisv: number, arrayId: number): number
 	function s__ClearMobArray_getLastInstanceId(thisv: number): number
-	function rf__s__ClearMobArray_new(thisv: number, triggerMobId: number, disableDuration: number, initialize: boolean): void
 	function s__ClearMobArray_new(thisv: number, triggerMobId: number, disableDuration: number, initialize: boolean): number
 	function s__ClearMobArray_count(thisv: number): number
 	function s__ClearMobArray_onDestroy(thisv: number): void
 	function s__ClearMobArray_deallocate(thisv: number): void
 	function s__ClearMobArray_setClearMobNull(thisv: number, clearMobArrayId: number): void
-	function rf__s__ClearMobArray_clearClearMob(thisv: number, clearMobId: number): void
 	function s__ClearMobArray_clearClearMob(thisv: number, clearMobId: number): boolean
-	function rf__s__ClearMobArray_getClearMobNear(thisv: number, x: number, l__y: number): void
 	function s__ClearMobArray_getClearMobNear(thisv: number, x: number, l__y: number): number
 	function s__ClearMobArray_initializeClearMobs(thisv: number): void
 	function s__ClearMobArray_closeClearMobs(thisv: number): void
@@ -8362,15 +7768,11 @@ declare global {
 	function ExecuteCommand(escaper: number, cmd: string): void
 	function Trig_Command_execution_Actions(): void
 	function Init_Command_execution(): void
-	function rf__s__MakeClearMob_create(maker: unit, disableDuration: number): void
 	function s__MakeClearMob_create(maker: unit, disableDuration: number): number
 	function s__MakeClearMob_onDestroy(thisv: number): void
 	function s__MakeClearMob_clickMade(thisv: number, monsterOrCasterId: number): void
-	function rf__s__MakeClearMob_cancelLastAction(thisv: number): void
 	function s__MakeClearMob_cancelLastAction(thisv: number): boolean
-	function rf__s__MakeClearMob_redoLastAction(thisv: number): void
 	function s__MakeClearMob_redoLastAction(thisv: number): boolean
-	function rf__s__MakeDeleteClearMob_create(maker: unit): void
 	function s__MakeDeleteClearMob_create(maker: unit): number
 	function s__MakeDeleteClearMob_onDestroy(thisv: number): void
 	function s__MakeDeleteClearMob_clickMade(thisv: number, monsterOrCasterId: number): void
@@ -8378,18 +7780,14 @@ declare global {
 	function s__MakeDeleteClearMob_redoLastAction(thisv: number): boolean
 	function s__MonsterMultiplePatrolsArray_create(): number
 	function s__MonsterMultiplePatrolsArray_getFirstEmpty(thisv: number): number
-	function rf__s__MonsterMultiplePatrolsArray_get(thisv: number, arrayId: number): void
 	function s__MonsterMultiplePatrolsArray_get(thisv: number, arrayId: number): number
 	function s__MonsterMultiplePatrolsArray_getLastInstanceId(thisv: number): number
-	function rf__s__MonsterMultiplePatrolsArray_new(thisv: number, mt: number, mode: string, createUnit: boolean): void
 	function s__MonsterMultiplePatrolsArray_new(thisv: number, mt: number, mode: string, createUnit: boolean): number
 	function s__MonsterMultiplePatrolsArray_count(thisv: number): number
 	function s__MonsterMultiplePatrolsArray_onDestroy(thisv: number): void
 	function s__MonsterMultiplePatrolsArray_deallocate(thisv: number): void
 	function s__MonsterMultiplePatrolsArray_setMonsterNull(thisv: number, monsterArrayId: number): void
-	function rf__s__MonsterMultiplePatrolsArray_clearMonster(thisv: number, monsterId: number): void
 	function s__MonsterMultiplePatrolsArray_clearMonster(thisv: number, monsterId: number): boolean
-	function rf__s__MonsterMultiplePatrolsArray_getMonsterNear(thisv: number, x: number, l__y: number): void
 	function s__MonsterMultiplePatrolsArray_getMonsterNear(thisv: number, x: number, l__y: number): number
 	function s__MonsterMultiplePatrolsArray_createMonsters(thisv: number): void
 	function s__MonsterMultiplePatrolsArray_removeMonsters(thisv: number): void
@@ -8397,18 +7795,14 @@ declare global {
 	function s__MonsterMultiplePatrolsArray_removeMonstersOfType(thisv: number, mt: number): void
 	function s__MonsterNoMoveArray_create(): number
 	function s__MonsterNoMoveArray_getFirstEmpty(thisv: number): number
-	function rf__s__MonsterNoMoveArray_get(thisv: number, arrayId: number): void
 	function s__MonsterNoMoveArray_get(thisv: number, arrayId: number): number
 	function s__MonsterNoMoveArray_getLastInstanceId(thisv: number): number
-	function rf__s__MonsterNoMoveArray_new(thisv: number, mt: number, x: number, l__y: number, angle: number, createUnit: boolean): void
 	function s__MonsterNoMoveArray_new(thisv: number, mt: number, x: number, l__y: number, angle: number, createUnit: boolean): number
 	function s__MonsterNoMoveArray_count(thisv: number): number
 	function s__MonsterNoMoveArray_onDestroy(thisv: number): void
 	function s__MonsterNoMoveArray_deallocate(thisv: number): void
 	function s__MonsterNoMoveArray_setMonsterNull(thisv: number, monsterArrayId: number): void
-	function rf__s__MonsterNoMoveArray_clearMonster(thisv: number, monsterId: number): void
 	function s__MonsterNoMoveArray_clearMonster(thisv: number, monsterId: number): boolean
-	function rf__s__MonsterNoMoveArray_getMonsterNear(thisv: number, x: number, l__y: number): void
 	function s__MonsterNoMoveArray_getMonsterNear(thisv: number, x: number, l__y: number): number
 	function s__MonsterNoMoveArray_createMonsters(thisv: number): void
 	function s__MonsterNoMoveArray_removeMonsters(thisv: number): void
@@ -8416,18 +7810,14 @@ declare global {
 	function s__MonsterNoMoveArray_removeMonstersOfType(thisv: number, mt: number): void
 	function s__MonsterSimplePatrolArray_create(): number
 	function s__MonsterSimplePatrolArray_getFirstEmpty(thisv: number): number
-	function rf__s__MonsterSimplePatrolArray_get(thisv: number, arrayId: number): void
 	function s__MonsterSimplePatrolArray_get(thisv: number, arrayId: number): number
 	function s__MonsterSimplePatrolArray_getLastInstanceId(thisv: number): number
-	function rf__s__MonsterSimplePatrolArray_new(thisv: number, mt: number, x1: number, y1: number, x2: number, y2: number, createUnit: boolean): void
 	function s__MonsterSimplePatrolArray_new(thisv: number, mt: number, x1: number, y1: number, x2: number, y2: number, createUnit: boolean): number
 	function s__MonsterSimplePatrolArray_count(thisv: number): number
 	function s__MonsterSimplePatrolArray_onDestroy(thisv: number): void
 	function s__MonsterSimplePatrolArray_deallocate(thisv: number): void
 	function s__MonsterSimplePatrolArray_setMonsterNull(thisv: number, monsterArrayId: number): void
-	function rf__s__MonsterSimplePatrolArray_clearMonster(thisv: number, monsterId: number): void
 	function s__MonsterSimplePatrolArray_clearMonster(thisv: number, monsterId: number): boolean
-	function rf__s__MonsterSimplePatrolArray_getMonsterNear(thisv: number, x: number, l__y: number): void
 	function s__MonsterSimplePatrolArray_getMonsterNear(thisv: number, x: number, l__y: number): number
 	function s__MonsterSimplePatrolArray_createMonsters(thisv: number): void
 	function s__MonsterSimplePatrolArray_removeMonsters(thisv: number): void
@@ -8435,18 +7825,14 @@ declare global {
 	function s__MonsterSimplePatrolArray_removeMonstersOfType(thisv: number, mt: number): void
 	function s__MonsterTeleportArray_create(): number
 	function s__MonsterTeleportArray_getFirstEmpty(thisv: number): number
-	function rf__s__MonsterTeleportArray_get(thisv: number, arrayId: number): void
 	function s__MonsterTeleportArray_get(thisv: number, arrayId: number): number
 	function s__MonsterTeleportArray_getLastInstanceId(thisv: number): number
-	function rf__s__MonsterTeleportArray_new(thisv: number, mt: number, period: number, angle: number, mode: string, createUnit: boolean): void
 	function s__MonsterTeleportArray_new(thisv: number, mt: number, period: number, angle: number, mode: string, createUnit: boolean): number
 	function s__MonsterTeleportArray_count(thisv: number): number
 	function s__MonsterTeleportArray_onDestroy(thisv: number): void
 	function s__MonsterTeleportArray_deallocate(thisv: number): void
 	function s__MonsterTeleportArray_setMonsterNull(thisv: number, monsterArrayId: number): void
-	function rf__s__MonsterTeleportArray_clearMonster(thisv: number, monsterId: number): void
 	function s__MonsterTeleportArray_clearMonster(thisv: number, monsterId: number): boolean
-	function rf__s__MonsterTeleportArray_getMonsterNear(thisv: number, x: number, l__y: number): void
 	function s__MonsterTeleportArray_getMonsterNear(thisv: number, x: number, l__y: number): number
 	function s__MonsterTeleportArray_createMonsters(thisv: number): void
 	function s__MonsterTeleportArray_removeMonsters(thisv: number): void
@@ -8454,18 +7840,14 @@ declare global {
 	function s__MonsterTeleportArray_removeMonstersOfType(thisv: number, mt: number): void
 	function s__CasterArray_create(): number
 	function s__CasterArray_getFirstEmpty(thisv: number): number
-	function rf__s__CasterArray_get(thisv: number, arrayId: number): void
 	function s__CasterArray_get(thisv: number, arrayId: number): number
 	function s__CasterArray_getLastInstanceId(thisv: number): number
-	function rf__s__CasterArray_new(thisv: number, casterType: number, x: number, l__y: number, angle: number, enable: boolean): void
 	function s__CasterArray_new(thisv: number, casterType: number, x: number, l__y: number, angle: number, enable: boolean): number
 	function s__CasterArray_count(thisv: number): number
 	function s__CasterArray_onDestroy(thisv: number): void
 	function s__CasterArray_deallocate(thisv: number): void
 	function s__CasterArray_setCasterNull(thisv: number, casterArrayId: number): void
-	function rf__s__CasterArray_clearCaster(thisv: number, casterId: number): void
 	function s__CasterArray_clearCaster(thisv: number, casterId: number): boolean
-	function rf__s__CasterArray_getCasterNear(thisv: number, x: number, l__y: number): void
 	function s__CasterArray_getCasterNear(thisv: number, x: number, l__y: number): number
 	function s__CasterArray_createCasters(thisv: number): void
 	function s__CasterArray_removeCasters(thisv: number): void
@@ -8473,7 +7855,6 @@ declare global {
 	function s__CasterArray_removeCastersOfType(thisv: number, casterType: number): void
 	function s__EscaperSavedCommands_create(): number
 	function s__EscaperSavedCommands_new(thisv: number, escaper: number, commandName: string, command: string): void
-	function rf__s__EscaperSavedCommands_execute(thisv: number, escaper: number, commandName: string): void
 	function s__EscaperSavedCommands_execute(thisv: number, escaper: number, commandName: string): boolean
 	function Init_EscaperSavedCommands(): void
 	function InitGlobals(): void
@@ -8487,7 +7868,6 @@ declare global {
 	function InitTrig_Right_click_on_widget(): void
 	function Trig_meteor_being_used_Actions(): void
 	function InitTrig_Meteor_being_used(): void
-	function rf__Trig_Stop_using_normal_meteor_Conditions(): void
 	function Trig_Stop_using_normal_meteor_Conditions(): boolean
 	function Trig_Stop_using_normal_meteor_Actions(): void
 	function InitTrig_Stop_using_normal_meteor(): void
@@ -8541,7 +7921,6 @@ declare global {
 	function InitTrig_A_hero_dies_check_if_all_dead_and_sounds(): void
 	function Trig_Lose_a_life_and_res_Actions(): void
 	function InitTrig_Lose_a_life_and_res(): void
-	function rf__Trig_Sound_monster_dies_Conditions(): void
 	function Trig_Sound_monster_dies_Conditions(): boolean
 	function Trig_Sound_monster_dies_Actions(): void
 	function InitTrig_Sound_monster_dies(): void
@@ -8576,78 +7955,62 @@ declare global {
 	function main(): void
 	function config(): void
 	function sa__EscaperSavedCommands_new(): boolean
-	function rf__sa__EscaperSavedCommands_execute(): void
 	function sa__EscaperSavedCommands_execute(): boolean
 	function sa__CasterArray_create(): boolean
-	function rf__sa__CasterArray_get(): void
 	function sa__CasterArray_get(): boolean
 	function sa__CasterArray_getLastInstanceId(): boolean
-	function rf__sa__CasterArray_new(): void
 	function sa__CasterArray_new(): boolean
 	function sa__CasterArray_count(): boolean
 	function sa__CasterArray_onDestroy(): boolean
 	function sa__CasterArray_setCasterNull(): boolean
-	function rf__sa__CasterArray_getCasterNear(): void
 	function sa__CasterArray_getCasterNear(): boolean
 	function sa__CasterArray_createCasters(): boolean
 	function sa__CasterArray_removeCasters(): boolean
 	function sa__CasterArray_refreshCastersOfType(): boolean
 	function sa__CasterArray_removeCastersOfType(): boolean
 	function sa__MonsterTeleportArray_create(): boolean
-	function rf__sa__MonsterTeleportArray_get(): void
 	function sa__MonsterTeleportArray_get(): boolean
 	function sa__MonsterTeleportArray_getLastInstanceId(): boolean
-	function rf__sa__MonsterTeleportArray_new(): void
 	function sa__MonsterTeleportArray_new(): boolean
 	function sa__MonsterTeleportArray_count(): boolean
 	function sa__MonsterTeleportArray_onDestroy(): boolean
 	function sa__MonsterTeleportArray_setMonsterNull(): boolean
-	function rf__sa__MonsterTeleportArray_getMonsterNear(): void
 	function sa__MonsterTeleportArray_getMonsterNear(): boolean
 	function sa__MonsterTeleportArray_createMonsters(): boolean
 	function sa__MonsterTeleportArray_removeMonsters(): boolean
 	function sa__MonsterTeleportArray_recreateMonstersOfType(): boolean
 	function sa__MonsterTeleportArray_removeMonstersOfType(): boolean
 	function sa__MonsterSimplePatrolArray_create(): boolean
-	function rf__sa__MonsterSimplePatrolArray_get(): void
 	function sa__MonsterSimplePatrolArray_get(): boolean
 	function sa__MonsterSimplePatrolArray_getLastInstanceId(): boolean
-	function rf__sa__MonsterSimplePatrolArray_new(): void
 	function sa__MonsterSimplePatrolArray_new(): boolean
 	function sa__MonsterSimplePatrolArray_count(): boolean
 	function sa__MonsterSimplePatrolArray_onDestroy(): boolean
 	function sa__MonsterSimplePatrolArray_setMonsterNull(): boolean
-	function rf__sa__MonsterSimplePatrolArray_getMonsterNear(): void
 	function sa__MonsterSimplePatrolArray_getMonsterNear(): boolean
 	function sa__MonsterSimplePatrolArray_createMonsters(): boolean
 	function sa__MonsterSimplePatrolArray_removeMonsters(): boolean
 	function sa__MonsterSimplePatrolArray_recreateMonstersOfType(): boolean
 	function sa__MonsterSimplePatrolArray_removeMonstersOfType(): boolean
 	function sa__MonsterNoMoveArray_create(): boolean
-	function rf__sa__MonsterNoMoveArray_get(): void
 	function sa__MonsterNoMoveArray_get(): boolean
 	function sa__MonsterNoMoveArray_getLastInstanceId(): boolean
-	function rf__sa__MonsterNoMoveArray_new(): void
 	function sa__MonsterNoMoveArray_new(): boolean
 	function sa__MonsterNoMoveArray_count(): boolean
 	function sa__MonsterNoMoveArray_onDestroy(): boolean
 	function sa__MonsterNoMoveArray_setMonsterNull(): boolean
-	function rf__sa__MonsterNoMoveArray_getMonsterNear(): void
 	function sa__MonsterNoMoveArray_getMonsterNear(): boolean
 	function sa__MonsterNoMoveArray_createMonsters(): boolean
 	function sa__MonsterNoMoveArray_removeMonsters(): boolean
 	function sa__MonsterNoMoveArray_recreateMonstersOfType(): boolean
 	function sa__MonsterNoMoveArray_removeMonstersOfType(): boolean
 	function sa__MonsterMultiplePatrolsArray_create(): boolean
-	function rf__sa__MonsterMultiplePatrolsArray_get(): void
 	function sa__MonsterMultiplePatrolsArray_get(): boolean
 	function sa__MonsterMultiplePatrolsArray_getLastInstanceId(): boolean
-	function rf__sa__MonsterMultiplePatrolsArray_new(): void
 	function sa__MonsterMultiplePatrolsArray_new(): boolean
 	function sa__MonsterMultiplePatrolsArray_count(): boolean
 	function sa__MonsterMultiplePatrolsArray_onDestroy(): boolean
 	function sa__MonsterMultiplePatrolsArray_setMonsterNull(): boolean
-	function rf__sa__MonsterMultiplePatrolsArray_getMonsterNear(): void
 	function sa__MonsterMultiplePatrolsArray_getMonsterNear(): boolean
 	function sa__MonsterMultiplePatrolsArray_createMonsters(): boolean
 	function sa__MonsterMultiplePatrolsArray_removeMonsters(): boolean
@@ -8677,14 +8040,12 @@ declare global {
 	function sa__Caster_escaperOutOfRangeOrDead(): boolean
 	function sa__Caster_temporarilyDisable(): boolean
 	function sa__Caster_temporarilyEnable(): boolean
-	function rf__sa__Caster_setBaseColor(): void
 	function sa__Caster_setBaseColor(): boolean
 	function sa__Caster_setVertexColor(): boolean
 	function sa__Caster_reinitColor(): boolean
 	function sa__Caster_toString(): boolean
 	function sa__Stack_onDestroy(): boolean
 	function sa__MonsterOrCaster_create(): boolean
-	function rf__sa__MonsterOrCaster_getId(): void
 	function sa__MonsterOrCaster_getId(): boolean
 	function sa__MonsterOrCaster_killUnit(): boolean
 	function sa__MonsterOrCaster_temporarilyDisable(): boolean
@@ -8692,90 +8053,63 @@ declare global {
 	function sa__MonsterOrCaster_setBaseColor(): boolean
 	function sa__MonsterOrCaster_setVertexColor(): boolean
 	function sa__MonsterOrCaster_reinitColor(): boolean
-	function rf__sa__MonsterOrCaster_getUnit(): void
 	function sa__MonsterOrCaster_getUnit(): boolean
 	function sa__MonsterOrCaster_copy(): boolean
-	function rf__sa__MonsterOrCaster_getMonsterType(): void
 	function sa__MonsterOrCaster_getMonsterType(): boolean
 	function sa__Trigger_onDestroy(): boolean
 	function sa__TriggerArray_onDestroy(): boolean
 	function sa__VisibilityModifier_onDestroy(): boolean
 	function sa__CasterType_onDestroy(): boolean
 	function sa__MakeCasterAction_onDestroy(): boolean
-	function rf__sa__MakeCasterAction_cancel(): void
 	function sa__MakeCasterAction_cancel(): boolean
-	function rf__sa__MakeCasterAction_redo(): void
 	function sa__MakeCasterAction_redo(): boolean
 	function sa__MakeDeleteCastersAction_onDestroy(): boolean
-	function rf__sa__MakeDeleteCastersAction_cancel(): void
 	function sa__MakeDeleteCastersAction_cancel(): boolean
-	function rf__sa__MakeDeleteCastersAction_redo(): void
 	function sa__MakeDeleteCastersAction_redo(): boolean
 	function sa__MakeDeleteMeteorsAction_onDestroy(): boolean
-	function rf__sa__MakeDeleteMeteorsAction_cancel(): void
 	function sa__MakeDeleteMeteorsAction_cancel(): boolean
-	function rf__sa__MakeDeleteMeteorsAction_redo(): void
 	function sa__MakeDeleteMeteorsAction_redo(): boolean
 	function sa__MakeDeleteMonstersAction_onDestroy(): boolean
-	function rf__sa__MakeDeleteMonstersAction_cancel(): void
 	function sa__MakeDeleteMonstersAction_cancel(): boolean
-	function rf__sa__MakeDeleteMonstersAction_redo(): void
 	function sa__MakeDeleteMonstersAction_redo(): boolean
 	function sa__MakeLastActions_onDestroy(): boolean
 	function sa__MakeMeteorAction_getLevel(): boolean
 	function sa__MakeMeteorAction_onDestroy(): boolean
-	function rf__sa__MakeMeteorAction_cancel(): void
 	function sa__MakeMeteorAction_cancel(): boolean
-	function rf__sa__MakeMeteorAction_redo(): void
 	function sa__MakeMeteorAction_redo(): boolean
 	function sa__MakeMonsterAction_getLevel(): boolean
 	function sa__MakeMonsterAction_onDestroy(): boolean
-	function rf__sa__MakeMonsterAction_cancel(): void
 	function sa__MakeMonsterAction_cancel(): boolean
-	function rf__sa__MakeMonsterAction_redo(): void
 	function sa__MakeMonsterAction_redo(): boolean
 	function sa__MakeTerrainHeightAction_apply(): boolean
-	function rf__sa__MakeTerrainHeightAction_cancel(): void
 	function sa__MakeTerrainHeightAction_cancel(): boolean
-	function rf__sa__MakeTerrainHeightAction_redo(): void
 	function sa__MakeTerrainHeightAction_redo(): boolean
 	function sa__MakeVisibilityModifierAction_getLevel(): boolean
 	function sa__MakeVisibilityModifierAction_onDestroy(): boolean
-	function rf__sa__MakeVisibilityModifierAction_cancel(): void
 	function sa__MakeVisibilityModifierAction_cancel(): boolean
-	function rf__sa__MakeVisibilityModifierAction_redo(): void
 	function sa__MakeVisibilityModifierAction_redo(): boolean
 	function sa__MeteorArray_setMeteorNull(): boolean
 	function sa__MeteorArray_onDestroy(): boolean
 	function sa__MonsterType_onDestroy(): boolean
-	function sa__SoundUtils__soundrecycler_onDestroy(): boolean
+	function sa__SoundUtils___soundrecycler_onDestroy(): boolean
 	function sa__StringArrayForCache_create(): boolean
 	function sa__StringArrayForCache_push(): boolean
 	function sa__StringArrayForCache_writeInCache(): boolean
 	function sa__VisibilityModifierArray_onDestroy(): boolean
 	function sa__VisibilityModifierArray_count(): boolean
-	function rf__sa__VisibilityModifierArray_get(): void
 	function sa__VisibilityModifierArray_get(): boolean
 	function sa__VisibilityModifierArray_getLastInstanceId(): boolean
 	function sa__VisibilityModifierArray_setNull(): boolean
-	function rf__sa__LevelArray_goToLevel(): void
 	function sa__LevelArray_goToLevel(): boolean
-	function rf__sa__LevelArray_goToNextLevel(): void
 	function sa__LevelArray_goToNextLevel(): boolean
 	function sa__LevelArray_restartTheGame(): boolean
-	function rf__sa__LevelArray_new(): void
 	function sa__LevelArray_new(): boolean
-	function rf__sa__LevelArray_destroyLastLevel(): void
 	function sa__LevelArray_destroyLastLevel(): boolean
 	function sa__LevelArray_count(): boolean
 	function sa__LevelArray_getCurrentLevel(): boolean
-	function rf__sa__LevelArray_get(): void
 	function sa__LevelArray_get(): boolean
-	function rf__sa__LevelArray_getLevelFromMonsterSpawnArray(): void
 	function sa__LevelArray_getLevelFromMonsterSpawnArray(): boolean
-	function rf__sa__LevelArray_getLevelFromMeteorArray(): void
 	function sa__LevelArray_getLevelFromMeteorArray(): boolean
-	function rf__sa__LevelArray_getLevelFromVisibilityModifierArray(): void
 	function sa__LevelArray_getLevelFromVisibilityModifierArray(): boolean
 	function sa__LevelArray_removeMonstersOfType(): boolean
 	function sa__LevelArray_removeCastersOfType(): boolean
@@ -8786,18 +8120,12 @@ declare global {
 	function sa__ClearMob_initialize(): boolean
 	function sa__ClearMob_onDestroy(): boolean
 	function sa__ClearMob_isBeingActivated(): boolean
-	function rf__sa__TerrainTypeArray_get(): void
 	function sa__TerrainTypeArray_get(): boolean
-	function rf__sa__TerrainTypeArray_getTerrainType(): void
 	function sa__TerrainTypeArray_getTerrainType(): boolean
-	function rf__sa__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(): void
 	function sa__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(): boolean
 	function sa__TerrainTypeArray_isLabelAlreadyUsed(): boolean
-	function rf__sa__TerrainTypeArray_newWalk(): void
 	function sa__TerrainTypeArray_newWalk(): boolean
-	function rf__sa__TerrainTypeArray_newDeath(): void
 	function sa__TerrainTypeArray_newDeath(): boolean
-	function rf__sa__TerrainTypeArray_newSlide(): void
 	function sa__TerrainTypeArray_newSlide(): boolean
 	function sa__TerrainTypeArray_getWalk(): boolean
 	function sa__TerrainTypeArray_getDeath(): boolean
@@ -8806,7 +8134,6 @@ declare global {
 	function sa__TerrainTypeArray_saveInCache(): boolean
 	function sa__TerrainTypeArray_count(): boolean
 	function sa__TerrainTypeArray_getMainTileset(): boolean
-	function rf__sa__Level_activate(): void
 	function sa__Level_activate(): boolean
 	function sa__Level_getStart(): boolean
 	function sa__Level_getStartRandomX(): boolean
@@ -8818,9 +8145,7 @@ declare global {
 	function sa__Level_onDestroy(): boolean
 	function sa__Level_recreateMonstersOfType(): boolean
 	function sa__Level_refreshCastersOfType(): boolean
-	function rf__sa__Level_getId(): void
 	function sa__Level_getId(): boolean
-	function rf__sa__Level_setNbLivesEarned(): void
 	function sa__Level_setNbLivesEarned(): boolean
 	function sa__Level_getNbLives(): boolean
 	function sa__Level_newVisibilityModifier(): boolean
@@ -8834,9 +8159,7 @@ declare global {
 	function sa__EscaperArray_get(): boolean
 	function sa__EscaperArray_nullify(): boolean
 	function sa__Escaper_onDestroy(): boolean
-	function rf__sa__Escaper_enableSlide(): void
 	function sa__Escaper_enableSlide(): boolean
-	function rf__sa__Escaper_enableCheckTerrain(): void
 	function sa__Escaper_enableCheckTerrain(): boolean
 	function sa__Escaper_isSliding(): boolean
 	function sa__Escaper_doesCheckTerrain(): boolean
@@ -8844,9 +8167,7 @@ declare global {
 	function sa__Escaper_moveInvisUnit(): boolean
 	function sa__Escaper_getHero(): boolean
 	function sa__Escaper_isAlive(): boolean
-	function rf__sa__Escaper_kill(): void
 	function sa__Escaper_kill(): boolean
-	function rf__sa__Escaper_pause(): void
 	function sa__Escaper_pause(): boolean
 	function sa__Escaper_reverse(): boolean
 	function sa__Escaper_setIsHeroSelectedForPlayer(): boolean
@@ -8861,25 +8182,18 @@ declare global {
 	function sa__Escaper_isAbsoluteSlideSpeed(): boolean
 	function sa__Escaper_isAbsoluteWalkSpeed(): boolean
 	function sa__Escaper_isGodModeOn(): boolean
-	function rf__sa__Escaper_setBaseColorDisco(): void
 	function sa__Escaper_setBaseColorDisco(): boolean
 	function sa__Escaper_getBaseColor(): boolean
-	function rf__sa__Escaper_setVcRed(): void
 	function sa__Escaper_setVcRed(): boolean
-	function rf__sa__Escaper_setVcGreen(): void
 	function sa__Escaper_setVcGreen(): boolean
-	function rf__sa__Escaper_setVcBlue(): void
 	function sa__Escaper_setVcBlue(): boolean
-	function rf__sa__Escaper_setVcTransparency(): void
 	function sa__Escaper_setVcTransparency(): boolean
 	function sa__Escaper_getVcRed(): boolean
 	function sa__Escaper_getVcGreen(): boolean
 	function sa__Escaper_getVcBlue(): boolean
 	function sa__Escaper_getVcTransparency(): boolean
 	function sa__Escaper_getPlayer(): boolean
-	function rf__sa__Escaper_getMakingLevel(): void
 	function sa__Escaper_getMakingLevel(): boolean
-	function rf__sa__Escaper_destroyMake(): void
 	function sa__Escaper_destroyMake(): boolean
 	function sa__Escaper_destroyAllSavedActions(): boolean
 	function sa__Escaper_getLastZ(): boolean
@@ -8891,7 +8205,6 @@ declare global {
 	function sa__Escaper_setCoopInvul(): boolean
 	function sa__Escaper_refreshCerclePosition(): boolean
 	function sa__KillingTimers_onDestroy(): boolean
-	function rf__sa__MonsterSpawnArray_get(): void
 	function sa__MonsterSpawnArray_get(): boolean
 	function sa__MonsterSpawnArray_getLastInstanceId(): boolean
 	function sa__MonsterSpawnArray_count(): boolean
@@ -8906,24 +8219,16 @@ declare global {
 	function sa__MonsterSpawn_createMob(): boolean
 	function sa__MonsterSpawn_toString(): boolean
 	function sa__MakeTerrainVerticalSymmetryAction_applySymmetry(): boolean
-	function rf__sa__MakeTerrainVerticalSymmetryAction_cancel(): void
 	function sa__MakeTerrainVerticalSymmetryAction_cancel(): boolean
-	function rf__sa__MakeTerrainVerticalSymmetryAction_redo(): void
 	function sa__MakeTerrainVerticalSymmetryAction_redo(): boolean
 	function sa__MakeTerrainHorizontalSymmetryAction_applySymmetry(): boolean
-	function rf__sa__MakeTerrainHorizontalSymmetryAction_cancel(): void
 	function sa__MakeTerrainHorizontalSymmetryAction_cancel(): boolean
-	function rf__sa__MakeTerrainHorizontalSymmetryAction_redo(): void
 	function sa__MakeTerrainHorizontalSymmetryAction_redo(): boolean
 	function sa__MakeTerrainCreateAction_onDestroy(): boolean
-	function rf__sa__MakeTerrainCreateAction_cancel(): void
 	function sa__MakeTerrainCreateAction_cancel(): boolean
-	function rf__sa__MakeTerrainCreateAction_redo(): void
 	function sa__MakeTerrainCreateAction_redo(): boolean
 	function sa__MakeTerrainCopyPasteAction_onDestroy(): boolean
-	function rf__sa__MakeTerrainCopyPasteAction_cancel(): void
 	function sa__MakeTerrainCopyPasteAction_cancel(): boolean
-	function rf__sa__MakeTerrainCopyPasteAction_redo(): void
 	function sa__MakeTerrainCopyPasteAction_redo(): boolean
 	function sa__EscaperEffect_onDestroy(): boolean
 	function sa__CasterShot_create(): boolean
@@ -8960,7 +8265,6 @@ declare global {
 	function sa__MakeDeleteCasters_saveLoc(): boolean
 	function sa__MakeDeleteCasters_unsaveLocDefinitely(): boolean
 	function sa__MakeDeleteCasters_cancelLastAction(): boolean
-	function rf__sa__MakeDeleteCasters_redoLastAction(): void
 	function sa__MakeDeleteCasters_redoLastAction(): boolean
 	function sa__MakeDeleteCasters_getMode(): boolean
 	function sa__MakeDeleteMeteors_isLastLocSavedUsed(): boolean
@@ -8969,7 +8273,6 @@ declare global {
 	function sa__MakeDeleteMeteors_saveLoc(): boolean
 	function sa__MakeDeleteMeteors_unsaveLocDefinitely(): boolean
 	function sa__MakeDeleteMeteors_cancelLastAction(): boolean
-	function rf__sa__MakeDeleteMeteors_redoLastAction(): void
 	function sa__MakeDeleteMeteors_redoLastAction(): boolean
 	function sa__MakeDeleteMeteors_getMode(): boolean
 	function sa__MakeDeleteMonsters_isLastLocSavedUsed(): boolean
@@ -8978,7 +8281,6 @@ declare global {
 	function sa__MakeDeleteMonsters_saveLoc(): boolean
 	function sa__MakeDeleteMonsters_unsaveLocDefinitely(): boolean
 	function sa__MakeDeleteMonsters_cancelLastAction(): boolean
-	function rf__sa__MakeDeleteMonsters_redoLastAction(): void
 	function sa__MakeDeleteMonsters_redoLastAction(): boolean
 	function sa__MakeDeleteMonsters_getMode(): boolean
 	function sa__MakeEnd_create(): boolean
@@ -8986,7 +8288,6 @@ declare global {
 	function sa__MakeEnd_saveLoc(): boolean
 	function sa__MakeEnd_isLastLocSavedUsed(): boolean
 	function sa__MakeEnd_cancelLastAction(): boolean
-	function rf__sa__MakeEnd_redoLastAction(): void
 	function sa__MakeEnd_redoLastAction(): boolean
 	function sa__MakeExchangeTerrains_create(): boolean
 	function sa__MakeExchangeTerrains_onDestroy(): boolean
@@ -8994,7 +8295,6 @@ declare global {
 	function sa__MakeExchangeTerrains_unsaveLocDefinitely(): boolean
 	function sa__MakeExchangeTerrains_isLastLocSavedUsed(): boolean
 	function sa__MakeExchangeTerrains_cancelLastAction(): boolean
-	function rf__sa__MakeExchangeTerrains_redoLastAction(): void
 	function sa__MakeExchangeTerrains_redoLastAction(): boolean
 	function sa__MakeGetTerrainType_create(): boolean
 	function sa__MakeGetTerrainType_onDestroy(): boolean
@@ -9016,11 +8316,9 @@ declare global {
 	function sa__MakeMonsterMultiplePatrols_onDestroy(): boolean
 	function sa__MakeMonsterMultiplePatrols_nextMonster(): boolean
 	function sa__MakeMonsterMultiplePatrols_getLocPointeur(): boolean
-	function rf__sa__MakeMonsterMultiplePatrols_saveLoc(): void
 	function sa__MakeMonsterMultiplePatrols_saveLoc(): boolean
 	function sa__MakeMonsterMultiplePatrols_setMonster(): boolean
 	function sa__MakeMonsterMultiplePatrols_cancelLastAction(): boolean
-	function rf__sa__MakeMonsterMultiplePatrols_redoLastAction(): void
 	function sa__MakeMonsterMultiplePatrols_redoLastAction(): boolean
 	function sa__MakeMonsterNoMove_getMonsterType(): boolean
 	function sa__MakeMonsterNoMove_getFacingAngle(): boolean
@@ -9032,12 +8330,10 @@ declare global {
 	function sa__MakeMonsterSimplePatrol_create(): boolean
 	function sa__MakeMonsterSimplePatrol_onDestroy(): boolean
 	function sa__MakeMonsterSimplePatrol_saveLoc(): boolean
-	function rf__sa__MakeMonsterSimplePatrol_unsaveLoc(): void
 	function sa__MakeMonsterSimplePatrol_unsaveLoc(): boolean
 	function sa__MakeMonsterSimplePatrol_unsaveLocDefinitely(): boolean
 	function sa__MakeMonsterSimplePatrol_isLastLocSavedUsed(): boolean
 	function sa__MakeMonsterSimplePatrol_cancelLastAction(): boolean
-	function rf__sa__MakeMonsterSimplePatrol_redoLastAction(): void
 	function sa__MakeMonsterSimplePatrol_redoLastAction(): boolean
 	function sa__MakeMonsterSimplePatrol_getMode(): boolean
 	function sa__MakeMonsterSpawn_create(): boolean
@@ -9045,7 +8341,6 @@ declare global {
 	function sa__MakeMonsterSpawn_saveLoc(): boolean
 	function sa__MakeMonsterSpawn_isLastLocSavedUsed(): boolean
 	function sa__MakeMonsterSpawn_cancelLastAction(): boolean
-	function rf__sa__MakeMonsterSpawn_redoLastAction(): void
 	function sa__MakeMonsterSpawn_redoLastAction(): boolean
 	function sa__MakeMonsterTeleport__disposeArrays(): boolean
 	function sa__MakeMonsterTeleport_getMonsterType(): boolean
@@ -9056,16 +8351,12 @@ declare global {
 	function sa__MakeMonsterTeleport_create(): boolean
 	function sa__MakeMonsterTeleport_onDestroy(): boolean
 	function sa__MakeMonsterTeleport_nextMonster(): boolean
-	function rf__sa__MakeMonsterTeleport_addWaitPeriod(): void
 	function sa__MakeMonsterTeleport_addWaitPeriod(): boolean
-	function rf__sa__MakeMonsterTeleport_addHidePeriod(): void
 	function sa__MakeMonsterTeleport_addHidePeriod(): boolean
 	function sa__MakeMonsterTeleport_getLocPointeur(): boolean
-	function rf__sa__MakeMonsterTeleport_saveLoc(): void
 	function sa__MakeMonsterTeleport_saveLoc(): boolean
 	function sa__MakeMonsterTeleport_setMonster(): boolean
 	function sa__MakeMonsterTeleport_cancelLastAction(): boolean
-	function rf__sa__MakeMonsterTeleport_redoLastAction(): void
 	function sa__MakeMonsterTeleport_redoLastAction(): boolean
 	function sa__MakeSetUnitMonsterType_getMonsterType(): boolean
 	function sa__MakeSetUnitMonsterType_isLastLocSavedUsed(): boolean
@@ -9074,7 +8365,6 @@ declare global {
 	function sa__MakeSetUnitMonsterType_saveLoc(): boolean
 	function sa__MakeSetUnitMonsterType_unsaveLocDefinitely(): boolean
 	function sa__MakeSetUnitMonsterType_cancelLastAction(): boolean
-	function rf__sa__MakeSetUnitMonsterType_redoLastAction(): void
 	function sa__MakeSetUnitMonsterType_redoLastAction(): boolean
 	function sa__MakeSetUnitMonsterType_getMode(): boolean
 	function sa__MakeSetUnitTeleportPeriod_getPeriod(): boolean
@@ -9084,7 +8374,6 @@ declare global {
 	function sa__MakeSetUnitTeleportPeriod_saveLoc(): boolean
 	function sa__MakeSetUnitTeleportPeriod_unsaveLocDefinitely(): boolean
 	function sa__MakeSetUnitTeleportPeriod_cancelLastAction(): boolean
-	function rf__sa__MakeSetUnitTeleportPeriod_redoLastAction(): void
 	function sa__MakeSetUnitTeleportPeriod_redoLastAction(): boolean
 	function sa__MakeSetUnitTeleportPeriod_getMode(): boolean
 	function sa__MakeStart_create(): boolean
@@ -9092,16 +8381,12 @@ declare global {
 	function sa__MakeStart_saveLoc(): boolean
 	function sa__MakeStart_isLastLocSavedUsed(): boolean
 	function sa__MakeStart_cancelLastAction(): boolean
-	function rf__sa__MakeStart_redoLastAction(): void
 	function sa__MakeStart_redoLastAction(): boolean
 	function sa__MakeStart_forNext(): boolean
 	function sa__MakeTerrainCopyPaste_create(): boolean
 	function sa__MakeTerrainCopyPaste_onDestroy(): boolean
-	function rf__sa__MakeTerrainCopyPaste_saveLoc(): void
 	function sa__MakeTerrainCopyPaste_saveLoc(): boolean
-	function rf__sa__MakeTerrainCopyPaste_cancelLastAction(): void
 	function sa__MakeTerrainCopyPaste_cancelLastAction(): boolean
-	function rf__sa__MakeTerrainCopyPaste_redoLastAction(): void
 	function sa__MakeTerrainCopyPaste_redoLastAction(): boolean
 	function sa__MakeTerrainCreate_isLastLocSavedUsed(): boolean
 	function sa__MakeTerrainCreate_getTerrainType(): boolean
@@ -9110,7 +8395,6 @@ declare global {
 	function sa__MakeTerrainCreate_saveLoc(): boolean
 	function sa__MakeTerrainCreate_unsaveLocDefinitely(): boolean
 	function sa__MakeTerrainCreate_cancelLastAction(): boolean
-	function rf__sa__MakeTerrainCreate_redoLastAction(): void
 	function sa__MakeTerrainCreate_redoLastAction(): boolean
 	function sa__MakeTerrainHeight_create(): boolean
 	function sa__MakeTerrainHeight_getRadius(): boolean
@@ -9124,7 +8408,6 @@ declare global {
 	function sa__MakeTerrainHorizontalSymmetry_saveLoc(): boolean
 	function sa__MakeTerrainHorizontalSymmetry_unsaveLocDefinitely(): boolean
 	function sa__MakeTerrainHorizontalSymmetry_cancelLastAction(): boolean
-	function rf__sa__MakeTerrainHorizontalSymmetry_redoLastAction(): void
 	function sa__MakeTerrainHorizontalSymmetry_redoLastAction(): boolean
 	function sa__MakeTerrainVerticalSymmetry_isLastLocSavedUsed(): boolean
 	function sa__MakeTerrainVerticalSymmetry_create(): boolean
@@ -9132,7 +8415,6 @@ declare global {
 	function sa__MakeTerrainVerticalSymmetry_saveLoc(): boolean
 	function sa__MakeTerrainVerticalSymmetry_unsaveLocDefinitely(): boolean
 	function sa__MakeTerrainVerticalSymmetry_cancelLastAction(): boolean
-	function rf__sa__MakeTerrainVerticalSymmetry_redoLastAction(): void
 	function sa__MakeTerrainVerticalSymmetry_redoLastAction(): boolean
 	function sa__MakeVisibilityModifier_create(): boolean
 	function sa__MakeVisibilityModifier_onDestroy(): boolean
@@ -9140,9 +8422,7 @@ declare global {
 	function sa__MakeVisibilityModifier_unsaveLocDefinitely(): boolean
 	function sa__MakeVisibilityModifier_isLastLocSavedUsed(): boolean
 	function sa__MakeVisibilityModifier_cancelLastAction(): boolean
-	function rf__sa__MakeVisibilityModifier_redoLastAction(): void
 	function sa__MakeVisibilityModifier_redoLastAction(): boolean
-	function rf__sa__MonsterMultiplePatrols_storeNewLoc(): void
 	function sa__MonsterMultiplePatrols_storeNewLoc(): boolean
 	function sa__MonsterMultiplePatrols_destroyLocs(): boolean
 	function sa__MonsterMultiplePatrols_getId(): boolean
@@ -9151,24 +8431,18 @@ declare global {
 	function sa__MonsterMultiplePatrols_killUnit(): boolean
 	function sa__MonsterMultiplePatrols_onDestroy(): boolean
 	function sa__MonsterMultiplePatrols_nextMove(): boolean
-	function rf__sa__MonsterMultiplePatrols_createUnit(): void
 	function sa__MonsterMultiplePatrols_createUnit(): boolean
 	function sa__MonsterMultiplePatrols_getLife(): boolean
 	function sa__MonsterMultiplePatrols_setLife(): boolean
-	function rf__sa__MonsterMultiplePatrols_destroyLastLoc(): void
 	function sa__MonsterMultiplePatrols_destroyLastLoc(): boolean
-	function rf__sa__MonsterMultiplePatrols_addNewLoc(): void
 	function sa__MonsterMultiplePatrols_addNewLoc(): boolean
 	function sa__MonsterMultiplePatrols_getMonsterType(): boolean
-	function rf__sa__MonsterMultiplePatrols_setMonsterType(): void
 	function sa__MonsterMultiplePatrols_setMonsterType(): boolean
 	function sa__MonsterMultiplePatrols_temporarilyDisable(): boolean
 	function sa__MonsterMultiplePatrols_temporarilyEnable(): boolean
-	function rf__sa__MonsterMultiplePatrols_setBaseColor(): void
 	function sa__MonsterMultiplePatrols_setBaseColor(): boolean
 	function sa__MonsterMultiplePatrols_setVertexColor(): boolean
 	function sa__MonsterMultiplePatrols_reinitColor(): boolean
-	function rf__sa__MonsterMultiplePatrols_toString(): void
 	function sa__MonsterMultiplePatrols_toString(): boolean
 	function sa__MonsterNoMove_getId(): boolean
 	function sa__MonsterNoMove_removeUnit(): boolean
@@ -9178,12 +8452,10 @@ declare global {
 	function sa__MonsterNoMove_getLife(): boolean
 	function sa__MonsterNoMove_setLife(): boolean
 	function sa__MonsterNoMove_getMonsterType(): boolean
-	function rf__sa__MonsterNoMove_setMonsterType(): void
 	function sa__MonsterNoMove_setMonsterType(): boolean
 	function sa__MonsterNoMove_toString(): boolean
 	function sa__MonsterNoMove_temporarilyDisable(): boolean
 	function sa__MonsterNoMove_temporarilyEnable(): boolean
-	function rf__sa__MonsterNoMove_setBaseColor(): void
 	function sa__MonsterNoMove_setBaseColor(): boolean
 	function sa__MonsterNoMove_setVertexColor(): boolean
 	function sa__MonsterNoMove_reinitColor(): boolean
@@ -9195,62 +8467,46 @@ declare global {
 	function sa__MonsterSimplePatrol_getLife(): boolean
 	function sa__MonsterSimplePatrol_setLife(): boolean
 	function sa__MonsterSimplePatrol_getMonsterType(): boolean
-	function rf__sa__MonsterSimplePatrol_setMonsterType(): void
 	function sa__MonsterSimplePatrol_setMonsterType(): boolean
 	function sa__MonsterSimplePatrol_temporarilyDisable(): boolean
 	function sa__MonsterSimplePatrol_temporarilyEnable(): boolean
-	function rf__sa__MonsterSimplePatrol_setBaseColor(): void
 	function sa__MonsterSimplePatrol_setBaseColor(): boolean
 	function sa__MonsterSimplePatrol_setVertexColor(): boolean
 	function sa__MonsterSimplePatrol_reinitColor(): boolean
 	function sa__MonsterSimplePatrol_toString(): boolean
-	function rf__sa__MonsterTeleport_storeNewLoc(): void
 	function sa__MonsterTeleport_storeNewLoc(): boolean
 	function sa__MonsterTeleport_destroyLocs(): boolean
 	function sa__MonsterTeleport_getId(): boolean
 	function sa__MonsterTeleport_removeUnit(): boolean
 	function sa__MonsterTeleport_killUnit(): boolean
 	function sa__MonsterTeleport_onDestroy(): boolean
-	function rf__sa__MonsterTeleport_setPeriod(): void
 	function sa__MonsterTeleport_setPeriod(): boolean
 	function sa__MonsterTeleport_getPeriod(): boolean
-	function rf__sa__MonsterTeleport_createUnit(): void
 	function sa__MonsterTeleport_createUnit(): boolean
 	function sa__MonsterTeleport_nextMove(): boolean
 	function sa__MonsterTeleport_getLife(): boolean
 	function sa__MonsterTeleport_setLife(): boolean
-	function rf__sa__MonsterTeleport_getX(): void
 	function sa__MonsterTeleport_getX(): boolean
-	function rf__sa__MonsterTeleport_getY(): void
 	function sa__MonsterTeleport_getY(): boolean
-	function rf__sa__MonsterTeleport_addNewLoc(): void
 	function sa__MonsterTeleport_addNewLoc(): boolean
-	function rf__sa__MonsterTeleport_destroyLastLoc(): void
 	function sa__MonsterTeleport_destroyLastLoc(): boolean
 	function sa__MonsterTeleport_getMonsterType(): boolean
-	function rf__sa__MonsterTeleport_setMonsterType(): void
 	function sa__MonsterTeleport_setMonsterType(): boolean
 	function sa__MonsterTeleport_temporarilyDisable(): boolean
 	function sa__MonsterTeleport_temporarilyEnable(): boolean
-	function rf__sa__MonsterTeleport_setBaseColor(): void
 	function sa__MonsterTeleport_setBaseColor(): boolean
 	function sa__MonsterTeleport_setVertexColor(): boolean
 	function sa__MonsterTeleport_reinitColor(): boolean
-	function rf__sa__MonsterTeleport_toString(): void
 	function sa__MonsterTeleport_toString(): boolean
 	function sa__MakeClearMob__disposeArrays(): boolean
 	function sa__MakeClearMob_create(): boolean
 	function sa__MakeClearMob_onDestroy(): boolean
-	function rf__sa__MakeClearMob_clickMade(): void
 	function sa__MakeClearMob_clickMade(): boolean
-	function rf__sa__MakeClearMob_cancelLastAction(): void
 	function sa__MakeClearMob_cancelLastAction(): boolean
-	function rf__sa__MakeClearMob_redoLastAction(): void
 	function sa__MakeClearMob_redoLastAction(): boolean
-	function rf__sa___prototype2_TimerUtils__init(): void
-	function sa___prototype2_TimerUtils__init(): boolean
-	function sa___prototype51_SoundUtils__HookStopSound(): boolean
-	function jasshelper__initstructs239980312(): void
+	function sa___prototype2_TimerUtils___init(): boolean
+	function sa___prototype51_SoundUtils___HookStopSound(): boolean
+	function jasshelper__initstructs1517943906(): void
 	
 	
 }

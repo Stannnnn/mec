@@ -1,11 +1,24 @@
 import { DrakeMPQ } from 'utility-node/dist/MPQ/DrakeMPQ'
 import { simpleExec } from 'utility-node/dist/SimpleExec'
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'fs-extra'
+import { getEnv } from 'utility-node/dist/Env'
+
+const transpilerFix = `-- TRANSPILER FIX
+local oldSubString = SubString
+SubString = function(source, start, _end)
+    if start > StringLength(source) then
+        return nil
+    end
+    local result = oldSubString(source, start, _end)
+    return result
+end
+function`
 
 const main = async () => {
     const src = 'C:/Users/Stan/Node/mec/source/mec.w3x'
     const outDir = 'C:/Users/Stan/Node/mec/maps/map.w3x'
 
+    const tmpFile = 'C:/Users/Stan/Node/mec/maps/tmp.w3x'
     const mapJ = './tmp.j'
 
     await DrakeMPQ().extract({ mpq: src, file: 'war3map.j', outputFile: mapJ })
@@ -17,28 +30,8 @@ const main = async () => {
     contents = contents.replace(new RegExp('"\\\\\\\\"', 'g'), '"@BACKSLASH@@BACKSLASH@"')
     writeFileSync(mapJ, contents)
 
-    // war3map.j
-    // TODO; We use drake's Jass to Lua transpiler, GUI only no API..
-    if (false) {
-        await simpleExec({
-            cmd: [
-                'C:/Users/Stan/Node/JassToTs/JassToTs/bin/Release/netcoreapp2.1/publish/JassToTs.exe',
-                '-i',
-                mapJ,
-                '-lua',
-                '-o',
-                `${outDir}/war3map.lua`,
-            ].join(' '),
-            verbose: true,
-        })
-
-        let contents2 = readFileSync(mapJ).toString('utf-8')
-        contents2 = contents2.replace(new RegExp('"@BACKSLASH@"', 'g'), '"\\\\"')
-        writeFileSync(mapJ, contents2)
-    }
-
     // .d.ts
-    if (true) {
+    {
         const dts = 'C:/Users/Stan/Node/mec/src/war3map.d.ts'
 
         await simpleExec({
@@ -75,7 +68,30 @@ const main = async () => {
 
     unlinkSync(mapJ)
 
-    await DrakeMPQ().extractAll({ mpq: src, outputDir: outDir })
+    // .w3x
+    {
+        await simpleExec({
+            cmd: `${getEnv('War3NetMPQApi')} "transpile>${src}>${tmpFile}"`,
+            verbose: true,
+        })
+
+        if (existsSync(`${outDir}/war3map.lua`)) {
+            unlinkSync(`${outDir}/war3map.lua`)
+        }
+
+        await DrakeMPQ().extractAll({ mpq: tmpFile, outputDir: outDir })
+
+        unlinkSync(tmpFile)
+
+        let contents = readFileSync(`${outDir}/war3map.lua`).toString('utf-8')
+        contents = contents.replace(new RegExp('^function', 'm'), transpilerFix)
+        contents = contents.replace(
+            new RegExp('outputStr = outputStr \\.\\. char', 'g'),
+            'outputStr = (outputStr or "") .. char'
+        )
+
+        writeFileSync(`${outDir}/war3map.lua`, contents)
+    }
 
     const cleanup = [`${outDir}/(attributes)`, `${outDir}/(listfile)`, `${outDir}/war3map.j`]
 

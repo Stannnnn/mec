@@ -5855,6 +5855,15 @@ f__result_trigger = nil
 
 
 
+-- TRANSPILER FIX
+local oldSubString = SubString
+SubString = function(source, start, _end)
+    if start > StringLength(source) then
+        return nil
+    end
+    local result = oldSubString(source, start, _end)
+    return result
+end
 function sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(i)
   if (i < 8191) then
     return s__ReinitTerrainsPositions___TERRAIN_SAVE[i]
@@ -49854,7 +49863,7 @@ function CmdParam(str, paramNumber)
       if (char == " ") then
         break
       end
-      outputStr = outputStr .. char
+      outputStr = (outputStr or "") .. char
       i = i + 1
     end
     return outputStr
