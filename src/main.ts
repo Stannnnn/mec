@@ -1,6 +1,6 @@
 import { Commands } from 'commands'
 import { hamiltonianPathGenerator } from 'hamiltonianPathGenerator'
-import { enableAutoRevive, killEscapers, spawnMonster } from 'mec'
+import { enableAutoRevive, killEscapers, spawnMonster, spawnRock } from 'mec'
 import { DifficultyLevels } from 'Settings/Difficulty'
 import { Themes } from 'Settings/themes'
 import { createEvent, forRange } from 'utils'
@@ -13,18 +13,20 @@ import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
     [?] = Possibly fixed
     [X] = Done
 *
-    [?] BUG: Autorevive not working from start
-    [ ] Terrain order for themes is wrong
+    [X] BUG: Autorevive not working from start
+    [X] Terrain order for themes is wrong
     [X] Specific commands to override difficulty levels
     [X] Help command
     [X] Use diff command trigger so that mec doesn't trigger
     [ ] BUG: Init_heroes breaks heroes, they won't die by killEscapers on new level
-    [O] yarn transpile - to transpile the basemap again so that we can actually edit it (Should also regenerate the war3map.lua)
+    [X] yarn transpile - to transpile the basemap again so that we can actually edit it (Should also regenerate the war3map.lua)
     [ ] Patrols in corner should have a tiny offset so that they match terrain and that it doesn't look like that they walk out too far
     [O] Implement https://github.com/voces/w3ts-jsx
-    [O] Decide first which blocks on the size of a grid can have patrols, then use thatto spawn em based on config amount
-    [ ] Random rocks on the map
+    [X] Decide first which blocks on the size of a grid can have patrols, then use thatto spawn em based on config amount
+    [X] Random rocks on the map
     [ ] Multiple diagonal patrols on the same tile
+    [ ] Tiles per patrol should support 0.5
+    [ ] Fix start loc on 1x1 slide
 */
 
 const BUILD_DATE = compiletime(() => new Date().toUTCString())
@@ -80,7 +82,7 @@ const tsMain = () => {
     const difficulty = DifficultyLevels()
 
     let theme = themes.magic
-    let difficultyLevel = difficulty.newbie
+    let difficultyLevel = { ...difficulty.newbie }
 
     const getPatrolRandom = () => GetRandomInt(-4, 4)
 
@@ -103,7 +105,7 @@ const tsMain = () => {
             const lvl = GetEventPlayerChatString().split(' ')[1]
 
             if (!!difficulty[lvl as keyof typeof difficulty]) {
-                difficultyLevel = difficulty[lvl as keyof typeof difficulty]
+                difficultyLevel = { ...difficulty[lvl as keyof typeof difficulty] }
 
                 print(`Difficulty changed to: ${lvl}`)
                 generateSlide(true)
@@ -129,7 +131,7 @@ const tsMain = () => {
             }
         },
     })
-    ;['gridWidth', 'slideWidth'].forEach(s =>
+    ;['gridWidth', 'slideWidth', 'tilesPerPatrol', 'rockChance', 'tilesX', 'tilesY'].forEach(s =>
         registerCommand({
             cmd: s,
             exactMatchOnly: false,
@@ -148,14 +150,24 @@ const tsMain = () => {
         })
     )
 
+    registerCommand({
+        cmd: 'info',
+        exactMatchOnly: false,
+        cb: () => {
+            print(lastLevelInfo)
+        },
+    })
+
     const worldRect = GetWorldBounds()
 
     let generatedEvents: trigger[] = []
     let activeTimers: Timer[] = []
 
+    let lastLevelInfo: string = ''
+
     const generateSlide = (regenerate?: boolean) => {
         const { monsterIds, walkTerrain, slideTerrain, deathTerrain } = theme
-        const { gridWidth, slideWidth } = difficultyLevel
+        const { gridWidth, slideWidth, tilesPerPatrol, rockChance } = difficultyLevel
 
         // Tiles around the corner of the map are only rendered for half
         const mapOffsetX = GetRectMinX(worldRect) + mapTileOffset * tileSize + tileSize / 2
@@ -206,8 +218,23 @@ const tsMain = () => {
             }
         }
 
-        const tilesX = Math.min(8, Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth))
-        const tilesY = Math.min(8, Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth))
+        const tilesX = Math.max(
+            2,
+            Math.min(
+                8,
+                Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth),
+                difficultyLevel.tilesX
+            )
+        )
+
+        const tilesY = Math.max(
+            2,
+            Math.min(
+                8,
+                Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth),
+                difficultyLevel.tilesY
+            )
+        )
 
         generatedEvents.forEach(t => DestroyTrigger(t))
         generatedEvents = []
@@ -241,11 +268,16 @@ const tsMain = () => {
 
         NB_MAX_TILES_MODIFIED = 1000
 
-        print(`Level info:
-    gridWidth: ${gridWidth}
-    slideWidth: ${slideWidth}
-    tiles: ${tilesX}x${tilesY}
-    `)
+        lastLevelInfo = `Level info:
+        gridWidth: ${gridWidth}
+        slideWidth: ${slideWidth}
+        tilesPerPatrol: ${tilesPerPatrol}
+        rockChance: ${rockChance}
+        tilesX: ${tilesX}
+        tilesY: ${tilesY}
+        `
+
+        print(lastLevelInfo)
 
         let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY })
 
@@ -305,7 +337,22 @@ const tsMain = () => {
             let prev: { x: number; y: number }
             let current: { x: number; y: number }
 
-            path.data.slice(1, path.data.length).forEach((next, k) => {
+            const patrolsToSpawnGrid = slideWidth
+            const patrolsToSpawnConnector = gridWidth - slideWidth
+
+            let i = 1
+
+            const shouldSpawn = () => {
+                if (i === tilesPerPatrol) {
+                    i = 1
+                    return true
+                }
+
+                i += 1
+                return false
+            }
+
+            path.data.slice(1, path.data.length).forEach(next => {
                 if (!current) {
                     current = next
                     return
@@ -360,32 +407,21 @@ const tsMain = () => {
                     y: prevTile.y + prevTileRadius,
                 }
 
-                // TODO; Use tilesPerPatrol and k to decide wether or not a patrol should spawn
-                const tilesPerPatrol = 4
-                const patrolsToSpawnGrid = slideWidth
-                const patrolsToSpawnConnector = gridWidth - slideWidth
-
                 let patrols: { x: number; y: number; x2: number; y2: number }[] = []
 
                 // Grid patrols
                 {
                     // Rocks
-                    // {
-                    //     s__MonsterNoMoveArray_new(
-                    //         s__Level_monstersNoMove[level],
-                    //         monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                    //         currentTileCenter.x,
-                    //         currentTileCenter.y,
-                    //         -1,
-                    //         true
-                    //     )
-                    // }
+                    if (GetRandomInt(0, 100) > 100 - rockChance) {
+                        spawnRock({
+                            level,
+                            monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+                            x: currentTileCenter.x,
+                            y: currentTileCenter.y,
+                        })
+                    }
 
                     forRange(patrolsToSpawnGrid, i => {
-                        // if ((k * patrolsToSpawnGrid + i) % patrolsToSpawnGrid !== 0) {
-                        //     return
-                        // }
-
                         const patrolWidth = slideWidth * tileSize
                         const iOffset =
                             // Offset based on i
@@ -394,6 +430,10 @@ const tsMain = () => {
                             patrolWidth / patrolsToSpawnGrid / 2
 
                         if (direction === 'EE' || direction === 'WW') {
+                            if (!shouldSpawn()) {
+                                return
+                            }
+
                             patrols.push({
                                 x: currentTile.x + iOffset,
                                 y: currentTileCenter.y - currentTileRadius - patrolOffset,
@@ -401,19 +441,39 @@ const tsMain = () => {
                                 y2: currentTileCenter.y + currentTileRadius + patrolOffset,
                             })
                         } else if (direction === 'NN' || direction === 'SS') {
+                            if (!shouldSpawn()) {
+                                return
+                            }
+
                             patrols.push({
                                 x: currentTileCenter.x - currentTileRadius - patrolOffset,
                                 y: currentTile.y + iOffset,
                                 x2: currentTileCenter.x + currentTileRadius + patrolOffset,
                                 y2: currentTile.y + iOffset,
                             })
-                        } else if (
-                            direction === 'NE' ||
-                            direction === 'EN' ||
-                            direction === 'SW' ||
-                            direction === 'WS'
-                        ) {
+                            // TODO; Was working on adding multiple patrols on diagonal..
+                        } else if (direction === 'NE' || direction === 'WS') {
+                            // 90 / patrolsToSpawnGrid * i
                             if (i > 0) {
+                                return
+                            }
+
+                            if (!shouldSpawn()) {
+                                return
+                            }
+
+                            patrols.push({
+                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
+                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
+                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+                            })
+                        } else if (direction === 'EN' || direction === 'SW') {
+                            if (i > 0) {
+                                return
+                            }
+
+                            if (!shouldSpawn()) {
                                 return
                             }
 
@@ -425,6 +485,10 @@ const tsMain = () => {
                             })
                         } else {
                             if (i > 0) {
+                                return
+                            }
+
+                            if (!shouldSpawn()) {
                                 return
                             }
 
@@ -442,24 +506,21 @@ const tsMain = () => {
                 {
                     const diffTile = getCenterTile({ tile: prevTileCenter, tileTo: currentTileCenter })
 
-                    // Rocks
-                    // {
-                    //     s__MonsterNoMoveArray_new(
-                    //         s__Level_monstersNoMove[level],
-                    //         monsterTypes[GetRandomInt(0, monsterTypes.length - 1)],
-                    //         diffTile.x,
-                    //         diffTile.y,
-                    //         -1,
-                    //         true
-                    //     )
-                    // }
+                    if (GetRandomInt(0, 100) > 100 - rockChance) {
+                        spawnRock({
+                            level,
+                            monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+                            x: diffTile.x,
+                            y: diffTile.y,
+                        })
+                    }
 
                     forRange(patrolsToSpawnConnector, i => {
-                        const iOffset = tileSize * i - (patrolsToSpawnConnector / 2) * tileSize + tileSize / 2
+                        if (!shouldSpawn()) {
+                            return
+                        }
 
-                        // if ((k * patrolsToSpawnConnector + i) % patrolsToSpawnConnector !== 0) {
-                        //     return
-                        // }
+                        const iOffset = tileSize * i - (patrolsToSpawnConnector / 2) * tileSize + tileSize / 2
 
                         if (directionFrom === 'N' || directionFrom === 'S') {
                             patrols.push({
@@ -481,7 +542,7 @@ const tsMain = () => {
 
                 patrols.forEach(patrol => {
                     activeTimers.push(
-                        new Timer().start(GetRandomReal(0, 2), false, () => {
+                        new Timer().start(GetRandomReal(0, Math.min(5, slideWidth + 1)), false, () => {
                             spawnMonster({
                                 level,
                                 monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],

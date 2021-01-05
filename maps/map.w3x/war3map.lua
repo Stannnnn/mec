@@ -1,9 +1,9 @@
 --globals from AfkMode:
 LIBRARY_AfkMode = true
 timeMinAfk = 30
-AfkMode___Z = -50
-AfkMode___SIZE = 8
-AfkMode___TRANSPARENCY = 0
+AfkMode__Z = -50
+AfkMode__SIZE = 8
+AfkMode__TRANSPARENCY = 0
 
 isAfk = __jarray(false)
 afkModeTimers = {}
@@ -28,8 +28,8 @@ AutoContinueAfterSliding__ECART_MAX_ANGLE = 45
 --endglobals from AutoContinueAfterSliding
 --globals from DeplacementHeroHorsDeathPath:
 LIBRARY_DeplacementHeroHorsDeathPath = true
-DeplacementHeroHorsDeathPath___GRADUATION_ANGLE = 5
-DeplacementHeroHorsDeathPath___VALEUR_DECALAGE = 60
+DeplacementHeroHorsDeathPath__GRADUATION_ANGLE = 5
+DeplacementHeroHorsDeathPath__VALEUR_DECALAGE = 60
 --endglobals from DeplacementHeroHorsDeathPath
 --globals from Disco:
 LIBRARY_Disco = true
@@ -39,9 +39,9 @@ LIBRARY_FunctionsOnNumbers = true
 --endglobals from FunctionsOnNumbers
 --globals from GameTime:
 LIBRARY_GameTime = true
-GameTime__hours = 0
-GameTime__minuts = 0
-GameTime__seconds = 0
+GameTime___hours = 0
+GameTime___minuts = 0
+GameTime___seconds = 0
 TIME_PLAYER = Player(0)
 --endglobals from GameTime
 --globals from Gravity:
@@ -65,13 +65,13 @@ METEOR_CHEAT = 1296254001
 --endglobals from Meteor
 --globals from MonsterOrCasterStack:
 LIBRARY_MonsterOrCasterStack = true
-MonsterOrCasterStack__udg_enumMoc = nil
+MonsterOrCasterStack___udg_enumMoc = nil
 --endglobals from MonsterOrCasterStack
 --globals from MonstersClickableSetLife:
 LIBRARY_MonstersClickableSetLife = true
 monstersClickable = nil
 trigMonstersClickableSetLife = nil
-MonstersClickableSetLife__PERIOD = 0.1
+MonstersClickableSetLife___PERIOD = 0.1
 --endglobals from MonstersClickableSetLife
 --globals from SlideTrigger:
 LIBRARY_SlideTrigger = true
@@ -86,13 +86,13 @@ STRING_INVALID_SEGMENT = ""
 
 StringLib___ht_hash = nil
 
-StringLib___KEY_ASCII = 2
-StringLib___KEY_UTF8 = 3
+StringLib___KEY_ASCII = 8
+StringLib___KEY_UTF8 = 10
 --endglobals from StringLib
 --globals from TerrainModifyingTrig:
 LIBRARY_TerrainModifyingTrig = true
 y = nil
-TerrainModifyingTrig___wasCheckTerrainTriggerOn = __jarray(false)
+TerrainModifyingTrig__wasCheckTerrainTriggerOn = __jarray(false)
 terrainModifyWorking = false
 --constant integer TERRAIN_MODIFYING_NB_LINES_TO_DO = 5
 --maintenant on fait ligne par ligne (--> 1)
@@ -225,37 +225,37 @@ LIBRARY_MakeVisibilityModifierAction = true
 --endglobals from MakeVisibilityModifierAction
 --globals from MessageHeroDies:
 LIBRARY_MessageHeroDies = true
-MessageHeroDies___MESSAGE_DURATION = 10
-MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE = 5
-MessageHeroDies___timerSonJoue = CreateTimer()
-MessageHeroDies___isSoundPlaying = false
-MessageHeroDies___DUREE_SON = 3
+MessageHeroDies__MESSAGE_DURATION = 10
+MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE = 5
+MessageHeroDies__timerSonJoue = CreateTimer()
+MessageHeroDies__isSoundPlaying = false
+MessageHeroDies__DUREE_SON = 3
 --endglobals from MessageHeroDies
 --globals from MeteorArray:
 LIBRARY_MeteorArray = true
-MeteorArray__MAX_NB_METEORS = 100
+MeteorArray___MAX_NB_METEORS = 100
 --endglobals from MeteorArray
 --globals from MeteorFunctions:
 LIBRARY_MeteorFunctions = true
-MeteorFunctions__meteor = nil
+MeteorFunctions___meteor = nil
 --endglobals from MeteorFunctions
 --globals from MonsterType:
 LIBRARY_MonsterType = true
 --endglobals from MonsterType
 --globals from SaveLevels:
 LIBRARY_SaveLevels = true
-SaveLevels___levelId = nil
-SaveLevels___level = nil
-SaveLevels___visibilityId = nil
-SaveLevels___monsterNoMoveId = nil
-SaveLevels___monsterSimplePatrolId = nil
-SaveLevels___monsterMultiplePatrolsId = nil
-SaveLevels___monsterTeleportId = nil
-SaveLevels___meteorId = nil
-SaveLevels___monsterSpawnId = nil
-SaveLevels___casterId = nil
-SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME = 10
-SaveLevels___trg_startSaveNextLevel = nil
+SaveLevels__levelId = nil
+SaveLevels__level = nil
+SaveLevels__visibilityId = nil
+SaveLevels__monsterNoMoveId = nil
+SaveLevels__monsterSimplePatrolId = nil
+SaveLevels__monsterMultiplePatrolsId = nil
+SaveLevels__monsterTeleportId = nil
+SaveLevels__meteorId = nil
+SaveLevels__monsterSpawnId = nil
+SaveLevels__casterId = nil
+SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME = 10
+SaveLevels__trg_startSaveNextLevel = nil
 --endglobals from SaveLevels
 --globals from SaveTerrainConfigInCache:
 LIBRARY_SaveTerrainConfigInCache = true
@@ -272,7 +272,7 @@ LIBRARY_StringArrayForCache = true
 CACHE_SEPARATEUR_ITEM = "("
 CACHE_SEPARATEUR_PARAM = ","
 
-StringArrayForCache___MAX_STRING_LENGTH = 200
+StringArrayForCache__MAX_STRING_LENGTH = 200
 stringArrayForCache = 0
 --endglobals from StringArrayForCache
 --globals from TerrainTypeGrass:
@@ -288,28 +288,28 @@ timeOnSlide = __jarray(0.0)
 --endglobals from Apm
 --globals from CasterFunctions:
 LIBRARY_CasterFunctions = true
-CasterFunctions__escaper = nil
-CasterFunctions__caster = nil
-CasterFunctions__PRECISION_TIR = 40
-CasterFunctions__PRECISION_DIFF_POS_HERO = 20
-CasterFunctions__ECART_CHECK = 0.05
+CasterFunctions___escaper = nil
+CasterFunctions___caster = nil
+CasterFunctions___PRECISION_TIR = 40
+CasterFunctions___PRECISION_DIFF_POS_HERO = 20
+CasterFunctions___ECART_CHECK = 0.05
 
-CasterFunctions__x1 = nil
-CasterFunctions__y1 = nil
-CasterFunctions__angleSlider = nil
-CasterFunctions__sliderSpeed = nil
-CasterFunctions__x2 = nil
-CasterFunctions__y2 = nil
-CasterFunctions__x3 = nil
-CasterFunctions__y3 = nil
-CasterFunctions__k1 = nil
-CasterFunctions__k2 = nil
-CasterFunctions__Xk1 = nil
-CasterFunctions__Yk1 = nil
-CasterFunctions__Xk2 = nil
-CasterFunctions__Yk2 = nil
-CasterFunctions__XintersectionDevantHeros = nil
-CasterFunctions__YintersectionDevantHeros = nil
+CasterFunctions___x1 = nil
+CasterFunctions___y1 = nil
+CasterFunctions___angleSlider = nil
+CasterFunctions___sliderSpeed = nil
+CasterFunctions___x2 = nil
+CasterFunctions___y2 = nil
+CasterFunctions___x3 = nil
+CasterFunctions___y3 = nil
+CasterFunctions___k1 = nil
+CasterFunctions___k2 = nil
+CasterFunctions___Xk1 = nil
+CasterFunctions___Yk1 = nil
+CasterFunctions___Xk2 = nil
+CasterFunctions___Yk2 = nil
+CasterFunctions___XintersectionDevantHeros = nil
+CasterFunctions___YintersectionDevantHeros = nil
 --endglobals from CasterFunctions
 --globals from CasterTypeArray:
 LIBRARY_CasterTypeArray = true
@@ -333,7 +333,7 @@ F_shortcutCommand = __jarray("")
 --endglobals from CommandShortcuts
 --globals from Lives:
 LIBRARY_Lives = true
-Lives__LIVES_PLAYER = Player(6)
+Lives___LIVES_PLAYER = Player(6)
 --endglobals from Lives
 --globals from MonsterTypeArray:
 LIBRARY_MonsterTypeArray = true
@@ -362,15 +362,15 @@ LIBRARY_ModifyTerrainFunctions = true
 --endglobals from ModifyTerrainFunctions
 --globals from MonsterCreationFunctions:
 LIBRARY_MonsterCreationFunctions = true
-MonsterCreationFunctions__monster = nil
-MonsterCreationFunctions__ATTACK_SKILL = 1096905835
-MonsterCreationFunctions__ABILITY_1_LIFE = 1094866481
-MonsterCreationFunctions__ABILITY_10_LIFE = 1094866482
-MonsterCreationFunctions__ABILITY_100_LIFE = 1094866483
-MonsterCreationFunctions__ABILITY_1000_LIFE = 1094866484
-MonsterCreationFunctions__ABILITY_10000_LIFE = 1094866485
-MonsterCreationFunctions__ABILITY_ANNULER_VISION = 1093681494
-MonsterCreationFunctions__ABILITY_FORME_CORBEAU = 1097691750
+MonsterCreationFunctions___monster = nil
+MonsterCreationFunctions___ATTACK_SKILL = 1096905835
+MonsterCreationFunctions___ABILITY_1_LIFE = 1094866481
+MonsterCreationFunctions___ABILITY_10_LIFE = 1094866482
+MonsterCreationFunctions___ABILITY_100_LIFE = 1094866483
+MonsterCreationFunctions___ABILITY_1000_LIFE = 1094866484
+MonsterCreationFunctions___ABILITY_10000_LIFE = 1094866485
+MonsterCreationFunctions___ABILITY_ANNULER_VISION = 1093681494
+MonsterCreationFunctions___ABILITY_FORME_CORBEAU = 1097691750
 --endglobals from MonsterCreationFunctions
 --globals from SaveMonsterTypes:
 LIBRARY_SaveMonsterTypes = true
@@ -386,8 +386,8 @@ LIBRARY_AllTerrainFunctions = true
 --endglobals from AllTerrainFunctions
 --globals from CasterShot:
 LIBRARY_CasterShot = true
-CasterShot__shotsHashtable = nil
-CasterShot__PERIOD = 0.01
+CasterShot___shotsHashtable = nil
+CasterShot___PERIOD = 0.01
 --endglobals from CasterShot
 --globals from EscaperEffect:
 LIBRARY_EscaperEffect = true
@@ -406,13 +406,13 @@ LIBRARY_MakeTerrainVerticalSymmetryAction = true
 --endglobals from MakeTerrainVerticalSymmetryAction
 --globals from MonsterSpawn:
 LIBRARY_MonsterSpawn = true
-MonsterSpawn__ht = nil
-MonsterSpawn__DECALAGE_UNSPAWN = 200
-MonsterSpawn__DELAY_BETWEEN_SPAWN_AND_MOVEMENT = 0.5
+MonsterSpawn___ht = nil
+MonsterSpawn___DECALAGE_UNSPAWN = 200
+MonsterSpawn___DELAY_BETWEEN_SPAWN_AND_MOVEMENT = 0.5
 --endglobals from MonsterSpawn
 --globals from SaveWater:
 LIBRARY_SaveWater = true
-SaveWater___y = nil
+SaveWater__y = nil
 --endglobals from SaveWater
 --globals from TerrainTypeDeathFunctions:
 LIBRARY_TerrainTypeDeathFunctions = true
@@ -425,62 +425,62 @@ LIBRARY_TerrainTypeWalk = true
 --endglobals from TerrainTypeWalk
 --globals from ChangeAllTerrains:
 LIBRARY_ChangeAllTerrains = true
-ChangeAllTerrains___oldTerrainTypes = __jarray(0)
-ChangeAllTerrains___newTerrainTypes = __jarray(0)
-ChangeAllTerrains___lastTerrainArrayId = nil
-ChangeAllTerrains___nbNewTerrains = nil
-ChangeAllTerrains___nbNewTerrainsAllowed = nil
+ChangeAllTerrains__oldTerrainTypes = __jarray(0)
+ChangeAllTerrains__newTerrainTypes = __jarray(0)
+ChangeAllTerrains__lastTerrainArrayId = nil
+ChangeAllTerrains__nbNewTerrains = nil
+ChangeAllTerrains__nbNewTerrainsAllowed = nil
 udg_changeAllTerrainsAtRevive = false
 --endglobals from ChangeAllTerrains
 --globals from ChangeOneTerrain:
 LIBRARY_ChangeOneTerrain = true
-ChangeOneTerrain___oldTerrain = nil
-ChangeOneTerrain___newTerrain = nil
+ChangeOneTerrain__oldTerrain = nil
+ChangeOneTerrain__newTerrain = nil
 --endglobals from ChangeOneTerrain
 --globals from EscaperEffectArray:
 LIBRARY_EscaperEffectArray = true
 --endglobals from EscaperEffectArray
 --globals from ExchangeTerrains:
 LIBRARY_ExchangeTerrains = true
-ExchangeTerrains___terrainA = nil
-ExchangeTerrains___terrainB = nil
+ExchangeTerrains__terrainA = nil
+ExchangeTerrains__terrainB = nil
 --endglobals from ExchangeTerrains
 --globals from MonsterSpawnArray:
 LIBRARY_MonsterSpawnArray = true
 --endglobals from MonsterSpawnArray
 --globals from RandomizeTerrains:
 LIBRARY_RandomizeTerrains = true
-RandomizeTerrains___oldTerrainTypes = __jarray(0)
-RandomizeTerrains___newTerrainTypes = __jarray(0)
-RandomizeTerrains___lastTerrainArrayId = nil
+RandomizeTerrains__oldTerrainTypes = __jarray(0)
+RandomizeTerrains__newTerrainTypes = __jarray(0)
+RandomizeTerrains__lastTerrainArrayId = nil
 --endglobals from RandomizeTerrains
 --globals from ReinitTerrains:
 LIBRARY_ReinitTerrains = true
-ReinitTerrains___terrainTypes = __jarray(0)
-ReinitTerrains___terrainTypeIds = __jarray(0)
-ReinitTerrains___terrainTypeIdsToReplace = __jarray(0)
+ReinitTerrains__terrainTypes = __jarray(0)
+ReinitTerrains__terrainTypeIds = __jarray(0)
+ReinitTerrains__terrainTypeIdsToReplace = __jarray(0)
 --endglobals from ReinitTerrains
 --globals from ReinitTerrainsPositions:
 LIBRARY_ReinitTerrainsPositions = true
--- processed:     TerrainType array ReinitTerrainsPositions___TERRAIN_SAVE [232000]
-ReinitTerrainsPositions___terrainSave_id = nil
+-- processed:     TerrainType array ReinitTerrainsPositions__TERRAIN_SAVE [232000]
+ReinitTerrainsPositions__terrainSave_id = nil
 --endglobals from ReinitTerrainsPositions
 --globals from SaveLoadTerrainWithName:
 LIBRARY_SaveLoadTerrainWithName = true
-SaveLoadTerrainWithName___saveNameInt = nil
-SaveLoadTerrainWithName___terrainSaves = InitHashtable()
-SaveLoadTerrainWithName___terrainSave_id = nil
+SaveLoadTerrainWithName__saveNameInt = nil
+SaveLoadTerrainWithName__terrainSaves = InitHashtable()
+SaveLoadTerrainWithName__terrainSave_id = nil
 --endglobals from SaveLoadTerrainWithName
 --globals from SaveLoadTerrainWithoutName:
 LIBRARY_SaveLoadTerrainWithoutName = true
--- processed:     TerrainType array SaveLoadTerrainWithoutName___terrainSave [232000]
-SaveLoadTerrainWithoutName___terrainSave_id = nil
+-- processed:     TerrainType array SaveLoadTerrainWithoutName__terrainSave [232000]
+SaveLoadTerrainWithoutName__terrainSave_id = nil
 --endglobals from SaveLoadTerrainWithoutName
 --globals from SaveTerrainRamps:
 LIBRARY_SaveTerrainRamps = true
-SaveTerrainRamps___y = nil
-SaveTerrainRamps___ramps = __jarray(false)
-SaveTerrainRamps___DECAL_TEST_PATH = 10
+SaveTerrainRamps__y = nil
+SaveTerrainRamps__ramps = __jarray(false)
+SaveTerrainRamps__DECAL_TEST_PATH = 10
 --endglobals from SaveTerrainRamps
 --globals from TerrainTypeDeathKillingTimers:
 LIBRARY_TerrainTypeDeathKillingTimers = true
@@ -488,11 +488,11 @@ LIBRARY_TerrainTypeDeathKillingTimers = true
 --globals from Escaper:
 LIBRARY_Escaper = true
 SHOW_REVIVE_EFFECTS = false
-Escaper__heroToSelect = nil
+Escaper___heroToSelect = nil
 --endglobals from Escaper
 --globals from SaveTerrainHeights:
 LIBRARY_SaveTerrainHeights = true
-SaveTerrainHeights___y = nil
+SaveTerrainHeights__y = nil
 --endglobals from SaveTerrainHeights
 --globals from TerrainTypeDeath:
 LIBRARY_TerrainTypeDeath = true
@@ -531,8 +531,8 @@ TIME_BEFORE_HERO_SPAWN = 3
 TIME_BETWEEN_EACH_HERO_SPAWN = 0.3
 HERO_START_ANGLE = 90
 EFFECT_FOR_MISSING_HEROES = "Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl"
-Heroes___NB_COLUMNS = 4
-Heroes___NB_ROWS = 3
+Heroes__NB_COLUMNS = 4
+Heroes__NB_ROWS = 3
 --endglobals from Heroes
 --globals from MClearMobActions:
 LIBRARY_MClearMobActions = true
@@ -548,13 +548,13 @@ LIBRARY_MMNoMoveActions = true
 --endglobals from MMNoMoveActions
 --globals from MMSimplePatrolActions:
 LIBRARY_MMSimplePatrolActions = true
-MMSimplePatrolActions__MIN_DIST = 5
-MMSimplePatrolActions__MAX_DIST = 2000
-MMSimplePatrolActions__ECART_DIST = 32
-MMSimplePatrolActions__ECART_ANGLE = 9
-MMSimplePatrolActions__DIST_ON_TERRAIN_MAX = 300
-MMSimplePatrolActions__DIST_ON_TERRAIN_DEFAULT = 50
-MMSimplePatrolActions__distOnTerrain = 50
+MMSimplePatrolActions___MIN_DIST = 5
+MMSimplePatrolActions___MAX_DIST = 2000
+MMSimplePatrolActions___ECART_DIST = 32
+MMSimplePatrolActions___ECART_ANGLE = 9
+MMSimplePatrolActions___DIST_ON_TERRAIN_MAX = 300
+MMSimplePatrolActions___DIST_ON_TERRAIN_DEFAULT = 50
+MMSimplePatrolActions___distOnTerrain = 50
 --endglobals from MMSimplePatrolActions
 --globals from MMTeleportActions:
 LIBRARY_MMTeleportActions = true
@@ -585,9 +585,9 @@ LIBRARY_MonsterSpawnMakingActions = true
 --endglobals from MonsterSpawnMakingActions
 --globals from SaveTerrain:
 LIBRARY_SaveTerrain = true
-SaveTerrain___y = nil
-SaveTerrain___terrainTypeIds = __jarray(0)
-SaveTerrain___nbTerrainTypesUsed = nil
+SaveTerrain__y = nil
+SaveTerrain__terrainTypeIds = __jarray(0)
+SaveTerrain__nbTerrainTypesUsed = nil
 --endglobals from SaveTerrain
 --globals from StartAndEnd:
 LIBRARY_StartAndEnd = true
@@ -671,11 +671,11 @@ MAKE_CANT_REDO_MORE = "Nothing else to redo !"
 --globals from MonsterInterface:
 LIBRARY_MonsterInterface = true
 MAX_NB_MONSTERS = 500
-MonsterInterface__htMonsterId2MonsterHandleId = nil
-MonsterInterface__MONSTER = 1
-MonsterInterface__CASTER = 2
+MonsterInterface___htMonsterId2MonsterHandleId = nil
+MonsterInterface___MONSTER = 1
+MonsterInterface___CASTER = 2
 NO_ID = -1
-MonsterInterface__monsterNextId = 1
+MonsterInterface___monsterNextId = 1
 DISABLE_TRANSPARENCY = 80
 --endglobals from MonsterInterface
 --globals from SaveMapInCache:
@@ -688,15 +688,15 @@ LIBRARY_TerrainTypeArray = true
 --endglobals from TerrainTypeArray
 --globals from ClearMob:
 LIBRARY_ClearMob = true
-ClearMob__htClearMob = nil
+ClearMob___htClearMob = nil
 CLEAR_MOB_MAX_DURATION = 300
-ClearMob__TRIGGER_MOB = 0
-ClearMob__TIMER_ACTIVATED = 1
-ClearMob__TIMER_FRONT_MONTANT = 2
+ClearMob___TRIGGER_MOB = 0
+ClearMob___TIMER_ACTIVATED = 1
+ClearMob___TIMER_FRONT_MONTANT = 2
 ClearMob_FRONT_MONTANT_DURATION = 0.03
-ClearMob__udp_currentTimer = nil
+ClearMob___udp_currentTimer = nil
 MAX_NB_CLEAR_MOB_BY_LEVEL = 160
-ClearMob__TRIGGER_MOB_PERMANENT_EFFECT = "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+ClearMob___TRIGGER_MOB_PERMANENT_EFFECT = "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
 --endglobals from ClearMob
 --globals from CommandMax:
 LIBRARY_CommandMax = true
@@ -785,8 +785,8 @@ LIBRARY_MonsterOrCaster = true
 --endglobals from MonsterOrCaster
 --globals from MonsterSimplePatrol:
 LIBRARY_MonsterSimplePatrol = true
-MonsterSimplePatrol__simplePatrolMobs = CreateGroup()
-MonsterSimplePatrol__checkSimplePatrolMobsPeriod = 5
+MonsterSimplePatrol___simplePatrolMobs = CreateGroup()
+MonsterSimplePatrol___checkSimplePatrolMobsPeriod = 5
 --endglobals from MonsterSimplePatrol
 --globals from MonsterTeleport:
 LIBRARY_MonsterTeleport = true
@@ -5378,64 +5378,64 @@ si__EscaperSavedCommands_V = __jarray(0)
 s__EscaperSavedCommands_savedCommands = {}
 s__TimerUtils___data = __jarray(0)
 s__TimerUtils___tT = {}
-s__ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__2ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__3ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__4ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__5ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__6ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__7ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__8ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__9ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__10ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__11ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__12ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__13ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__14ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__15ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__16ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__17ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__18ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__19ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__20ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__21ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__22ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__23ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__24ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__25ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__26ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__27ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__28ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__29ReinitTerrainsPositions___TERRAIN_SAVE = __jarray(0)
-s__SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__2SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__3SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__4SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__5SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__6SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__7SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__8SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__9SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__10SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__11SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__12SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__13SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__14SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__15SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__16SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__17SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__18SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__19SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__20SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__21SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__22SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__23SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__24SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__25SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__26SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__27SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__28SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
-s__29SaveLoadTerrainWithoutName___terrainSave = __jarray(0)
+s__ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__2ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__3ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__4ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__5ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__6ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__7ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__8ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__9ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__10ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__11ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__12ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__13ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__14ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__15ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__16ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__17ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__18ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__19ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__20ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__21ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__22ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__23ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__24ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__25ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__26ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__27ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__28ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__29ReinitTerrainsPositions__TERRAIN_SAVE = __jarray(0)
+s__SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__2SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__3SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__4SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__5SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__6SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__7SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__8SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__9SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__10SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__11SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__12SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__13SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__14SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__15SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__16SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__17SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__18SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__19SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__20SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__21SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__22SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__23SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__24SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__25SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__26SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__27SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__28SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
+s__29SaveLoadTerrainWithoutName__terrainSave = __jarray(0)
 s__s__MonsterMultiplePatrols_X = __jarray(0.0)
 s__s__MonsterMultiplePatrols_Y = __jarray(0.0)
 s__s__MonsterTeleport_X = __jarray(0.0)
@@ -5864,307 +5864,307 @@ SubString = function(source, start, _end)
     local result = oldSubString(source, start, _end)
     return result
 end
-function sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(i)
+function sg__ReinitTerrainsPositions__TERRAIN_SAVE_get(i)
   if (i < 8191) then
-    return s__ReinitTerrainsPositions___TERRAIN_SAVE[i]
+    return s__ReinitTerrainsPositions__TERRAIN_SAVE[i]
   elseif (i < 122865) then
     if (i < 16382) then
-      return s__2ReinitTerrainsPositions___TERRAIN_SAVE[i - 8191]
+      return s__2ReinitTerrainsPositions__TERRAIN_SAVE[i - 8191]
     elseif (i < 65528) then
       if (i < 24573) then
-        return s__3ReinitTerrainsPositions___TERRAIN_SAVE[i - 16382]
+        return s__3ReinitTerrainsPositions__TERRAIN_SAVE[i - 16382]
       elseif (i < 40955) then
         if (i < 32764) then
-          return s__4ReinitTerrainsPositions___TERRAIN_SAVE[i - 24573]
+          return s__4ReinitTerrainsPositions__TERRAIN_SAVE[i - 24573]
         else
-          return s__5ReinitTerrainsPositions___TERRAIN_SAVE[i - 32764]
+          return s__5ReinitTerrainsPositions__TERRAIN_SAVE[i - 32764]
         end
       elseif (i < 49146) then
-        return s__6ReinitTerrainsPositions___TERRAIN_SAVE[i - 40955]
+        return s__6ReinitTerrainsPositions__TERRAIN_SAVE[i - 40955]
       elseif (i < 57337) then
-        return s__7ReinitTerrainsPositions___TERRAIN_SAVE[i - 49146]
+        return s__7ReinitTerrainsPositions__TERRAIN_SAVE[i - 49146]
       else
-        return s__8ReinitTerrainsPositions___TERRAIN_SAVE[i - 57337]
+        return s__8ReinitTerrainsPositions__TERRAIN_SAVE[i - 57337]
       end
     elseif (i < 73719) then
-      return s__9ReinitTerrainsPositions___TERRAIN_SAVE[i - 65528]
+      return s__9ReinitTerrainsPositions__TERRAIN_SAVE[i - 65528]
     elseif (i < 98292) then
       if (i < 81910) then
-        return s__10ReinitTerrainsPositions___TERRAIN_SAVE[i - 73719]
+        return s__10ReinitTerrainsPositions__TERRAIN_SAVE[i - 73719]
       elseif (i < 90101) then
-        return s__11ReinitTerrainsPositions___TERRAIN_SAVE[i - 81910]
+        return s__11ReinitTerrainsPositions__TERRAIN_SAVE[i - 81910]
       else
-        return s__12ReinitTerrainsPositions___TERRAIN_SAVE[i - 90101]
+        return s__12ReinitTerrainsPositions__TERRAIN_SAVE[i - 90101]
       end
     elseif (i < 106483) then
-      return s__13ReinitTerrainsPositions___TERRAIN_SAVE[i - 98292]
+      return s__13ReinitTerrainsPositions__TERRAIN_SAVE[i - 98292]
     elseif (i < 114674) then
-      return s__14ReinitTerrainsPositions___TERRAIN_SAVE[i - 106483]
+      return s__14ReinitTerrainsPositions__TERRAIN_SAVE[i - 106483]
     else
-      return s__15ReinitTerrainsPositions___TERRAIN_SAVE[i - 114674]
+      return s__15ReinitTerrainsPositions__TERRAIN_SAVE[i - 114674]
     end
   elseif (i < 131056) then
-    return s__16ReinitTerrainsPositions___TERRAIN_SAVE[i - 122865]
+    return s__16ReinitTerrainsPositions__TERRAIN_SAVE[i - 122865]
   elseif (i < 180202) then
     if (i < 139247) then
-      return s__17ReinitTerrainsPositions___TERRAIN_SAVE[i - 131056]
+      return s__17ReinitTerrainsPositions__TERRAIN_SAVE[i - 131056]
     elseif (i < 155629) then
       if (i < 147438) then
-        return s__18ReinitTerrainsPositions___TERRAIN_SAVE[i - 139247]
+        return s__18ReinitTerrainsPositions__TERRAIN_SAVE[i - 139247]
       else
-        return s__19ReinitTerrainsPositions___TERRAIN_SAVE[i - 147438]
+        return s__19ReinitTerrainsPositions__TERRAIN_SAVE[i - 147438]
       end
     elseif (i < 163820) then
-      return s__20ReinitTerrainsPositions___TERRAIN_SAVE[i - 155629]
+      return s__20ReinitTerrainsPositions__TERRAIN_SAVE[i - 155629]
     elseif (i < 172011) then
-      return s__21ReinitTerrainsPositions___TERRAIN_SAVE[i - 163820]
+      return s__21ReinitTerrainsPositions__TERRAIN_SAVE[i - 163820]
     else
-      return s__22ReinitTerrainsPositions___TERRAIN_SAVE[i - 172011]
+      return s__22ReinitTerrainsPositions__TERRAIN_SAVE[i - 172011]
     end
   elseif (i < 188393) then
-    return s__23ReinitTerrainsPositions___TERRAIN_SAVE[i - 180202]
+    return s__23ReinitTerrainsPositions__TERRAIN_SAVE[i - 180202]
   elseif (i < 212966) then
     if (i < 196584) then
-      return s__24ReinitTerrainsPositions___TERRAIN_SAVE[i - 188393]
+      return s__24ReinitTerrainsPositions__TERRAIN_SAVE[i - 188393]
     elseif (i < 204775) then
-      return s__25ReinitTerrainsPositions___TERRAIN_SAVE[i - 196584]
+      return s__25ReinitTerrainsPositions__TERRAIN_SAVE[i - 196584]
     else
-      return s__26ReinitTerrainsPositions___TERRAIN_SAVE[i - 204775]
+      return s__26ReinitTerrainsPositions__TERRAIN_SAVE[i - 204775]
     end
   elseif (i < 221157) then
-    return s__27ReinitTerrainsPositions___TERRAIN_SAVE[i - 212966]
+    return s__27ReinitTerrainsPositions__TERRAIN_SAVE[i - 212966]
   elseif (i < 229348) then
-    return s__28ReinitTerrainsPositions___TERRAIN_SAVE[i - 221157]
+    return s__28ReinitTerrainsPositions__TERRAIN_SAVE[i - 221157]
   else
-    return s__29ReinitTerrainsPositions___TERRAIN_SAVE[i - 229348]
+    return s__29ReinitTerrainsPositions__TERRAIN_SAVE[i - 229348]
   end
 end
 
-function sg__ReinitTerrainsPositions___TERRAIN_SAVE_set(i, v)
+function sg__ReinitTerrainsPositions__TERRAIN_SAVE_set(i, v)
   if (i < 8191) then
-    s__ReinitTerrainsPositions___TERRAIN_SAVE[i] = v
+    s__ReinitTerrainsPositions__TERRAIN_SAVE[i] = v
   elseif (i < 122865) then
     if (i < 16382) then
-      s__2ReinitTerrainsPositions___TERRAIN_SAVE[i - 8191] = v
+      s__2ReinitTerrainsPositions__TERRAIN_SAVE[i - 8191] = v
     elseif (i < 65528) then
       if (i < 24573) then
-        s__3ReinitTerrainsPositions___TERRAIN_SAVE[i - 16382] = v
+        s__3ReinitTerrainsPositions__TERRAIN_SAVE[i - 16382] = v
       elseif (i < 40955) then
         if (i < 32764) then
-          s__4ReinitTerrainsPositions___TERRAIN_SAVE[i - 24573] = v
+          s__4ReinitTerrainsPositions__TERRAIN_SAVE[i - 24573] = v
         else
-          s__5ReinitTerrainsPositions___TERRAIN_SAVE[i - 32764] = v
+          s__5ReinitTerrainsPositions__TERRAIN_SAVE[i - 32764] = v
         end
       elseif (i < 49146) then
-        s__6ReinitTerrainsPositions___TERRAIN_SAVE[i - 40955] = v
+        s__6ReinitTerrainsPositions__TERRAIN_SAVE[i - 40955] = v
       elseif (i < 57337) then
-        s__7ReinitTerrainsPositions___TERRAIN_SAVE[i - 49146] = v
+        s__7ReinitTerrainsPositions__TERRAIN_SAVE[i - 49146] = v
       else
-        s__8ReinitTerrainsPositions___TERRAIN_SAVE[i - 57337] = v
+        s__8ReinitTerrainsPositions__TERRAIN_SAVE[i - 57337] = v
       end
     elseif (i < 73719) then
-      s__9ReinitTerrainsPositions___TERRAIN_SAVE[i - 65528] = v
+      s__9ReinitTerrainsPositions__TERRAIN_SAVE[i - 65528] = v
     elseif (i < 98292) then
       if (i < 81910) then
-        s__10ReinitTerrainsPositions___TERRAIN_SAVE[i - 73719] = v
+        s__10ReinitTerrainsPositions__TERRAIN_SAVE[i - 73719] = v
       elseif (i < 90101) then
-        s__11ReinitTerrainsPositions___TERRAIN_SAVE[i - 81910] = v
+        s__11ReinitTerrainsPositions__TERRAIN_SAVE[i - 81910] = v
       else
-        s__12ReinitTerrainsPositions___TERRAIN_SAVE[i - 90101] = v
+        s__12ReinitTerrainsPositions__TERRAIN_SAVE[i - 90101] = v
       end
     elseif (i < 106483) then
-      s__13ReinitTerrainsPositions___TERRAIN_SAVE[i - 98292] = v
+      s__13ReinitTerrainsPositions__TERRAIN_SAVE[i - 98292] = v
     elseif (i < 114674) then
-      s__14ReinitTerrainsPositions___TERRAIN_SAVE[i - 106483] = v
+      s__14ReinitTerrainsPositions__TERRAIN_SAVE[i - 106483] = v
     else
-      s__15ReinitTerrainsPositions___TERRAIN_SAVE[i - 114674] = v
+      s__15ReinitTerrainsPositions__TERRAIN_SAVE[i - 114674] = v
     end
   elseif (i < 131056) then
-    s__16ReinitTerrainsPositions___TERRAIN_SAVE[i - 122865] = v
+    s__16ReinitTerrainsPositions__TERRAIN_SAVE[i - 122865] = v
   elseif (i < 180202) then
     if (i < 139247) then
-      s__17ReinitTerrainsPositions___TERRAIN_SAVE[i - 131056] = v
+      s__17ReinitTerrainsPositions__TERRAIN_SAVE[i - 131056] = v
     elseif (i < 155629) then
       if (i < 147438) then
-        s__18ReinitTerrainsPositions___TERRAIN_SAVE[i - 139247] = v
+        s__18ReinitTerrainsPositions__TERRAIN_SAVE[i - 139247] = v
       else
-        s__19ReinitTerrainsPositions___TERRAIN_SAVE[i - 147438] = v
+        s__19ReinitTerrainsPositions__TERRAIN_SAVE[i - 147438] = v
       end
     elseif (i < 163820) then
-      s__20ReinitTerrainsPositions___TERRAIN_SAVE[i - 155629] = v
+      s__20ReinitTerrainsPositions__TERRAIN_SAVE[i - 155629] = v
     elseif (i < 172011) then
-      s__21ReinitTerrainsPositions___TERRAIN_SAVE[i - 163820] = v
+      s__21ReinitTerrainsPositions__TERRAIN_SAVE[i - 163820] = v
     else
-      s__22ReinitTerrainsPositions___TERRAIN_SAVE[i - 172011] = v
+      s__22ReinitTerrainsPositions__TERRAIN_SAVE[i - 172011] = v
     end
   elseif (i < 188393) then
-    s__23ReinitTerrainsPositions___TERRAIN_SAVE[i - 180202] = v
+    s__23ReinitTerrainsPositions__TERRAIN_SAVE[i - 180202] = v
   elseif (i < 212966) then
     if (i < 196584) then
-      s__24ReinitTerrainsPositions___TERRAIN_SAVE[i - 188393] = v
+      s__24ReinitTerrainsPositions__TERRAIN_SAVE[i - 188393] = v
     elseif (i < 204775) then
-      s__25ReinitTerrainsPositions___TERRAIN_SAVE[i - 196584] = v
+      s__25ReinitTerrainsPositions__TERRAIN_SAVE[i - 196584] = v
     else
-      s__26ReinitTerrainsPositions___TERRAIN_SAVE[i - 204775] = v
+      s__26ReinitTerrainsPositions__TERRAIN_SAVE[i - 204775] = v
     end
   elseif (i < 221157) then
-    s__27ReinitTerrainsPositions___TERRAIN_SAVE[i - 212966] = v
+    s__27ReinitTerrainsPositions__TERRAIN_SAVE[i - 212966] = v
   elseif (i < 229348) then
-    s__28ReinitTerrainsPositions___TERRAIN_SAVE[i - 221157] = v
+    s__28ReinitTerrainsPositions__TERRAIN_SAVE[i - 221157] = v
   else
-    s__29ReinitTerrainsPositions___TERRAIN_SAVE[i - 229348] = v
+    s__29ReinitTerrainsPositions__TERRAIN_SAVE[i - 229348] = v
   end
 end
 
-function sg__SaveLoadTerrainWithoutName___terrainSave_get(i)
+function sg__SaveLoadTerrainWithoutName__terrainSave_get(i)
   if (i < 8191) then
-    return s__SaveLoadTerrainWithoutName___terrainSave[i]
+    return s__SaveLoadTerrainWithoutName__terrainSave[i]
   elseif (i < 122865) then
     if (i < 16382) then
-      return s__2SaveLoadTerrainWithoutName___terrainSave[i - 8191]
+      return s__2SaveLoadTerrainWithoutName__terrainSave[i - 8191]
     elseif (i < 65528) then
       if (i < 24573) then
-        return s__3SaveLoadTerrainWithoutName___terrainSave[i - 16382]
+        return s__3SaveLoadTerrainWithoutName__terrainSave[i - 16382]
       elseif (i < 40955) then
         if (i < 32764) then
-          return s__4SaveLoadTerrainWithoutName___terrainSave[i - 24573]
+          return s__4SaveLoadTerrainWithoutName__terrainSave[i - 24573]
         else
-          return s__5SaveLoadTerrainWithoutName___terrainSave[i - 32764]
+          return s__5SaveLoadTerrainWithoutName__terrainSave[i - 32764]
         end
       elseif (i < 49146) then
-        return s__6SaveLoadTerrainWithoutName___terrainSave[i - 40955]
+        return s__6SaveLoadTerrainWithoutName__terrainSave[i - 40955]
       elseif (i < 57337) then
-        return s__7SaveLoadTerrainWithoutName___terrainSave[i - 49146]
+        return s__7SaveLoadTerrainWithoutName__terrainSave[i - 49146]
       else
-        return s__8SaveLoadTerrainWithoutName___terrainSave[i - 57337]
+        return s__8SaveLoadTerrainWithoutName__terrainSave[i - 57337]
       end
     elseif (i < 73719) then
-      return s__9SaveLoadTerrainWithoutName___terrainSave[i - 65528]
+      return s__9SaveLoadTerrainWithoutName__terrainSave[i - 65528]
     elseif (i < 98292) then
       if (i < 81910) then
-        return s__10SaveLoadTerrainWithoutName___terrainSave[i - 73719]
+        return s__10SaveLoadTerrainWithoutName__terrainSave[i - 73719]
       elseif (i < 90101) then
-        return s__11SaveLoadTerrainWithoutName___terrainSave[i - 81910]
+        return s__11SaveLoadTerrainWithoutName__terrainSave[i - 81910]
       else
-        return s__12SaveLoadTerrainWithoutName___terrainSave[i - 90101]
+        return s__12SaveLoadTerrainWithoutName__terrainSave[i - 90101]
       end
     elseif (i < 106483) then
-      return s__13SaveLoadTerrainWithoutName___terrainSave[i - 98292]
+      return s__13SaveLoadTerrainWithoutName__terrainSave[i - 98292]
     elseif (i < 114674) then
-      return s__14SaveLoadTerrainWithoutName___terrainSave[i - 106483]
+      return s__14SaveLoadTerrainWithoutName__terrainSave[i - 106483]
     else
-      return s__15SaveLoadTerrainWithoutName___terrainSave[i - 114674]
+      return s__15SaveLoadTerrainWithoutName__terrainSave[i - 114674]
     end
   elseif (i < 131056) then
-    return s__16SaveLoadTerrainWithoutName___terrainSave[i - 122865]
+    return s__16SaveLoadTerrainWithoutName__terrainSave[i - 122865]
   elseif (i < 180202) then
     if (i < 139247) then
-      return s__17SaveLoadTerrainWithoutName___terrainSave[i - 131056]
+      return s__17SaveLoadTerrainWithoutName__terrainSave[i - 131056]
     elseif (i < 155629) then
       if (i < 147438) then
-        return s__18SaveLoadTerrainWithoutName___terrainSave[i - 139247]
+        return s__18SaveLoadTerrainWithoutName__terrainSave[i - 139247]
       else
-        return s__19SaveLoadTerrainWithoutName___terrainSave[i - 147438]
+        return s__19SaveLoadTerrainWithoutName__terrainSave[i - 147438]
       end
     elseif (i < 163820) then
-      return s__20SaveLoadTerrainWithoutName___terrainSave[i - 155629]
+      return s__20SaveLoadTerrainWithoutName__terrainSave[i - 155629]
     elseif (i < 172011) then
-      return s__21SaveLoadTerrainWithoutName___terrainSave[i - 163820]
+      return s__21SaveLoadTerrainWithoutName__terrainSave[i - 163820]
     else
-      return s__22SaveLoadTerrainWithoutName___terrainSave[i - 172011]
+      return s__22SaveLoadTerrainWithoutName__terrainSave[i - 172011]
     end
   elseif (i < 188393) then
-    return s__23SaveLoadTerrainWithoutName___terrainSave[i - 180202]
+    return s__23SaveLoadTerrainWithoutName__terrainSave[i - 180202]
   elseif (i < 212966) then
     if (i < 196584) then
-      return s__24SaveLoadTerrainWithoutName___terrainSave[i - 188393]
+      return s__24SaveLoadTerrainWithoutName__terrainSave[i - 188393]
     elseif (i < 204775) then
-      return s__25SaveLoadTerrainWithoutName___terrainSave[i - 196584]
+      return s__25SaveLoadTerrainWithoutName__terrainSave[i - 196584]
     else
-      return s__26SaveLoadTerrainWithoutName___terrainSave[i - 204775]
+      return s__26SaveLoadTerrainWithoutName__terrainSave[i - 204775]
     end
   elseif (i < 221157) then
-    return s__27SaveLoadTerrainWithoutName___terrainSave[i - 212966]
+    return s__27SaveLoadTerrainWithoutName__terrainSave[i - 212966]
   elseif (i < 229348) then
-    return s__28SaveLoadTerrainWithoutName___terrainSave[i - 221157]
+    return s__28SaveLoadTerrainWithoutName__terrainSave[i - 221157]
   else
-    return s__29SaveLoadTerrainWithoutName___terrainSave[i - 229348]
+    return s__29SaveLoadTerrainWithoutName__terrainSave[i - 229348]
   end
 end
 
-function sg__SaveLoadTerrainWithoutName___terrainSave_set(i, v)
+function sg__SaveLoadTerrainWithoutName__terrainSave_set(i, v)
   if (i < 8191) then
-    s__SaveLoadTerrainWithoutName___terrainSave[i] = v
+    s__SaveLoadTerrainWithoutName__terrainSave[i] = v
   elseif (i < 122865) then
     if (i < 16382) then
-      s__2SaveLoadTerrainWithoutName___terrainSave[i - 8191] = v
+      s__2SaveLoadTerrainWithoutName__terrainSave[i - 8191] = v
     elseif (i < 65528) then
       if (i < 24573) then
-        s__3SaveLoadTerrainWithoutName___terrainSave[i - 16382] = v
+        s__3SaveLoadTerrainWithoutName__terrainSave[i - 16382] = v
       elseif (i < 40955) then
         if (i < 32764) then
-          s__4SaveLoadTerrainWithoutName___terrainSave[i - 24573] = v
+          s__4SaveLoadTerrainWithoutName__terrainSave[i - 24573] = v
         else
-          s__5SaveLoadTerrainWithoutName___terrainSave[i - 32764] = v
+          s__5SaveLoadTerrainWithoutName__terrainSave[i - 32764] = v
         end
       elseif (i < 49146) then
-        s__6SaveLoadTerrainWithoutName___terrainSave[i - 40955] = v
+        s__6SaveLoadTerrainWithoutName__terrainSave[i - 40955] = v
       elseif (i < 57337) then
-        s__7SaveLoadTerrainWithoutName___terrainSave[i - 49146] = v
+        s__7SaveLoadTerrainWithoutName__terrainSave[i - 49146] = v
       else
-        s__8SaveLoadTerrainWithoutName___terrainSave[i - 57337] = v
+        s__8SaveLoadTerrainWithoutName__terrainSave[i - 57337] = v
       end
     elseif (i < 73719) then
-      s__9SaveLoadTerrainWithoutName___terrainSave[i - 65528] = v
+      s__9SaveLoadTerrainWithoutName__terrainSave[i - 65528] = v
     elseif (i < 98292) then
       if (i < 81910) then
-        s__10SaveLoadTerrainWithoutName___terrainSave[i - 73719] = v
+        s__10SaveLoadTerrainWithoutName__terrainSave[i - 73719] = v
       elseif (i < 90101) then
-        s__11SaveLoadTerrainWithoutName___terrainSave[i - 81910] = v
+        s__11SaveLoadTerrainWithoutName__terrainSave[i - 81910] = v
       else
-        s__12SaveLoadTerrainWithoutName___terrainSave[i - 90101] = v
+        s__12SaveLoadTerrainWithoutName__terrainSave[i - 90101] = v
       end
     elseif (i < 106483) then
-      s__13SaveLoadTerrainWithoutName___terrainSave[i - 98292] = v
+      s__13SaveLoadTerrainWithoutName__terrainSave[i - 98292] = v
     elseif (i < 114674) then
-      s__14SaveLoadTerrainWithoutName___terrainSave[i - 106483] = v
+      s__14SaveLoadTerrainWithoutName__terrainSave[i - 106483] = v
     else
-      s__15SaveLoadTerrainWithoutName___terrainSave[i - 114674] = v
+      s__15SaveLoadTerrainWithoutName__terrainSave[i - 114674] = v
     end
   elseif (i < 131056) then
-    s__16SaveLoadTerrainWithoutName___terrainSave[i - 122865] = v
+    s__16SaveLoadTerrainWithoutName__terrainSave[i - 122865] = v
   elseif (i < 180202) then
     if (i < 139247) then
-      s__17SaveLoadTerrainWithoutName___terrainSave[i - 131056] = v
+      s__17SaveLoadTerrainWithoutName__terrainSave[i - 131056] = v
     elseif (i < 155629) then
       if (i < 147438) then
-        s__18SaveLoadTerrainWithoutName___terrainSave[i - 139247] = v
+        s__18SaveLoadTerrainWithoutName__terrainSave[i - 139247] = v
       else
-        s__19SaveLoadTerrainWithoutName___terrainSave[i - 147438] = v
+        s__19SaveLoadTerrainWithoutName__terrainSave[i - 147438] = v
       end
     elseif (i < 163820) then
-      s__20SaveLoadTerrainWithoutName___terrainSave[i - 155629] = v
+      s__20SaveLoadTerrainWithoutName__terrainSave[i - 155629] = v
     elseif (i < 172011) then
-      s__21SaveLoadTerrainWithoutName___terrainSave[i - 163820] = v
+      s__21SaveLoadTerrainWithoutName__terrainSave[i - 163820] = v
     else
-      s__22SaveLoadTerrainWithoutName___terrainSave[i - 172011] = v
+      s__22SaveLoadTerrainWithoutName__terrainSave[i - 172011] = v
     end
   elseif (i < 188393) then
-    s__23SaveLoadTerrainWithoutName___terrainSave[i - 180202] = v
+    s__23SaveLoadTerrainWithoutName__terrainSave[i - 180202] = v
   elseif (i < 212966) then
     if (i < 196584) then
-      s__24SaveLoadTerrainWithoutName___terrainSave[i - 188393] = v
+      s__24SaveLoadTerrainWithoutName__terrainSave[i - 188393] = v
     elseif (i < 204775) then
-      s__25SaveLoadTerrainWithoutName___terrainSave[i - 196584] = v
+      s__25SaveLoadTerrainWithoutName__terrainSave[i - 196584] = v
     else
-      s__26SaveLoadTerrainWithoutName___terrainSave[i - 204775] = v
+      s__26SaveLoadTerrainWithoutName__terrainSave[i - 204775] = v
     end
   elseif (i < 221157) then
-    s__27SaveLoadTerrainWithoutName___terrainSave[i - 212966] = v
+    s__27SaveLoadTerrainWithoutName__terrainSave[i - 212966] = v
   elseif (i < 229348) then
-    s__28SaveLoadTerrainWithoutName___terrainSave[i - 221157] = v
+    s__28SaveLoadTerrainWithoutName__terrainSave[i - 221157] = v
   else
-    s__29SaveLoadTerrainWithoutName___terrainSave[i - 229348] = v
+    s__29SaveLoadTerrainWithoutName__terrainSave[i - 229348] = v
   end
 end
 
@@ -30200,7 +30200,7 @@ function SetAfkMode(playerId)
   if (afkModeTextTags[playerId] ~= nil) then
     DestroyTextTag(afkModeTextTags[playerId])
   end
-  afkModeTextTags[playerId] = CreateTextTagUnitBJ(udg_colorCode[playerId] .. "AFK", (s__Escaper_hero[((s___EscaperArray_escapers[s__EscaperArray_escapers[(udg_escapers)] + (playerId)]))]), AfkMode___Z, AfkMode___SIZE, 100, 100, 100, AfkMode___TRANSPARENCY)
+  afkModeTextTags[playerId] = CreateTextTagUnitBJ(udg_colorCode[playerId] .. "AFK", (s__Escaper_hero[((s___EscaperArray_escapers[s__EscaperArray_escapers[(udg_escapers)] + (playerId)]))]), AfkMode__Z, AfkMode__SIZE, 100, 100, 100, AfkMode__TRANSPARENCY)
   -- INLINED!!
   isAfk[playerId] = true
 end
@@ -30600,8 +30600,8 @@ function DeplacementHeroHorsDeathPath(hero)
     if angle >= 360 then
       break
     end
-    x = xHero + DeplacementHeroHorsDeathPath___VALEUR_DECALAGE * CosBJ(angle)
-    l__y = yHero + DeplacementHeroHorsDeathPath___VALEUR_DECALAGE * SinBJ(angle)
+    x = xHero + DeplacementHeroHorsDeathPath__VALEUR_DECALAGE * CosBJ(angle)
+    l__y = yHero + DeplacementHeroHorsDeathPath__VALEUR_DECALAGE * SinBJ(angle)
     if ((s__TerrainType_kind[(sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, x, l__y))]) ~= "death") then
       -- INLINED!!
       if (not angleNonDeathTrouveALInstant) then
@@ -30617,21 +30617,21 @@ function DeplacementHeroHorsDeathPath(hero)
       if (angleNonDeathTrouveALInstant) then
         --dernierAngleNonDeathTrouvé
         if (dernierAngleNonDeath == 0) then
-          dernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath___GRADUATION_ANGLE
+          dernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath__GRADUATION_ANGLE
         else
-          deuxiemeDernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath___GRADUATION_ANGLE
+          deuxiemeDernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath__GRADUATION_ANGLE
         end
         angleNonDeathTrouveALInstant = false
       end
     end
-    angle = angle + DeplacementHeroHorsDeathPath___GRADUATION_ANGLE
+    angle = angle + DeplacementHeroHorsDeathPath__GRADUATION_ANGLE
   end
   --ajout du dernier angle s'il est non death
   if (angleNonDeathTrouveALInstant) then
     if (dernierAngleNonDeath == 0) then
-      dernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath___GRADUATION_ANGLE
+      dernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath__GRADUATION_ANGLE
     else
-      deuxiemeDernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath___GRADUATION_ANGLE
+      deuxiemeDernierAngleNonDeath = angle - DeplacementHeroHorsDeathPath__GRADUATION_ANGLE
     end
   end
 
@@ -30659,8 +30659,8 @@ function DeplacementHeroHorsDeathPath(hero)
     end
   end
   --déplacement du héros
-  xDecal = xHero + DeplacementHeroHorsDeathPath___VALEUR_DECALAGE * CosBJ(angleIdeal)
-  yDecal = yHero + DeplacementHeroHorsDeathPath___VALEUR_DECALAGE * SinBJ(angleIdeal)
+  xDecal = xHero + DeplacementHeroHorsDeathPath__VALEUR_DECALAGE * CosBJ(angleIdeal)
+  yDecal = yHero + DeplacementHeroHorsDeathPath__VALEUR_DECALAGE * SinBJ(angleIdeal)
   SetUnitPosition(hero, xDecal, yDecal)
 end
 
@@ -30800,32 +30800,32 @@ function Trig_time_of_game_Actions()
   local secStr = nil
 
   --set integers
-  if (GameTime__seconds >= 59) then
-    GameTime__seconds = 0
-    if (GameTime__minuts >= 59) then
-      GameTime__minuts = 0
-      GameTime__hours = GameTime__hours + 1
+  if (GameTime___seconds >= 59) then
+    GameTime___seconds = 0
+    if (GameTime___minuts >= 59) then
+      GameTime___minuts = 0
+      GameTime___hours = GameTime___hours + 1
     else
-      GameTime__minuts = GameTime__minuts + 1
+      GameTime___minuts = GameTime___minuts + 1
     end
   else
-    GameTime__seconds = GameTime__seconds + 1
+    GameTime___seconds = GameTime___seconds + 1
   end
 
 
   --set strings
-  hourStr = I2S(GameTime__hours)
+  hourStr = I2S(GameTime___hours)
 
-  if (GameTime__minuts < 10) then
-    minStr = "0" .. I2S(GameTime__minuts)
+  if (GameTime___minuts < 10) then
+    minStr = "0" .. I2S(GameTime___minuts)
   else
-    minStr = I2S(GameTime__minuts)
+    minStr = I2S(GameTime___minuts)
   end
 
-  if (GameTime__seconds < 10) then
-    secStr = "0" .. I2S(GameTime__seconds)
+  if (GameTime___seconds < 10) then
+    secStr = "0" .. I2S(GameTime___seconds)
   else
-    secStr = I2S(GameTime__seconds)
+    secStr = I2S(GameTime___seconds)
   end
 
   timeStr = "|Cfffed312 Game time :  " .. hourStr .. " h  " .. minStr .. " min  " .. secStr .. " s"
@@ -31068,7 +31068,7 @@ end
 
 
 function GetEnumMoc()
-  return MonsterOrCasterStack__udg_enumMoc
+  return MonsterOrCasterStack___udg_enumMoc
 end
 
 
@@ -31116,7 +31116,7 @@ function s__MonsterOrCasterStack_deallocate(this)
 end
 
 function s__MonsterOrCasterStack_executeForAll(this, functionName)
-  MonsterOrCasterStack__udg_enumMoc = sg__MonsterOrCasterStack_get_monsterOrCaster(this)
+  MonsterOrCasterStack___udg_enumMoc = sg__MonsterOrCasterStack_get_monsterOrCaster(this)
   ExecuteFunc(functionName)
   if (sg__MonsterOrCasterStack_get_nextElement(this) ~= 0) then
     s__MonsterOrCasterStack_executeForAll(sg__MonsterOrCasterStack_get_nextElement(this), functionName)
@@ -31192,7 +31192,7 @@ function Init_MonstersClickableSetLife()
   monstersClickable = CreateGroup()
   trigMonstersClickableSetLife = CreateTrigger()
   TriggerAddAction(trigMonstersClickableSetLife, MonstersClickableSetLife_Actions)
-  TriggerRegisterTimerEvent(trigMonstersClickableSetLife, MonstersClickableSetLife__PERIOD, true)
+  TriggerRegisterTimerEvent(trigMonstersClickableSetLife, MonstersClickableSetLife___PERIOD, true)
 end
 
 
@@ -33189,10 +33189,10 @@ function StopEnabledCheckTerrainTriggers()
     if (escaper ~= 0) then
       if ((IsTriggerEnabled(s__Escaper_checkTerrain[(escaper)]))) then
         -- INLINED!!
-        TerrainModifyingTrig___wasCheckTerrainTriggerOn[i] = true
+        TerrainModifyingTrig__wasCheckTerrainTriggerOn[i] = true
         sc__Escaper_enableCheckTerrain(escaper, false)
       else
-        TerrainModifyingTrig___wasCheckTerrainTriggerOn[i] = false
+        TerrainModifyingTrig__wasCheckTerrainTriggerOn[i] = false
       end
     end
     i = i + 1
@@ -33210,7 +33210,7 @@ function RestartEnabledCheckTerrainTriggers()
     escaper = (s___EscaperArray_escapers[s__EscaperArray_escapers[(udg_escapers)] + (i)])
     -- INLINED!!
     if (escaper ~= 0) then
-      if (TerrainModifyingTrig___wasCheckTerrainTriggerOn[i]) then
+      if (TerrainModifyingTrig__wasCheckTerrainTriggerOn[i]) then
         sc__Escaper_enableCheckTerrain(escaper, true)
       end
     end
@@ -39025,7 +39025,7 @@ end
 
 
 
-function MessageHeroDies___GetRandomSoundHeroDies()
+function MessageHeroDies__GetRandomSoundHeroDies()
   local n = GetRandomInt(0, 3)
   if (n == 0) then
     return gg_snd_heroDies0
@@ -39039,7 +39039,7 @@ function MessageHeroDies___GetRandomSoundHeroDies()
 end
 
 
-function MessageHeroDies___GetRandomSoundAllyHeroDies()
+function MessageHeroDies__GetRandomSoundAllyHeroDies()
   local n = GetRandomInt(0, 3)
   if (n == 0) then
     return gg_snd_allyHeroDies0
@@ -39053,20 +39053,20 @@ function MessageHeroDies___GetRandomSoundAllyHeroDies()
 end
 
 
-function MessageHeroDies___SoundEnd()
-  MessageHeroDies___isSoundPlaying = false
+function MessageHeroDies__SoundEnd()
+  MessageHeroDies__isSoundPlaying = false
 end
 
 
-function MessageHeroDies___PlaySoundHeroDies(fallenPlayer)
-  if (not MessageHeroDies___isSoundPlaying) then
+function MessageHeroDies__PlaySoundHeroDies(fallenPlayer)
+  if (not MessageHeroDies__isSoundPlaying) then
     if (GetLocalPlayer() == fallenPlayer) then
-      StartSound(MessageHeroDies___GetRandomSoundHeroDies())
+      StartSound(MessageHeroDies__GetRandomSoundHeroDies())
     else
-      StartSound(MessageHeroDies___GetRandomSoundAllyHeroDies())
+      StartSound(MessageHeroDies__GetRandomSoundAllyHeroDies())
     end
-    MessageHeroDies___isSoundPlaying = true
-    TimerStart(MessageHeroDies___timerSonJoue, MessageHeroDies___DUREE_SON, false, MessageHeroDies___SoundEnd)
+    MessageHeroDies__isSoundPlaying = true
+    TimerStart(MessageHeroDies__timerSonJoue, MessageHeroDies__DUREE_SON, false, MessageHeroDies__SoundEnd)
   end
 end
 
@@ -39074,98 +39074,86 @@ end
 
 
 --textmacro instance: DisplayDeathMessagePlayer_function("0")
-function MessageHeroDies___DisplayDeathMessagePlayer_0()
-  MessageHeroDies___PlaySoundHeroDies(Player(0))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[0] .. GetPlayerName(Player(0)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_0()
+  MessageHeroDies__PlaySoundHeroDies(Player(0))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[0] + GetPlayerName(Player(0)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("0")
 --textmacro instance: DisplayDeathMessagePlayer_function("1")
-function MessageHeroDies___DisplayDeathMessagePlayer_1()
-  MessageHeroDies___PlaySoundHeroDies(Player(1))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[1] .. GetPlayerName(Player(1)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_1()
+  MessageHeroDies__PlaySoundHeroDies(Player(1))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[1] + GetPlayerName(Player(1)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("1")
 --textmacro instance: DisplayDeathMessagePlayer_function("2")
-function MessageHeroDies___DisplayDeathMessagePlayer_2()
-  MessageHeroDies___PlaySoundHeroDies(Player(2))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[2] .. GetPlayerName(Player(2)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_2()
+  MessageHeroDies__PlaySoundHeroDies(Player(2))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[2] + GetPlayerName(Player(2)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("2")
 --textmacro instance: DisplayDeathMessagePlayer_function("3")
-function MessageHeroDies___DisplayDeathMessagePlayer_3()
-  MessageHeroDies___PlaySoundHeroDies(Player(3))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[3] .. GetPlayerName(Player(3)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_3()
+  MessageHeroDies__PlaySoundHeroDies(Player(3))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[3] + GetPlayerName(Player(3)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("3")
 --textmacro instance: DisplayDeathMessagePlayer_function("4")
-function MessageHeroDies___DisplayDeathMessagePlayer_4()
-  MessageHeroDies___PlaySoundHeroDies(Player(4))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[4] .. GetPlayerName(Player(4)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_4()
+  MessageHeroDies__PlaySoundHeroDies(Player(4))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[4] + GetPlayerName(Player(4)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("4")
 --textmacro instance: DisplayDeathMessagePlayer_function("5")
-function MessageHeroDies___DisplayDeathMessagePlayer_5()
-  MessageHeroDies___PlaySoundHeroDies(Player(5))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[5] .. GetPlayerName(Player(5)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_5()
+  MessageHeroDies__PlaySoundHeroDies(Player(5))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[5] + GetPlayerName(Player(5)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("5")
 --textmacro instance: DisplayDeathMessagePlayer_function("6")
-function MessageHeroDies___DisplayDeathMessagePlayer_6()
-  MessageHeroDies___PlaySoundHeroDies(Player(6))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[6] .. GetPlayerName(Player(6)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_6()
+  MessageHeroDies__PlaySoundHeroDies(Player(6))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[6] + GetPlayerName(Player(6)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("6")
 --textmacro instance: DisplayDeathMessagePlayer_function("7")
-function MessageHeroDies___DisplayDeathMessagePlayer_7()
-  MessageHeroDies___PlaySoundHeroDies(Player(7))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[7] .. GetPlayerName(Player(7)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_7()
+  MessageHeroDies__PlaySoundHeroDies(Player(7))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[7] + GetPlayerName(Player(7)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("7")
 --textmacro instance: DisplayDeathMessagePlayer_function("8")
-function MessageHeroDies___DisplayDeathMessagePlayer_8()
-  MessageHeroDies___PlaySoundHeroDies(Player(8))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[8] .. GetPlayerName(Player(8)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_8()
+  MessageHeroDies__PlaySoundHeroDies(Player(8))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[8] + GetPlayerName(Player(8)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("8")
 --textmacro instance: DisplayDeathMessagePlayer_function("9")
-function MessageHeroDies___DisplayDeathMessagePlayer_9()
-  MessageHeroDies___PlaySoundHeroDies(Player(9))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[9] .. GetPlayerName(Player(9)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_9()
+  MessageHeroDies__PlaySoundHeroDies(Player(9))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[9] + GetPlayerName(Player(9)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("9")
 --textmacro instance: DisplayDeathMessagePlayer_function("10")
-function MessageHeroDies___DisplayDeathMessagePlayer_10()
-  MessageHeroDies___PlaySoundHeroDies(Player(10))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[10] .. GetPlayerName(Player(10)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_10()
+  MessageHeroDies__PlaySoundHeroDies(Player(10))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[10] + GetPlayerName(Player(10)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("10")
 --textmacro instance: DisplayDeathMessagePlayer_function("11")
-function MessageHeroDies___DisplayDeathMessagePlayer_11()
-  MessageHeroDies___PlaySoundHeroDies(Player(11))
-  Text___ForAll_timed_withColorCode(((MessageHeroDies___MESSAGE_DURATION) * 1.0), NORMAL_TEXT_COLORCODE, (udg_colorCode[11] .. GetPlayerName(Player(11)) .. "|r has fallen."))
-  -- INLINED!!
+function MessageHeroDies__DisplayDeathMessagePlayer_11()
+  MessageHeroDies__PlaySoundHeroDies(Player(11))
+  --call Text_A_timed(MESSAGE_DURATION, udg_colorCode[11] + GetPlayerName(Player(11)) + "|r has fallen.")
   DestroyTimer(GetExpiredTimer())
 end
 --end of: DisplayDeathMessagePlayer_function("11")
@@ -39176,62 +39164,62 @@ function DisplayDeathMessagePlayer(p)
 
   --textmacro instance: RunDisplayDeathMessagePlayer("0")
   if (n == 0) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_0)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_0)
   end
   --end of: RunDisplayDeathMessagePlayer("0")
   --textmacro instance: RunDisplayDeathMessagePlayer("1")
   if (n == 1) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_1)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_1)
   end
   --end of: RunDisplayDeathMessagePlayer("1")
   --textmacro instance: RunDisplayDeathMessagePlayer("2")
   if (n == 2) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_2)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_2)
   end
   --end of: RunDisplayDeathMessagePlayer("2")
   --textmacro instance: RunDisplayDeathMessagePlayer("3")
   if (n == 3) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_3)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_3)
   end
   --end of: RunDisplayDeathMessagePlayer("3")
   --textmacro instance: RunDisplayDeathMessagePlayer("4")
   if (n == 4) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_4)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_4)
   end
   --end of: RunDisplayDeathMessagePlayer("4")
   --textmacro instance: RunDisplayDeathMessagePlayer("5")
   if (n == 5) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_5)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_5)
   end
   --end of: RunDisplayDeathMessagePlayer("5")
   --textmacro instance: RunDisplayDeathMessagePlayer("6")
   if (n == 6) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_6)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_6)
   end
   --end of: RunDisplayDeathMessagePlayer("6")
   --textmacro instance: RunDisplayDeathMessagePlayer("7")
   if (n == 7) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_7)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_7)
   end
   --end of: RunDisplayDeathMessagePlayer("7")
   --textmacro instance: RunDisplayDeathMessagePlayer("8")
   if (n == 8) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_8)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_8)
   end
   --end of: RunDisplayDeathMessagePlayer("8")
   --textmacro instance: RunDisplayDeathMessagePlayer("9")
   if (n == 9) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_9)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_9)
   end
   --end of: RunDisplayDeathMessagePlayer("9")
   --textmacro instance: RunDisplayDeathMessagePlayer("10")
   if (n == 10) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_10)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_10)
   end
   --end of: RunDisplayDeathMessagePlayer("10")
   --textmacro instance: RunDisplayDeathMessagePlayer("11")
   if (n == 11) then
-    TimerStart(CreateTimer(), MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies___DisplayDeathMessagePlayer_11)
+    TimerStart(CreateTimer(), MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE, false, MessageHeroDies__DisplayDeathMessagePlayer_11)
   end
   --end of: RunDisplayDeathMessagePlayer("11")
 end
@@ -39273,7 +39261,7 @@ end
 function s__MeteorArray_new(this, x, l__y, createMeteor)
   --local integer n = .getFirstEmpty()
   local n = s__MeteorArray_lastInstance[this] + 1
-  if (n >= MeteorArray__MAX_NB_METEORS) then
+  if (n >= MeteorArray___MAX_NB_METEORS) then
     return 0
   end
   --if (n > .lastInstance) then
@@ -39414,27 +39402,27 @@ end
 
 
 function HeroAddCheatMeteor(hero)
-  MeteorFunctions__meteor = UnitAddItemById(hero, METEOR_CHEAT)
+  MeteorFunctions___meteor = UnitAddItemById(hero, METEOR_CHEAT)
   if ((s__TerrainType_kind[(sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, GetUnitX(hero), GetUnitY(hero)))]) == "slide") then
     -- INLINED!!
-    SetItemDroppable(MeteorFunctions__meteor, false)
+    SetItemDroppable(MeteorFunctions___meteor, false)
   end
-  return MeteorFunctions__meteor
+  return MeteorFunctions___meteor
 end
 
 
 function HeroComingToSlide_CheckItem(hero)
-  MeteorFunctions__meteor = UnitItemInSlot(hero, 0)
-  if (MeteorFunctions__meteor ~= nil) then
-    SetItemDroppable(MeteorFunctions__meteor, false)
+  MeteorFunctions___meteor = UnitItemInSlot(hero, 0)
+  if (MeteorFunctions___meteor ~= nil) then
+    SetItemDroppable(MeteorFunctions___meteor, false)
   end
 end
 
 
 function HeroComingOutFromSlide_CheckItem(hero)
-  MeteorFunctions__meteor = UnitItemInSlot(hero, 0)
-  if (MeteorFunctions__meteor ~= nil) then
-    SetItemDroppable(MeteorFunctions__meteor, true)
+  MeteorFunctions___meteor = UnitItemInSlot(hero, 0)
+  if (MeteorFunctions___meteor ~= nil) then
+    SetItemDroppable(MeteorFunctions___meteor, true)
   end
 end
 
@@ -39745,277 +39733,277 @@ end
 
 
 --casters
-function SaveLevels___SaveCasters_Actions()
+function SaveLevels__SaveCasters_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___casterId > sc__CasterArray_getLastInstanceId(s__Level_casters[SaveLevels___level])) then
+    if (SaveLevels__casterId > sc__CasterArray_getLastInstanceId(s__Level_casters[SaveLevels__level])) then
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      TriggerExecute(SaveLevels___trg_startSaveNextLevel)
+      TriggerExecute(SaveLevels__trg_startSaveNextLevel)
       return
     end
-    if (sc__CasterArray_get(s__Level_casters[SaveLevels___level], SaveLevels___casterId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__Caster_toString(sc__CasterArray_get(s__Level_casters[SaveLevels___level], SaveLevels___casterId)))
+    if (sc__CasterArray_get(s__Level_casters[SaveLevels__level], SaveLevels__casterId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__Caster_toString(sc__CasterArray_get(s__Level_casters[SaveLevels__level], SaveLevels__casterId)))
     end
-    SaveLevels___casterId = SaveLevels___casterId + 1
+    SaveLevels__casterId = SaveLevels__casterId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveCasters()
-  if (sc__CasterArray_count(s__Level_casters[SaveLevels___level]) == 0) then
-    TriggerExecute(SaveLevels___trg_startSaveNextLevel)
+function SaveLevels__StartSaveCasters()
+  if (sc__CasterArray_count(s__Level_casters[SaveLevels__level]) == 0) then
+    TriggerExecute(SaveLevels__trg_startSaveNextLevel)
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "casters", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "casters", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveCasters_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveCasters_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___casterId = 0
+    SaveLevels__casterId = 0
   end
 end
 --/////////////////////////
 
 
 --monsterSpawns
-function SaveLevels___SaveMonsterSpawns_Actions()
+function SaveLevels__SaveMonsterSpawns_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___monsterSpawnId > (s__MonsterSpawnArray_lastInstance[(s__Level_monsterSpawns[SaveLevels___level])])) then
+    if (SaveLevels__monsterSpawnId > (s__MonsterSpawnArray_lastInstance[(s__Level_monsterSpawns[SaveLevels__level])])) then
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveCasters()
+      SaveLevels__StartSaveCasters()
       return
     end
-    if (sc__MonsterSpawnArray_get(s__Level_monsterSpawns[SaveLevels___level], SaveLevels___monsterSpawnId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterSpawn_toString(sc__MonsterSpawnArray_get(s__Level_monsterSpawns[SaveLevels___level], SaveLevels___monsterSpawnId)))
+    if (sc__MonsterSpawnArray_get(s__Level_monsterSpawns[SaveLevels__level], SaveLevels__monsterSpawnId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterSpawn_toString(sc__MonsterSpawnArray_get(s__Level_monsterSpawns[SaveLevels__level], SaveLevels__monsterSpawnId)))
     end
-    SaveLevels___monsterSpawnId = SaveLevels___monsterSpawnId + 1
+    SaveLevels__monsterSpawnId = SaveLevels__monsterSpawnId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMonsterSpawns()
-  if (sc__MonsterSpawnArray_count(s__Level_monsterSpawns[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveCasters()
+function SaveLevels__StartSaveMonsterSpawns()
+  if (sc__MonsterSpawnArray_count(s__Level_monsterSpawns[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveCasters()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "monsterSpawns", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "monsterSpawns", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMonsterSpawns_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMonsterSpawns_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___monsterSpawnId = 0
+    SaveLevels__monsterSpawnId = 0
   end
 end
 --/////////////////////////
 
 --meteors
-function SaveLevels___SaveMeteors_Actions()
+function SaveLevels__SaveMeteors_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___meteorId > (s__MeteorArray_lastInstance[(s__Level_meteors[SaveLevels___level])])) then
+    if (SaveLevels__meteorId > (s__MeteorArray_lastInstance[(s__Level_meteors[SaveLevels__level])])) then
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMonsterSpawns()
+      SaveLevels__StartSaveMonsterSpawns()
       return
     end
-    if (s__MeteorArray_get(s__Level_meteors[SaveLevels___level], SaveLevels___meteorId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, s__Meteor_toString(s__MeteorArray_get(s__Level_meteors[SaveLevels___level], SaveLevels___meteorId)))
+    if (s__MeteorArray_get(s__Level_meteors[SaveLevels__level], SaveLevels__meteorId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, s__Meteor_toString(s__MeteorArray_get(s__Level_meteors[SaveLevels__level], SaveLevels__meteorId)))
     end
-    SaveLevels___meteorId = SaveLevels___meteorId + 1
+    SaveLevels__meteorId = SaveLevels__meteorId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMeteors()
-  if (s__MeteorArray_count(s__Level_meteors[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMonsterSpawns()
+function SaveLevels__StartSaveMeteors()
+  if (s__MeteorArray_count(s__Level_meteors[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMonsterSpawns()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "meteors", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "meteors", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMeteors_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMeteors_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___meteorId = 0
+    SaveLevels__meteorId = 0
   end
 end
 --/////////////////////////
 
 --monsters teleport
-function SaveLevels___SaveMonstersTeleport_Actions()
+function SaveLevels__SaveMonstersTeleport_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___monsterTeleportId > sc__MonsterTeleportArray_getLastInstanceId(s__Level_monstersTeleport[SaveLevels___level])) then
+    if (SaveLevels__monsterTeleportId > sc__MonsterTeleportArray_getLastInstanceId(s__Level_monstersTeleport[SaveLevels__level])) then
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMeteors()
+      SaveLevels__StartSaveMeteors()
       return
     end
-    if (sc__MonsterTeleportArray_get(s__Level_monstersTeleport[SaveLevels___level], SaveLevels___monsterTeleportId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterTeleport_toString(sc__MonsterTeleportArray_get(s__Level_monstersTeleport[SaveLevels___level], SaveLevels___monsterTeleportId)))
+    if (sc__MonsterTeleportArray_get(s__Level_monstersTeleport[SaveLevels__level], SaveLevels__monsterTeleportId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterTeleport_toString(sc__MonsterTeleportArray_get(s__Level_monstersTeleport[SaveLevels__level], SaveLevels__monsterTeleportId)))
     end
-    SaveLevels___monsterTeleportId = SaveLevels___monsterTeleportId + 1
+    SaveLevels__monsterTeleportId = SaveLevels__monsterTeleportId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMonstersTeleport()
-  if (sc__MonsterTeleportArray_count(s__Level_monstersTeleport[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMeteors()
+function SaveLevels__StartSaveMonstersTeleport()
+  if (sc__MonsterTeleportArray_count(s__Level_monstersTeleport[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMeteors()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "monstersTeleport", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "monstersTeleport", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMonstersTeleport_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMonstersTeleport_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___monsterTeleportId = 0
+    SaveLevels__monsterTeleportId = 0
   end
 end
 --/////////////////////////
 
 --monsters multiple patrols
-function SaveLevels___SaveMonstersMultiplePatrols_Actions()
+function SaveLevels__SaveMonstersMultiplePatrols_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___monsterMultiplePatrolsId > sc__MonsterMultiplePatrolsArray_getLastInstanceId(s__Level_monstersMultiplePatrols[SaveLevels___level])) then
+    if (SaveLevels__monsterMultiplePatrolsId > sc__MonsterMultiplePatrolsArray_getLastInstanceId(s__Level_monstersMultiplePatrols[SaveLevels__level])) then
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMonstersTeleport()
+      SaveLevels__StartSaveMonstersTeleport()
       return
     end
-    if (sc__MonsterMultiplePatrolsArray_get(s__Level_monstersMultiplePatrols[SaveLevels___level], SaveLevels___monsterMultiplePatrolsId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterMultiplePatrols_toString(sc__MonsterMultiplePatrolsArray_get(s__Level_monstersMultiplePatrols[SaveLevels___level], SaveLevels___monsterMultiplePatrolsId)))
+    if (sc__MonsterMultiplePatrolsArray_get(s__Level_monstersMultiplePatrols[SaveLevels__level], SaveLevels__monsterMultiplePatrolsId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterMultiplePatrols_toString(sc__MonsterMultiplePatrolsArray_get(s__Level_monstersMultiplePatrols[SaveLevels__level], SaveLevels__monsterMultiplePatrolsId)))
     end
-    SaveLevels___monsterMultiplePatrolsId = SaveLevels___monsterMultiplePatrolsId + 1
+    SaveLevels__monsterMultiplePatrolsId = SaveLevels__monsterMultiplePatrolsId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMonstersMultiplePatrols()
-  if (sc__MonsterMultiplePatrolsArray_count(s__Level_monstersMultiplePatrols[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMonstersTeleport()
+function SaveLevels__StartSaveMonstersMultiplePatrols()
+  if (sc__MonsterMultiplePatrolsArray_count(s__Level_monstersMultiplePatrols[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMonstersTeleport()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "monstersMultiplePatrols", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "monstersMultiplePatrols", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMonstersMultiplePatrols_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMonstersMultiplePatrols_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___monsterMultiplePatrolsId = 0
+    SaveLevels__monsterMultiplePatrolsId = 0
   end
 end
 --/////////////////////////
 
 --monsters simple patrol
-function SaveLevels___SaveMonstersSimplePatrol_Actions()
+function SaveLevels__SaveMonstersSimplePatrol_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___monsterSimplePatrolId > sc__MonsterSimplePatrolArray_getLastInstanceId(s__Level_monstersSimplePatrol[SaveLevels___level])) then
+    if (SaveLevels__monsterSimplePatrolId > sc__MonsterSimplePatrolArray_getLastInstanceId(s__Level_monstersSimplePatrol[SaveLevels__level])) then
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMonstersMultiplePatrols()
+      SaveLevels__StartSaveMonstersMultiplePatrols()
       return
     end
-    if (sc__MonsterSimplePatrolArray_get(s__Level_monstersSimplePatrol[SaveLevels___level], SaveLevels___monsterSimplePatrolId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterSimplePatrol_toString(sc__MonsterSimplePatrolArray_get(s__Level_monstersSimplePatrol[SaveLevels___level], SaveLevels___monsterSimplePatrolId)))
+    if (sc__MonsterSimplePatrolArray_get(s__Level_monstersSimplePatrol[SaveLevels__level], SaveLevels__monsterSimplePatrolId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterSimplePatrol_toString(sc__MonsterSimplePatrolArray_get(s__Level_monstersSimplePatrol[SaveLevels__level], SaveLevels__monsterSimplePatrolId)))
     end
-    SaveLevels___monsterSimplePatrolId = SaveLevels___monsterSimplePatrolId + 1
+    SaveLevels__monsterSimplePatrolId = SaveLevels__monsterSimplePatrolId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMonstersSimplePatrol()
-  if (sc__MonsterSimplePatrolArray_count(s__Level_monstersSimplePatrol[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMonstersMultiplePatrols()
+function SaveLevels__StartSaveMonstersSimplePatrol()
+  if (sc__MonsterSimplePatrolArray_count(s__Level_monstersSimplePatrol[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMonstersMultiplePatrols()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "monstersSimplePatrol", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "monstersSimplePatrol", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMonstersSimplePatrol_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMonstersSimplePatrol_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___monsterSimplePatrolId = 0
+    SaveLevels__monsterSimplePatrolId = 0
   end
 end
 --/////////////////////////
 
 --monsters no move
-function SaveLevels___SaveMonstersNoMove_Actions()
+function SaveLevels__SaveMonstersNoMove_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___monsterNoMoveId > sc__MonsterNoMoveArray_getLastInstanceId(s__Level_monstersNoMove[SaveLevels___level])) then
+    if (SaveLevels__monsterNoMoveId > sc__MonsterNoMoveArray_getLastInstanceId(s__Level_monstersNoMove[SaveLevels__level])) then
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMonstersSimplePatrol()
+      SaveLevels__StartSaveMonstersSimplePatrol()
       return
     end
-    if (sc__MonsterNoMoveArray_get(s__Level_monstersNoMove[SaveLevels___level], SaveLevels___monsterNoMoveId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterNoMove_toString(sc__MonsterNoMoveArray_get(s__Level_monstersNoMove[SaveLevels___level], SaveLevels___monsterNoMoveId)))
+    if (sc__MonsterNoMoveArray_get(s__Level_monstersNoMove[SaveLevels__level], SaveLevels__monsterNoMoveId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, sc__MonsterNoMove_toString(sc__MonsterNoMoveArray_get(s__Level_monstersNoMove[SaveLevels__level], SaveLevels__monsterNoMoveId)))
     end
-    SaveLevels___monsterNoMoveId = SaveLevels___monsterNoMoveId + 1
+    SaveLevels__monsterNoMoveId = SaveLevels__monsterNoMoveId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveMonstersNoMove()
-  if (sc__MonsterNoMoveArray_count(s__Level_monstersNoMove[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMonstersSimplePatrol()
+function SaveLevels__StartSaveMonstersNoMove()
+  if (sc__MonsterNoMoveArray_count(s__Level_monstersNoMove[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMonstersSimplePatrol()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "monstersNoMove", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "monstersNoMove", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveMonstersNoMove_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveMonstersNoMove_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___monsterNoMoveId = 0
+    SaveLevels__monsterNoMoveId = 0
   end
 end
 --/////////////////////////
 
 --visibilities
-function SaveLevels___SaveVisibilities_Actions()
+function SaveLevels__SaveVisibilities_Actions()
   local i = 0
   while true do
-    if (i >= SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME) then
+    if (i >= SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME) then
       break
     end
-    if (SaveLevels___visibilityId > (s__VisibilityModifierArray_lastInstance[(s__Level_visibilities[SaveLevels___level])])) then
+    if (SaveLevels__visibilityId > (s__VisibilityModifierArray_lastInstance[(s__Level_visibilities[SaveLevels__level])])) then
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
       DisableTrigger(GetTriggeringTrigger())
-      SaveLevels___StartSaveMonstersNoMove()
+      SaveLevels__StartSaveMonstersNoMove()
       return
     end
-    if (sc__VisibilityModifierArray_get(s__Level_visibilities[SaveLevels___level], SaveLevels___visibilityId) ~= 0) then
-      sc__StringArrayForCache_push(stringArrayForCache, s__VisibilityModifier_toString(sc__VisibilityModifierArray_get(s__Level_visibilities[SaveLevels___level], SaveLevels___visibilityId)))
+    if (sc__VisibilityModifierArray_get(s__Level_visibilities[SaveLevels__level], SaveLevels__visibilityId) ~= 0) then
+      sc__StringArrayForCache_push(stringArrayForCache, s__VisibilityModifier_toString(sc__VisibilityModifierArray_get(s__Level_visibilities[SaveLevels__level], SaveLevels__visibilityId)))
     end
-    SaveLevels___visibilityId = SaveLevels___visibilityId + 1
+    SaveLevels__visibilityId = SaveLevels__visibilityId + 1
     i = i + 1
   end
 end
 
-function SaveLevels___StartSaveVisibilities()
-  if (sc__VisibilityModifierArray_count(s__Level_visibilities[SaveLevels___level]) == 0) then
-    SaveLevels___StartSaveMonstersNoMove()
+function SaveLevels__StartSaveVisibilities()
+  if (sc__VisibilityModifierArray_count(s__Level_visibilities[SaveLevels__level]) == 0) then
+    SaveLevels__StartSaveMonstersNoMove()
   else
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "visibilities", true)
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "visibilities", true)
     TriggerClearActions(trigSaveMapInCache)
-    TriggerAddAction(trigSaveMapInCache, SaveLevels___SaveVisibilities_Actions)
+    TriggerAddAction(trigSaveMapInCache, SaveLevels__SaveVisibilities_Actions)
     EnableTrigger(trigSaveMapInCache)
-    SaveLevels___visibilityId = 0
+    SaveLevels__visibilityId = 0
   end
 end
 --/////////////////////////
@@ -40023,7 +40011,7 @@ end
 
 
 
-function SaveLevels___EndSaveLevel()
+function SaveLevels__EndSaveLevel()
   Text___ForAll_timed_withColorCode(-1, NORMAL_TEXT_COLORCODE, ("all levels saved"))
   -- INLINED!!
   SaveGameCache(saveMap_cache)
@@ -40031,43 +40019,43 @@ function SaveLevels___EndSaveLevel()
   -- INLINED!!
 end
 
-function SaveLevels___StartSaveLevel()
-  SaveLevels___level = sc__LevelArray_get(udg_levels, SaveLevels___levelId)
-  if (SaveLevels___level == 0) then
-    SaveLevels___EndSaveLevel()
+function SaveLevels__StartSaveLevel()
+  SaveLevels__level = sc__LevelArray_get(udg_levels, SaveLevels__levelId)
+  if (SaveLevels__level == 0) then
+    SaveLevels__EndSaveLevel()
   else
     --start message
-    if ((s__Level_startMessage[(SaveLevels___level)]) ~= nil and (s__Level_startMessage[(SaveLevels___level)]) ~= "") then
+    if ((s__Level_startMessage[(SaveLevels__level)]) ~= nil and (s__Level_startMessage[(SaveLevels__level)]) ~= "") then
       -- INLINED!!
-      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "startMessage", false)
-      sc__StringArrayForCache_push(stringArrayForCache, StringReplace((s__Level_startMessage[(SaveLevels___level)]), ";", ";;", true))
+      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "startMessage", false)
+      sc__StringArrayForCache_push(stringArrayForCache, StringReplace((s__Level_startMessage[(SaveLevels__level)]), ";", ";;", true))
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
     end
     --nb lives earned
-    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "nbLives", false)
-    sc__StringArrayForCache_push(stringArrayForCache, I2S((s__Level_livesEarnedAtBeginning[(SaveLevels___level)])))
+    stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "nbLives", false)
+    sc__StringArrayForCache_push(stringArrayForCache, I2S((s__Level_livesEarnedAtBeginning[(SaveLevels__level)])))
     -- INLINED!!
     sc__StringArrayForCache_writeInCache(stringArrayForCache)
     --start
-    if ((s__Level_start[(SaveLevels___level)]) ~= 0) then
+    if ((s__Level_start[(SaveLevels__level)]) ~= 0) then
       -- INLINED!!
-      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "start", false)
-      sc__StringArrayForCache_push(stringArrayForCache, sc__Start_toString((s__Level_start[(SaveLevels___level)])))
+      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "start", false)
+      sc__StringArrayForCache_push(stringArrayForCache, sc__Start_toString((s__Level_start[(SaveLevels__level)])))
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
     end
     --end
-    if ((s__Level_end[(SaveLevels___level)]) ~= 0) then
+    if ((s__Level_end[(SaveLevels__level)]) ~= 0) then
       -- INLINED!!
-      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels___levelId), "end", false)
-      sc__StringArrayForCache_push(stringArrayForCache, sc__End_toString((s__Level_end[(SaveLevels___level)])))
+      stringArrayForCache = sc__StringArrayForCache_create("level" .. I2S(SaveLevels__levelId), "end", false)
+      sc__StringArrayForCache_push(stringArrayForCache, sc__End_toString((s__Level_end[(SaveLevels__level)])))
       -- INLINED!!
       sc__StringArrayForCache_writeInCache(stringArrayForCache)
     end
     --reste :      //visibilities  
     --monstersNoMove  //monstersSimplePatrol  //monstersMultiplePatrols  //meteors  //monsterSpawns
-    SaveLevels___StartSaveVisibilities()
+    SaveLevels__StartSaveVisibilities()
   end
 end
 
@@ -40087,21 +40075,21 @@ function StartSaveLevels()
     end
     i = i + 1
   end
-  SaveLevels___levelId = 0
-  SaveLevels___StartSaveLevel()
+  SaveLevels__levelId = 0
+  SaveLevels__StartSaveLevel()
 end
 
 
 
 
 function StartSaveNextLevel_Actions()
-  SaveLevels___levelId = SaveLevels___levelId + 1
-  SaveLevels___StartSaveLevel()
+  SaveLevels__levelId = SaveLevels__levelId + 1
+  SaveLevels__StartSaveLevel()
 end
 
 function InitStartSaveNextLevel()
-  SaveLevels___trg_startSaveNextLevel = CreateTrigger()
-  TriggerAddAction(SaveLevels___trg_startSaveNextLevel, StartSaveNextLevel_Actions)
+  SaveLevels__trg_startSaveNextLevel = CreateTrigger()
+  TriggerAddAction(SaveLevels__trg_startSaveNextLevel, StartSaveNextLevel_Actions)
 end
 
 
@@ -40485,14 +40473,14 @@ function s__StringArrayForCache_push(this, str)
   if (s__StringArrayForCache_lastStringId[this] == -1) then
     s__StringArrayForCache_nextString(this)
   else
-    if (StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]]) == StringArrayForCache___MAX_STRING_LENGTH) then
+    if (StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]]) == StringArrayForCache__MAX_STRING_LENGTH) then
       s__StringArrayForCache_nextString(this)
     end
     if (s__StringArrayForCache_avecSeparateur[this]) then
       s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] = s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] .. CACHE_SEPARATEUR_ITEM
     end
   end
-  nbCharsDispoForCurrentString = StringArrayForCache___MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
+  nbCharsDispoForCurrentString = StringArrayForCache__MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
   length = StringLength(str)
   while true do
     if (length == 0) then
@@ -40506,7 +40494,7 @@ function s__StringArrayForCache_push(this, str)
       s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] = s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] .. str
       str = ""
     end
-    nbCharsDispoForCurrentString = StringArrayForCache___MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
+    nbCharsDispoForCurrentString = StringArrayForCache__MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
     length = StringLength(str)
   end
 end
@@ -40933,42 +40921,42 @@ end
 
 
 
-function CasterFunctions__CalculerPointsIntersections()
+function CasterFunctions___CalculerPointsIntersections()
   local decalSurX = 50
   local a = nil
   local b = nil
   local c = nil
   local discriminant = nil
-  if (CasterFunctions__sliderSpeed >= 0) then
-    CasterFunctions__angleSlider = GetUnitFacing((s__Escaper_hero[(CasterFunctions__escaper)]))
+  if (CasterFunctions___sliderSpeed >= 0) then
+    CasterFunctions___angleSlider = GetUnitFacing((s__Escaper_hero[(CasterFunctions___escaper)]))
     -- INLINED!!
   else
-    CasterFunctions__angleSlider = GetUnitFacing((s__Escaper_hero[(CasterFunctions__escaper)])) + 180
+    CasterFunctions___angleSlider = GetUnitFacing((s__Escaper_hero[(CasterFunctions___escaper)])) + 180
     -- INLINED!!
   end
-  CasterFunctions__x2 = CasterFunctions__x1 + decalSurX
-  CasterFunctions__y2 = CasterFunctions__y1 + TanBJ(CasterFunctions__angleSlider) * decalSurX
-  a = (CasterFunctions__x2 - CasterFunctions__x1) * (CasterFunctions__x2 - CasterFunctions__x1) + (CasterFunctions__y2 - CasterFunctions__y1) * (CasterFunctions__y2 - CasterFunctions__y1)
-  b = 2 * ((CasterFunctions__x2 - CasterFunctions__x1) * (CasterFunctions__x1 - CasterFunctions__x3) + (CasterFunctions__y2 - CasterFunctions__y1) * (CasterFunctions__y1 - CasterFunctions__y3))
-  c = CasterFunctions__x3 * CasterFunctions__x3 + CasterFunctions__y3 * CasterFunctions__y3 + CasterFunctions__x1 * CasterFunctions__x1 + CasterFunctions__y1 * CasterFunctions__y1 - 2 * (CasterFunctions__x3 * CasterFunctions__x1 + CasterFunctions__y3 * CasterFunctions__y1) - sc__Caster_getRange(CasterFunctions__caster) * sc__Caster_getRange(CasterFunctions__caster)
+  CasterFunctions___x2 = CasterFunctions___x1 + decalSurX
+  CasterFunctions___y2 = CasterFunctions___y1 + TanBJ(CasterFunctions___angleSlider) * decalSurX
+  a = (CasterFunctions___x2 - CasterFunctions___x1) * (CasterFunctions___x2 - CasterFunctions___x1) + (CasterFunctions___y2 - CasterFunctions___y1) * (CasterFunctions___y2 - CasterFunctions___y1)
+  b = 2 * ((CasterFunctions___x2 - CasterFunctions___x1) * (CasterFunctions___x1 - CasterFunctions___x3) + (CasterFunctions___y2 - CasterFunctions___y1) * (CasterFunctions___y1 - CasterFunctions___y3))
+  c = CasterFunctions___x3 * CasterFunctions___x3 + CasterFunctions___y3 * CasterFunctions___y3 + CasterFunctions___x1 * CasterFunctions___x1 + CasterFunctions___y1 * CasterFunctions___y1 - 2 * (CasterFunctions___x3 * CasterFunctions___x1 + CasterFunctions___y3 * CasterFunctions___y1) - sc__Caster_getRange(CasterFunctions___caster) * sc__Caster_getRange(CasterFunctions___caster)
   discriminant = b * b - 4 * a * c
   if (discriminant < 0) then
-    CasterFunctions__k1 = 0
-    CasterFunctions__k2 = 0
+    CasterFunctions___k1 = 0
+    CasterFunctions___k2 = 0
   else
-    CasterFunctions__k1 = (-b + SquareRoot(b * b - 4 * a * c)) / (2 * a)
-    CasterFunctions__Xk1 = CasterFunctions__x1 + CasterFunctions__k1 * (CasterFunctions__x2 - CasterFunctions__x1)
-    CasterFunctions__Yk1 = CasterFunctions__y1 + CasterFunctions__k1 * (CasterFunctions__y2 - CasterFunctions__y1)
-    CasterFunctions__k2 = (-b - SquareRoot(b * b - 4 * a * c)) / (2 * a)
-    CasterFunctions__Xk2 = CasterFunctions__x1 + CasterFunctions__k2 * (CasterFunctions__x2 - CasterFunctions__x1)
-    CasterFunctions__Yk2 = CasterFunctions__y1 + CasterFunctions__k2 * (CasterFunctions__y2 - CasterFunctions__y1)
+    CasterFunctions___k1 = (-b + SquareRoot(b * b - 4 * a * c)) / (2 * a)
+    CasterFunctions___Xk1 = CasterFunctions___x1 + CasterFunctions___k1 * (CasterFunctions___x2 - CasterFunctions___x1)
+    CasterFunctions___Yk1 = CasterFunctions___y1 + CasterFunctions___k1 * (CasterFunctions___y2 - CasterFunctions___y1)
+    CasterFunctions___k2 = (-b - SquareRoot(b * b - 4 * a * c)) / (2 * a)
+    CasterFunctions___Xk2 = CasterFunctions___x1 + CasterFunctions___k2 * (CasterFunctions___x2 - CasterFunctions___x1)
+    CasterFunctions___Yk2 = CasterFunctions___y1 + CasterFunctions___k2 * (CasterFunctions___y2 - CasterFunctions___y1)
   end
 end
 
 
 
-function CasterFunctions__TrouverTempsIdeal(tempsMax)
-  local diffTemps = CasterFunctions__PRECISION_DIFF_POS_HERO / CasterFunctions__sliderSpeed
+function CasterFunctions___TrouverTempsIdeal(tempsMax)
+  local diffTemps = CasterFunctions___PRECISION_DIFF_POS_HERO / CasterFunctions___sliderSpeed
   local temps = 0
   local xHero = nil
   local yHero = nil
@@ -40982,11 +40970,11 @@ function CasterFunctions__TrouverTempsIdeal(tempsMax)
     if temps >= tempsMax then
       break
     end
-    xHero = CasterFunctions__x1 + CasterFunctions__sliderSpeed * CosBJ(CasterFunctions__angleSlider) * temps
-    yHero = CasterFunctions__y1 + CasterFunctions__sliderSpeed * SinBJ(CasterFunctions__angleSlider) * temps
-    angleBouleHero = Atan2BJ(yHero - CasterFunctions__y3, xHero - CasterFunctions__x3)
-    xBoule = CasterFunctions__x3 + sc__Caster_getProjectileSpeed(CasterFunctions__caster) * CosBJ(angleBouleHero) * temps
-    yBoule = CasterFunctions__y3 + sc__Caster_getProjectileSpeed(CasterFunctions__caster) * SinBJ(angleBouleHero) * temps
+    xHero = CasterFunctions___x1 + CasterFunctions___sliderSpeed * CosBJ(CasterFunctions___angleSlider) * temps
+    yHero = CasterFunctions___y1 + CasterFunctions___sliderSpeed * SinBJ(CasterFunctions___angleSlider) * temps
+    angleBouleHero = Atan2BJ(yHero - CasterFunctions___y3, xHero - CasterFunctions___x3)
+    xBoule = CasterFunctions___x3 + sc__Caster_getProjectileSpeed(CasterFunctions___caster) * CosBJ(angleBouleHero) * temps
+    yBoule = CasterFunctions___y3 + sc__Caster_getProjectileSpeed(CasterFunctions___caster) * SinBJ(angleBouleHero) * temps
     distHeroBoule = SquareRoot((xHero - xBoule) * (xHero - xBoule) + (yHero - yBoule) * (yHero - yBoule))
     if (distHeroBoule < distHeroBouleMin) then
       distHeroBouleMin = distHeroBoule
@@ -40994,14 +40982,14 @@ function CasterFunctions__TrouverTempsIdeal(tempsMax)
     end
     temps = temps + diffTemps
   end
-  if (distHeroBouleMin > CasterFunctions__PRECISION_TIR) then
+  if (distHeroBouleMin > CasterFunctions___PRECISION_TIR) then
     tempsIdeal = -1
   end
   return tempsIdeal
 end
 
 
-function CasterFunctions__CasterTryToShoot()
+function CasterFunctions___CasterTryToShoot()
   local xHero = nil
   local yHero = nil
   local tempsMax = nil
@@ -41019,21 +41007,21 @@ function CasterFunctions__CasterTryToShoot()
   local numEscaper = nil
 
   --récupération du caster et vérification qu'il existe toujours
-  CasterFunctions__caster = (LoadInteger(Caster_casterHashtable, 1, GetHandleId(GetExpiredTimer())))
-  if (sg__Caster_get_casterUnit(CasterFunctions__caster) == nil) then
+  CasterFunctions___caster = (LoadInteger(Caster_casterHashtable, 1, GetHandleId(GetExpiredTimer())))
+  if (sg__Caster_get_casterUnit(CasterFunctions___caster) == nil) then
     return
   end
 
   --détermination des escapers à viser
   i = 0
   while true do
-    if (i >= sg__Caster_get_nbEscapersInRange(CasterFunctions__caster)) then
+    if (i >= sg__Caster_get_nbEscapersInRange(CasterFunctions___caster)) then
       break
     end
-    escapersToShoot[i] = sg___Caster_escapersInRange_get(sg__Caster_get_escapersInRange(CasterFunctions__caster) + i)
+    escapersToShoot[i] = sg___Caster_escapersInRange_get(sg__Caster_get_escapersInRange(CasterFunctions___caster) + i)
     i = i + 1
   end
-  nbRemainingEscapersToShoot = sg__Caster_get_nbEscapersInRange(CasterFunctions__caster)
+  nbRemainingEscapersToShoot = sg__Caster_get_nbEscapersInRange(CasterFunctions___caster)
 
   while true do
     if (tirOk or nbRemainingEscapersToShoot == 0) then
@@ -41041,22 +41029,22 @@ function CasterFunctions__CasterTryToShoot()
     end
     --choix d'un escaper au hasard
     numEscaper = GetRandomInt(0, nbRemainingEscapersToShoot - 1)
-    CasterFunctions__escaper = escapersToShoot[numEscaper]
+    CasterFunctions___escaper = escapersToShoot[numEscaper]
     --vérification que l'escaper est shootable (vivant et à portée de tir)
     estShootable = false
-    if ((IsUnitAliveBJ(s__Escaper_hero[(CasterFunctions__escaper)]))) then
+    if ((IsUnitAliveBJ(s__Escaper_hero[(CasterFunctions___escaper)]))) then
       -- INLINED!!
-      CasterFunctions__x1 = GetUnitX((s__Escaper_hero[(CasterFunctions__escaper)]))
+      CasterFunctions___x1 = GetUnitX((s__Escaper_hero[(CasterFunctions___escaper)]))
       -- INLINED!!
-      CasterFunctions__y1 = GetUnitY((s__Escaper_hero[(CasterFunctions__escaper)]))
+      CasterFunctions___y1 = GetUnitY((s__Escaper_hero[(CasterFunctions___escaper)]))
       -- INLINED!!
-      CasterFunctions__x3 = sc__Caster_getX(CasterFunctions__caster)
-      CasterFunctions__y3 = sc__Caster_getY(CasterFunctions__caster)
+      CasterFunctions___x3 = sc__Caster_getX(CasterFunctions___caster)
+      CasterFunctions___y3 = sc__Caster_getY(CasterFunctions___caster)
       --vérification que le héros est à portée de tir
-      estShootable = SquareRoot((CasterFunctions__x1 - CasterFunctions__x3) * (CasterFunctions__x1 - CasterFunctions__x3) + (CasterFunctions__y1 - CasterFunctions__y3) * (CasterFunctions__y1 - CasterFunctions__y3)) <= sc__Caster_getRange(CasterFunctions__caster)
+      estShootable = SquareRoot((CasterFunctions___x1 - CasterFunctions___x3) * (CasterFunctions___x1 - CasterFunctions___x3) + (CasterFunctions___y1 - CasterFunctions___y3) * (CasterFunctions___y1 - CasterFunctions___y3)) <= sc__Caster_getRange(CasterFunctions___caster)
     end
     if (not estShootable) then
-      sc__Caster_escaperOutOfRangeOrDead(CasterFunctions__caster, CasterFunctions__escaper)
+      sc__Caster_escaperOutOfRangeOrDead(CasterFunctions___caster, CasterFunctions___escaper)
       i = numEscaper
       while true do
         if (i == nbRemainingEscapersToShoot - 1) then
@@ -41068,83 +41056,83 @@ function CasterFunctions__CasterTryToShoot()
       nbRemainingEscapersToShoot = nbRemainingEscapersToShoot - 1
     else
       --tir si possible
-      if ((IsTriggerEnabled(s__Escaper_slide[(CasterFunctions__escaper)]))) then
+      if ((IsTriggerEnabled(s__Escaper_slide[(CasterFunctions___escaper)]))) then
         -- INLINED!!
-        CasterFunctions__sliderSpeed = (s__Escaper_slideSpeed[(CasterFunctions__escaper)] / SLIDE_PERIOD)
+        CasterFunctions___sliderSpeed = (s__Escaper_slideSpeed[(CasterFunctions___escaper)] / SLIDE_PERIOD)
         -- INLINED!!
-      elseif (GetUnitCurrentOrder((s__Escaper_hero[(CasterFunctions__escaper)])) ~= 0) then
+      elseif (GetUnitCurrentOrder((s__Escaper_hero[(CasterFunctions___escaper)])) ~= 0) then
         -- INLINED!!
-        CasterFunctions__sliderSpeed = (s__Escaper_walkSpeed[(CasterFunctions__escaper)])
+        CasterFunctions___sliderSpeed = (s__Escaper_walkSpeed[(CasterFunctions___escaper)])
         -- INLINED!!
       else
-        CasterFunctions__sliderSpeed = 0
+        CasterFunctions___sliderSpeed = 0
       end
-      if (CasterFunctions__sliderSpeed == 0) then
-        xHero = CasterFunctions__x1
-        yHero = CasterFunctions__y1
+      if (CasterFunctions___sliderSpeed == 0) then
+        xHero = CasterFunctions___x1
+        yHero = CasterFunctions___y1
         tirOk = true
       else
-        CasterFunctions__CalculerPointsIntersections()
-        if (CasterFunctions__sliderSpeed < 0) then
-          CasterFunctions__sliderSpeed = -CasterFunctions__sliderSpeed
+        CasterFunctions___CalculerPointsIntersections()
+        if (CasterFunctions___sliderSpeed < 0) then
+          CasterFunctions___sliderSpeed = -CasterFunctions___sliderSpeed
         end
-        if (CasterFunctions__k1 == 0 and CasterFunctions__k2 == 0) then
+        if (CasterFunctions___k1 == 0 and CasterFunctions___k2 == 0) then
           return
         end
         --sens points
-        if (CosBJ(CasterFunctions__angleSlider) ~= 0) then
-          sensPoint1positif = (CasterFunctions__Xk1 - CasterFunctions__x1) * CosBJ(CasterFunctions__angleSlider) > 0
-          sensPoint2positif = (CasterFunctions__Xk2 - CasterFunctions__x1) * CosBJ(CasterFunctions__angleSlider) > 0
+        if (CosBJ(CasterFunctions___angleSlider) ~= 0) then
+          sensPoint1positif = (CasterFunctions___Xk1 - CasterFunctions___x1) * CosBJ(CasterFunctions___angleSlider) > 0
+          sensPoint2positif = (CasterFunctions___Xk2 - CasterFunctions___x1) * CosBJ(CasterFunctions___angleSlider) > 0
         else
-          sensPoint1positif = (CasterFunctions__Yk1 - CasterFunctions__y1) * SinBJ(CasterFunctions__angleSlider) > 0
-          sensPoint2positif = (CasterFunctions__Yk2 - CasterFunctions__y1) * SinBJ(CasterFunctions__angleSlider) > 0
+          sensPoint1positif = (CasterFunctions___Yk1 - CasterFunctions___y1) * SinBJ(CasterFunctions___angleSlider) > 0
+          sensPoint2positif = (CasterFunctions___Yk2 - CasterFunctions___y1) * SinBJ(CasterFunctions___angleSlider) > 0
         end
         --déterminer lequel des deux points d'intersection est devant le héros
         if (sensPoint1positif == sensPoint2positif) then
           --cas exceptionnel où le point d'intersection le plus proche du héros apparaît être placé après le héros, comme l'autre point
           --calcul du temps pour chaque point pour trouver le plus éloigné qui est le bon
-          tempsPoint1 = SquareRoot((CasterFunctions__x1 - CasterFunctions__Xk1) * (CasterFunctions__x1 - CasterFunctions__Xk1) + (CasterFunctions__y1 - CasterFunctions__Yk1) * (CasterFunctions__y1 - CasterFunctions__Yk1)) / CasterFunctions__sliderSpeed
-          tempsPoint2 = SquareRoot((CasterFunctions__x1 - CasterFunctions__Xk2) * (CasterFunctions__x1 - CasterFunctions__Xk2) + (CasterFunctions__y1 - CasterFunctions__Yk2) * (CasterFunctions__y1 - CasterFunctions__Yk2)) / CasterFunctions__sliderSpeed
+          tempsPoint1 = SquareRoot((CasterFunctions___x1 - CasterFunctions___Xk1) * (CasterFunctions___x1 - CasterFunctions___Xk1) + (CasterFunctions___y1 - CasterFunctions___Yk1) * (CasterFunctions___y1 - CasterFunctions___Yk1)) / CasterFunctions___sliderSpeed
+          tempsPoint2 = SquareRoot((CasterFunctions___x1 - CasterFunctions___Xk2) * (CasterFunctions___x1 - CasterFunctions___Xk2) + (CasterFunctions___y1 - CasterFunctions___Yk2) * (CasterFunctions___y1 - CasterFunctions___Yk2)) / CasterFunctions___sliderSpeed
           if (tempsPoint1 > tempsPoint2) then
-            CasterFunctions__XintersectionDevantHeros = CasterFunctions__Xk1
-            CasterFunctions__YintersectionDevantHeros = CasterFunctions__Yk1
+            CasterFunctions___XintersectionDevantHeros = CasterFunctions___Xk1
+            CasterFunctions___YintersectionDevantHeros = CasterFunctions___Yk1
             tempsMax = tempsPoint1
           else
-            CasterFunctions__XintersectionDevantHeros = CasterFunctions__Xk2
-            CasterFunctions__YintersectionDevantHeros = CasterFunctions__Yk2
+            CasterFunctions___XintersectionDevantHeros = CasterFunctions___Xk2
+            CasterFunctions___YintersectionDevantHeros = CasterFunctions___Yk2
             tempsMax = tempsPoint2
           end
         else
           if (sensPoint1positif) then
-            CasterFunctions__XintersectionDevantHeros = CasterFunctions__Xk1
-            CasterFunctions__YintersectionDevantHeros = CasterFunctions__Yk1
-            tempsMax = SquareRoot((CasterFunctions__x1 - CasterFunctions__Xk1) * (CasterFunctions__x1 - CasterFunctions__Xk1) + (CasterFunctions__y1 - CasterFunctions__Yk1) * (CasterFunctions__y1 - CasterFunctions__Yk1)) / CasterFunctions__sliderSpeed
+            CasterFunctions___XintersectionDevantHeros = CasterFunctions___Xk1
+            CasterFunctions___YintersectionDevantHeros = CasterFunctions___Yk1
+            tempsMax = SquareRoot((CasterFunctions___x1 - CasterFunctions___Xk1) * (CasterFunctions___x1 - CasterFunctions___Xk1) + (CasterFunctions___y1 - CasterFunctions___Yk1) * (CasterFunctions___y1 - CasterFunctions___Yk1)) / CasterFunctions___sliderSpeed
           else
-            CasterFunctions__XintersectionDevantHeros = CasterFunctions__Xk2
-            CasterFunctions__YintersectionDevantHeros = CasterFunctions__Yk2
-            tempsMax = SquareRoot((CasterFunctions__x1 - CasterFunctions__Xk2) * (CasterFunctions__x1 - CasterFunctions__Xk2) + (CasterFunctions__y1 - CasterFunctions__Yk2) * (CasterFunctions__y1 - CasterFunctions__Yk2)) / CasterFunctions__sliderSpeed
+            CasterFunctions___XintersectionDevantHeros = CasterFunctions___Xk2
+            CasterFunctions___YintersectionDevantHeros = CasterFunctions___Yk2
+            tempsMax = SquareRoot((CasterFunctions___x1 - CasterFunctions___Xk2) * (CasterFunctions___x1 - CasterFunctions___Xk2) + (CasterFunctions___y1 - CasterFunctions___Yk2) * (CasterFunctions___y1 - CasterFunctions___Yk2)) / CasterFunctions___sliderSpeed
           end
         end
 
         --trouver temps idéal
-        if ((GetUnitFlyHeight(((s__Escaper_hero[(CasterFunctions__escaper)]))) < 1)) then
+        if ((GetUnitFlyHeight(((s__Escaper_hero[(CasterFunctions___escaper)]))) < 1)) then
           -- INLINED!!
-          tempsIdeal = CasterFunctions__TrouverTempsIdeal(tempsMax)
+          tempsIdeal = CasterFunctions___TrouverTempsIdeal(tempsMax)
         else
           tempsIdeal = -1
         end
         if (tempsIdeal ~= -1) then
-          xHero = CasterFunctions__x1 + CasterFunctions__sliderSpeed * CosBJ(CasterFunctions__angleSlider) * tempsIdeal
-          yHero = CasterFunctions__y1 + CasterFunctions__sliderSpeed * SinBJ(CasterFunctions__angleSlider) * tempsIdeal
+          xHero = CasterFunctions___x1 + CasterFunctions___sliderSpeed * CosBJ(CasterFunctions___angleSlider) * tempsIdeal
+          yHero = CasterFunctions___y1 + CasterFunctions___sliderSpeed * SinBJ(CasterFunctions___angleSlider) * tempsIdeal
           tirOk = true
         end
       end
       if (tirOk) then
-        if (sc__Caster_isEnabled(CasterFunctions__caster)) then
-          angleDeTir = Atan2BJ(yHero - CasterFunctions__y3, xHero - CasterFunctions__x3)
-          SetUnitFacing(sc__Caster_getCasterUnit(CasterFunctions__caster), angleDeTir)
-          SetUnitAnimation(sc__Caster_getCasterUnit(CasterFunctions__caster), sc__Caster_getAnimation(CasterFunctions__caster))
-          sc__CasterShot_create(sc__Caster_getProjectileMonsterType(CasterFunctions__caster), CasterFunctions__x3, CasterFunctions__y3, angleDeTir, sc__Caster_getProjectileSpeed(CasterFunctions__caster), sc__Caster_getRange(CasterFunctions__caster))
+        if (sc__Caster_isEnabled(CasterFunctions___caster)) then
+          angleDeTir = Atan2BJ(yHero - CasterFunctions___y3, xHero - CasterFunctions___x3)
+          SetUnitFacing(sc__Caster_getCasterUnit(CasterFunctions___caster), angleDeTir)
+          SetUnitAnimation(sc__Caster_getCasterUnit(CasterFunctions___caster), sc__Caster_getAnimation(CasterFunctions___caster))
+          sc__CasterShot_create(sc__Caster_getProjectileMonsterType(CasterFunctions___caster), CasterFunctions___x3, CasterFunctions___y3, angleDeTir, sc__Caster_getProjectileSpeed(CasterFunctions___caster), sc__Caster_getRange(CasterFunctions___caster))
         end
       else
         --on retire l'escaper du pick aléatoire
@@ -41164,14 +41152,14 @@ function CasterFunctions__CasterTryToShoot()
   end
   if (tirOk) then
     --on attend que le temps soit écoulé pour un autre tir
-    TimerStart(sg__Caster_get_t(CasterFunctions__caster), sc__Caster_getLoadTime(CasterFunctions__caster), false, CasterFunctions__CasterTryToShoot)
-    sg__Caster_set_canShoot(CasterFunctions__caster, false)
-  elseif (sg__Caster_get_nbEscapersInRange(CasterFunctions__caster) == 0) then
+    TimerStart(sg__Caster_get_t(CasterFunctions___caster), sc__Caster_getLoadTime(CasterFunctions___caster), false, CasterFunctions___CasterTryToShoot)
+    sg__Caster_set_canShoot(CasterFunctions___caster, false)
+  elseif (sg__Caster_get_nbEscapersInRange(CasterFunctions___caster) == 0) then
     --plus aucun héros à portée, on stoppe tout
-    sg__Caster_set_canShoot(CasterFunctions__caster, true)
+    sg__Caster_set_canShoot(CasterFunctions___caster, true)
   else
     --héros à portée mais impossible de tirer, on attend un peu et on réessaie
-    TimerStart(sg__Caster_get_t(CasterFunctions__caster), CasterFunctions__ECART_CHECK, false, CasterFunctions__CasterTryToShoot)
+    TimerStart(sg__Caster_get_t(CasterFunctions___caster), CasterFunctions___ECART_CHECK, false, CasterFunctions___CasterTryToShoot)
   end
 end
 
@@ -41182,11 +41170,11 @@ function CasterUnitWithinRange_Actions()
   if (escaperInRange == 0) then
     return
   end
-  CasterFunctions__caster = (LoadInteger(Caster_casterHashtable, 0, GetHandleId(GetTriggeringTrigger())))
-  sg___Caster_escapersInRange_set(sg__Caster_get_escapersInRange(CasterFunctions__caster) + sg__Caster_get_nbEscapersInRange(CasterFunctions__caster), escaperInRange)
-  sg__Caster_set_nbEscapersInRange(CasterFunctions__caster, sg__Caster_get_nbEscapersInRange(CasterFunctions__caster) + 1)
-  if (sg__Caster_get_canShoot(CasterFunctions__caster)) then
-    TimerStart(sg__Caster_get_t(CasterFunctions__caster), 0, false, CasterFunctions__CasterTryToShoot)
+  CasterFunctions___caster = (LoadInteger(Caster_casterHashtable, 0, GetHandleId(GetTriggeringTrigger())))
+  sg___Caster_escapersInRange_set(sg__Caster_get_escapersInRange(CasterFunctions___caster) + sg__Caster_get_nbEscapersInRange(CasterFunctions___caster), escaperInRange)
+  sg__Caster_set_nbEscapersInRange(CasterFunctions___caster, sg__Caster_get_nbEscapersInRange(CasterFunctions___caster) + 1)
+  if (sg__Caster_get_canShoot(CasterFunctions___caster)) then
+    TimerStart(sg__Caster_get_t(CasterFunctions___caster), 0, false, CasterFunctions___CasterTryToShoot)
   end
 end
 
@@ -44243,7 +44231,7 @@ function s__Lives_display(this, show)
 end
 
 function s__Lives_refresh(this)
-  LeaderboardSetPlayerItemValueBJ(Lives__LIVES_PLAYER, s__Lives_lb[this], s__Lives_nb[this])
+  LeaderboardSetPlayerItemValueBJ(Lives___LIVES_PLAYER, s__Lives_lb[this], s__Lives_nb[this])
 end
 
 function s__Lives_getLeaderboard(this)
@@ -44263,7 +44251,7 @@ function s__Lives_create()
   s__Lives_lb[l] = CreateLeaderboardBJ(GetPlayersAll(), "")
   LeaderboardAddItemBJ(Player(0), s__Lives_lb[l], "Game time", 0)
   LeaderboardSetPlayerItemStyleBJ(Player(0), s__Lives_lb[l], true, false, false)
-  LeaderboardAddItemBJ(Lives__LIVES_PLAYER, s__Lives_lb[l], "Lives :", s__Lives_nb[l])
+  LeaderboardAddItemBJ(Lives___LIVES_PLAYER, s__Lives_lb[l], "Lives :", s__Lives_nb[l])
   LeaderboardDisplay(s__Lives_lb[(l)], (true))
   -- INLINED!!
   return l
@@ -44305,7 +44293,7 @@ function s__Lives_setNb(this, nbLives)
   else
     wordLives = " life."
   end
-  Text___ForAll_timed_withColorCode(-1, NORMAL_TEXT_COLORCODE, (udg_colorCode[GetPlayerId(Lives__LIVES_PLAYER)] .. "You have now " .. I2S(nbLives) .. wordLives))
+  Text___ForAll_timed_withColorCode(-1, NORMAL_TEXT_COLORCODE, (udg_colorCode[GetPlayerId(Lives___LIVES_PLAYER)] .. "You have now " .. I2S(nbLives) .. wordLives))
   -- INLINED!!
   return true
 end
@@ -44991,7 +44979,7 @@ end
 
 
 
-function MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, lifeAbility)
+function MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, lifeAbility)
   UnitAddAbility(u, lifeAbility)
   SetUnitAbilityLevel(u, lifeAbility, 2)
   UnitRemoveAbility(u, lifeAbility)
@@ -45003,22 +44991,22 @@ function UnitAddMaxLife(u, lifeToAdd)
       break
     end
     if (lifeToAdd >= 10000) then
-      MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, MonsterCreationFunctions__ABILITY_10000_LIFE)
+      MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, MonsterCreationFunctions___ABILITY_10000_LIFE)
       lifeToAdd = lifeToAdd - 10000
     else
       if (lifeToAdd >= 1000) then
-        MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, MonsterCreationFunctions__ABILITY_1000_LIFE)
+        MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, MonsterCreationFunctions___ABILITY_1000_LIFE)
         lifeToAdd = lifeToAdd - 1000
       else
         if (lifeToAdd >= 100) then
-          MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, MonsterCreationFunctions__ABILITY_100_LIFE)
+          MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, MonsterCreationFunctions___ABILITY_100_LIFE)
           lifeToAdd = lifeToAdd - 100
         else
           if (lifeToAdd >= 10) then
-            MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, MonsterCreationFunctions__ABILITY_10_LIFE)
+            MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, MonsterCreationFunctions___ABILITY_10_LIFE)
             lifeToAdd = lifeToAdd - 10
           else
-            MonsterCreationFunctions__UnitAddRemoveLifeAbility(u, MonsterCreationFunctions__ABILITY_1_LIFE)
+            MonsterCreationFunctions___UnitAddRemoveLifeAbility(u, MonsterCreationFunctions___ABILITY_1_LIFE)
             lifeToAdd = lifeToAdd - 1
           end
         end
@@ -45040,10 +45028,10 @@ end
 function NewImmobileMonsterForPlayer(mt, p, x, l__y, angle)
   local scale = nil
   if (angle == -1) then
-    MonsterCreationFunctions__monster = CreateUnit(p, (s__MonsterType_unitTypeId[(mt)]), x, l__y, GetRandomDirectionDeg())
+    MonsterCreationFunctions___monster = CreateUnit(p, (s__MonsterType_unitTypeId[(mt)]), x, l__y, GetRandomDirectionDeg())
     -- INLINED!!
   else
-    MonsterCreationFunctions__monster = CreateUnit(p, (s__MonsterType_unitTypeId[(mt)]), x, l__y, angle)
+    MonsterCreationFunctions___monster = CreateUnit(p, (s__MonsterType_unitTypeId[(mt)]), x, l__y, angle)
     -- INLINED!!
   end
   --if (IsHeroUnitId(mt.getUnitTypeId())) then
@@ -45051,36 +45039,36 @@ function NewImmobileMonsterForPlayer(mt, p, x, l__y, angle)
   --else
   --    call Text_A("pas hero")
   --endif
-  SetUnitUseFood(MonsterCreationFunctions__monster, false)
+  SetUnitUseFood(MonsterCreationFunctions___monster, false)
   if ((s__MonsterType_isClickableB[(mt)])) then
     -- INLINED!!
-    SetUnitMaxLife(MonsterCreationFunctions__monster, (s__MonsterType_maxLife[(mt)]))
+    SetUnitMaxLife(MonsterCreationFunctions___monster, (s__MonsterType_maxLife[(mt)]))
     -- INLINED!!
   else
-    UnitAddAbility(MonsterCreationFunctions__monster, 1097625443)
-    UnitAddAbility(MonsterCreationFunctions__monster, MonsterCreationFunctions__ABILITY_ANNULER_VISION)
+    UnitAddAbility(MonsterCreationFunctions___monster, 1097625443)
+    UnitAddAbility(MonsterCreationFunctions___monster, MonsterCreationFunctions___ABILITY_ANNULER_VISION)
   end
-  UnitAddAbility(MonsterCreationFunctions__monster, (s__MonsterType_immolationSkill[(mt)]))
+  UnitAddAbility(MonsterCreationFunctions___monster, (s__MonsterType_immolationSkill[(mt)]))
   -- INLINED!!
   scale = (s__MonsterType_scale[(mt)])
   -- INLINED!!
   if (scale ~= -1) then
-    SetUnitScale(MonsterCreationFunctions__monster, scale, scale, scale)
+    SetUnitScale(MonsterCreationFunctions___monster, scale, scale, scale)
   end
-  SetUnitMoveSpeed(MonsterCreationFunctions__monster, (s__MonsterType_speed[(mt)]))
+  SetUnitMoveSpeed(MonsterCreationFunctions___monster, (s__MonsterType_speed[(mt)]))
   -- INLINED!!
   if (not MOBS_VARIOUS_COLORS) then
-    SetUnitColor(MonsterCreationFunctions__monster, ConvertPlayerColor(12))
+    SetUnitColor(MonsterCreationFunctions___monster, ConvertPlayerColor(12))
   end
-  UnitRemoveAbility(MonsterCreationFunctions__monster, MonsterCreationFunctions__ATTACK_SKILL)
-  UnitRemoveType(MonsterCreationFunctions__monster, UNIT_TYPE_PEON)
+  UnitRemoveAbility(MonsterCreationFunctions___monster, MonsterCreationFunctions___ATTACK_SKILL)
+  UnitRemoveType(MonsterCreationFunctions___monster, UNIT_TYPE_PEON)
   if ((s__MonsterType_height[(mt)]) ~= -1) then
     -- INLINED!!
-    UnitAddAbility(MonsterCreationFunctions__monster, MonsterCreationFunctions__ABILITY_FORME_CORBEAU)
-    SetUnitFlyHeight(MonsterCreationFunctions__monster, (s__MonsterType_height[(mt)]), 0)
+    UnitAddAbility(MonsterCreationFunctions___monster, MonsterCreationFunctions___ABILITY_FORME_CORBEAU)
+    SetUnitFlyHeight(MonsterCreationFunctions___monster, (s__MonsterType_height[(mt)]), 0)
     -- INLINED!!
   end
-  return MonsterCreationFunctions__monster
+  return MonsterCreationFunctions___monster
 end
 
 function NewImmobileMonster(mt, x, l__y, angle)
@@ -45097,9 +45085,9 @@ end
 
 function NewPatrolMonster(mt, x1, y1, x2, y2)
   local angle = bj_RADTODEG * Atan2(y1 - y2, x1 - x2)
-  MonsterCreationFunctions__monster = NewImmobileMonster(mt, x1, y1, angle)
-  IssuePointOrder(MonsterCreationFunctions__monster, "patrol", x2, y2)
-  return MonsterCreationFunctions__monster
+  MonsterCreationFunctions___monster = NewImmobileMonster(mt, x1, y1, angle)
+  IssuePointOrder(MonsterCreationFunctions___monster, "patrol", x2, y2)
+  return MonsterCreationFunctions___monster
 end
 
 
@@ -45332,8 +45320,8 @@ end
 
 
 
-function CasterShot__CasterShot_Actions()
-  local shot = (LoadInteger(CasterShot__shotsHashtable, 0, GetHandleId(GetTriggeringTrigger())))
+function CasterShot___CasterShot_Actions()
+  local shot = (LoadInteger(CasterShot___shotsHashtable, 0, GetHandleId(GetTriggeringTrigger())))
   s__CasterShot_x[shot] = s__CasterShot_x[shot] + s__CasterShot_diffX[shot]
   s__CasterShot_y[shot] = s__CasterShot_y[shot] + s__CasterShot_diffY[shot]
   if (s__CasterShot_x[shot] >= MAP_MIN_X and s__CasterShot_x[shot] <= MAP_MAX_X) then
@@ -45355,14 +45343,14 @@ function s__CasterShot_create(monsterType, Xdep, Ydep, angle, speed, portee)
   local t = s__CasterShot__allocate()
   s__CasterShot_x[t] = Xdep
   s__CasterShot_y[t] = Ydep
-  s__CasterShot_diffX[t] = speed * CosBJ(angle) * CasterShot__PERIOD
-  s__CasterShot_diffY[t] = speed * SinBJ(angle) * CasterShot__PERIOD
-  s__CasterShot_nbTeleportationsRestantes[t] = R2I((portee / speed) / CasterShot__PERIOD)
+  s__CasterShot_diffX[t] = speed * CosBJ(angle) * CasterShot___PERIOD
+  s__CasterShot_diffY[t] = speed * SinBJ(angle) * CasterShot___PERIOD
+  s__CasterShot_nbTeleportationsRestantes[t] = R2I((portee / speed) / CasterShot___PERIOD)
   s__CasterShot_unite[t] = NewImmobileMonster(monsterType, Xdep, Ydep, angle)
   s__CasterShot_trig[t] = CreateTrigger()
-  TriggerRegisterTimerEvent(s__CasterShot_trig[t], CasterShot__PERIOD, true)
-  TriggerAddAction(s__CasterShot_trig[t], CasterShot__CasterShot_Actions)
-  SaveInteger(CasterShot__shotsHashtable, 0, GetHandleId(s__CasterShot_trig[t]), t)
+  TriggerRegisterTimerEvent(s__CasterShot_trig[t], CasterShot___PERIOD, true)
+  TriggerAddAction(s__CasterShot_trig[t], CasterShot___CasterShot_Actions)
+  SaveInteger(CasterShot___shotsHashtable, 0, GetHandleId(s__CasterShot_trig[t]), t)
   return t
 end
 
@@ -45388,7 +45376,7 @@ end
 
 --===========================================================================
 function InitCasterShot()
-  CasterShot__shotsHashtable = InitHashtable()
+  CasterShot___shotsHashtable = InitHashtable()
 end
 
 
@@ -46007,15 +45995,15 @@ end
 --library MonsterSpawn:
 
 
-function MonsterSpawn__RemoveEnumMonster()
+function MonsterSpawn___RemoveEnumMonster()
   RemoveUnit(GetEnumUnit())
 end
 
 
-function MonsterSpawn__MonsterStartMovement()
+function MonsterSpawn___MonsterStartMovement()
   local mobTimer = GetExpiredTimer()
-  local ms = (LoadInteger(MonsterSpawn__ht, 1, GetHandleId(mobTimer)))
-  local mobUnit = LoadUnitHandle(MonsterSpawn__ht, 2, GetHandleId(mobTimer))
+  local ms = (LoadInteger(MonsterSpawn___ht, 1, GetHandleId(mobTimer)))
+  local mobUnit = LoadUnitHandle(MonsterSpawn___ht, 2, GetHandleId(mobTimer))
   sc__MonsterSpawn_startMobMovement(ms, mobUnit)
   UnitAddAbility(mobUnit, 1097625443)
   DestroyTimer(mobTimer)
@@ -46023,13 +46011,13 @@ function MonsterSpawn__MonsterStartMovement()
   mobTimer = nil
 end
 
-function MonsterSpawn__MonsterSpawn_Actions()
-  local ms = (LoadInteger(MonsterSpawn__ht, 0, GetHandleId(GetTriggeringTrigger())))
+function MonsterSpawn___MonsterSpawn_Actions()
+  local ms = (LoadInteger(MonsterSpawn___ht, 0, GetHandleId(GetTriggeringTrigger())))
   local mobUnit = sc__MonsterSpawn_createMob(ms)
   local mobTimer = CreateTimer()
-  SaveInteger(MonsterSpawn__ht, 1, GetHandleId(mobTimer), (ms))
-  SaveUnitHandle(MonsterSpawn__ht, 2, GetHandleId(mobTimer), mobUnit)
-  TimerStart(mobTimer, MonsterSpawn__DELAY_BETWEEN_SPAWN_AND_MOVEMENT, false, MonsterSpawn__MonsterStartMovement)
+  SaveInteger(MonsterSpawn___ht, 1, GetHandleId(mobTimer), (ms))
+  SaveUnitHandle(MonsterSpawn___ht, 2, GetHandleId(mobTimer), mobUnit)
+  TimerStart(mobTimer, MonsterSpawn___DELAY_BETWEEN_SPAWN_AND_MOVEMENT, false, MonsterSpawn___MonsterStartMovement)
   SetUnitOwner(mobUnit, ENNEMY_PLAYER, false)
   ShowUnit(mobUnit, false)
   UnitRemoveAbility(mobUnit, 1097625443)
@@ -46038,8 +46026,8 @@ function MonsterSpawn__MonsterSpawn_Actions()
   mobTimer = nil
 end
 
-function MonsterSpawn__UnspawMonster_Actions()
-  local ms = (LoadInteger(MonsterSpawn__ht, 0, GetHandleId(GetTriggeringTrigger())))
+function MonsterSpawn___UnspawMonster_Actions()
+  local ms = (LoadInteger(MonsterSpawn___ht, 0, GetHandleId(GetTriggeringTrigger())))
   if (IsUnitInGroup(GetTriggerUnit(), s__MonsterSpawn_monsters[ms])) then
     GroupRemoveUnit(s__MonsterSpawn_monsters[ms], GetTriggerUnit())
     RemoveUnit(GetTriggerUnit())
@@ -46049,7 +46037,7 @@ end
 
 
 function s__MonsterSpawn_onInit()
-  MonsterSpawn__ht = InitHashtable()
+  MonsterSpawn___ht = InitHashtable()
   --0, tSpawn --> MonsterSpawn
   --0, tUnspawn --> MonsterSpawn
   --1, timer --> MonsterSpawn
@@ -46078,7 +46066,7 @@ function s__MonsterSpawn_desactivate(this)
     s__MonsterSpawn_tUnspawn[this] = nil
   end
   if (s__MonsterSpawn_monsters[this] ~= nil) then
-    ForGroup(s__MonsterSpawn_monsters[this], MonsterSpawn__RemoveEnumMonster)
+    ForGroup(s__MonsterSpawn_monsters[this], MonsterSpawn___RemoveEnumMonster)
     DestroyGroup(s__MonsterSpawn_monsters[this])
     s__MonsterSpawn_monsters[this] = nil
   end
@@ -46094,22 +46082,22 @@ function s__MonsterSpawn_createUnspawnReg(this)
   if (s__MonsterSpawn_sens[this] == "leftToRight") then
     x1 = s__MonsterSpawn_maxX[this]
     x2 = s__MonsterSpawn_maxX[this]
-    y1 = s__MonsterSpawn_minY[this] - MonsterSpawn__DECALAGE_UNSPAWN
-    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    y1 = s__MonsterSpawn_minY[this] - MonsterSpawn___DECALAGE_UNSPAWN
+    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn___DECALAGE_UNSPAWN
   elseif (s__MonsterSpawn_sens[this] == "upToDown") then
-    x1 = s__MonsterSpawn_minX[this] - MonsterSpawn__DECALAGE_UNSPAWN
-    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    x1 = s__MonsterSpawn_minX[this] - MonsterSpawn___DECALAGE_UNSPAWN
+    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn___DECALAGE_UNSPAWN
     y1 = s__MonsterSpawn_minY[this]
     y2 = s__MonsterSpawn_minY[this]
   elseif (s__MonsterSpawn_sens[this] == "rightToLeft") then
     x1 = s__MonsterSpawn_minX[this]
     x2 = s__MonsterSpawn_minX[this]
-    y1 = s__MonsterSpawn_minY[this] - MonsterSpawn__DECALAGE_UNSPAWN
-    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    y1 = s__MonsterSpawn_minY[this] - MonsterSpawn___DECALAGE_UNSPAWN
+    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn___DECALAGE_UNSPAWN
   else
     --downToUp
-    x1 = s__MonsterSpawn_minX[this] - MonsterSpawn__DECALAGE_UNSPAWN
-    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    x1 = s__MonsterSpawn_minX[this] - MonsterSpawn___DECALAGE_UNSPAWN
+    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn___DECALAGE_UNSPAWN
     y1 = s__MonsterSpawn_maxY[this]
     y2 = s__MonsterSpawn_maxY[this]
   end
@@ -46122,14 +46110,14 @@ end
 function s__MonsterSpawn_activate(this)
   s__MonsterSpawn_monsters[this] = CreateGroup()
   s__MonsterSpawn_tSpawn[this] = CreateTrigger()
-  SaveInteger(MonsterSpawn__ht, 0, GetHandleId(s__MonsterSpawn_tSpawn[this]), (this))
+  SaveInteger(MonsterSpawn___ht, 0, GetHandleId(s__MonsterSpawn_tSpawn[this]), (this))
   TriggerRegisterTimerEvent(s__MonsterSpawn_tSpawn[this], 1 / s__MonsterSpawn_frequence[this], true)
-  TriggerAddAction(s__MonsterSpawn_tSpawn[this], MonsterSpawn__MonsterSpawn_Actions)
+  TriggerAddAction(s__MonsterSpawn_tSpawn[this], MonsterSpawn___MonsterSpawn_Actions)
   s__MonsterSpawn_createUnspawnReg(this)
   s__MonsterSpawn_tUnspawn[this] = CreateTrigger()
-  SaveInteger(MonsterSpawn__ht, 0, GetHandleId(s__MonsterSpawn_tUnspawn[this]), (this))
+  SaveInteger(MonsterSpawn___ht, 0, GetHandleId(s__MonsterSpawn_tUnspawn[this]), (this))
   TriggerRegisterEnterRegion(s__MonsterSpawn_tUnspawn[this], s__MonsterSpawn_unspawnReg[this], nil)
-  TriggerAddAction(s__MonsterSpawn_tUnspawn[this], MonsterSpawn__UnspawMonster_Actions)
+  TriggerAddAction(s__MonsterSpawn_tUnspawn[this], MonsterSpawn___UnspawMonster_Actions)
 end
 
 function s__MonsterSpawn_onDestroy(this)
@@ -46172,17 +46160,17 @@ function s__MonsterSpawn_startMobMovement(this, mobUnit)
   --leftToRight, upToDown, rightToLeft, downToUp
   if (s__MonsterSpawn_sens[this] == "leftToRight") then
     x1 = s__MonsterSpawn_minX[this]
-    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    x2 = s__MonsterSpawn_maxX[this] + MonsterSpawn___DECALAGE_UNSPAWN
     y1 = GetRandomReal(s__MonsterSpawn_minY[this], s__MonsterSpawn_maxY[this])
     y2 = y1
   elseif (s__MonsterSpawn_sens[this] == "upToDown") then
     x1 = GetRandomReal(s__MonsterSpawn_minX[this], s__MonsterSpawn_maxX[this])
     x2 = x1
     y1 = s__MonsterSpawn_maxY[this]
-    y2 = s__MonsterSpawn_minY[this] - MonsterSpawn__DECALAGE_UNSPAWN
+    y2 = s__MonsterSpawn_minY[this] - MonsterSpawn___DECALAGE_UNSPAWN
   elseif (s__MonsterSpawn_sens[this] == "rightToLeft") then
     x1 = s__MonsterSpawn_maxX[this]
-    x2 = s__MonsterSpawn_minX[this] - MonsterSpawn__DECALAGE_UNSPAWN
+    x2 = s__MonsterSpawn_minX[this] - MonsterSpawn___DECALAGE_UNSPAWN
     y1 = GetRandomReal(s__MonsterSpawn_minY[this], s__MonsterSpawn_maxY[this])
     y2 = y1
   else
@@ -46190,7 +46178,7 @@ function s__MonsterSpawn_startMobMovement(this, mobUnit)
     x1 = GetRandomReal(s__MonsterSpawn_minX[this], s__MonsterSpawn_maxX[this])
     x2 = x1
     y1 = s__MonsterSpawn_minY[this]
-    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn__DECALAGE_UNSPAWN
+    y2 = s__MonsterSpawn_maxY[this] + MonsterSpawn___DECALAGE_UNSPAWN
   end
   SetUnitX(mobUnit, x1)
   SetUnitY(mobUnit, y1)
@@ -46239,9 +46227,9 @@ function s__MonsterSpawn_setFrequence(this, frequence)
   s__MonsterSpawn_frequence[this] = frequence
   DestroyTrigger(s__MonsterSpawn_tSpawn[this])
   s__MonsterSpawn_tSpawn[this] = CreateTrigger()
-  SaveInteger(MonsterSpawn__ht, 0, GetHandleId(s__MonsterSpawn_tSpawn[this]), (this))
+  SaveInteger(MonsterSpawn___ht, 0, GetHandleId(s__MonsterSpawn_tSpawn[this]), (this))
   TriggerRegisterTimerEvent(s__MonsterSpawn_tSpawn[this], 1 / s__MonsterSpawn_frequence[this], true)
-  TriggerAddAction(s__MonsterSpawn_tSpawn[this], MonsterSpawn__MonsterSpawn_Actions)
+  TriggerAddAction(s__MonsterSpawn_tSpawn[this], MonsterSpawn___MonsterSpawn_Actions)
 end
 
 function s__MonsterSpawn_displayForPlayer(this, p)
@@ -46274,18 +46262,18 @@ end
 
 
 --save water heights
-function SaveWater___SaveWaterHeights_Actions()
+function SaveWater__SaveWaterHeights_Actions()
   local x = nil
-  if (SaveWater___y <= MAP_MAX_Y) then
+  if (SaveWater__y <= MAP_MAX_Y) then
     x = MAP_MIN_X
     while true do
       if (x > MAP_MAX_X) then
         break
       end
-      s__StringArrayForCache_push(stringArrayForCache, I2S(R2I(GetSurfaceZ(x, SaveWater___y))))
+      s__StringArrayForCache_push(stringArrayForCache, I2S(R2I(GetSurfaceZ(x, SaveWater__y))))
       x = x + LARGEUR_CASE
     end
-    SaveWater___y = SaveWater___y + LARGEUR_CASE
+    SaveWater__y = SaveWater__y + LARGEUR_CASE
   else
     DisableTrigger(GetTriggeringTrigger())
     s__StringArrayForCache_writeInCache(stringArrayForCache)
@@ -46297,10 +46285,10 @@ end
 
 
 function StartSaveWaterHeights()
-  SaveWater___y = MAP_MIN_Y
+  SaveWater__y = MAP_MIN_Y
   stringArrayForCache = s__StringArrayForCache_create("terrain", "waterHeights", true)
   TriggerClearActions(trigSaveMapInCache)
-  TriggerAddAction(trigSaveMapInCache, SaveWater___SaveWaterHeights_Actions)
+  TriggerAddAction(trigSaveMapInCache, SaveWater__SaveWaterHeights_Actions)
   EnableTrigger(trigSaveMapInCache)
 end
 
@@ -46478,11 +46466,11 @@ function ChangeAllTerrains_Actions()
     done = false
     j = 0
     while true do
-      if (j > ChangeAllTerrains___lastTerrainArrayId or done) then
+      if (j > ChangeAllTerrains__lastTerrainArrayId or done) then
         break
       end
-      if (terrainTypeId == ChangeAllTerrains___oldTerrainTypes[j]) then
-        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ChangeAllTerrains___newTerrainTypes[j]), -1, 1, 0)
+      if (terrainTypeId == ChangeAllTerrains__oldTerrainTypes[j]) then
+        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ChangeAllTerrains__newTerrainTypes[j]), -1, 1, 0)
         -- INLINED!!
         done = true
       end
@@ -46502,7 +46490,7 @@ function ChangeAllTerrains_Actions()
 end
 
 
-function ChangeAllTerrains___StartTerrainModifying()
+function ChangeAllTerrains__StartTerrainModifying()
   y = MAP_MIN_Y
   StopEnabledCheckTerrainTriggers()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
@@ -46512,12 +46500,12 @@ function ChangeAllTerrains___StartTerrainModifying()
 end
 
 
-function ChangeAllTerrains___GetRandomTerrain_checked()
+function ChangeAllTerrains__GetRandomTerrain_checked()
   local i = nil
   local rdmTerrain = nil
   local alreadyUsed = nil
   while true do
-    if (ChangeAllTerrains___nbNewTerrains >= ChangeAllTerrains___nbNewTerrainsAllowed) then
+    if (ChangeAllTerrains__nbNewTerrains >= ChangeAllTerrains__nbNewTerrainsAllowed) then
       rdmTerrain = (udg_used_terrain_types[GetRandomInt(0, udg_nb_used_terrains - 1)])
       -- INLINED!!
     else
@@ -46527,10 +46515,10 @@ function ChangeAllTerrains___GetRandomTerrain_checked()
     alreadyUsed = false
     i = 0
     while true do
-      if (i > ChangeAllTerrains___lastTerrainArrayId or alreadyUsed) then
+      if (i > ChangeAllTerrains__lastTerrainArrayId or alreadyUsed) then
         break
       end
-      alreadyUsed = (ChangeAllTerrains___newTerrainTypes[i] == rdmTerrain)
+      alreadyUsed = (ChangeAllTerrains__newTerrainTypes[i] == rdmTerrain)
       i = i + 1
     end
     if (not alreadyUsed) then
@@ -46538,13 +46526,13 @@ function ChangeAllTerrains___GetRandomTerrain_checked()
     end
   end
   if (not IsTerrainAlreadyUsed(rdmTerrain)) then
-    ChangeAllTerrains___nbNewTerrains = ChangeAllTerrains___nbNewTerrains + 1
+    ChangeAllTerrains__nbNewTerrains = ChangeAllTerrains__nbNewTerrains + 1
   end
   return rdmTerrain
 end
 
 
-function ChangeAllTerrains___GetRandomKnownTerrain_checked()
+function ChangeAllTerrains__GetRandomKnownTerrain_checked()
   local i = nil
   local rdmTerrain = nil
   local alreadyUsed = nil
@@ -46554,10 +46542,10 @@ function ChangeAllTerrains___GetRandomKnownTerrain_checked()
     alreadyUsed = false
     i = 0
     while true do
-      if (i > ChangeAllTerrains___lastTerrainArrayId or alreadyUsed) then
+      if (i > ChangeAllTerrains__lastTerrainArrayId or alreadyUsed) then
         break
       end
-      alreadyUsed = (ChangeAllTerrains___newTerrainTypes[i] == rdmTerrain)
+      alreadyUsed = (ChangeAllTerrains__newTerrainTypes[i] == rdmTerrain)
       i = i + 1
     end
     if (not alreadyUsed) then
@@ -46568,7 +46556,7 @@ function ChangeAllTerrains___GetRandomKnownTerrain_checked()
 end
 
 
-function ChangeAllTerrains___GetRandomNotKnownTerrain_checked()
+function ChangeAllTerrains__GetRandomNotKnownTerrain_checked()
   local i = nil
   local rdmTerrain = nil
   local alreadyUsed = nil
@@ -46577,10 +46565,10 @@ function ChangeAllTerrains___GetRandomNotKnownTerrain_checked()
     alreadyUsed = false
     i = 0
     while true do
-      if (i > ChangeAllTerrains___lastTerrainArrayId or alreadyUsed) then
+      if (i > ChangeAllTerrains__lastTerrainArrayId or alreadyUsed) then
         break
       end
-      alreadyUsed = (ChangeAllTerrains___newTerrainTypes[i] == rdmTerrain)
+      alreadyUsed = (ChangeAllTerrains__newTerrainTypes[i] == rdmTerrain)
       i = i + 1
     end
     if (not alreadyUsed) then
@@ -46613,7 +46601,7 @@ function ChangeAllTerrains(mode)
     if (terrainTypes[n] == 0) then
       break
     end
-    ChangeAllTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    ChangeAllTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -46625,7 +46613,7 @@ function ChangeAllTerrains(mode)
     if (terrainTypes[n] == 0) then
       break
     end
-    ChangeAllTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    ChangeAllTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -46637,62 +46625,62 @@ function ChangeAllTerrains(mode)
     if (terrainTypes[n] == 0) then
       break
     end
-    ChangeAllTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    ChangeAllTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
   end
 
-  ChangeAllTerrains___lastTerrainArrayId = n - 1
-  ChangeAllTerrains___nbNewTerrainsAllowed = NB_MAX_OF_TERRAINS - udg_nb_used_terrains
+  ChangeAllTerrains__lastTerrainArrayId = n - 1
+  ChangeAllTerrains__nbNewTerrainsAllowed = NB_MAX_OF_TERRAINS - udg_nb_used_terrains
 
   if (mode == "normal") then
-    ChangeAllTerrains___nbNewTerrains = 0
+    ChangeAllTerrains__nbNewTerrains = 0
     i = 0
     while true do
-      if (i > ChangeAllTerrains___lastTerrainArrayId) then
+      if (i > ChangeAllTerrains__lastTerrainArrayId) then
         break
       end
-      ChangeAllTerrains___newTerrainTypes[i] = ChangeAllTerrains___GetRandomTerrain_checked()
+      ChangeAllTerrains__newTerrainTypes[i] = ChangeAllTerrains__GetRandomTerrain_checked()
       i = i + 1
     end
   else
     if (mode == "known") then
       i = 0
       while true do
-        if (i > ChangeAllTerrains___lastTerrainArrayId) then
+        if (i > ChangeAllTerrains__lastTerrainArrayId) then
           break
         end
-        ChangeAllTerrains___newTerrainTypes[i] = ChangeAllTerrains___GetRandomKnownTerrain_checked()
+        ChangeAllTerrains__newTerrainTypes[i] = ChangeAllTerrains__GetRandomKnownTerrain_checked()
         i = i + 1
       end
     else
       if (mode == "notKnown") then
-        ChangeAllTerrains___nbNewTerrains = ChangeAllTerrains___lastTerrainArrayId + 1
-        if (ChangeAllTerrains___nbNewTerrains > ChangeAllTerrains___nbNewTerrainsAllowed) then
+        ChangeAllTerrains__nbNewTerrains = ChangeAllTerrains__lastTerrainArrayId + 1
+        if (ChangeAllTerrains__nbNewTerrains > ChangeAllTerrains__nbNewTerrainsAllowed) then
           return false
         end
         i = 0
         while true do
-          if (i > ChangeAllTerrains___lastTerrainArrayId) then
+          if (i > ChangeAllTerrains__lastTerrainArrayId) then
             break
           end
-          ChangeAllTerrains___newTerrainTypes[i] = ChangeAllTerrains___GetRandomNotKnownTerrain_checked()
+          ChangeAllTerrains__newTerrainTypes[i] = ChangeAllTerrains__GetRandomNotKnownTerrain_checked()
           i = i + 1
         end
       end
     end
   end
 
-  ChangeAllTerrains___StartTerrainModifying()
+  ChangeAllTerrains__StartTerrainModifying()
 
   i = 0
   while true do
-    if (i > ChangeAllTerrains___lastTerrainArrayId) then
+    if (i > ChangeAllTerrains__lastTerrainArrayId) then
       break
     end
-    s__TerrainType_setTerrainTypeId(terrainTypes[i], ChangeAllTerrains___newTerrainTypes[i])
-    AddNewTerrain(ChangeAllTerrains___newTerrainTypes[i])
+    s__TerrainType_setTerrainTypeId(terrainTypes[i], ChangeAllTerrains__newTerrainTypes[i])
+    AddNewTerrain(ChangeAllTerrains__newTerrainTypes[i])
     i = i + 1
   end
 
@@ -46730,8 +46718,8 @@ function ChangeAppearanceOfOneTerrain_Actions()
     if (x > MAP_MAX_X) then
       break
     end
-    if (GetTerrainType(x, y) == ChangeOneTerrain___oldTerrain) then
-      SetTerrainType(((x) * 1.0), ((y) * 1.0), (ChangeOneTerrain___newTerrain), -1, 1, 0)
+    if (GetTerrainType(x, y) == ChangeOneTerrain__oldTerrain) then
+      SetTerrainType(((x) * 1.0), ((y) * 1.0), (ChangeOneTerrain__newTerrain), -1, 1, 0)
       -- INLINED!!
     end
     x = x + LARGEUR_CASE
@@ -46748,7 +46736,7 @@ function ChangeAppearanceOfOneTerrain_Actions()
 end
 
 
-function ChangeOneTerrain___StartTerrainModifying()
+function ChangeOneTerrain__StartTerrainModifying()
   StopEnabledCheckTerrainTriggers()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
   TriggerAddAction(gg_trg_Terrain_modifying_trig, ChangeAppearanceOfOneTerrain_Actions)
@@ -46771,21 +46759,21 @@ function ChangeOneTerrain(terrainTypeLabel, newTerrainType)
     return nil
   end
 
-  ChangeOneTerrain___oldTerrain = (s__TerrainType_terrainTypeId[(terrainType)])
+  ChangeOneTerrain__oldTerrain = (s__TerrainType_terrainTypeId[(terrainType)])
   -- INLINED!!
-  ChangeOneTerrain___newTerrain = TerrainTypeString2TerrainTypeId(newTerrainType)
-  if (ChangeOneTerrain___newTerrain == 0) then
+  ChangeOneTerrain__newTerrain = TerrainTypeString2TerrainTypeId(newTerrainType)
+  if (ChangeOneTerrain__newTerrain == 0) then
     return nil
   end
-  if (sc__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(udg_terrainTypes, ChangeOneTerrain___newTerrain)) then
+  if (sc__TerrainTypeArray_isTerrainTypeIdAlreadyUsed(udg_terrainTypes, ChangeOneTerrain__newTerrain)) then
     return nil
   end
-  if (not s__TerrainType_setTerrainTypeId(terrainType, ChangeOneTerrain___newTerrain)) then
+  if (not s__TerrainType_setTerrainTypeId(terrainType, ChangeOneTerrain__newTerrain)) then
     return nil
   end
 
-  ChangeOneTerrain___StartTerrainModifying()
-  return GetTerrainData(ChangeOneTerrain___newTerrain)
+  ChangeOneTerrain__StartTerrainModifying()
+  return GetTerrainData(ChangeOneTerrain__newTerrain)
 end
 
 
@@ -46915,12 +46903,12 @@ function ExchangeTerrains_Actions()
       break
     end
     terrainType = GetTerrainType(x, y)
-    if (terrainType == ExchangeTerrains___terrainA) then
-      SetTerrainType(((x) * 1.0), ((y) * 1.0), (ExchangeTerrains___terrainB), -1, 1, 0)
+    if (terrainType == ExchangeTerrains__terrainA) then
+      SetTerrainType(((x) * 1.0), ((y) * 1.0), (ExchangeTerrains__terrainB), -1, 1, 0)
       -- INLINED!!
     else
-      if (terrainType == ExchangeTerrains___terrainB) then
-        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ExchangeTerrains___terrainA), -1, 1, 0)
+      if (terrainType == ExchangeTerrains__terrainB) then
+        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ExchangeTerrains__terrainA), -1, 1, 0)
         -- INLINED!!
       end
     end
@@ -46938,7 +46926,7 @@ function ExchangeTerrains_Actions()
 end
 
 
-function ExchangeTerrains___StartTerrainModifying()
+function ExchangeTerrains__StartTerrainModifying()
   StopEnabledCheckTerrainTriggers()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
   TriggerAddAction(gg_trg_Terrain_modifying_trig, ExchangeTerrains_Actions)
@@ -46961,15 +46949,15 @@ function ExchangeTerrains(terrainTypeLabelA, terrainTypeLabelB)
     return false
   end
 
-  ExchangeTerrains___terrainA = (s__TerrainType_terrainTypeId[(terrainTypeA)])
+  ExchangeTerrains__terrainA = (s__TerrainType_terrainTypeId[(terrainTypeA)])
   -- INLINED!!
-  ExchangeTerrains___terrainB = (s__TerrainType_terrainTypeId[(terrainTypeB)])
+  ExchangeTerrains__terrainB = (s__TerrainType_terrainTypeId[(terrainTypeB)])
   -- INLINED!!
 
-  ExchangeTerrains___StartTerrainModifying()
+  ExchangeTerrains__StartTerrainModifying()
 
-  s__TerrainType_setTerrainTypeId(terrainTypeA, ExchangeTerrains___terrainB)
-  s__TerrainType_setTerrainTypeId(terrainTypeB, ExchangeTerrains___terrainA)
+  s__TerrainType_setTerrainTypeId(terrainTypeA, ExchangeTerrains__terrainB)
+  s__TerrainType_setTerrainTypeId(terrainTypeB, ExchangeTerrains__terrainA)
   return true
 end
 
@@ -47212,11 +47200,11 @@ function RandomizeTerrains_Actions()
     done = false
     j = 0
     while true do
-      if (j > RandomizeTerrains___lastTerrainArrayId or done) then
+      if (j > RandomizeTerrains__lastTerrainArrayId or done) then
         break
       end
-      if (terrainTypeId == RandomizeTerrains___oldTerrainTypes[j]) then
-        SetTerrainType(((x) * 1.0), ((y) * 1.0), (RandomizeTerrains___newTerrainTypes[j]), -1, 1, 0)
+      if (terrainTypeId == RandomizeTerrains__oldTerrainTypes[j]) then
+        SetTerrainType(((x) * 1.0), ((y) * 1.0), (RandomizeTerrains__newTerrainTypes[j]), -1, 1, 0)
         -- INLINED!!
         done = true
       end
@@ -47236,7 +47224,7 @@ function RandomizeTerrains_Actions()
 end
 
 
-function RandomizeTerrains___StartTerrainModifying()
+function RandomizeTerrains__StartTerrainModifying()
   StopEnabledCheckTerrainTriggers()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
   TriggerAddAction(gg_trg_Terrain_modifying_trig, RandomizeTerrains_Actions)
@@ -47266,7 +47254,7 @@ function RandomizeTerrains()
     if (terrainTypes[n] == 0) then
       break
     end
-    RandomizeTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    RandomizeTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -47278,7 +47266,7 @@ function RandomizeTerrains()
     if (terrainTypes[n] == 0) then
       break
     end
-    RandomizeTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    RandomizeTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -47290,17 +47278,17 @@ function RandomizeTerrains()
     if (terrainTypes[n] == 0) then
       break
     end
-    RandomizeTerrains___oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
+    RandomizeTerrains__oldTerrainTypes[n] = (s__TerrainType_terrainTypeId[(terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
   end
 
-  RandomizeTerrains___lastTerrainArrayId = n - 1
+  RandomizeTerrains__lastTerrainArrayId = n - 1
 
   i = 0
   while true do
-    if (i > RandomizeTerrains___lastTerrainArrayId) then
+    if (i > RandomizeTerrains__lastTerrainArrayId) then
       break
     end
     isTaken[i] = false
@@ -47309,28 +47297,28 @@ function RandomizeTerrains()
 
   i = 0
   while true do
-    if (i > RandomizeTerrains___lastTerrainArrayId) then
+    if (i > RandomizeTerrains__lastTerrainArrayId) then
       break
     end
     while true do
-      n = GetRandomInt(0, RandomizeTerrains___lastTerrainArrayId)
+      n = GetRandomInt(0, RandomizeTerrains__lastTerrainArrayId)
       if (not isTaken[n]) then
         break
       end
     end
     isTaken[n] = true
-    RandomizeTerrains___newTerrainTypes[i] = RandomizeTerrains___oldTerrainTypes[n]
+    RandomizeTerrains__newTerrainTypes[i] = RandomizeTerrains__oldTerrainTypes[n]
     i = i + 1
   end
 
-  RandomizeTerrains___StartTerrainModifying()
+  RandomizeTerrains__StartTerrainModifying()
 
   i = 0
   while true do
-    if (i > RandomizeTerrains___lastTerrainArrayId) then
+    if (i > RandomizeTerrains__lastTerrainArrayId) then
       break
     end
-    s__TerrainType_setTerrainTypeId(terrainTypes[i], RandomizeTerrains___newTerrainTypes[i])
+    s__TerrainType_setTerrainTypeId(terrainTypes[i], RandomizeTerrains__newTerrainTypes[i])
     i = i + 1
   end
 end
@@ -47346,16 +47334,16 @@ end
 
 
 
-function ReinitTerrains___SaveTerrainConfig()
+function ReinitTerrains__SaveTerrainConfig()
   local n = 0
   local i = 0
   while true do
     if (i >= s__TerrainTypeArray_numberOfWalk[udg_terrainTypes]) then
       break
     end
-    ReinitTerrains___terrainTypes[n] = (s___TerrainTypeArray_ttWalk[s__TerrainTypeArray_ttWalk[(udg_terrainTypes)] + (i)])
+    ReinitTerrains__terrainTypes[n] = (s___TerrainTypeArray_ttWalk[s__TerrainTypeArray_ttWalk[(udg_terrainTypes)] + (i)])
     -- INLINED!!
-    ReinitTerrains___terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains___terrainTypes[n])])
+    ReinitTerrains__terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains__terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -47365,9 +47353,9 @@ function ReinitTerrains___SaveTerrainConfig()
     if (i >= s__TerrainTypeArray_numberOfDeath[udg_terrainTypes]) then
       break
     end
-    ReinitTerrains___terrainTypes[n] = (s___TerrainTypeArray_ttDeath[s__TerrainTypeArray_ttDeath[(udg_terrainTypes)] + (i)])
+    ReinitTerrains__terrainTypes[n] = (s___TerrainTypeArray_ttDeath[s__TerrainTypeArray_ttDeath[(udg_terrainTypes)] + (i)])
     -- INLINED!!
-    ReinitTerrains___terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains___terrainTypes[n])])
+    ReinitTerrains__terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains__terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -47377,9 +47365,9 @@ function ReinitTerrains___SaveTerrainConfig()
     if (i >= s__TerrainTypeArray_numberOfSlide[udg_terrainTypes]) then
       break
     end
-    ReinitTerrains___terrainTypes[n] = (s___TerrainTypeArray_ttSlide[s__TerrainTypeArray_ttSlide[(udg_terrainTypes)] + (i)])
+    ReinitTerrains__terrainTypes[n] = (s___TerrainTypeArray_ttSlide[s__TerrainTypeArray_ttSlide[(udg_terrainTypes)] + (i)])
     -- INLINED!!
-    ReinitTerrains___terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains___terrainTypes[n])])
+    ReinitTerrains__terrainTypeIds[n] = (s__TerrainType_terrainTypeId[(ReinitTerrains__terrainTypes[n])])
     -- INLINED!!
     n = n + 1
     i = i + 1
@@ -47389,7 +47377,7 @@ end
 
 function Init_ReinitTerrains()
   local trig = CreateTrigger()
-  TriggerAddAction(trig, ReinitTerrains___SaveTerrainConfig)
+  TriggerAddAction(trig, ReinitTerrains__SaveTerrainConfig)
   TriggerRegisterTimerEvent(trig, 0, false)
   trig = nil
 end
@@ -47416,11 +47404,11 @@ function ReinitTerrains_Actions()
     done = false
     j = 0
     while true do
-      if (ReinitTerrains___terrainTypes[j] == 0 or done) then
+      if (ReinitTerrains__terrainTypes[j] == 0 or done) then
         break
       end
-      if (terrainTypeId == ReinitTerrains___terrainTypeIdsToReplace[j]) then
-        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ReinitTerrains___terrainTypeIds[j]), -1, 1, 0)
+      if (terrainTypeId == ReinitTerrains__terrainTypeIdsToReplace[j]) then
+        SetTerrainType(((x) * 1.0), ((y) * 1.0), (ReinitTerrains__terrainTypeIds[j]), -1, 1, 0)
         -- INLINED!!
         done = true
       end
@@ -47442,7 +47430,7 @@ function ReinitTerrains_Actions()
 end
 
 
-function ReinitTerrains___StartTerrainModifying()
+function ReinitTerrains__StartTerrainModifying()
   StopEnabledCheckTerrainTriggers()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
   TriggerAddAction(gg_trg_Terrain_modifying_trig, ReinitTerrains_Actions)
@@ -47463,15 +47451,15 @@ function ReinitTerrains()
 
   i = 0
   while true do
-    if (ReinitTerrains___terrainTypes[i] == 0) then
+    if (ReinitTerrains__terrainTypes[i] == 0) then
       break
     end
-    ReinitTerrains___terrainTypeIdsToReplace[i] = (s__TerrainType_terrainTypeId[(ReinitTerrains___terrainTypes[i])])
+    ReinitTerrains__terrainTypeIdsToReplace[i] = (s__TerrainType_terrainTypeId[(ReinitTerrains__terrainTypes[i])])
     -- INLINED!!
-    s__TerrainType_setTerrainTypeId(ReinitTerrains___terrainTypes[i], ReinitTerrains___terrainTypeIds[i])
+    s__TerrainType_setTerrainTypeId(ReinitTerrains__terrainTypes[i], ReinitTerrains__terrainTypeIds[i])
     i = i + 1
   end
-  ReinitTerrains___StartTerrainModifying()
+  ReinitTerrains__StartTerrainModifying()
 end
 
 
@@ -47489,7 +47477,7 @@ end
 
 
 
-function ReinitTerrainsPositions___SaveTerrain_Actions()
+function ReinitTerrainsPositions__SaveTerrain_Actions()
   local terrainType = nil
   local x = MAP_MIN_X
   while true do
@@ -47503,8 +47491,8 @@ function ReinitTerrainsPositions___SaveTerrain_Actions()
     SetTerrainType(((x) * 1.0), ((y) * 1.0), (terrainType), -1, 1, 0)
     -- INLINED!!
     --sauvegarde du terrain
-    sg__ReinitTerrainsPositions___TERRAIN_SAVE_set(ReinitTerrainsPositions___terrainSave_id, TerrainTypeId2TerrainType(terrainType))
-    ReinitTerrainsPositions___terrainSave_id = ReinitTerrainsPositions___terrainSave_id + 1
+    sg__ReinitTerrainsPositions__TERRAIN_SAVE_set(ReinitTerrainsPositions__terrainSave_id, TerrainTypeId2TerrainType(terrainType))
+    ReinitTerrainsPositions__terrainSave_id = ReinitTerrainsPositions__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
 
@@ -47517,10 +47505,10 @@ function ReinitTerrainsPositions___SaveTerrain_Actions()
 end
 
 
-function ReinitTerrainsPositions___StartSaveTerrain()
+function ReinitTerrainsPositions__StartSaveTerrain()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
-  TriggerAddAction(gg_trg_Terrain_modifying_trig, ReinitTerrainsPositions___SaveTerrain_Actions)
-  ReinitTerrainsPositions___terrainSave_id = 0
+  TriggerAddAction(gg_trg_Terrain_modifying_trig, ReinitTerrainsPositions__SaveTerrain_Actions)
+  ReinitTerrainsPositions__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47530,7 +47518,7 @@ end
 
 function Init_Reinit_terrains_position_Change_variations_and_ut_at_beginning()
   local trig = CreateTrigger()
-  TriggerAddAction(trig, ReinitTerrainsPositions___StartSaveTerrain)
+  TriggerAddAction(trig, ReinitTerrainsPositions__StartSaveTerrain)
   TriggerRegisterTimerEvent(trig, 0, false)
   trig = nil
 end
@@ -47553,12 +47541,12 @@ function ReinitTerrainsPosition_Actions()
     if (x > MAP_MAX_X) then
       break
     end
-    if (sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(ReinitTerrainsPositions___terrainSave_id) ~= 0 and (s__TerrainType_terrainTypeId[(sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(ReinitTerrainsPositions___terrainSave_id))]) ~= 0) then
+    if (sg__ReinitTerrainsPositions__TERRAIN_SAVE_get(ReinitTerrainsPositions__terrainSave_id) ~= 0 and (s__TerrainType_terrainTypeId[(sg__ReinitTerrainsPositions__TERRAIN_SAVE_get(ReinitTerrainsPositions__terrainSave_id))]) ~= 0) then
       -- INLINED!!
-      SetTerrainType(((x) * 1.0), ((y) * 1.0), ((s__TerrainType_terrainTypeId[(sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(ReinitTerrainsPositions___terrainSave_id))])), -1, 1, 0)
+      SetTerrainType(((x) * 1.0), ((y) * 1.0), ((s__TerrainType_terrainTypeId[(sg__ReinitTerrainsPositions__TERRAIN_SAVE_get(ReinitTerrainsPositions__terrainSave_id))])), -1, 1, 0)
       -- INLINED!!
     end
-    ReinitTerrainsPositions___terrainSave_id = ReinitTerrainsPositions___terrainSave_id + 1
+    ReinitTerrainsPositions__terrainSave_id = ReinitTerrainsPositions__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
   y = y + LARGEUR_CASE
@@ -47576,10 +47564,10 @@ end
 
 
 
-function ReinitTerrainsPositions___StartTerrainModifying()
+function ReinitTerrainsPositions__StartTerrainModifying()
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
   TriggerAddAction(gg_trg_Terrain_modifying_trig, ReinitTerrainsPosition_Actions)
-  ReinitTerrainsPositions___terrainSave_id = 0
+  ReinitTerrainsPositions__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47596,7 +47584,7 @@ function ReinitTerrainsPosition()
     -- INLINED!!
     return
   end
-  ReinitTerrainsPositions___StartTerrainModifying()
+  ReinitTerrainsPositions__StartTerrainModifying()
 end
 
 
@@ -47615,16 +47603,16 @@ end
 --save terrain
 
 
-function SaveLoadTerrainWithName___SaveTerrain_Actions()
+function SaveLoadTerrainWithName__SaveTerrain_Actions()
   local x = MAP_MIN_X
   while true do
     if (x > MAP_MAX_X) then
       break
     end
     --call Text_A("avant")
-    SaveInteger(SaveLoadTerrainWithName___terrainSaves, SaveLoadTerrainWithName___saveNameInt, SaveLoadTerrainWithName___terrainSave_id, (sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, x, y)))
+    SaveInteger(SaveLoadTerrainWithName__terrainSaves, SaveLoadTerrainWithName__saveNameInt, SaveLoadTerrainWithName__terrainSave_id, (sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, x, y)))
     --call Text_A("après")
-    SaveLoadTerrainWithName___terrainSave_id = SaveLoadTerrainWithName___terrainSave_id + 1
+    SaveLoadTerrainWithName__terrainSave_id = SaveLoadTerrainWithName__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
 
@@ -47645,10 +47633,10 @@ function SaveTerrainWithName(saveName)
     -- INLINED!!
     return
   end
-  SaveLoadTerrainWithName___saveNameInt = StringHash(saveName)
+  SaveLoadTerrainWithName__saveNameInt = StringHash(saveName)
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
-  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithName___SaveTerrain_Actions)
-  SaveLoadTerrainWithName___terrainSave_id = 0
+  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithName__SaveTerrain_Actions)
+  SaveLoadTerrainWithName__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47661,11 +47649,11 @@ function DeleteTerrainSaveWithName(saveName)
     -- INLINED!!
     return false
   end
-  SaveLoadTerrainWithName___saveNameInt = StringHash(saveName)
-  if (not HaveSavedInteger(SaveLoadTerrainWithName___terrainSaves, SaveLoadTerrainWithName___saveNameInt, 0)) then
+  SaveLoadTerrainWithName__saveNameInt = StringHash(saveName)
+  if (not HaveSavedInteger(SaveLoadTerrainWithName__terrainSaves, SaveLoadTerrainWithName__saveNameInt, 0)) then
     return false
   end
-  FlushChildHashtable(SaveLoadTerrainWithName___terrainSaves, SaveLoadTerrainWithName___saveNameInt)
+  FlushChildHashtable(SaveLoadTerrainWithName__terrainSaves, SaveLoadTerrainWithName__saveNameInt)
   return true
 end
 
@@ -47680,7 +47668,7 @@ end
 
 
 
-function SaveLoadTerrainWithName___LoadTerrain_Actions()
+function SaveLoadTerrainWithName__LoadTerrain_Actions()
   local terrainType = nil
   local x = nil
   --local integer i = 1
@@ -47691,12 +47679,12 @@ function SaveLoadTerrainWithName___LoadTerrain_Actions()
     if (x > MAP_MAX_X) then
       break
     end
-    terrainType = (LoadInteger(SaveLoadTerrainWithName___terrainSaves, SaveLoadTerrainWithName___saveNameInt, SaveLoadTerrainWithName___terrainSave_id))
+    terrainType = (LoadInteger(SaveLoadTerrainWithName__terrainSaves, SaveLoadTerrainWithName__saveNameInt, SaveLoadTerrainWithName__terrainSave_id))
     if (terrainType ~= 0) then
       SetTerrainType(((x) * 1.0), ((y) * 1.0), ((s__TerrainType_terrainTypeId[(terrainType)])), -1, 1, 0)
       -- INLINED!!
     end
-    SaveLoadTerrainWithName___terrainSave_id = SaveLoadTerrainWithName___terrainSave_id + 1
+    SaveLoadTerrainWithName__terrainSave_id = SaveLoadTerrainWithName__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
   y = y + LARGEUR_CASE
@@ -47720,13 +47708,13 @@ function LoadTerrainWithName(saveName)
     -- INLINED!!
     return true
   end
-  SaveLoadTerrainWithName___saveNameInt = StringHash(saveName)
-  if (not HaveSavedInteger(SaveLoadTerrainWithName___terrainSaves, SaveLoadTerrainWithName___saveNameInt, 0)) then
+  SaveLoadTerrainWithName__saveNameInt = StringHash(saveName)
+  if (not HaveSavedInteger(SaveLoadTerrainWithName__terrainSaves, SaveLoadTerrainWithName__saveNameInt, 0)) then
     return false
   end
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
-  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithName___LoadTerrain_Actions)
-  SaveLoadTerrainWithName___terrainSave_id = 0
+  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithName__LoadTerrain_Actions)
+  SaveLoadTerrainWithName__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47749,14 +47737,14 @@ end
 --save terrain
 
 
-function SaveLoadTerrainWithoutName___SaveTerrain_Actions()
+function SaveLoadTerrainWithoutName__SaveTerrain_Actions()
   local x = MAP_MIN_X
   while true do
     if (x > MAP_MAX_X) then
       break
     end
-    sg__SaveLoadTerrainWithoutName___terrainSave_set(SaveLoadTerrainWithoutName___terrainSave_id, sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, x, y))
-    SaveLoadTerrainWithoutName___terrainSave_id = SaveLoadTerrainWithoutName___terrainSave_id + 1
+    sg__SaveLoadTerrainWithoutName__terrainSave_set(SaveLoadTerrainWithoutName__terrainSave_id, sc__TerrainTypeArray_getTerrainType(udg_terrainTypes, x, y))
+    SaveLoadTerrainWithoutName__terrainSave_id = SaveLoadTerrainWithoutName__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
 
@@ -47778,8 +47766,8 @@ function SaveTerrainWithoutName()
     return
   end
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
-  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithoutName___SaveTerrain_Actions)
-  SaveLoadTerrainWithoutName___terrainSave_id = 0
+  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithoutName__SaveTerrain_Actions)
+  SaveLoadTerrainWithoutName__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47795,7 +47783,7 @@ end
 
 
 
-function SaveLoadTerrainWithoutName___LoadTerrain_Actions()
+function SaveLoadTerrainWithoutName__LoadTerrain_Actions()
   local x = nil
   --local integer i = 1
   --loop
@@ -47805,11 +47793,11 @@ function SaveLoadTerrainWithoutName___LoadTerrain_Actions()
     if (x > MAP_MAX_X) then
       break
     end
-    if (sg__SaveLoadTerrainWithoutName___terrainSave_get(SaveLoadTerrainWithoutName___terrainSave_id) ~= 0) then
-      SetTerrainType(((x) * 1.0), ((y) * 1.0), ((s__TerrainType_terrainTypeId[(sg__SaveLoadTerrainWithoutName___terrainSave_get(SaveLoadTerrainWithoutName___terrainSave_id))])), -1, 1, 0)
+    if (sg__SaveLoadTerrainWithoutName__terrainSave_get(SaveLoadTerrainWithoutName__terrainSave_id) ~= 0) then
+      SetTerrainType(((x) * 1.0), ((y) * 1.0), ((s__TerrainType_terrainTypeId[(sg__SaveLoadTerrainWithoutName__terrainSave_get(SaveLoadTerrainWithoutName__terrainSave_id))])), -1, 1, 0)
       -- INLINED!!
     end
-    SaveLoadTerrainWithoutName___terrainSave_id = SaveLoadTerrainWithoutName___terrainSave_id + 1
+    SaveLoadTerrainWithoutName__terrainSave_id = SaveLoadTerrainWithoutName__terrainSave_id + 1
     x = x + LARGEUR_CASE
   end
   y = y + LARGEUR_CASE
@@ -47834,8 +47822,8 @@ function LoadTerrainWithoutName()
     return
   end
   TriggerClearActions(gg_trg_Terrain_modifying_trig)
-  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithoutName___LoadTerrain_Actions)
-  SaveLoadTerrainWithoutName___terrainSave_id = 0
+  TriggerAddAction(gg_trg_Terrain_modifying_trig, SaveLoadTerrainWithoutName__LoadTerrain_Actions)
+  SaveLoadTerrainWithoutName__terrainSave_id = 0
   y = MAP_MIN_Y
   EnableTrigger(gg_trg_Terrain_modifying_trig)
   terrainModifyWorking = true
@@ -47855,7 +47843,7 @@ end
 
 
 --save terrain ramps
-function SaveTerrainRamps___SaveTerrainRamps_Actions()
+function SaveTerrainRamps__SaveTerrainRamps_Actions()
   local x = nil
   local currentCliffLevel = nil
   local otherCliffLevel = nil
@@ -47872,7 +47860,7 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
   local signX = nil
   local signY = nil
 
-  if (SaveTerrainRamps___y <= MAP_MAX_Y) then
+  if (SaveTerrainRamps__y <= MAP_MAX_Y) then
     x = MAP_MIN_X
     while true do
       if (x > MAP_MAX_X) then
@@ -47880,20 +47868,20 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
       end
       ramp = false
 
-      if (not IsNearBounds(x, SaveTerrainRamps___y)) then
+      if (not IsNearBounds(x, SaveTerrainRamps__y)) then
         --à cause de l'utilisation préalable de GetTerrainZ, GetTerrainCliffLevel plante sur les bords de la carte
-        currentCliffLevel = GetTerrainCliffLevel(x, SaveTerrainRamps___y)
+        currentCliffLevel = GetTerrainCliffLevel(x, SaveTerrainRamps__y)
         rampMiddle = false
 
         if (not ramp) then
           --droite
           otherX = x + LARGEUR_CASE
-          otherY = SaveTerrainRamps___y
+          otherY = SaveTerrainRamps__y
           if (otherX <= MAP_MAX_X) then
             otherCliffLevel = GetTerrainCliffLevel(otherX, otherY)
 
             otherX = x + LARGEUR_CASE / 2
-            walkable = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+            walkable = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
             --can't ça renvoie false, c'est walkable, c'est l'inverse de la logique
 
             if (currentCliffLevel ~= otherCliffLevel) then
@@ -47909,15 +47897,15 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 else
                   otherX = x - LARGEUR_CASE / 2
                 end
-                walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+                walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
                 if (not walkable2) then
                   --il y a une rampe à condition que les deux points en bas de la falaise soient au même niveau de falaise et pas à la même hauteur
                   if (currentCliffLevel < otherCliffLevel) then
-                    loc1 = Location(x, SaveTerrainRamps___y)
-                    loc2 = Location(x - LARGEUR_CASE, SaveTerrainRamps___y)
+                    loc1 = Location(x, SaveTerrainRamps__y)
+                    loc2 = Location(x - LARGEUR_CASE, SaveTerrainRamps__y)
                   else
-                    loc1 = Location(otherX, SaveTerrainRamps___y)
-                    loc2 = Location(otherX + LARGEUR_CASE, SaveTerrainRamps___y)
+                    loc1 = Location(otherX, SaveTerrainRamps__y)
+                    loc2 = Location(otherX + LARGEUR_CASE, SaveTerrainRamps__y)
                   end
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2) and GetTerrainCliffLevelBJ(loc1) == GetTerrainCliffLevelBJ(loc2)) then
                     ramp = true
@@ -47939,8 +47927,8 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                 if (otherCliffLevel2 - currentCliffLevel == 1) then
                   --il y a une rampe sauf si les deux points en bas de la falaise sont à la même hauteur
-                  loc1 = Location(x, SaveTerrainRamps___y)
-                  loc2 = Location(x + LARGEUR_CASE, SaveTerrainRamps___y)
+                  loc1 = Location(x, SaveTerrainRamps__y)
+                  loc2 = Location(x + LARGEUR_CASE, SaveTerrainRamps__y)
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2)) then
                     ramp = true
                   end
@@ -47954,7 +47942,7 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                   otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                   if (currentCliffLevel < otherCliffLevel2) then
                     otherX = otherX - LARGEUR_CASE / 2
-                    walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+                    walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
                     if (walkable2) then
                       ramp = true
                     end
@@ -47968,12 +47956,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
         if (not ramp) then
           --gauche
           otherX = x - LARGEUR_CASE
-          otherY = SaveTerrainRamps___y
+          otherY = SaveTerrainRamps__y
           if (otherX >= MAP_MIN_X) then
             otherCliffLevel = GetTerrainCliffLevel(otherX, otherY)
 
             otherX = x - LARGEUR_CASE / 2
-            walkable = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+            walkable = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
             --can't ça renvoie false, c'est walkable, c'est l'inverse de la logique
 
             if (currentCliffLevel ~= otherCliffLevel) then
@@ -47989,15 +47977,15 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 else
                   otherX = x + LARGEUR_CASE / 2
                 end
-                walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+                walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
                 if (not walkable2) then
                   --il y a une rampe à condition que les deux points en bas de la falaise soient au même niveau de falaise et pas à la même hauteur
                   if (currentCliffLevel < otherCliffLevel) then
-                    loc1 = Location(x, SaveTerrainRamps___y)
-                    loc2 = Location(x + LARGEUR_CASE, SaveTerrainRamps___y)
+                    loc1 = Location(x, SaveTerrainRamps__y)
+                    loc2 = Location(x + LARGEUR_CASE, SaveTerrainRamps__y)
                   else
-                    loc1 = Location(otherX, SaveTerrainRamps___y)
-                    loc2 = Location(otherX - LARGEUR_CASE, SaveTerrainRamps___y)
+                    loc1 = Location(otherX, SaveTerrainRamps__y)
+                    loc2 = Location(otherX - LARGEUR_CASE, SaveTerrainRamps__y)
                   end
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2) and GetTerrainCliffLevelBJ(loc1) == GetTerrainCliffLevelBJ(loc2)) then
                     ramp = true
@@ -48019,8 +48007,8 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                 if (otherCliffLevel2 - currentCliffLevel == 1) then
                   --il y a une rampe sauf si les deux points en bas de la falaise sont à la même hauteur
-                  loc1 = Location(x, SaveTerrainRamps___y)
-                  loc2 = Location(x - LARGEUR_CASE, SaveTerrainRamps___y)
+                  loc1 = Location(x, SaveTerrainRamps__y)
+                  loc2 = Location(x - LARGEUR_CASE, SaveTerrainRamps__y)
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2)) then
                     ramp = true
                   end
@@ -48034,7 +48022,7 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                   otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                   if (currentCliffLevel < otherCliffLevel2) then
                     otherX = otherX + LARGEUR_CASE / 2
-                    walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps___DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
+                    walkable2 = not IsTerrainPathable(otherX, otherY + SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX, otherY - SaveTerrainRamps__DECAL_TEST_PATH, PATHING_TYPE_WALKABILITY)
                     if (walkable2) then
                       ramp = true
                     end
@@ -48048,12 +48036,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
         if (not ramp) then
           --haut
           otherX = x
-          otherY = SaveTerrainRamps___y + LARGEUR_CASE
+          otherY = SaveTerrainRamps__y + LARGEUR_CASE
           if (otherY <= MAP_MAX_Y) then
             otherCliffLevel = GetTerrainCliffLevel(otherX, otherY)
 
-            otherY = SaveTerrainRamps___y + LARGEUR_CASE / 2
-            walkable = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+            otherY = SaveTerrainRamps__y + LARGEUR_CASE / 2
+            walkable = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
             --can't ça renvoie false, c'est walkable, c'est l'inverse de la logique
 
             if (currentCliffLevel ~= otherCliffLevel) then
@@ -48065,16 +48053,16 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 --ce n'est pas walkable, mais il y a peut-être une rampe, de largeur 1
                 --si ce n'est pas walkable non plus en bas de la falaise, c'est qu'il y a une rampe
                 if (currentCliffLevel > otherCliffLevel) then
-                  otherY = SaveTerrainRamps___y + 3 * LARGEUR_CASE / 2
+                  otherY = SaveTerrainRamps__y + 3 * LARGEUR_CASE / 2
                 else
-                  otherY = SaveTerrainRamps___y - LARGEUR_CASE / 2
+                  otherY = SaveTerrainRamps__y - LARGEUR_CASE / 2
                 end
-                walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+                walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
                 if (not walkable2) then
                   --il y a une rampe à condition que les deux points en bas de la falaise soient au même niveau de falaise et pas à la même hauteur
                   if (currentCliffLevel < otherCliffLevel) then
-                    loc1 = Location(x, SaveTerrainRamps___y)
-                    loc2 = Location(x, SaveTerrainRamps___y - LARGEUR_CASE)
+                    loc1 = Location(x, SaveTerrainRamps__y)
+                    loc2 = Location(x, SaveTerrainRamps__y - LARGEUR_CASE)
                   else
                     loc1 = Location(x, otherY)
                     loc2 = Location(x, otherY + LARGEUR_CASE)
@@ -48095,12 +48083,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
             else
               --il n'y a pas de falaise entre les deux ; si ce n'est pas walkable, il y a une rampe de largeur 1 s'il y a une falaise ensuite vers le haut de différence 1
               if (not walkable) then
-                otherY = SaveTerrainRamps___y + LARGEUR_CASE * 2
+                otherY = SaveTerrainRamps__y + LARGEUR_CASE * 2
                 otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                 if (otherCliffLevel2 - currentCliffLevel == 1) then
                   --il y a une rampe sauf si les deux points en bas de la falaise sont à la même hauteur
-                  loc1 = Location(x, SaveTerrainRamps___y)
-                  loc2 = Location(x, SaveTerrainRamps___y + LARGEUR_CASE)
+                  loc1 = Location(x, SaveTerrainRamps__y)
+                  loc2 = Location(x, SaveTerrainRamps__y + LARGEUR_CASE)
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2)) then
                     ramp = true
                   end
@@ -48109,12 +48097,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 end
               else
                 --il peut y avoir une rampe s'il y a une falaise juste après, vers le haut et walkable
-                otherY = SaveTerrainRamps___y + LARGEUR_CASE * 2
+                otherY = SaveTerrainRamps__y + LARGEUR_CASE * 2
                 if (otherY <= MAP_MAX_Y) then
                   otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                   if (currentCliffLevel < otherCliffLevel2) then
                     otherY = otherY - LARGEUR_CASE / 2
-                    walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+                    walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
                     if (walkable2) then
                       ramp = true
                     end
@@ -48128,12 +48116,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
         if (not ramp) then
           --bas
           otherX = x
-          otherY = SaveTerrainRamps___y - LARGEUR_CASE
+          otherY = SaveTerrainRamps__y - LARGEUR_CASE
           if (otherY >= MAP_MIN_Y) then
             otherCliffLevel = GetTerrainCliffLevel(otherX, otherY)
 
-            otherY = SaveTerrainRamps___y - LARGEUR_CASE / 2
-            walkable = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+            otherY = SaveTerrainRamps__y - LARGEUR_CASE / 2
+            walkable = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
 
             if (currentCliffLevel ~= otherCliffLevel) then
               --il y a une falaise entre les deux ; si c'est walkable malgré tout, c'est qu'il y a une rampe
@@ -48144,16 +48132,16 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 --ce n'est pas walkable, mais il y a peut-être une rampe, de largeur 1
                 --si ce n'est pas walkable non plus en bas de la falaise, c'est qu'il y a une rampe
                 if (currentCliffLevel > otherCliffLevel) then
-                  otherY = SaveTerrainRamps___y - 3 * LARGEUR_CASE / 2
+                  otherY = SaveTerrainRamps__y - 3 * LARGEUR_CASE / 2
                 else
-                  otherY = SaveTerrainRamps___y + LARGEUR_CASE / 2
+                  otherY = SaveTerrainRamps__y + LARGEUR_CASE / 2
                 end
-                walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+                walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
                 if (not walkable2) then
                   --il y a une rampe à condition que les deux points en bas de la falaise soient au même niveau de falaise et pas à la même hauteur
                   if (currentCliffLevel < otherCliffLevel) then
-                    loc1 = Location(x, SaveTerrainRamps___y)
-                    loc2 = Location(x, SaveTerrainRamps___y + LARGEUR_CASE)
+                    loc1 = Location(x, SaveTerrainRamps__y)
+                    loc2 = Location(x, SaveTerrainRamps__y + LARGEUR_CASE)
                   else
                     loc1 = Location(x, otherY)
                     loc2 = Location(x, otherY - LARGEUR_CASE)
@@ -48174,12 +48162,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
             else
               --il n'y a pas de falaise entre les deux ; si ce n'est pas walkable, il y a une rampe de largeur 1 s'il y a une falaise ensuite vers le haut de différence 1
               if (not walkable) then
-                otherY = SaveTerrainRamps___y - LARGEUR_CASE * 2
+                otherY = SaveTerrainRamps__y - LARGEUR_CASE * 2
                 otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                 if (otherCliffLevel2 - currentCliffLevel == 1) then
                   --il y a une rampe sauf si les deux points en bas de la falaise sont à la même hauteur
-                  loc1 = Location(x, SaveTerrainRamps___y)
-                  loc2 = Location(x, SaveTerrainRamps___y - LARGEUR_CASE)
+                  loc1 = Location(x, SaveTerrainRamps__y)
+                  loc2 = Location(x, SaveTerrainRamps__y - LARGEUR_CASE)
                   if (GetLocationZ(loc1) ~= GetLocationZ(loc2)) then
                     ramp = true
                   end
@@ -48188,12 +48176,12 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 end
               else
                 --il peut y avoir une rampe s'il y a une falaise juste après, vers le haut et walkable
-                otherY = SaveTerrainRamps___y - LARGEUR_CASE * 2
+                otherY = SaveTerrainRamps__y - LARGEUR_CASE * 2
                 if (otherY >= MAP_MIN_Y) then
                   otherCliffLevel2 = GetTerrainCliffLevel(otherX, otherY)
                   if (currentCliffLevel < otherCliffLevel2) then
                     otherY = otherY + LARGEUR_CASE / 2
-                    walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps___DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
+                    walkable2 = not IsTerrainPathable(otherX + SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY) or not IsTerrainPathable(otherX - SaveTerrainRamps__DECAL_TEST_PATH, otherY, PATHING_TYPE_WALKABILITY)
                     if (walkable2) then
                       ramp = true
                     end
@@ -48217,13 +48205,13 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
                 break
               end
               otherX = x + LARGEUR_CASE * signX
-              otherY = SaveTerrainRamps___y + LARGEUR_CASE * signY
+              otherY = SaveTerrainRamps__y + LARGEUR_CASE * signY
               otherCliffLevel = GetTerrainCliffLevel(otherX, otherY)
               --call BJDebugMsg("signX : " + R2S(signX) + " ; signY : " + R2S(signY) + " ; x : " + R2S(otherX) + " ; y : " + R2S(otherY))
               --on ne prend en compte que si ça monte et que c'est walkable
               if (currentCliffLevel < otherCliffLevel) then
                 otherX = x + LARGEUR_CASE * signX // 2
-                otherY = SaveTerrainRamps___y + LARGEUR_CASE * signY // 2
+                otherY = SaveTerrainRamps__y + LARGEUR_CASE * signY // 2
                 walkable = not IsTerrainPathable(otherX, otherY, PATHING_TYPE_WALKABILITY)
                 if (walkable) then
                   ramp = true
@@ -48251,7 +48239,7 @@ function SaveTerrainRamps___SaveTerrainRamps_Actions()
       s__StringArrayForCache_push(stringArrayForCache, rampStr)
       x = x + LARGEUR_CASE
     end
-    SaveTerrainRamps___y = SaveTerrainRamps___y + LARGEUR_CASE
+    SaveTerrainRamps__y = SaveTerrainRamps__y + LARGEUR_CASE
     loc1 = nil
     loc2 = nil
   else
@@ -48266,10 +48254,10 @@ end
 
 
 function StartSaveTerrainRamps()
-  SaveTerrainRamps___y = MAP_MIN_Y
+  SaveTerrainRamps__y = MAP_MIN_Y
   stringArrayForCache = s__StringArrayForCache_create("terrain", "terrainRamps", false)
   TriggerClearActions(trigSaveMapInCache)
-  TriggerAddAction(trigSaveMapInCache, SaveTerrainRamps___SaveTerrainRamps_Actions)
+  TriggerAddAction(trigSaveMapInCache, SaveTerrainRamps__SaveTerrainRamps_Actions)
   EnableTrigger(trigSaveMapInCache)
 end
 
@@ -49445,26 +49433,26 @@ end
 
 
 --save terrain cliff levels
-function SaveTerrainHeights___SaveTerrainCliffs_Actions()
+function SaveTerrainHeights__SaveTerrainCliffs_Actions()
   local x = nil
   local cliffLevel = nil
 
-  if (SaveTerrainHeights___y <= MAP_MAX_Y) then
+  if (SaveTerrainHeights__y <= MAP_MAX_Y) then
     x = MAP_MIN_X
     while true do
       if (x > MAP_MAX_X) then
         break
       end
-      if (IsNearBounds(x, SaveTerrainHeights___y)) then
+      if (IsNearBounds(x, SaveTerrainHeights__y)) then
         --at MAP_MAX_Y, GetTerrainZ used before makes GetTerrainCliffLevel crashes the game
         cliffLevel = 2
       else
-        cliffLevel = GetTerrainCliffLevel(x, SaveTerrainHeights___y)
+        cliffLevel = GetTerrainCliffLevel(x, SaveTerrainHeights__y)
       end
       s__StringArrayForCache_push(stringArrayForCache, I2HexaString(cliffLevel))
       x = x + LARGEUR_CASE
     end
-    SaveTerrainHeights___y = SaveTerrainHeights___y + LARGEUR_CASE
+    SaveTerrainHeights__y = SaveTerrainHeights__y + LARGEUR_CASE
   else
     DisableTrigger(GetTriggeringTrigger())
     s__StringArrayForCache_writeInCache(stringArrayForCache)
@@ -49476,10 +49464,10 @@ end
 
 
 function StartSaveTerrainCliffs()
-  SaveTerrainHeights___y = MAP_MIN_Y
+  SaveTerrainHeights__y = MAP_MIN_Y
   stringArrayForCache = s__StringArrayForCache_create("terrain", "terrainCliffs", false)
   TriggerClearActions(trigSaveMapInCache)
-  TriggerAddAction(trigSaveMapInCache, SaveTerrainHeights___SaveTerrainCliffs_Actions)
+  TriggerAddAction(trigSaveMapInCache, SaveTerrainHeights__SaveTerrainCliffs_Actions)
   EnableTrigger(trigSaveMapInCache)
 end
 
@@ -49487,29 +49475,29 @@ end
 
 
 --save terrain heights
-function SaveTerrainHeights___SaveTerrainHeights_Actions()
+function SaveTerrainHeights__SaveTerrainHeights_Actions()
   local x = nil
   local height = nil
   local isWater = nil
 
-  if (SaveTerrainHeights___y <= MAP_MAX_Y) then
+  if (SaveTerrainHeights__y <= MAP_MAX_Y) then
     x = MAP_MIN_X
     while true do
       if (x > MAP_MAX_X) then
         break
       end
       --set isWater = not IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY)
-      if (IsNearBounds(x, SaveTerrainHeights___y)) then
+      if (IsNearBounds(x, SaveTerrainHeights__y)) then
         --at MAP_MAX_Y, GetTerrainZ crashes the game
-        height = GetSurfaceZ(x, SaveTerrainHeights___y)
+        height = GetSurfaceZ(x, SaveTerrainHeights__y)
       else
-        height = GetTerrainZ(x, SaveTerrainHeights___y)
+        height = GetTerrainZ(x, SaveTerrainHeights__y)
       end
 
       s__StringArrayForCache_push(stringArrayForCache, I2S(R2I(height)))
       x = x + LARGEUR_CASE
     end
-    SaveTerrainHeights___y = SaveTerrainHeights___y + LARGEUR_CASE
+    SaveTerrainHeights__y = SaveTerrainHeights__y + LARGEUR_CASE
   else
     DisableTrigger(GetTriggeringTrigger())
     s__StringArrayForCache_writeInCache(stringArrayForCache)
@@ -49521,10 +49509,10 @@ end
 
 
 function StartSaveTerrainHeights()
-  SaveTerrainHeights___y = MAP_MIN_Y
+  SaveTerrainHeights__y = MAP_MIN_Y
   stringArrayForCache = s__StringArrayForCache_create("terrain", "terrainHeights", true)
   TriggerClearActions(trigSaveMapInCache)
-  TriggerAddAction(trigSaveMapInCache, SaveTerrainHeights___SaveTerrainHeights_Actions)
+  TriggerAddAction(trigSaveMapInCache, SaveTerrainHeights__SaveTerrainHeights_Actions)
   EnableTrigger(trigSaveMapInCache)
 end
 
@@ -50194,17 +50182,17 @@ function Init_Heroes()
   --define start positions
   local minX = GetRectMinX(gg_rct_departLvl_0)
   local minY = GetRectMinY(gg_rct_departLvl_0)
-  local diffX = (GetRectMaxX(gg_rct_departLvl_0) - minX) / (Heroes___NB_COLUMNS - 1)
-  local diffY = (GetRectMaxY(gg_rct_departLvl_0) - minY) / (Heroes___NB_ROWS - 1)
+  local diffX = (GetRectMaxX(gg_rct_departLvl_0) - minX) / (Heroes__NB_COLUMNS - 1)
+  local diffY = (GetRectMaxY(gg_rct_departLvl_0) - minY) / (Heroes__NB_ROWS - 1)
   local x = 0
   local l__y = 0
   local n = 0
   while true do
-    if (l__y > Heroes___NB_ROWS - 1) then
+    if (l__y > Heroes__NB_ROWS - 1) then
       break
     end
     while true do
-      if (x > Heroes___NB_COLUMNS - 1) then
+      if (x > Heroes__NB_COLUMNS - 1) then
         break
       end
       startPositions[n] = Location(minX + diffX * x, minY + diffY * l__y)
@@ -50438,15 +50426,15 @@ end
 
 
 function MakeSimplePatrolAuto_ChangeDistOnTerrain(newDist)
-  if (newDist < 0 or newDist > MMSimplePatrolActions__DIST_ON_TERRAIN_MAX) then
+  if (newDist < 0 or newDist > MMSimplePatrolActions___DIST_ON_TERRAIN_MAX) then
     return false
   end
-  MMSimplePatrolActions__distOnTerrain = newDist
+  MMSimplePatrolActions___distOnTerrain = newDist
   return true
 end
 
 function MakeSimplePatrolAuto_ChangeDistOnTerrainDefault()
-  MMSimplePatrolActions__distOnTerrain = MMSimplePatrolActions__DIST_ON_TERRAIN_DEFAULT
+  MMSimplePatrolActions___distOnTerrain = MMSimplePatrolActions___DIST_ON_TERRAIN_DEFAULT
 end
 
 
@@ -50524,9 +50512,9 @@ function MonsterMakingSimplePatrol_Actions()
 
     --find approximatively first location
     found = false
-    dist = MMSimplePatrolActions__MIN_DIST
+    dist = MMSimplePatrolActions___MIN_DIST
     while true do
-      if (found or dist > MMSimplePatrolActions__MAX_DIST) then
+      if (found or dist > MMSimplePatrolActions___MAX_DIST) then
         break
       end
       angle = 0
@@ -50569,11 +50557,11 @@ function MonsterMakingSimplePatrol_Actions()
         x1 = x + dist * CosBJ(angle)
         y1 = l__y + dist * SinBJ(angle)
         found = IsTerrainTypeOfKind(GetTerrainType(x1, y1), "death")
-        angle = angle + MMSimplePatrolActions__ECART_ANGLE
+        angle = angle + MMSimplePatrolActions___ECART_ANGLE
       end
-      angle = angle - MMSimplePatrolActions__ECART_ANGLE
+      angle = angle - MMSimplePatrolActions___ECART_ANGLE
 
-      dist = dist + MMSimplePatrolActions__ECART_DIST
+      dist = dist + MMSimplePatrolActions___ECART_DIST
     end
 
     --first location not found
@@ -50592,7 +50580,7 @@ function MonsterMakingSimplePatrol_Actions()
       x1 = x + dist * CosBJ(angle)
       y1 = l__y + dist * SinBJ(angle)
     end
-    dist = dist + MMSimplePatrolActions__distOnTerrain + 1
+    dist = dist + MMSimplePatrolActions___distOnTerrain + 1
     x1 = x + dist * CosBJ(angle)
     y1 = l__y + dist * SinBJ(angle)
 
@@ -50605,15 +50593,15 @@ function MonsterMakingSimplePatrol_Actions()
 
     --find approximatively second location
     found = false
-    dist = MMSimplePatrolActions__MIN_DIST
+    dist = MMSimplePatrolActions___MIN_DIST
     while true do
-      if (found or dist > MMSimplePatrolActions__MAX_DIST) then
+      if (found or dist > MMSimplePatrolActions___MAX_DIST) then
         break
       end
       x2 = x + dist * CosBJ(angle)
       y2 = l__y + dist * SinBJ(angle)
       found = IsTerrainTypeOfKind(GetTerrainType(x2, y2), "death")
-      dist = dist + MMSimplePatrolActions__ECART_DIST
+      dist = dist + MMSimplePatrolActions___ECART_DIST
     end
 
     --second location not found
@@ -50632,7 +50620,7 @@ function MonsterMakingSimplePatrol_Actions()
       x2 = x + dist * CosBJ(angle)
       y2 = l__y + dist * SinBJ(angle)
     end
-    dist = dist + MMSimplePatrolActions__distOnTerrain + 1
+    dist = dist + MMSimplePatrolActions___distOnTerrain + 1
     x2 = x + dist * CosBJ(angle)
     y2 = l__y + dist * SinBJ(angle)
 
@@ -51279,15 +51267,15 @@ end
 
 
 
-function SaveTerrain___SaveTerrainsUsed()
+function SaveTerrain__SaveTerrainsUsed()
   local i = nil
   stringArrayForCache = s__StringArrayForCache_create("terrain", "terrainsUsed", false)
   i = 0
   while true do
-    if (i >= SaveTerrain___nbTerrainTypesUsed) then
+    if (i >= SaveTerrain__nbTerrainTypesUsed) then
       break
     end
-    s__StringArrayForCache_push(stringArrayForCache, Ascii2String(SaveTerrain___terrainTypeIds[i]))
+    s__StringArrayForCache_push(stringArrayForCache, Ascii2String(SaveTerrain__terrainTypeIds[i]))
     i = i + 1
   end
   s__StringArrayForCache_writeInCache(stringArrayForCache)
@@ -51295,7 +51283,7 @@ function SaveTerrain___SaveTerrainsUsed()
   -- INLINED!!
 end
 
-function SaveTerrain___SaveMapDimensionsAndCenterOffset()
+function SaveTerrain__SaveMapDimensionsAndCenterOffset()
   local largeurMap = R2I((MAP_MAX_X - MAP_MIN_X) / LARGEUR_CASE)
   local hauteurMap = R2I((MAP_MAX_Y - MAP_MIN_Y) / LARGEUR_CASE)
   local offsetX = R2I(MAP_MIN_X)
@@ -51318,23 +51306,23 @@ end
 
 
 --crée si besoin une nouvelle instance dans le tableau et retourne l'id de cet élément de tableau
-function SaveTerrain___GetTerrainId(x, l__SaveTerrain___y)
-  local terrainTypeId = GetTerrainType(x, l__SaveTerrain___y)
+function SaveTerrain__GetTerrainId(x, l__SaveTerrain__y)
+  local terrainTypeId = GetTerrainType(x, l__SaveTerrain__y)
   local i = 0
   while true do
-    if (i >= SaveTerrain___nbTerrainTypesUsed) then
+    if (i >= SaveTerrain__nbTerrainTypesUsed) then
       break
     end
-    if (terrainTypeId == SaveTerrain___terrainTypeIds[i]) then
+    if (terrainTypeId == SaveTerrain__terrainTypeIds[i]) then
       return I2HexaString(i)
     end
     i = i + 1
   end
-  if (SaveTerrain___nbTerrainTypesUsed < 16) then
-    SaveTerrain___terrainTypeIds[SaveTerrain___nbTerrainTypesUsed] = terrainTypeId
-    SaveTerrain___nbTerrainTypesUsed = SaveTerrain___nbTerrainTypesUsed + 1
+  if (SaveTerrain__nbTerrainTypesUsed < 16) then
+    SaveTerrain__terrainTypeIds[SaveTerrain__nbTerrainTypesUsed] = terrainTypeId
+    SaveTerrain__nbTerrainTypesUsed = SaveTerrain__nbTerrainTypesUsed + 1
   end
-  return I2HexaString(SaveTerrain___nbTerrainTypesUsed - 1)
+  return I2HexaString(SaveTerrain__nbTerrainTypesUsed - 1)
 end
 
 
@@ -51424,49 +51412,49 @@ function GererOrdreTerrains()
     numTerrain = numTerrain + 1
   end
   --sauvegarde des terrains dans les variables finales
-  SaveTerrain___nbTerrainTypesUsed = nbOrderedTerrains
+  SaveTerrain__nbTerrainTypesUsed = nbOrderedTerrains
   i = 0
   while true do
     if (i == nbOrderedTerrains) then
       break
     end
-    SaveTerrain___terrainTypeIds[i] = (s__TerrainType_terrainTypeId[(terrainTypes[i])])
+    SaveTerrain__terrainTypeIds[i] = (s__TerrainType_terrainTypeId[(terrainTypes[i])])
     -- INLINED!!
     i = i + 1
   end
 end
 
 
-function SaveTerrain___SaveTerrain_Actions()
+function SaveTerrain__SaveTerrain_Actions()
   local x = nil
-  if (SaveTerrain___y <= MAP_MAX_Y) then
+  if (SaveTerrain__y <= MAP_MAX_Y) then
     x = MAP_MIN_X
     while true do
       if (x > MAP_MAX_X) then
         break
       end
-      s__StringArrayForCache_push(stringArrayForCache, SaveTerrain___GetTerrainId(x, SaveTerrain___y))
+      s__StringArrayForCache_push(stringArrayForCache, SaveTerrain__GetTerrainId(x, SaveTerrain__y))
       x = x + LARGEUR_CASE
     end
-    SaveTerrain___y = SaveTerrain___y + LARGEUR_CASE
+    SaveTerrain__y = SaveTerrain__y + LARGEUR_CASE
   else
     DisableTrigger(GetTriggeringTrigger())
     s__StringArrayForCache_writeInCache(stringArrayForCache)
     Text___ForAll_timed_withColorCode(-1, NORMAL_TEXT_COLORCODE, ("terrain saved"))
     -- INLINED!!
-    SaveTerrain___SaveTerrainsUsed()
-    SaveTerrain___SaveMapDimensionsAndCenterOffset()
+    SaveTerrain__SaveTerrainsUsed()
+    SaveTerrain__SaveMapDimensionsAndCenterOffset()
     StartSaveTerrainHeights()
   end
 end
 
 
 function StartSaveTerrain()
-  SaveTerrain___y = MAP_MIN_Y
+  SaveTerrain__y = MAP_MIN_Y
   GererOrdreTerrains()
   stringArrayForCache = s__StringArrayForCache_create("terrain", "terrainTypes", false)
   TriggerClearActions(trigSaveMapInCache)
-  TriggerAddAction(trigSaveMapInCache, SaveTerrain___SaveTerrain_Actions)
+  TriggerAddAction(trigSaveMapInCache, SaveTerrain__SaveTerrain_Actions)
   EnableTrigger(trigSaveMapInCache)
 end
 
@@ -54469,7 +54457,7 @@ function ExecuteCommandMake(escaper, cmd)
       return true
     end
     if (param1 == "default" or param1 == "d") then
-      MMSimplePatrolActions__distOnTerrain = MMSimplePatrolActions__DIST_ON_TERRAIN_DEFAULT
+      MMSimplePatrolActions___distOnTerrain = MMSimplePatrolActions___DIST_ON_TERRAIN_DEFAULT
       -- INLINED!!
     else
       if (not MakeSimplePatrolAuto_ChangeDistOnTerrain(S2R(param1))) then
@@ -56272,19 +56260,19 @@ end
 --method setId takes integer id returns Monster______
 
 
-function MonsterInterface__InitHtMonster()
-  MonsterInterface__htMonsterId2MonsterHandleId = InitHashtable()
+function MonsterInterface___InitHtMonster()
+  MonsterInterface___htMonsterId2MonsterHandleId = InitHashtable()
 end
 
 
 function GetNextMonsterId()
-  MonsterInterface__monsterNextId = MonsterInterface__monsterNextId + 1
-  return MonsterInterface__monsterNextId - 1
+  MonsterInterface___monsterNextId = MonsterInterface___monsterNextId + 1
+  return MonsterInterface___monsterNextId - 1
 end
 
 function MonsterIdHasBeenSetTo(monsterId)
-  if (monsterId >= MonsterInterface__monsterNextId) then
-    MonsterInterface__monsterNextId = monsterId + 1
+  if (monsterId >= MonsterInterface___monsterNextId) then
+    MonsterInterface___monsterNextId = monsterId + 1
   end
 end
 
@@ -56295,17 +56283,17 @@ function MonsterHashtableSetMonsterId(monster, oldId, newId)
     return
   end
   if (oldId ~= NO_ID) then
-    RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, oldId)
+    RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, oldId)
   end
-  SaveInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, newId, (monster))
+  SaveInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, newId, (monster))
 end
 
 function MonsterId2Monster(monsterId)
-  return (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, monsterId))
+  return (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, monsterId))
 end
 
 function MonsterHashtableRemoveMonsterId(id)
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, id)
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, id)
 end
 
 
@@ -56315,17 +56303,17 @@ function CasterHashtableSetCasterId(caster, oldId, newId)
     return
   end
   if (oldId ~= NO_ID) then
-    RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, oldId)
+    RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, oldId)
   end
-  SaveInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, newId, (caster))
+  SaveInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, newId, (caster))
 end
 
 function CasterId2Caster(casterId)
-  return (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, casterId))
+  return (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, casterId))
 end
 
 function CasterHashtableRemoveCasterId(id)
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, id)
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, id)
 end
 
 
@@ -56768,23 +56756,23 @@ end
 
 
 function ClearTriggerMobId2ClearMob(triggerMobId)
-  return (LoadInteger(ClearMob__htClearMob, 0, triggerMobId))
+  return (LoadInteger(ClearMob___htClearMob, 0, triggerMobId))
 end
 
 
 function ClearMobTimerExpires()
-  local clearMob = (LoadInteger(ClearMob__htClearMob, ClearMob__TIMER_ACTIVATED, GetHandleId(GetExpiredTimer())))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, ClearMob___TIMER_ACTIVATED, GetHandleId(GetExpiredTimer())))
   if (clearMob ~= 0) then
     sc__ClearMob_initialize(clearMob)
     --réinitialise la couleur du trigger mob
-    ClearMob__udp_currentTimer = GetExpiredTimer()
+    ClearMob___udp_currentTimer = GetExpiredTimer()
     s__MonsterOrCasterStack_executeForAll((s__ClearMob_blockMobs[(clearMob)]), "TemporarilyEnableMonsterOrCasterEach")
     -- INLINED!!
   end
 end
 
 function ClearMobFrontMontantTimerExpires()
-  local clearMob = (LoadInteger(ClearMob__htClearMob, ClearMob__TIMER_FRONT_MONTANT, GetHandleId(GetExpiredTimer())))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, ClearMob___TIMER_FRONT_MONTANT, GetHandleId(GetExpiredTimer())))
   if (clearMob ~= 0) then
     if ((TimerGetRemaining(s__ClearMob_timerActivated[(clearMob)]) > 0)) then
       -- INLINED!!
@@ -56795,22 +56783,22 @@ function ClearMobFrontMontantTimerExpires()
 end
 
 function KillMonsterOrCasterEach()
-  sc__MonsterOrCaster_killUnit((MonsterOrCasterStack__udg_enumMoc))
+  sc__MonsterOrCaster_killUnit((MonsterOrCasterStack___udg_enumMoc))
   -- INLINED!!
 end
 
 function TemporarilyDisableMonsterOrCasterEach()
-  sc__MonsterOrCaster_temporarilyDisable((MonsterOrCasterStack__udg_enumMoc), ClearMob__udp_currentTimer)
+  sc__MonsterOrCaster_temporarilyDisable((MonsterOrCasterStack___udg_enumMoc), ClearMob___udp_currentTimer)
   -- INLINED!!
 end
 
 function TemporarilyEnableMonsterOrCasterEach()
-  sc__MonsterOrCaster_temporarilyEnable((MonsterOrCasterStack__udg_enumMoc), ClearMob__udp_currentTimer)
+  sc__MonsterOrCaster_temporarilyEnable((MonsterOrCasterStack___udg_enumMoc), ClearMob___udp_currentTimer)
   -- INLINED!!
 end
 
-function ClearMob__InitClearMob()
-  ClearMob__htClearMob = InitHashtable()
+function ClearMob___InitClearMob()
+  ClearMob___htClearMob = InitHashtable()
 end
 
 
@@ -56838,8 +56826,8 @@ function s__ClearMob_setTriggerMob(this, newTriggerMob)
   if (newTriggerMob == 0 or s__ClearMob_triggerMob[this] == newTriggerMob) then
     return false
   end
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
-  SaveInteger(ClearMob__htClearMob, ClearMob__TRIGGER_MOB, sc__MonsterOrCaster_getId(newTriggerMob), (this))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
+  SaveInteger(ClearMob___htClearMob, ClearMob___TRIGGER_MOB, sc__MonsterOrCaster_getId(newTriggerMob), (this))
   s__ClearMob_triggerMob[this] = newTriggerMob
   return true
 end
@@ -56867,9 +56855,9 @@ function s__ClearMob_create(triggerMobId, disableDuration)
   s__ClearMob_timerFrontMontant[clearMob] = CreateTimer()
   s__ClearMob_triggerMobPermanentEffect[clearMob] = nil
   s__ClearMob_enabled[clearMob] = true
-  SaveInteger(ClearMob__htClearMob, ClearMob__TRIGGER_MOB, triggerMobId, (clearMob))
-  SaveInteger(ClearMob__htClearMob, ClearMob__TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[clearMob]), (clearMob))
-  SaveInteger(ClearMob__htClearMob, ClearMob__TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[clearMob]), (clearMob))
+  SaveInteger(ClearMob___htClearMob, ClearMob___TRIGGER_MOB, triggerMobId, (clearMob))
+  SaveInteger(ClearMob___htClearMob, ClearMob___TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[clearMob]), (clearMob))
+  SaveInteger(ClearMob___htClearMob, ClearMob___TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[clearMob]), (clearMob))
   return clearMob
 end
 
@@ -56877,7 +56865,7 @@ function s__ClearMob_initialize(this)
   sc__MonsterOrCaster_setBaseColor(s__ClearMob_triggerMob[this], "blue")
   sc__MonsterOrCaster_setVertexColor(s__ClearMob_triggerMob[this], 30, 60, 100)
   if (s__ClearMob_triggerMobPermanentEffect[this] == nil) then
-    s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob__TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
+    s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob___TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
   end
   s__ClearMob_enabled[this] = true
 end
@@ -56893,7 +56881,7 @@ function s__ClearMob_redoTriggerMobPermanentEffect(this)
   if (s__ClearMob_triggerMobPermanentEffect[this] ~= nil) then
     DestroyEffect(s__ClearMob_triggerMobPermanentEffect[this])
   end
-  s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob__TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
+  s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob___TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
 end
 
 function s__ClearMob_addBlockMob(this, blockMobId)
@@ -56915,21 +56903,21 @@ function s__ClearMob_removeLastBlockMob(this)
 end
 
 function s__ClearMob_removeAllBlockMobs(this)
-  ClearMob__udp_currentTimer = s__ClearMob_timerActivated[this]
+  ClearMob___udp_currentTimer = s__ClearMob_timerActivated[this]
   s__MonsterOrCasterStack_executeForAll(s__ClearMob_blockMobs[this], "TemporarilyEnableMonsterOrCasterEach")
   s__MonsterOrCasterStack_deallocate(s__ClearMob_blockMobs[this])
   s__ClearMob_blockMobs[this] = 0
 end
 
 function s__ClearMob_onDestroy(this)
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[this]))
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[this]))
   s__ClearMob_close(this)
   sc__MonsterOrCaster_reinitColor(s__ClearMob_triggerMob[this])
   s__MonsterOrCaster_deallocate(s__ClearMob_triggerMob[this])
   s__ClearMob_triggerMob[this] = 0
-  ClearMob__udp_currentTimer = s__ClearMob_timerActivated[this]
+  ClearMob___udp_currentTimer = s__ClearMob_timerActivated[this]
   s__MonsterOrCasterStack_executeForAll(s__ClearMob_blockMobs[this], "TemporarilyEnableMonsterOrCasterEach")
   s__MonsterOrCasterStack_deallocate(s__ClearMob_blockMobs[this])
   DestroyTimer(s__ClearMob_timerActivated[this])
@@ -56966,7 +56954,7 @@ function s__ClearMob_activate(this)
     s__ClearMob_enabled[this] = false
     --le clear mob se désactive pour le niveau actuel (il n'est plus utile car les mobs sont morts)
   else
-    ClearMob__udp_currentTimer = s__ClearMob_timerActivated[this]
+    ClearMob___udp_currentTimer = s__ClearMob_timerActivated[this]
     TimerStart(s__ClearMob_timerActivated[this], s__ClearMob_disableDuration[this], false, ClearMobTimerExpires)
     s__MonsterOrCasterStack_executeForAll(s__ClearMob_blockMobs[this], "TemporarilyDisableMonsterOrCasterEach")
     TimerStart(s__ClearMob_timerFrontMontant[this], ClearMob_FRONT_MONTANT_DURATION, false, ClearMobFrontMontantTimerExpires)
@@ -59959,7 +59947,7 @@ end
 
 
 
-function MonsterMultiplePatrols__NewRegion(x, l__y)
+function MonsterMultiplePatrols___NewRegion(x, l__y)
   local r = Rect(x - 16, l__y - 16, x + 16, l__y + 16)
   local R = CreateRegion()
   RegionAddRect(R, r)
@@ -60091,12 +60079,12 @@ function s__MonsterMultiplePatrols_onDestroy(this)
   end
   sc__MonsterMultiplePatrolsArray_setMonsterNull(s__Level_monstersMultiplePatrols[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
 end
 
@@ -60433,7 +60421,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (0 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x0(m, s__s__MonsterMultiplePatrols_X[0])
     sg__MonsterMultiplePatrols_set_y0(m, s__s__MonsterMultiplePatrols_Y[0])
-    sg__MonsterMultiplePatrols_set_r0(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x0(m), sg__MonsterMultiplePatrols_get_y0(m)))
+    sg__MonsterMultiplePatrols_set_r0(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x0(m), sg__MonsterMultiplePatrols_get_y0(m)))
     sg__MonsterMultiplePatrols_set_t0(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t0(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t0(m), MonsterMultiplePatrols_move_Actions)
@@ -60444,7 +60432,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (1 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x1(m, s__s__MonsterMultiplePatrols_X[1])
     sg__MonsterMultiplePatrols_set_y1(m, s__s__MonsterMultiplePatrols_Y[1])
-    sg__MonsterMultiplePatrols_set_r1(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x1(m), sg__MonsterMultiplePatrols_get_y1(m)))
+    sg__MonsterMultiplePatrols_set_r1(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x1(m), sg__MonsterMultiplePatrols_get_y1(m)))
     sg__MonsterMultiplePatrols_set_t1(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t1(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t1(m), MonsterMultiplePatrols_move_Actions)
@@ -60455,7 +60443,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (2 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x2(m, s__s__MonsterMultiplePatrols_X[2])
     sg__MonsterMultiplePatrols_set_y2(m, s__s__MonsterMultiplePatrols_Y[2])
-    sg__MonsterMultiplePatrols_set_r2(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x2(m), sg__MonsterMultiplePatrols_get_y2(m)))
+    sg__MonsterMultiplePatrols_set_r2(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x2(m), sg__MonsterMultiplePatrols_get_y2(m)))
     sg__MonsterMultiplePatrols_set_t2(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t2(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t2(m), MonsterMultiplePatrols_move_Actions)
@@ -60466,7 +60454,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (3 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x3(m, s__s__MonsterMultiplePatrols_X[3])
     sg__MonsterMultiplePatrols_set_y3(m, s__s__MonsterMultiplePatrols_Y[3])
-    sg__MonsterMultiplePatrols_set_r3(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x3(m), sg__MonsterMultiplePatrols_get_y3(m)))
+    sg__MonsterMultiplePatrols_set_r3(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x3(m), sg__MonsterMultiplePatrols_get_y3(m)))
     sg__MonsterMultiplePatrols_set_t3(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t3(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t3(m), MonsterMultiplePatrols_move_Actions)
@@ -60477,7 +60465,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (4 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x4(m, s__s__MonsterMultiplePatrols_X[4])
     sg__MonsterMultiplePatrols_set_y4(m, s__s__MonsterMultiplePatrols_Y[4])
-    sg__MonsterMultiplePatrols_set_r4(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x4(m), sg__MonsterMultiplePatrols_get_y4(m)))
+    sg__MonsterMultiplePatrols_set_r4(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x4(m), sg__MonsterMultiplePatrols_get_y4(m)))
     sg__MonsterMultiplePatrols_set_t4(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t4(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t4(m), MonsterMultiplePatrols_move_Actions)
@@ -60488,7 +60476,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (5 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x5(m, s__s__MonsterMultiplePatrols_X[5])
     sg__MonsterMultiplePatrols_set_y5(m, s__s__MonsterMultiplePatrols_Y[5])
-    sg__MonsterMultiplePatrols_set_r5(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x5(m), sg__MonsterMultiplePatrols_get_y5(m)))
+    sg__MonsterMultiplePatrols_set_r5(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x5(m), sg__MonsterMultiplePatrols_get_y5(m)))
     sg__MonsterMultiplePatrols_set_t5(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t5(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t5(m), MonsterMultiplePatrols_move_Actions)
@@ -60499,7 +60487,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (6 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x6(m, s__s__MonsterMultiplePatrols_X[6])
     sg__MonsterMultiplePatrols_set_y6(m, s__s__MonsterMultiplePatrols_Y[6])
-    sg__MonsterMultiplePatrols_set_r6(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x6(m), sg__MonsterMultiplePatrols_get_y6(m)))
+    sg__MonsterMultiplePatrols_set_r6(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x6(m), sg__MonsterMultiplePatrols_get_y6(m)))
     sg__MonsterMultiplePatrols_set_t6(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t6(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t6(m), MonsterMultiplePatrols_move_Actions)
@@ -60510,7 +60498,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (7 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x7(m, s__s__MonsterMultiplePatrols_X[7])
     sg__MonsterMultiplePatrols_set_y7(m, s__s__MonsterMultiplePatrols_Y[7])
-    sg__MonsterMultiplePatrols_set_r7(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x7(m), sg__MonsterMultiplePatrols_get_y7(m)))
+    sg__MonsterMultiplePatrols_set_r7(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x7(m), sg__MonsterMultiplePatrols_get_y7(m)))
     sg__MonsterMultiplePatrols_set_t7(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t7(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t7(m), MonsterMultiplePatrols_move_Actions)
@@ -60521,7 +60509,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (8 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x8(m, s__s__MonsterMultiplePatrols_X[8])
     sg__MonsterMultiplePatrols_set_y8(m, s__s__MonsterMultiplePatrols_Y[8])
-    sg__MonsterMultiplePatrols_set_r8(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x8(m), sg__MonsterMultiplePatrols_get_y8(m)))
+    sg__MonsterMultiplePatrols_set_r8(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x8(m), sg__MonsterMultiplePatrols_get_y8(m)))
     sg__MonsterMultiplePatrols_set_t8(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t8(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t8(m), MonsterMultiplePatrols_move_Actions)
@@ -60532,7 +60520,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (9 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x9(m, s__s__MonsterMultiplePatrols_X[9])
     sg__MonsterMultiplePatrols_set_y9(m, s__s__MonsterMultiplePatrols_Y[9])
-    sg__MonsterMultiplePatrols_set_r9(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x9(m), sg__MonsterMultiplePatrols_get_y9(m)))
+    sg__MonsterMultiplePatrols_set_r9(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x9(m), sg__MonsterMultiplePatrols_get_y9(m)))
     sg__MonsterMultiplePatrols_set_t9(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t9(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t9(m), MonsterMultiplePatrols_move_Actions)
@@ -60543,7 +60531,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (10 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x10(m, s__s__MonsterMultiplePatrols_X[10])
     sg__MonsterMultiplePatrols_set_y10(m, s__s__MonsterMultiplePatrols_Y[10])
-    sg__MonsterMultiplePatrols_set_r10(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x10(m), sg__MonsterMultiplePatrols_get_y10(m)))
+    sg__MonsterMultiplePatrols_set_r10(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x10(m), sg__MonsterMultiplePatrols_get_y10(m)))
     sg__MonsterMultiplePatrols_set_t10(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t10(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t10(m), MonsterMultiplePatrols_move_Actions)
@@ -60554,7 +60542,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (11 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x11(m, s__s__MonsterMultiplePatrols_X[11])
     sg__MonsterMultiplePatrols_set_y11(m, s__s__MonsterMultiplePatrols_Y[11])
-    sg__MonsterMultiplePatrols_set_r11(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x11(m), sg__MonsterMultiplePatrols_get_y11(m)))
+    sg__MonsterMultiplePatrols_set_r11(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x11(m), sg__MonsterMultiplePatrols_get_y11(m)))
     sg__MonsterMultiplePatrols_set_t11(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t11(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t11(m), MonsterMultiplePatrols_move_Actions)
@@ -60565,7 +60553,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (12 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x12(m, s__s__MonsterMultiplePatrols_X[12])
     sg__MonsterMultiplePatrols_set_y12(m, s__s__MonsterMultiplePatrols_Y[12])
-    sg__MonsterMultiplePatrols_set_r12(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x12(m), sg__MonsterMultiplePatrols_get_y12(m)))
+    sg__MonsterMultiplePatrols_set_r12(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x12(m), sg__MonsterMultiplePatrols_get_y12(m)))
     sg__MonsterMultiplePatrols_set_t12(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t12(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t12(m), MonsterMultiplePatrols_move_Actions)
@@ -60576,7 +60564,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (13 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x13(m, s__s__MonsterMultiplePatrols_X[13])
     sg__MonsterMultiplePatrols_set_y13(m, s__s__MonsterMultiplePatrols_Y[13])
-    sg__MonsterMultiplePatrols_set_r13(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x13(m), sg__MonsterMultiplePatrols_get_y13(m)))
+    sg__MonsterMultiplePatrols_set_r13(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x13(m), sg__MonsterMultiplePatrols_get_y13(m)))
     sg__MonsterMultiplePatrols_set_t13(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t13(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t13(m), MonsterMultiplePatrols_move_Actions)
@@ -60587,7 +60575,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (14 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x14(m, s__s__MonsterMultiplePatrols_X[14])
     sg__MonsterMultiplePatrols_set_y14(m, s__s__MonsterMultiplePatrols_Y[14])
-    sg__MonsterMultiplePatrols_set_r14(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x14(m), sg__MonsterMultiplePatrols_get_y14(m)))
+    sg__MonsterMultiplePatrols_set_r14(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x14(m), sg__MonsterMultiplePatrols_get_y14(m)))
     sg__MonsterMultiplePatrols_set_t14(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t14(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t14(m), MonsterMultiplePatrols_move_Actions)
@@ -60598,7 +60586,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (15 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x15(m, s__s__MonsterMultiplePatrols_X[15])
     sg__MonsterMultiplePatrols_set_y15(m, s__s__MonsterMultiplePatrols_Y[15])
-    sg__MonsterMultiplePatrols_set_r15(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x15(m), sg__MonsterMultiplePatrols_get_y15(m)))
+    sg__MonsterMultiplePatrols_set_r15(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x15(m), sg__MonsterMultiplePatrols_get_y15(m)))
     sg__MonsterMultiplePatrols_set_t15(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t15(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t15(m), MonsterMultiplePatrols_move_Actions)
@@ -60609,7 +60597,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (16 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x16(m, s__s__MonsterMultiplePatrols_X[16])
     sg__MonsterMultiplePatrols_set_y16(m, s__s__MonsterMultiplePatrols_Y[16])
-    sg__MonsterMultiplePatrols_set_r16(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x16(m), sg__MonsterMultiplePatrols_get_y16(m)))
+    sg__MonsterMultiplePatrols_set_r16(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x16(m), sg__MonsterMultiplePatrols_get_y16(m)))
     sg__MonsterMultiplePatrols_set_t16(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t16(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t16(m), MonsterMultiplePatrols_move_Actions)
@@ -60620,7 +60608,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (17 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x17(m, s__s__MonsterMultiplePatrols_X[17])
     sg__MonsterMultiplePatrols_set_y17(m, s__s__MonsterMultiplePatrols_Y[17])
-    sg__MonsterMultiplePatrols_set_r17(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x17(m), sg__MonsterMultiplePatrols_get_y17(m)))
+    sg__MonsterMultiplePatrols_set_r17(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x17(m), sg__MonsterMultiplePatrols_get_y17(m)))
     sg__MonsterMultiplePatrols_set_t17(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t17(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t17(m), MonsterMultiplePatrols_move_Actions)
@@ -60631,7 +60619,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (18 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x18(m, s__s__MonsterMultiplePatrols_X[18])
     sg__MonsterMultiplePatrols_set_y18(m, s__s__MonsterMultiplePatrols_Y[18])
-    sg__MonsterMultiplePatrols_set_r18(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x18(m), sg__MonsterMultiplePatrols_get_y18(m)))
+    sg__MonsterMultiplePatrols_set_r18(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x18(m), sg__MonsterMultiplePatrols_get_y18(m)))
     sg__MonsterMultiplePatrols_set_t18(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t18(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t18(m), MonsterMultiplePatrols_move_Actions)
@@ -60642,7 +60630,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
   if (19 <= s__MonsterMultiplePatrols_staticLastLocInd) then
     sg__MonsterMultiplePatrols_set_x19(m, s__s__MonsterMultiplePatrols_X[19])
     sg__MonsterMultiplePatrols_set_y19(m, s__s__MonsterMultiplePatrols_Y[19])
-    sg__MonsterMultiplePatrols_set_r19(m, MonsterMultiplePatrols__NewRegion(sg__MonsterMultiplePatrols_get_x19(m), sg__MonsterMultiplePatrols_get_y19(m)))
+    sg__MonsterMultiplePatrols_set_r19(m, MonsterMultiplePatrols___NewRegion(sg__MonsterMultiplePatrols_get_x19(m), sg__MonsterMultiplePatrols_get_y19(m)))
     sg__MonsterMultiplePatrols_set_t19(m, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t19(m))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t19(m), MonsterMultiplePatrols_move_Actions)
@@ -60669,7 +60657,7 @@ function s__MonsterMultiplePatrols_create(mt, mode)
 end
 
 function s__MonsterMultiplePatrols_createUnit(this)
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -61187,7 +61175,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 0) then
     sg__MonsterMultiplePatrols_set_x0(this, x)
     sg__MonsterMultiplePatrols_set_y0(this, l__y)
-    sg__MonsterMultiplePatrols_set_r0(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r0(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t0(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t0(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t0(this), MonsterMultiplePatrols_move_Actions)
@@ -61199,7 +61187,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 1) then
     sg__MonsterMultiplePatrols_set_x1(this, x)
     sg__MonsterMultiplePatrols_set_y1(this, l__y)
-    sg__MonsterMultiplePatrols_set_r1(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r1(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t1(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t1(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t1(this), MonsterMultiplePatrols_move_Actions)
@@ -61211,7 +61199,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 2) then
     sg__MonsterMultiplePatrols_set_x2(this, x)
     sg__MonsterMultiplePatrols_set_y2(this, l__y)
-    sg__MonsterMultiplePatrols_set_r2(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r2(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t2(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t2(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t2(this), MonsterMultiplePatrols_move_Actions)
@@ -61223,7 +61211,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 3) then
     sg__MonsterMultiplePatrols_set_x3(this, x)
     sg__MonsterMultiplePatrols_set_y3(this, l__y)
-    sg__MonsterMultiplePatrols_set_r3(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r3(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t3(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t3(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t3(this), MonsterMultiplePatrols_move_Actions)
@@ -61235,7 +61223,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 4) then
     sg__MonsterMultiplePatrols_set_x4(this, x)
     sg__MonsterMultiplePatrols_set_y4(this, l__y)
-    sg__MonsterMultiplePatrols_set_r4(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r4(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t4(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t4(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t4(this), MonsterMultiplePatrols_move_Actions)
@@ -61247,7 +61235,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 5) then
     sg__MonsterMultiplePatrols_set_x5(this, x)
     sg__MonsterMultiplePatrols_set_y5(this, l__y)
-    sg__MonsterMultiplePatrols_set_r5(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r5(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t5(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t5(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t5(this), MonsterMultiplePatrols_move_Actions)
@@ -61259,7 +61247,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 6) then
     sg__MonsterMultiplePatrols_set_x6(this, x)
     sg__MonsterMultiplePatrols_set_y6(this, l__y)
-    sg__MonsterMultiplePatrols_set_r6(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r6(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t6(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t6(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t6(this), MonsterMultiplePatrols_move_Actions)
@@ -61271,7 +61259,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 7) then
     sg__MonsterMultiplePatrols_set_x7(this, x)
     sg__MonsterMultiplePatrols_set_y7(this, l__y)
-    sg__MonsterMultiplePatrols_set_r7(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r7(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t7(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t7(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t7(this), MonsterMultiplePatrols_move_Actions)
@@ -61283,7 +61271,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 8) then
     sg__MonsterMultiplePatrols_set_x8(this, x)
     sg__MonsterMultiplePatrols_set_y8(this, l__y)
-    sg__MonsterMultiplePatrols_set_r8(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r8(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t8(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t8(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t8(this), MonsterMultiplePatrols_move_Actions)
@@ -61295,7 +61283,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 9) then
     sg__MonsterMultiplePatrols_set_x9(this, x)
     sg__MonsterMultiplePatrols_set_y9(this, l__y)
-    sg__MonsterMultiplePatrols_set_r9(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r9(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t9(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t9(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t9(this), MonsterMultiplePatrols_move_Actions)
@@ -61307,7 +61295,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 10) then
     sg__MonsterMultiplePatrols_set_x10(this, x)
     sg__MonsterMultiplePatrols_set_y10(this, l__y)
-    sg__MonsterMultiplePatrols_set_r10(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r10(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t10(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t10(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t10(this), MonsterMultiplePatrols_move_Actions)
@@ -61319,7 +61307,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 11) then
     sg__MonsterMultiplePatrols_set_x11(this, x)
     sg__MonsterMultiplePatrols_set_y11(this, l__y)
-    sg__MonsterMultiplePatrols_set_r11(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r11(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t11(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t11(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t11(this), MonsterMultiplePatrols_move_Actions)
@@ -61331,7 +61319,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 12) then
     sg__MonsterMultiplePatrols_set_x12(this, x)
     sg__MonsterMultiplePatrols_set_y12(this, l__y)
-    sg__MonsterMultiplePatrols_set_r12(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r12(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t12(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t12(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t12(this), MonsterMultiplePatrols_move_Actions)
@@ -61343,7 +61331,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 13) then
     sg__MonsterMultiplePatrols_set_x13(this, x)
     sg__MonsterMultiplePatrols_set_y13(this, l__y)
-    sg__MonsterMultiplePatrols_set_r13(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r13(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t13(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t13(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t13(this), MonsterMultiplePatrols_move_Actions)
@@ -61355,7 +61343,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 14) then
     sg__MonsterMultiplePatrols_set_x14(this, x)
     sg__MonsterMultiplePatrols_set_y14(this, l__y)
-    sg__MonsterMultiplePatrols_set_r14(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r14(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t14(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t14(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t14(this), MonsterMultiplePatrols_move_Actions)
@@ -61367,7 +61355,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 15) then
     sg__MonsterMultiplePatrols_set_x15(this, x)
     sg__MonsterMultiplePatrols_set_y15(this, l__y)
-    sg__MonsterMultiplePatrols_set_r15(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r15(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t15(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t15(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t15(this), MonsterMultiplePatrols_move_Actions)
@@ -61379,7 +61367,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 16) then
     sg__MonsterMultiplePatrols_set_x16(this, x)
     sg__MonsterMultiplePatrols_set_y16(this, l__y)
-    sg__MonsterMultiplePatrols_set_r16(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r16(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t16(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t16(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t16(this), MonsterMultiplePatrols_move_Actions)
@@ -61391,7 +61379,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 17) then
     sg__MonsterMultiplePatrols_set_x17(this, x)
     sg__MonsterMultiplePatrols_set_y17(this, l__y)
-    sg__MonsterMultiplePatrols_set_r17(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r17(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t17(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t17(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t17(this), MonsterMultiplePatrols_move_Actions)
@@ -61403,7 +61391,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 18) then
     sg__MonsterMultiplePatrols_set_x18(this, x)
     sg__MonsterMultiplePatrols_set_y18(this, l__y)
-    sg__MonsterMultiplePatrols_set_r18(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r18(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t18(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t18(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t18(this), MonsterMultiplePatrols_move_Actions)
@@ -61415,7 +61403,7 @@ function s__MonsterMultiplePatrols_addNewLocAt(this, id, x, l__y)
   if (id == 19) then
     sg__MonsterMultiplePatrols_set_x19(this, x)
     sg__MonsterMultiplePatrols_set_y19(this, l__y)
-    sg__MonsterMultiplePatrols_set_r19(this, MonsterMultiplePatrols__NewRegion(x, l__y))
+    sg__MonsterMultiplePatrols_set_r19(this, MonsterMultiplePatrols___NewRegion(x, l__y))
     sg__MonsterMultiplePatrols_set_t19(this, CreateTrigger())
     DisableTrigger(sg__MonsterMultiplePatrols_get_t19(this))
     TriggerAddAction(sg__MonsterMultiplePatrols_get_t19(this), MonsterMultiplePatrols_move_Actions)
@@ -61718,12 +61706,12 @@ function s__MonsterNoMove_onDestroy(this)
   end
   sc__MonsterNoMoveArray_setMonsterNull(s__Level_monstersNoMove[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
 end
 
@@ -61748,7 +61736,7 @@ function s__MonsterNoMove_create(mt, x, l__y, angle)
 end
 
 function s__MonsterNoMove_createUnit(this)
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -61906,7 +61894,7 @@ end
 
 function s__MonsterOrCaster_create(mobId)
   local moc = nil
-  local monster = (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (mobId)))
+  local monster = (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (mobId)))
   -- INLINED!!
   local caster = nil
   if (monster ~= 0) then
@@ -61914,7 +61902,7 @@ function s__MonsterOrCaster_create(mobId)
     sg__MonsterOrCaster_set_monster(moc, monster)
     sg__MonsterOrCaster_set_caster(moc, 0)
   else
-    caster = (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, (mobId)))
+    caster = (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, (mobId)))
     -- INLINED!!
     if (caster ~= 0) then
       moc = s__MonsterOrCaster__allocate()
@@ -62016,21 +62004,21 @@ end
 
 --vérification que les monstres multi-patrouilles patrouillent bien
 
-function MonsterSimplePatrol__CheckSimplePatrolMobsEnum()
+function MonsterSimplePatrol___CheckSimplePatrolMobsEnum()
   if (GetUnitCurrentOrder(GetEnumUnit()) == 0) then
     --le mob s'est arrêté
     sc__MonsterSimplePatrol_createUnit((GetUnitUserData(GetEnumUnit())))
   end
 end
 
-function MonsterSimplePatrol__CheckSimplePatrolMobs_Actions()
-  ForGroup(MonsterSimplePatrol__simplePatrolMobs, MonsterSimplePatrol__CheckSimplePatrolMobsEnum)
+function MonsterSimplePatrol___CheckSimplePatrolMobs_Actions()
+  ForGroup(MonsterSimplePatrol___simplePatrolMobs, MonsterSimplePatrol___CheckSimplePatrolMobsEnum)
 end
 
 function Init_MonsterSimplePatrol()
   local trigCheckSimplePatrolMobs = CreateTrigger()
-  TriggerAddAction(trigCheckSimplePatrolMobs, MonsterSimplePatrol__CheckSimplePatrolMobs_Actions)
-  TriggerRegisterTimerEvent(trigCheckSimplePatrolMobs, MonsterSimplePatrol__checkSimplePatrolMobsPeriod, true)
+  TriggerAddAction(trigCheckSimplePatrolMobs, MonsterSimplePatrol___CheckSimplePatrolMobs_Actions)
+  TriggerRegisterTimerEvent(trigCheckSimplePatrolMobs, MonsterSimplePatrol___checkSimplePatrolMobsPeriod, true)
   trigCheckSimplePatrolMobs = nil
 end
 --///////////////////////////////////////////////////////////////////////
@@ -62061,7 +62049,7 @@ end
 function s__MonsterSimplePatrol_removeUnit(this)
   if (sg__Monster_get_u(this) ~= nil) then
     GroupRemoveUnit(monstersClickable, sg__Monster_get_u(this))
-    GroupRemoveUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+    GroupRemoveUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
     RemoveUnit(sg__Monster_get_u(this))
     sg__Monster_set_u(this, nil)
   end
@@ -62069,7 +62057,7 @@ end
 
 function s__MonsterSimplePatrol_killUnit(this)
   if (sg__Monster_get_u(this) ~= nil and IsUnitAliveBJ(sg__Monster_get_u(this))) then
-    GroupRemoveUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+    GroupRemoveUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
     KillUnit(sg__Monster_get_u(this))
   end
 end
@@ -62080,12 +62068,12 @@ function s__MonsterSimplePatrol_onDestroy(this)
   end
   sc__MonsterSimplePatrolArray_setMonsterNull(s__Level_monstersSimplePatrol[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
 end
 
@@ -62111,7 +62099,7 @@ function s__MonsterSimplePatrol_create(mt, x1, y1, x2, y2)
 end
 
 function s__MonsterSimplePatrol_createUnit(this)
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -62121,7 +62109,7 @@ function s__MonsterSimplePatrol_createUnit(this)
   end
   sg__Monster_set_u(this, NewPatrolMonster(sg__Monster_get_mt(this), sg__MonsterSimplePatrol_get_x1(this), sg__MonsterSimplePatrol_get_y1(this), sg__MonsterSimplePatrol_get_x2(this), sg__MonsterSimplePatrol_get_y2(this)))
   SetUnitUserData(sg__Monster_get_u(this), sg__Monster_get_id(this))
-  GroupAddUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+  GroupAddUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
   if ((s__MonsterType_isClickableB[(sg__Monster_get_mt(this))])) then
     -- INLINED!!
     sg__Monster_set_life(this, (s__MonsterType_maxLife[(sg__Monster_get_mt(this))]))
@@ -62383,12 +62371,12 @@ function s__MonsterTeleport_onDestroy(this)
   RemoveSavedInteger(MonsterTeleport_monsterTeleportHashtable, 0, GetHandleId(sg__MonsterTeleport_get_t(this)))
   DestroyTimer(sg__MonsterTeleport_get_t(this))
   sg__MonsterTeleport_set_t(this, nil)
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
 end
 
@@ -62569,7 +62557,7 @@ function s__MonsterTeleport_getPeriod(this)
 end
 
 function s__MonsterTeleport_createUnit(this)
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -63407,7 +63395,7 @@ function s__Caster_killUnit(this)
 end
 
 function s__Caster_refresh(this)
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Caster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Caster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Caster_get_disablingTimer(this)
   local isCasterAlive = IsUnitAliveBJ(sg__Caster_get_casterUnit(this))
@@ -63438,12 +63426,12 @@ end
 function s__Caster_onDestroy(this)
   s__Caster_disable(this)
   sc__CasterArray_setCasterNull(s__Level_casters[sg__Caster_get_level(this)], sg__Caster_get_arrayId(this))
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Caster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Caster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Caster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Caster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, (sg__Caster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, (sg__Caster_get_id(this)))
   -- INLINED!!
 end
 
@@ -63901,7 +63889,7 @@ end
 function s__MakeClearMob_clickMade(this, monsterOrCasterId)
   local escaper = Hero2Escaper(s__Make_maker[this])
   if (s__MakeClearMob_pointeurClickedMob[this] == -1) then
-    if ((LoadInteger(ClearMob__htClearMob, 0, (monsterOrCasterId))) ~= 0) then
+    if ((LoadInteger(ClearMob___htClearMob, 0, (monsterOrCasterId))) ~= 0) then
       --le mob est déjà trigger mob d'un clear mob // INLINED!!
       Text___ForPlayer_timed_withColorCode((s__Make_makerOwner[this]), -1, ERROR_TEXT_COLORCODE, ("this monster is already a trigger mob of a clear mob"))
       -- INLINED!!
@@ -64013,7 +64001,7 @@ end
 
 function s__MakeDeleteClearMob_clickMade(this, monsterOrCasterId)
   local escaper = Hero2Escaper(s__Make_maker[this])
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (monsterOrCasterId)))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (monsterOrCasterId)))
   -- INLINED!!
   if (clearMob ~= 0) then
     --le mob est trigger mob d'un clear mob, c'est bon, delete du clear mob
@@ -66997,7 +66985,7 @@ function Trig_invisUnit_dies_Actions()
       killingUnit = nil
       return
     else
-      clearMob = (LoadInteger(ClearMob__htClearMob, 0, (GetUnitUserData(killingUnit))))
+      clearMob = (LoadInteger(ClearMob___htClearMob, 0, (GetUnitUserData(killingUnit))))
       -- INLINED!!
       if (clearMob ~= 0) then
         --cas de l'activation d'un clear mob
@@ -68340,14 +68328,14 @@ function main()
   SetCameraBounds(-4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), -4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM))
   SetDayNightModels("Environment\\DNC\\DNCLordaeron\\DNCLordaeronTerrain\\DNCLordaeronTerrain.mdl", "Environment\\DNC\\DNCLordaeron\\DNCLordaeronUnit\\DNCLordaeronUnit.mdl")
   NewSoundEnvironment("Default")
-  SetAmbientDaySound("BlackCitadelDay")
-  SetAmbientNightSound("BlackCitadelNight")
+  SetAmbientDaySound("NorthrendDay")
+  SetAmbientNightSound("NorthrendNight")
   SetMapMusic("Music", true, 0)
   InitSounds()
   CreateRegions()
   InitBlizzard()
 
-  ExecuteFunc("jasshelper__initstructs1517943906")
+  ExecuteFunc("jasshelper__initstructs14357671")
   ExecuteFunc("Init_AfkMode")
   ExecuteFunc("Init_AutoContinueAfterSliding")
   ExecuteFunc("Init_GameTime")
@@ -68369,9 +68357,9 @@ function main()
   ExecuteFunc("Init_Heroes")
   ExecuteFunc("Init_StartAndEnd")
   ExecuteFunc("Init_ToTurnOnSlide")
-  ExecuteFunc("MonsterInterface__InitHtMonster")
+  ExecuteFunc("MonsterInterface___InitHtMonster")
   ExecuteFunc("Init_SaveMapInCache")
-  ExecuteFunc("ClearMob__InitClearMob")
+  ExecuteFunc("ClearMob___InitClearMob")
   ExecuteFunc("Init_MonsterSimplePatrol")
   ExecuteFunc("InitMonsterTeleport")
   ExecuteFunc("InitCaster")
@@ -69443,12 +69431,12 @@ function sa__Caster_onDestroy()
   local this = f__arg_this
   s__Caster_disable(this)
   sc__CasterArray_setCasterNull(s__Level_casters[sg__Caster_get_level(this)], sg__Caster_get_arrayId(this))
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Caster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Caster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Caster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Caster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, (sg__Caster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, (sg__Caster_get_id(this)))
   -- INLINED!!
   return true
 end
@@ -69569,7 +69557,7 @@ end
 function sa__MonsterOrCaster_create()
   local mobId = f__arg_integer1
   local moc = nil
-  local monster = (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (mobId)))
+  local monster = (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (mobId)))
   -- INLINED!!
   local caster = nil
   if (monster ~= 0) then
@@ -69577,7 +69565,7 @@ function sa__MonsterOrCaster_create()
     sg__MonsterOrCaster_set_monster(moc, monster)
     sg__MonsterOrCaster_set_caster(moc, 0)
   else
-    caster = (LoadInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__CASTER, (mobId)))
+    caster = (LoadInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___CASTER, (mobId)))
     -- INLINED!!
     if (caster ~= 0) then
       moc = s__MonsterOrCaster__allocate()
@@ -70152,14 +70140,14 @@ function sa__StringArrayForCache_push()
   if (s__StringArrayForCache_lastStringId[this] == -1) then
     s__StringArrayForCache_nextString(this)
   else
-    if (StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]]) == StringArrayForCache___MAX_STRING_LENGTH) then
+    if (StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]]) == StringArrayForCache__MAX_STRING_LENGTH) then
       s__StringArrayForCache_nextString(this)
     end
     if (s__StringArrayForCache_avecSeparateur[this]) then
       s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] = s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] .. CACHE_SEPARATEUR_ITEM
     end
   end
-  nbCharsDispoForCurrentString = StringArrayForCache___MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
+  nbCharsDispoForCurrentString = StringArrayForCache__MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
   length = StringLength(str)
   while true do
     if (length == 0) then
@@ -70173,7 +70161,7 @@ function sa__StringArrayForCache_push()
       s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] = s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]] .. str
       str = ""
     end
-    nbCharsDispoForCurrentString = StringArrayForCache___MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
+    nbCharsDispoForCurrentString = StringArrayForCache__MAX_STRING_LENGTH - StringLength(s___StringArrayForCache_stringArray[s__StringArrayForCache_stringArray[this] + s__StringArrayForCache_lastStringId[this]])
     length = StringLength(str)
   end
   return true
@@ -70516,21 +70504,21 @@ function sa__ClearMob_initialize()
   sc__MonsterOrCaster_setBaseColor(s__ClearMob_triggerMob[this], "blue")
   sc__MonsterOrCaster_setVertexColor(s__ClearMob_triggerMob[this], 30, 60, 100)
   if (s__ClearMob_triggerMobPermanentEffect[this] == nil) then
-    s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob__TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
+    s__ClearMob_triggerMobPermanentEffect[this] = AddSpecialEffectTarget(ClearMob___TRIGGER_MOB_PERMANENT_EFFECT, sc__MonsterOrCaster_getUnit(s__ClearMob_triggerMob[this]), "origin")
   end
   s__ClearMob_enabled[this] = true
   return true
 end
 function sa__ClearMob_onDestroy()
   local this = f__arg_this
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[this]))
-  RemoveSavedInteger(ClearMob__htClearMob, ClearMob__TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TRIGGER_MOB, sc__MonsterOrCaster_getId(s__ClearMob_triggerMob[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TIMER_ACTIVATED, GetHandleId(s__ClearMob_timerActivated[this]))
+  RemoveSavedInteger(ClearMob___htClearMob, ClearMob___TIMER_FRONT_MONTANT, GetHandleId(s__ClearMob_timerFrontMontant[this]))
   s__ClearMob_close(this)
   sc__MonsterOrCaster_reinitColor(s__ClearMob_triggerMob[this])
   s__MonsterOrCaster_deallocate(s__ClearMob_triggerMob[this])
   s__ClearMob_triggerMob[this] = 0
-  ClearMob__udp_currentTimer = s__ClearMob_timerActivated[this]
+  ClearMob___udp_currentTimer = s__ClearMob_timerActivated[this]
   s__MonsterOrCasterStack_executeForAll(s__ClearMob_blockMobs[this], "TemporarilyEnableMonsterOrCasterEach")
   s__MonsterOrCasterStack_deallocate(s__ClearMob_blockMobs[this])
   DestroyTimer(s__ClearMob_timerActivated[this])
@@ -71774,14 +71762,14 @@ function sa__CasterShot_create()
   local t = s__CasterShot__allocate()
   s__CasterShot_x[t] = Xdep
   s__CasterShot_y[t] = Ydep
-  s__CasterShot_diffX[t] = speed * CosBJ(angle) * CasterShot__PERIOD
-  s__CasterShot_diffY[t] = speed * SinBJ(angle) * CasterShot__PERIOD
-  s__CasterShot_nbTeleportationsRestantes[t] = R2I((portee / speed) / CasterShot__PERIOD)
+  s__CasterShot_diffX[t] = speed * CosBJ(angle) * CasterShot___PERIOD
+  s__CasterShot_diffY[t] = speed * SinBJ(angle) * CasterShot___PERIOD
+  s__CasterShot_nbTeleportationsRestantes[t] = R2I((portee / speed) / CasterShot___PERIOD)
   s__CasterShot_unite[t] = NewImmobileMonster(monsterType, Xdep, Ydep, angle)
   s__CasterShot_trig[t] = CreateTrigger()
-  TriggerRegisterTimerEvent(s__CasterShot_trig[t], CasterShot__PERIOD, true)
-  TriggerAddAction(s__CasterShot_trig[t], CasterShot__CasterShot_Actions)
-  SaveInteger(CasterShot__shotsHashtable, 0, GetHandleId(s__CasterShot_trig[t]), t)
+  TriggerRegisterTimerEvent(s__CasterShot_trig[t], CasterShot___PERIOD, true)
+  TriggerAddAction(s__CasterShot_trig[t], CasterShot___CasterShot_Actions)
+  SaveInteger(CasterShot___shotsHashtable, 0, GetHandleId(s__CasterShot_trig[t]), t)
   f__result_integer = t
   return true
 end
@@ -71809,7 +71797,7 @@ function sa__MakeDeleteClearMob_clickMade()
   local this = f__arg_this
   local monsterOrCasterId = f__arg_integer1
   local escaper = Hero2Escaper(s__Make_maker[this])
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (monsterOrCasterId)))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (monsterOrCasterId)))
   -- INLINED!!
   if (clearMob ~= 0) then
     --le mob est trigger mob d'un clear mob, c'est bon, delete du clear mob
@@ -73384,12 +73372,12 @@ function sa__MonsterMultiplePatrols_onDestroy()
   end
   sc__MonsterMultiplePatrolsArray_setMonsterNull(s__Level_monstersMultiplePatrols[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
   f__arg_this = this
   return true
@@ -73422,7 +73410,7 @@ function sa__MonsterMultiplePatrols_nextMove()
 end
 function sa__MonsterMultiplePatrols_createUnit()
   local this = f__arg_this
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -73951,19 +73939,19 @@ function sa__MonsterNoMove_onDestroy()
   end
   sc__MonsterNoMoveArray_setMonsterNull(s__Level_monstersNoMove[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
   f__arg_this = this
   return true
 end
 function sa__MonsterNoMove_createUnit()
   local this = f__arg_this
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -74121,7 +74109,7 @@ function sa__MonsterSimplePatrol_removeUnit()
   local this = f__arg_this
   if (sg__Monster_get_u(this) ~= nil) then
     GroupRemoveUnit(monstersClickable, sg__Monster_get_u(this))
-    GroupRemoveUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+    GroupRemoveUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
     RemoveUnit(sg__Monster_get_u(this))
     sg__Monster_set_u(this, nil)
   end
@@ -74130,7 +74118,7 @@ end
 function sa__MonsterSimplePatrol_killUnit()
   local this = f__arg_this
   if (sg__Monster_get_u(this) ~= nil and IsUnitAliveBJ(sg__Monster_get_u(this))) then
-    GroupRemoveUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+    GroupRemoveUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
     KillUnit(sg__Monster_get_u(this))
   end
   return true
@@ -74142,19 +74130,19 @@ function sa__MonsterSimplePatrol_onDestroy()
   end
   sc__MonsterSimplePatrolArray_setMonsterNull(s__Level_monstersSimplePatrol[sg__Monster_get_level(this)], sg__Monster_get_arrayId(this))
   s__Monster_nbInstances = s__Monster_nbInstances - 1
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
   f__arg_this = this
   return true
 end
 function sa__MonsterSimplePatrol_createUnit()
   local this = f__arg_this
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -74164,7 +74152,7 @@ function sa__MonsterSimplePatrol_createUnit()
   end
   sg__Monster_set_u(this, NewPatrolMonster(sg__Monster_get_mt(this), sg__MonsterSimplePatrol_get_x1(this), sg__MonsterSimplePatrol_get_y1(this), sg__MonsterSimplePatrol_get_x2(this), sg__MonsterSimplePatrol_get_y2(this)))
   SetUnitUserData(sg__Monster_get_u(this), sg__Monster_get_id(this))
-  GroupAddUnit(MonsterSimplePatrol__simplePatrolMobs, sg__Monster_get_u(this))
+  GroupAddUnit(MonsterSimplePatrol___simplePatrolMobs, sg__Monster_get_u(this))
   if ((s__MonsterType_isClickableB[(sg__Monster_get_mt(this))])) then
     -- INLINED!!
     sg__Monster_set_life(this, (s__MonsterType_maxLife[(sg__Monster_get_mt(this))]))
@@ -74355,12 +74343,12 @@ function sa__MonsterTeleport_onDestroy()
   RemoveSavedInteger(MonsterTeleport_monsterTeleportHashtable, 0, GetHandleId(sg__MonsterTeleport_get_t(this)))
   DestroyTimer(sg__MonsterTeleport_get_t(this))
   sg__MonsterTeleport_set_t(this, nil)
-  if ((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
+  if ((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))) ~= 0) then
     -- INLINED!!
-    s__ClearMob_deallocate((LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this)))))
+    s__ClearMob_deallocate((LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this)))))
     -- INLINED!!
   end
-  RemoveSavedInteger(MonsterInterface__htMonsterId2MonsterHandleId, MonsterInterface__MONSTER, (sg__Monster_get_id(this)))
+  RemoveSavedInteger(MonsterInterface___htMonsterId2MonsterHandleId, MonsterInterface___MONSTER, (sg__Monster_get_id(this)))
   -- INLINED!!
   f__arg_this = this
   return true
@@ -74386,7 +74374,7 @@ function sa__MonsterTeleport_getPeriod()
 end
 function sa__MonsterTeleport_createUnit()
   local this = f__arg_this
-  local clearMob = (LoadInteger(ClearMob__htClearMob, 0, (sg__Monster_get_id(this))))
+  local clearMob = (LoadInteger(ClearMob___htClearMob, 0, (sg__Monster_get_id(this))))
   -- INLINED!!
   local disablingTimer = sg__Monster_get_disablingTimer(this)
   local previouslyEnabled = sg__Monster_get_u(this) ~= nil
@@ -74922,7 +74910,7 @@ function sa__MakeClearMob_clickMade()
   local monsterOrCasterId = f__arg_integer1
   local escaper = Hero2Escaper(s__Make_maker[this])
   if (s__MakeClearMob_pointeurClickedMob[this] == -1) then
-    if ((LoadInteger(ClearMob__htClearMob, 0, (monsterOrCasterId))) ~= 0) then
+    if ((LoadInteger(ClearMob___htClearMob, 0, (monsterOrCasterId))) ~= 0) then
       --le mob est déjà trigger mob d'un clear mob // INLINED!!
       Text___ForPlayer_timed_withColorCode((s__Make_makerOwner[this]), -1, ERROR_TEXT_COLORCODE, ("this monster is already a trigger mob of a clear mob"))
       -- INLINED!!
@@ -75034,7 +75022,7 @@ function sa___prototype51_SoundUtils___HookStopSound()
   return true
 end
 
-function jasshelper__initstructs1517943906()
+function jasshelper__initstructs14357671()
   st__EscaperSavedCommands_new = CreateTrigger()
   TriggerAddCondition(st__EscaperSavedCommands_new, Condition(sa__EscaperSavedCommands_new))
   st__EscaperSavedCommands_execute = CreateTrigger()

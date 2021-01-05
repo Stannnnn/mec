@@ -3,9 +3,9 @@ export {}
 declare global {
 	var LIBRARY_AfkMode: boolean
 	var timeMinAfk: number
-	var AfkMode___Z: number
-	var AfkMode___SIZE: number
-	var AfkMode___TRANSPARENCY: number
+	var AfkMode__Z: number
+	var AfkMode__SIZE: number
+	var AfkMode__TRANSPARENCY: number
 	var isAfk: boolean[]
 	var afkModeTimers: timer[]
 	var afkModeTextTags: texttag[]
@@ -22,14 +22,14 @@ declare global {
 	var udg_autoContinueAfterSliding: boolean[]
 	var AutoContinueAfterSliding__ECART_MAX_ANGLE: number
 	var LIBRARY_DeplacementHeroHorsDeathPath: boolean
-	var DeplacementHeroHorsDeathPath___GRADUATION_ANGLE: number
-	var DeplacementHeroHorsDeathPath___VALEUR_DECALAGE: number
+	var DeplacementHeroHorsDeathPath__GRADUATION_ANGLE: number
+	var DeplacementHeroHorsDeathPath__VALEUR_DECALAGE: number
 	var LIBRARY_Disco: boolean
 	var LIBRARY_FunctionsOnNumbers: boolean
 	var LIBRARY_GameTime: boolean
-	var GameTime__hours: number
-	var GameTime__minuts: number
-	var GameTime__seconds: number
+	var GameTime___hours: number
+	var GameTime___minuts: number
+	var GameTime___seconds: number
 	var TIME_PLAYER: player
 	var LIBRARY_Gravity: boolean
 	var Gravity__gravity: number
@@ -41,11 +41,11 @@ declare global {
 	var METEOR_NORMAL: number
 	var METEOR_CHEAT: number
 	var LIBRARY_MonsterOrCasterStack: boolean
-	var MonsterOrCasterStack__udg_enumMoc: number
+	var MonsterOrCasterStack___udg_enumMoc: number
 	var LIBRARY_MonstersClickableSetLife: boolean
 	var monstersClickable: group
 	var trigMonstersClickableSetLife: trigger
-	var MonstersClickableSetLife__PERIOD: number
+	var MonstersClickableSetLife___PERIOD: number
 	var LIBRARY_SlideTrigger: boolean
 	var LIBRARY_Stack: boolean
 	var LIBRARY_StringLib: boolean
@@ -56,7 +56,7 @@ declare global {
 	var StringLib___KEY_UTF8: number
 	var LIBRARY_TerrainModifyingTrig: boolean
 	var y: number
-	var TerrainModifyingTrig___wasCheckTerrainTriggerOn: boolean[]
+	var TerrainModifyingTrig__wasCheckTerrainTriggerOn: boolean[]
 	var terrainModifyWorking: boolean
 	var LIBRARY_TerrainTypeAsciiConversion: boolean
 	var LIBRARY_TerrainTypeFunctions: boolean
@@ -113,29 +113,29 @@ declare global {
 	var LIBRARY_MakeTerrainHeightAction: boolean
 	var LIBRARY_MakeVisibilityModifierAction: boolean
 	var LIBRARY_MessageHeroDies: boolean
-	var MessageHeroDies___MESSAGE_DURATION: number
-	var MessageHeroDies___TIME_BETWEEN_DEATH_AND_MESSAGE: number
-	var MessageHeroDies___timerSonJoue: timer
-	var MessageHeroDies___isSoundPlaying: boolean
-	var MessageHeroDies___DUREE_SON: number
+	var MessageHeroDies__MESSAGE_DURATION: number
+	var MessageHeroDies__TIME_BETWEEN_DEATH_AND_MESSAGE: number
+	var MessageHeroDies__timerSonJoue: timer
+	var MessageHeroDies__isSoundPlaying: boolean
+	var MessageHeroDies__DUREE_SON: number
 	var LIBRARY_MeteorArray: boolean
-	var MeteorArray__MAX_NB_METEORS: number
+	var MeteorArray___MAX_NB_METEORS: number
 	var LIBRARY_MeteorFunctions: boolean
-	var MeteorFunctions__meteor: item
+	var MeteorFunctions___meteor: item
 	var LIBRARY_MonsterType: boolean
 	var LIBRARY_SaveLevels: boolean
-	var SaveLevels___levelId: number
-	var SaveLevels___level: number
-	var SaveLevels___visibilityId: number
-	var SaveLevels___monsterNoMoveId: number
-	var SaveLevels___monsterSimplePatrolId: number
-	var SaveLevels___monsterMultiplePatrolsId: number
-	var SaveLevels___monsterTeleportId: number
-	var SaveLevels___meteorId: number
-	var SaveLevels___monsterSpawnId: number
-	var SaveLevels___casterId: number
-	var SaveLevels___NB_ITEM_TO_SAVE_EACH_TIME: number
-	var SaveLevels___trg_startSaveNextLevel: trigger
+	var SaveLevels__levelId: number
+	var SaveLevels__level: number
+	var SaveLevels__visibilityId: number
+	var SaveLevels__monsterNoMoveId: number
+	var SaveLevels__monsterSimplePatrolId: number
+	var SaveLevels__monsterMultiplePatrolsId: number
+	var SaveLevels__monsterTeleportId: number
+	var SaveLevels__meteorId: number
+	var SaveLevels__monsterSpawnId: number
+	var SaveLevels__casterId: number
+	var SaveLevels__NB_ITEM_TO_SAVE_EACH_TIME: number
+	var SaveLevels__trg_startSaveNextLevel: trigger
 	var LIBRARY_SaveTerrainConfigInCache: boolean
 	var LIBRARY_SoundUtils: boolean
 	var SoundUtils___ht: hashtable
@@ -145,7 +145,7 @@ declare global {
 	var LIBRARY_StringArrayForCache: boolean
 	var CACHE_SEPARATEUR_ITEM: string
 	var CACHE_SEPARATEUR_PARAM: string
-	var StringArrayForCache___MAX_STRING_LENGTH: number
+	var StringArrayForCache__MAX_STRING_LENGTH: number
 	var stringArrayForCache: number
 	var LIBRARY_TerrainTypeGrass: boolean
 	var LIBRARY_VisibilityModifierArray: boolean
@@ -153,27 +153,27 @@ declare global {
 	var nbClicsOnSlide: number[]
 	var timeOnSlide: number[]
 	var LIBRARY_CasterFunctions: boolean
-	var CasterFunctions__escaper: number
-	var CasterFunctions__caster: number
-	var CasterFunctions__PRECISION_TIR: number
-	var CasterFunctions__PRECISION_DIFF_POS_HERO: number
-	var CasterFunctions__ECART_CHECK: number
-	var CasterFunctions__x1: number
-	var CasterFunctions__y1: number
-	var CasterFunctions__angleSlider: number
-	var CasterFunctions__sliderSpeed: number
-	var CasterFunctions__x2: number
-	var CasterFunctions__y2: number
-	var CasterFunctions__x3: number
-	var CasterFunctions__y3: number
-	var CasterFunctions__k1: number
-	var CasterFunctions__k2: number
-	var CasterFunctions__Xk1: number
-	var CasterFunctions__Yk1: number
-	var CasterFunctions__Xk2: number
-	var CasterFunctions__Yk2: number
-	var CasterFunctions__XintersectionDevantHeros: number
-	var CasterFunctions__YintersectionDevantHeros: number
+	var CasterFunctions___escaper: number
+	var CasterFunctions___caster: number
+	var CasterFunctions___PRECISION_TIR: number
+	var CasterFunctions___PRECISION_DIFF_POS_HERO: number
+	var CasterFunctions___ECART_CHECK: number
+	var CasterFunctions___x1: number
+	var CasterFunctions___y1: number
+	var CasterFunctions___angleSlider: number
+	var CasterFunctions___sliderSpeed: number
+	var CasterFunctions___x2: number
+	var CasterFunctions___y2: number
+	var CasterFunctions___x3: number
+	var CasterFunctions___y3: number
+	var CasterFunctions___k1: number
+	var CasterFunctions___k2: number
+	var CasterFunctions___Xk1: number
+	var CasterFunctions___Yk1: number
+	var CasterFunctions___Xk2: number
+	var CasterFunctions___Yk2: number
+	var CasterFunctions___XintersectionDevantHeros: number
+	var CasterFunctions___YintersectionDevantHeros: number
 	var LIBRARY_CasterTypeArray: boolean
 	var LIBRARY_CheckTerrainTrigger: boolean
 	var CheckTerrainTrigger__TOLERANCE_ANGLE_DIFF: number
@@ -189,7 +189,7 @@ declare global {
 	var D_shortcutCommand: string[]
 	var F_shortcutCommand: string[]
 	var LIBRARY_Lives: boolean
-	var Lives__LIVES_PLAYER: player
+	var Lives___LIVES_PLAYER: player
 	var LIBRARY_MonsterTypeArray: boolean
 	var LIBRARY_SaveCasterTypes: boolean
 	var LIBRARY_TeleportOnceOnly: boolean
@@ -202,77 +202,77 @@ declare global {
 	var LIBRARY_EscaperEffectFunctions: boolean
 	var LIBRARY_ModifyTerrainFunctions: boolean
 	var LIBRARY_MonsterCreationFunctions: boolean
-	var MonsterCreationFunctions__monster: unit
-	var MonsterCreationFunctions__ATTACK_SKILL: number
-	var MonsterCreationFunctions__ABILITY_1_LIFE: number
-	var MonsterCreationFunctions__ABILITY_10_LIFE: number
-	var MonsterCreationFunctions__ABILITY_100_LIFE: number
-	var MonsterCreationFunctions__ABILITY_1000_LIFE: number
-	var MonsterCreationFunctions__ABILITY_10000_LIFE: number
-	var MonsterCreationFunctions__ABILITY_ANNULER_VISION: number
-	var MonsterCreationFunctions__ABILITY_FORME_CORBEAU: number
+	var MonsterCreationFunctions___monster: unit
+	var MonsterCreationFunctions___ATTACK_SKILL: number
+	var MonsterCreationFunctions___ABILITY_1_LIFE: number
+	var MonsterCreationFunctions___ABILITY_10_LIFE: number
+	var MonsterCreationFunctions___ABILITY_100_LIFE: number
+	var MonsterCreationFunctions___ABILITY_1000_LIFE: number
+	var MonsterCreationFunctions___ABILITY_10000_LIFE: number
+	var MonsterCreationFunctions___ABILITY_ANNULER_VISION: number
+	var MonsterCreationFunctions___ABILITY_FORME_CORBEAU: number
 	var LIBRARY_SaveMonsterTypes: boolean
 	var LIBRARY_TerrainType: boolean
 	var LIBRARY_TerrainTypeFromString: boolean
 	var LIBRARY_AllTerrainFunctions: boolean
 	var LIBRARY_CasterShot: boolean
-	var CasterShot__shotsHashtable: hashtable
-	var CasterShot__PERIOD: number
+	var CasterShot___shotsHashtable: hashtable
+	var CasterShot___PERIOD: number
 	var LIBRARY_EscaperEffect: boolean
 	var LIBRARY_MakeTerrainCopyPasteAction: boolean
 	var LIBRARY_MakeTerrainCreateAction: boolean
 	var LIBRARY_MakeTerrainHorizontalSymmetryAction: boolean
 	var LIBRARY_MakeTerrainVerticalSymmetryAction: boolean
 	var LIBRARY_MonsterSpawn: boolean
-	var MonsterSpawn__ht: hashtable
-	var MonsterSpawn__DECALAGE_UNSPAWN: number
-	var MonsterSpawn__DELAY_BETWEEN_SPAWN_AND_MOVEMENT: number
+	var MonsterSpawn___ht: hashtable
+	var MonsterSpawn___DECALAGE_UNSPAWN: number
+	var MonsterSpawn___DELAY_BETWEEN_SPAWN_AND_MOVEMENT: number
 	var LIBRARY_SaveWater: boolean
-	var SaveWater___y: number
+	var SaveWater__y: number
 	var LIBRARY_TerrainTypeDeathFunctions: boolean
 	var LIBRARY_TerrainTypeSlide: boolean
 	var LIBRARY_TerrainTypeWalk: boolean
 	var LIBRARY_ChangeAllTerrains: boolean
-	var ChangeAllTerrains___oldTerrainTypes: number[]
-	var ChangeAllTerrains___newTerrainTypes: number[]
-	var ChangeAllTerrains___lastTerrainArrayId: number
-	var ChangeAllTerrains___nbNewTerrains: number
-	var ChangeAllTerrains___nbNewTerrainsAllowed: number
+	var ChangeAllTerrains__oldTerrainTypes: number[]
+	var ChangeAllTerrains__newTerrainTypes: number[]
+	var ChangeAllTerrains__lastTerrainArrayId: number
+	var ChangeAllTerrains__nbNewTerrains: number
+	var ChangeAllTerrains__nbNewTerrainsAllowed: number
 	var udg_changeAllTerrainsAtRevive: boolean
 	var LIBRARY_ChangeOneTerrain: boolean
-	var ChangeOneTerrain___oldTerrain: number
-	var ChangeOneTerrain___newTerrain: number
+	var ChangeOneTerrain__oldTerrain: number
+	var ChangeOneTerrain__newTerrain: number
 	var LIBRARY_EscaperEffectArray: boolean
 	var LIBRARY_ExchangeTerrains: boolean
-	var ExchangeTerrains___terrainA: number
-	var ExchangeTerrains___terrainB: number
+	var ExchangeTerrains__terrainA: number
+	var ExchangeTerrains__terrainB: number
 	var LIBRARY_MonsterSpawnArray: boolean
 	var LIBRARY_RandomizeTerrains: boolean
-	var RandomizeTerrains___oldTerrainTypes: number[]
-	var RandomizeTerrains___newTerrainTypes: number[]
-	var RandomizeTerrains___lastTerrainArrayId: number
+	var RandomizeTerrains__oldTerrainTypes: number[]
+	var RandomizeTerrains__newTerrainTypes: number[]
+	var RandomizeTerrains__lastTerrainArrayId: number
 	var LIBRARY_ReinitTerrains: boolean
-	var ReinitTerrains___terrainTypes: number[]
-	var ReinitTerrains___terrainTypeIds: number[]
-	var ReinitTerrains___terrainTypeIdsToReplace: number[]
+	var ReinitTerrains__terrainTypes: number[]
+	var ReinitTerrains__terrainTypeIds: number[]
+	var ReinitTerrains__terrainTypeIdsToReplace: number[]
 	var LIBRARY_ReinitTerrainsPositions: boolean
-	var ReinitTerrainsPositions___terrainSave_id: number
+	var ReinitTerrainsPositions__terrainSave_id: number
 	var LIBRARY_SaveLoadTerrainWithName: boolean
-	var SaveLoadTerrainWithName___saveNameInt: number
-	var SaveLoadTerrainWithName___terrainSaves: hashtable
-	var SaveLoadTerrainWithName___terrainSave_id: number
+	var SaveLoadTerrainWithName__saveNameInt: number
+	var SaveLoadTerrainWithName__terrainSaves: hashtable
+	var SaveLoadTerrainWithName__terrainSave_id: number
 	var LIBRARY_SaveLoadTerrainWithoutName: boolean
-	var SaveLoadTerrainWithoutName___terrainSave_id: number
+	var SaveLoadTerrainWithoutName__terrainSave_id: number
 	var LIBRARY_SaveTerrainRamps: boolean
-	var SaveTerrainRamps___y: number
-	var SaveTerrainRamps___ramps: boolean[]
-	var SaveTerrainRamps___DECAL_TEST_PATH: number
+	var SaveTerrainRamps__y: number
+	var SaveTerrainRamps__ramps: boolean[]
+	var SaveTerrainRamps__DECAL_TEST_PATH: number
 	var LIBRARY_TerrainTypeDeathKillingTimers: boolean
 	var LIBRARY_Escaper: boolean
 	var SHOW_REVIVE_EFFECTS: boolean
-	var Escaper__heroToSelect: unit
+	var Escaper___heroToSelect: unit
 	var LIBRARY_SaveTerrainHeights: boolean
-	var SaveTerrainHeights___y: number
+	var SaveTerrainHeights__y: number
 	var LIBRARY_TerrainTypeDeath: boolean
 	var DEATH_TERRAIN_MAX_TOLERANCE: number
 	var LIBRARY_TrigCheckpointReviveHeroes: boolean
@@ -292,20 +292,20 @@ declare global {
 	var TIME_BETWEEN_EACH_HERO_SPAWN: number
 	var HERO_START_ANGLE: number
 	var EFFECT_FOR_MISSING_HEROES: string
-	var Heroes___NB_COLUMNS: number
-	var Heroes___NB_ROWS: number
+	var Heroes__NB_COLUMNS: number
+	var Heroes__NB_ROWS: number
 	var LIBRARY_MClearMobActions: boolean
 	var LIBRARY_MClearMobDeleteActions: boolean
 	var LIBRARY_MMMultiplePatrolsActions: boolean
 	var LIBRARY_MMNoMoveActions: boolean
 	var LIBRARY_MMSimplePatrolActions: boolean
-	var MMSimplePatrolActions__MIN_DIST: number
-	var MMSimplePatrolActions__MAX_DIST: number
-	var MMSimplePatrolActions__ECART_DIST: number
-	var MMSimplePatrolActions__ECART_ANGLE: number
-	var MMSimplePatrolActions__DIST_ON_TERRAIN_MAX: number
-	var MMSimplePatrolActions__DIST_ON_TERRAIN_DEFAULT: number
-	var MMSimplePatrolActions__distOnTerrain: number
+	var MMSimplePatrolActions___MIN_DIST: number
+	var MMSimplePatrolActions___MAX_DIST: number
+	var MMSimplePatrolActions___ECART_DIST: number
+	var MMSimplePatrolActions___ECART_ANGLE: number
+	var MMSimplePatrolActions___DIST_ON_TERRAIN_MAX: number
+	var MMSimplePatrolActions___DIST_ON_TERRAIN_DEFAULT: number
+	var MMSimplePatrolActions___distOnTerrain: number
 	var LIBRARY_MMTeleportActions: boolean
 	var LIBRARY_MakeExchangeTerrainsActions: boolean
 	var LIBRARY_MakeGetUnitTeleportPeriodActions: boolean
@@ -316,9 +316,9 @@ declare global {
 	var LIBRARY_MonsterDeleteActions: boolean
 	var LIBRARY_MonsterSpawnMakingActions: boolean
 	var LIBRARY_SaveTerrain: boolean
-	var SaveTerrain___y: number
-	var SaveTerrain___terrainTypeIds: number[]
-	var SaveTerrain___nbTerrainTypesUsed: number
+	var SaveTerrain__y: number
+	var SaveTerrain__terrainTypeIds: number[]
+	var SaveTerrain__nbTerrainTypesUsed: number
 	var LIBRARY_StartAndEnd: boolean
 	var DEPART_PAR_DEFAUT: number
 	var LIBRARY_StartMakingActions: boolean
@@ -363,26 +363,26 @@ declare global {
 	var MAKE_CANT_REDO_MORE: string
 	var LIBRARY_MonsterInterface: boolean
 	var MAX_NB_MONSTERS: number
-	var MonsterInterface__htMonsterId2MonsterHandleId: hashtable
-	var MonsterInterface__MONSTER: number
-	var MonsterInterface__CASTER: number
+	var MonsterInterface___htMonsterId2MonsterHandleId: hashtable
+	var MonsterInterface___MONSTER: number
+	var MonsterInterface___CASTER: number
 	var NO_ID: number
-	var MonsterInterface__monsterNextId: number
+	var MonsterInterface___monsterNextId: number
 	var DISABLE_TRANSPARENCY: number
 	var LIBRARY_SaveMapInCache: boolean
 	var saveMap_cache: gamecache
 	var trigSaveMapInCache: trigger
 	var LIBRARY_TerrainTypeArray: boolean
 	var LIBRARY_ClearMob: boolean
-	var ClearMob__htClearMob: hashtable
+	var ClearMob___htClearMob: hashtable
 	var CLEAR_MOB_MAX_DURATION: number
-	var ClearMob__TRIGGER_MOB: number
-	var ClearMob__TIMER_ACTIVATED: number
-	var ClearMob__TIMER_FRONT_MONTANT: number
+	var ClearMob___TRIGGER_MOB: number
+	var ClearMob___TIMER_ACTIVATED: number
+	var ClearMob___TIMER_FRONT_MONTANT: number
 	var ClearMob_FRONT_MONTANT_DURATION: number
-	var ClearMob__udp_currentTimer: timer
+	var ClearMob___udp_currentTimer: timer
 	var MAX_NB_CLEAR_MOB_BY_LEVEL: number
-	var ClearMob__TRIGGER_MOB_PERMANENT_EFFECT: string
+	var ClearMob___TRIGGER_MOB_PERMANENT_EFFECT: string
 	var LIBRARY_CommandMax: boolean
 	var LIBRARY_LevelArray: boolean
 	var NB_MAX_LEVELS: number
@@ -413,8 +413,8 @@ declare global {
 	var LIBRARY_MonsterNoMove: boolean
 	var LIBRARY_MonsterOrCaster: boolean
 	var LIBRARY_MonsterSimplePatrol: boolean
-	var MonsterSimplePatrol__simplePatrolMobs: group
-	var MonsterSimplePatrol__checkSimplePatrolMobsPeriod: number
+	var MonsterSimplePatrol___simplePatrolMobs: group
+	var MonsterSimplePatrol___checkSimplePatrolMobsPeriod: number
 	var LIBRARY_MonsterTeleport: boolean
 	var WAIT: number
 	var HIDE: number
@@ -4901,64 +4901,64 @@ declare global {
 	var s__EscaperSavedCommands_savedCommands: hashtable[]
 	var s__TimerUtils___data: number[]
 	var s__TimerUtils___tT: timer[]
-	var s__ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__2ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__3ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__4ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__5ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__6ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__7ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__8ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__9ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__10ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__11ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__12ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__13ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__14ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__15ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__16ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__17ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__18ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__19ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__20ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__21ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__22ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__23ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__24ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__25ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__26ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__27ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__28ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__29ReinitTerrainsPositions___TERRAIN_SAVE: number[]
-	var s__SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__2SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__3SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__4SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__5SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__6SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__7SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__8SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__9SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__10SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__11SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__12SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__13SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__14SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__15SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__16SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__17SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__18SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__19SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__20SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__21SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__22SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__23SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__24SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__25SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__26SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__27SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__28SaveLoadTerrainWithoutName___terrainSave: number[]
-	var s__29SaveLoadTerrainWithoutName___terrainSave: number[]
+	var s__ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__2ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__3ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__4ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__5ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__6ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__7ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__8ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__9ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__10ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__11ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__12ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__13ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__14ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__15ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__16ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__17ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__18ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__19ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__20ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__21ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__22ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__23ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__24ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__25ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__26ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__27ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__28ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__29ReinitTerrainsPositions__TERRAIN_SAVE: number[]
+	var s__SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__2SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__3SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__4SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__5SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__6SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__7SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__8SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__9SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__10SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__11SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__12SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__13SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__14SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__15SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__16SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__17SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__18SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__19SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__20SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__21SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__22SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__23SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__24SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__25SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__26SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__27SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__28SaveLoadTerrainWithoutName__terrainSave: number[]
+	var s__29SaveLoadTerrainWithoutName__terrainSave: number[]
 	var s__s__MonsterMultiplePatrols_X: number[]
 	var s__s__MonsterMultiplePatrols_Y: number[]
 	var s__s__MonsterTeleport_X: number[]
@@ -5375,10 +5375,10 @@ declare global {
 	var f__result_player: player
 	var f__result_timer: timer
 	var f__result_trigger: trigger
-	function sg__ReinitTerrainsPositions___TERRAIN_SAVE_get(i: number): number
-	function sg__ReinitTerrainsPositions___TERRAIN_SAVE_set(i: number, v: number): void
-	function sg__SaveLoadTerrainWithoutName___terrainSave_get(i: number): number
-	function sg__SaveLoadTerrainWithoutName___terrainSave_set(i: number, v: number): void
+	function sg__ReinitTerrainsPositions__TERRAIN_SAVE_get(i: number): number
+	function sg__ReinitTerrainsPositions__TERRAIN_SAVE_set(i: number, v: number): void
+	function sg__SaveLoadTerrainWithoutName__terrainSave_get(i: number): number
+	function sg__SaveLoadTerrainWithoutName__terrainSave_set(i: number, v: number): void
 	function sg___CasterArray_casters_get(i: number): number
 	function sg___CasterArray_casters_set(i: number, v: number): void
 	function sg__CasterArray_get_casters(i: number): number
@@ -6747,22 +6747,22 @@ declare global {
 	function s__MakeVisibilityModifierAction_onDestroy(thisv: number): void
 	function s__MakeVisibilityModifierAction_cancel(thisv: number): boolean
 	function s__MakeVisibilityModifierAction_redo(thisv: number): boolean
-	function MessageHeroDies___GetRandomSoundHeroDies(): sound
-	function MessageHeroDies___GetRandomSoundAllyHeroDies(): sound
-	function MessageHeroDies___SoundEnd(): void
-	function MessageHeroDies___PlaySoundHeroDies(fallenPlayer: player): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_0(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_1(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_2(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_3(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_4(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_5(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_6(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_7(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_8(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_9(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_10(): void
-	function MessageHeroDies___DisplayDeathMessagePlayer_11(): void
+	function MessageHeroDies__GetRandomSoundHeroDies(): sound
+	function MessageHeroDies__GetRandomSoundAllyHeroDies(): sound
+	function MessageHeroDies__SoundEnd(): void
+	function MessageHeroDies__PlaySoundHeroDies(fallenPlayer: player): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_0(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_1(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_2(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_3(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_4(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_5(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_6(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_7(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_8(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_9(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_10(): void
+	function MessageHeroDies__DisplayDeathMessagePlayer_11(): void
 	function DisplayDeathMessagePlayer(p: player): void
 	function s__MeteorArray_create(): number
 	function s__MeteorArray_getFirstEmpty(thisv: number): number
@@ -6808,24 +6808,24 @@ declare global {
 	function s__MonsterType_displayTotalForPlayer(thisv: number, p: player): void
 	function s__MonsterType_toString(thisv: number): string
 	function Init_MonsterType(): void
-	function SaveLevels___SaveCasters_Actions(): void
-	function SaveLevels___StartSaveCasters(): void
-	function SaveLevels___SaveMonsterSpawns_Actions(): void
-	function SaveLevels___StartSaveMonsterSpawns(): void
-	function SaveLevels___SaveMeteors_Actions(): void
-	function SaveLevels___StartSaveMeteors(): void
-	function SaveLevels___SaveMonstersTeleport_Actions(): void
-	function SaveLevels___StartSaveMonstersTeleport(): void
-	function SaveLevels___SaveMonstersMultiplePatrols_Actions(): void
-	function SaveLevels___StartSaveMonstersMultiplePatrols(): void
-	function SaveLevels___SaveMonstersSimplePatrol_Actions(): void
-	function SaveLevels___StartSaveMonstersSimplePatrol(): void
-	function SaveLevels___SaveMonstersNoMove_Actions(): void
-	function SaveLevels___StartSaveMonstersNoMove(): void
-	function SaveLevels___SaveVisibilities_Actions(): void
-	function SaveLevels___StartSaveVisibilities(): void
-	function SaveLevels___EndSaveLevel(): void
-	function SaveLevels___StartSaveLevel(): void
+	function SaveLevels__SaveCasters_Actions(): void
+	function SaveLevels__StartSaveCasters(): void
+	function SaveLevels__SaveMonsterSpawns_Actions(): void
+	function SaveLevels__StartSaveMonsterSpawns(): void
+	function SaveLevels__SaveMeteors_Actions(): void
+	function SaveLevels__StartSaveMeteors(): void
+	function SaveLevels__SaveMonstersTeleport_Actions(): void
+	function SaveLevels__StartSaveMonstersTeleport(): void
+	function SaveLevels__SaveMonstersMultiplePatrols_Actions(): void
+	function SaveLevels__StartSaveMonstersMultiplePatrols(): void
+	function SaveLevels__SaveMonstersSimplePatrol_Actions(): void
+	function SaveLevels__StartSaveMonstersSimplePatrol(): void
+	function SaveLevels__SaveMonstersNoMove_Actions(): void
+	function SaveLevels__StartSaveMonstersNoMove(): void
+	function SaveLevels__SaveVisibilities_Actions(): void
+	function SaveLevels__StartSaveVisibilities(): void
+	function SaveLevels__EndSaveLevel(): void
+	function SaveLevels__StartSaveLevel(): void
 	function StartSaveLevels(): void
 	function StartSaveNextLevel_Actions(): void
 	function InitStartSaveNextLevel(): void
@@ -6867,9 +6867,9 @@ declare global {
 	function Init_Apm(): void
 	function DisplayApm(playerId: number): void
 	function DisplayApmAll(playerId: number): void
-	function CasterFunctions__CalculerPointsIntersections(): void
-	function CasterFunctions__TrouverTempsIdeal(tempsMax: number): number
-	function CasterFunctions__CasterTryToShoot(): void
+	function CasterFunctions___CalculerPointsIntersections(): void
+	function CasterFunctions___TrouverTempsIdeal(tempsMax: number): number
+	function CasterFunctions___CasterTryToShoot(): void
 	function CasterUnitWithinRange_Actions(): void
 	function s__CasterTypeArray_create(): number
 	function s__CasterTypeArray_get(thisv: number, label: string): number
@@ -6938,7 +6938,7 @@ declare global {
 	function GetNbCaseBetween(minX: number, minY: number, maxX: number, maxY: number): number
 	function ChangeTerrainType(x: number, l__y: number, terrainTypeId: number): void
 	function ChangeTerrainBetween(terrainType: number, x1: number, y1: number, x2: number, y2: number): boolean
-	function MonsterCreationFunctions__UnitAddRemoveLifeAbility(u: unit, lifeAbility: number): void
+	function MonsterCreationFunctions___UnitAddRemoveLifeAbility(u: unit, lifeAbility: number): void
 	function UnitAddMaxLife(u: unit, lifeToAdd: number): void
 	function SetUnitMaxLife(u: unit, newMaxLife: number): boolean
 	function NewImmobileMonsterForPlayer(mt: number, p: player, x: number, l__y: number, angle: number): unit
@@ -6959,7 +6959,7 @@ declare global {
 	function s__TerrainType_displayForPlayer(thisv: number, p: player): void
 	function s__TerrainType_toString(thisv: number): string
 	function TerrainTypeString2TerrainTypeId(str: string): number
-	function CasterShot__CasterShot_Actions(): void
+	function CasterShot___CasterShot_Actions(): void
 	function s__CasterShot_create(monsterType: number, Xdep: number, Ydep: number, angle: number, speed: number, portee: number): number
 	function s__CasterShot_onDestroy(thisv: number): void
 	function s__CasterShot_deallocate(thisv: number): void
@@ -6995,10 +6995,10 @@ declare global {
 	function s__MakeTerrainVerticalSymmetryAction_applySymmetry(thisv: number): void
 	function s__MakeTerrainVerticalSymmetryAction_cancel(thisv: number): boolean
 	function s__MakeTerrainVerticalSymmetryAction_redo(thisv: number): boolean
-	function MonsterSpawn__RemoveEnumMonster(): void
-	function MonsterSpawn__MonsterStartMovement(): void
-	function MonsterSpawn__MonsterSpawn_Actions(): void
-	function MonsterSpawn__UnspawMonster_Actions(): void
+	function MonsterSpawn___RemoveEnumMonster(): void
+	function MonsterSpawn___MonsterStartMovement(): void
+	function MonsterSpawn___MonsterSpawn_Actions(): void
+	function MonsterSpawn___UnspawMonster_Actions(): void
 	function s__MonsterSpawn_onInit(): void
 	function s__MonsterSpawn_getLabel(thisv: number): string
 	function s__MonsterSpawn_desactivate(thisv: number): void
@@ -7015,7 +7015,7 @@ declare global {
 	function s__MonsterSpawn_setFrequence(thisv: number, frequence: number): void
 	function s__MonsterSpawn_displayForPlayer(thisv: number, p: player): void
 	function s__MonsterSpawn_toString(thisv: number): string
-	function SaveWater___SaveWaterHeights_Actions(): void
+	function SaveWater__SaveWaterHeights_Actions(): void
 	function StartSaveWaterHeights(): void
 	function StartSaveWater(): void
 	function TerrainKillTimer2Escaper(theTimer: timer): number
@@ -7029,13 +7029,13 @@ declare global {
 	function s__TerrainTypeWalk_getWalkSpeed(thisv: number): number
 	function s__TerrainTypeWalk_setWalkSpeed(thisv: number, walkSpeed: number): void
 	function ChangeAllTerrains_Actions(): void
-	function ChangeAllTerrains___StartTerrainModifying(): void
-	function ChangeAllTerrains___GetRandomTerrain_checked(): number
-	function ChangeAllTerrains___GetRandomKnownTerrain_checked(): number
-	function ChangeAllTerrains___GetRandomNotKnownTerrain_checked(): number
+	function ChangeAllTerrains__StartTerrainModifying(): void
+	function ChangeAllTerrains__GetRandomTerrain_checked(): number
+	function ChangeAllTerrains__GetRandomKnownTerrain_checked(): number
+	function ChangeAllTerrains__GetRandomNotKnownTerrain_checked(): number
 	function ChangeAllTerrains(mode: string): boolean
 	function ChangeAppearanceOfOneTerrain_Actions(): void
-	function ChangeOneTerrain___StartTerrainModifying(): void
+	function ChangeOneTerrain__StartTerrainModifying(): void
 	function ChangeOneTerrain(terrainTypeLabel: string, newTerrainType: string): string
 	function s__EscaperEffectArray_create(): number
 	function s__EscaperEffectArray_new(thisv: number, efStr: string, u: unit, bodyPart: string): void
@@ -7046,7 +7046,7 @@ declare global {
 	function s__EscaperEffectArray_hideEffects(thisv: number): void
 	function s__EscaperEffectArray_showEffects(thisv: number, u: unit): void
 	function ExchangeTerrains_Actions(): void
-	function ExchangeTerrains___StartTerrainModifying(): void
+	function ExchangeTerrains__StartTerrainModifying(): void
 	function ExchangeTerrains(terrainTypeLabelA: string, terrainTypeLabelB: string): boolean
 	function s__MonsterSpawnArray_create(): number
 	function s__MonsterSpawnArray_getFirstEmpty(thisv: number): number
@@ -7067,29 +7067,29 @@ declare global {
 	function s__MonsterSpawnArray_displayForPlayer(thisv: number, p: player): void
 	function s__MonsterSpawnArray_changeLabel(thisv: number, oldLabel: string, newLabel: string): boolean
 	function RandomizeTerrains_Actions(): void
-	function RandomizeTerrains___StartTerrainModifying(): void
+	function RandomizeTerrains__StartTerrainModifying(): void
 	function RandomizeTerrains(): void
-	function ReinitTerrains___SaveTerrainConfig(): void
+	function ReinitTerrains__SaveTerrainConfig(): void
 	function Init_ReinitTerrains(): void
 	function ReinitTerrains_Actions(): void
-	function ReinitTerrains___StartTerrainModifying(): void
+	function ReinitTerrains__StartTerrainModifying(): void
 	function ReinitTerrains(): void
-	function ReinitTerrainsPositions___SaveTerrain_Actions(): void
-	function ReinitTerrainsPositions___StartSaveTerrain(): void
+	function ReinitTerrainsPositions__SaveTerrain_Actions(): void
+	function ReinitTerrainsPositions__StartSaveTerrain(): void
 	function Init_Reinit_terrains_position_Change_variations_and_ut_at_beginning(): void
 	function ReinitTerrainsPosition_Actions(): void
-	function ReinitTerrainsPositions___StartTerrainModifying(): void
+	function ReinitTerrainsPositions__StartTerrainModifying(): void
 	function ReinitTerrainsPosition(): void
-	function SaveLoadTerrainWithName___SaveTerrain_Actions(): void
+	function SaveLoadTerrainWithName__SaveTerrain_Actions(): void
 	function SaveTerrainWithName(saveName: string): void
 	function DeleteTerrainSaveWithName(saveName: string): boolean
-	function SaveLoadTerrainWithName___LoadTerrain_Actions(): void
+	function SaveLoadTerrainWithName__LoadTerrain_Actions(): void
 	function LoadTerrainWithName(saveName: string): boolean
-	function SaveLoadTerrainWithoutName___SaveTerrain_Actions(): void
+	function SaveLoadTerrainWithoutName__SaveTerrain_Actions(): void
 	function SaveTerrainWithoutName(): void
-	function SaveLoadTerrainWithoutName___LoadTerrain_Actions(): void
+	function SaveLoadTerrainWithoutName__LoadTerrain_Actions(): void
 	function LoadTerrainWithoutName(): void
-	function SaveTerrainRamps___SaveTerrainRamps_Actions(): void
+	function SaveTerrainRamps__SaveTerrainRamps_Actions(): void
 	function StartSaveTerrainRamps(): void
 	function s__KillingTimers_onDestroy(thisv: number): void
 	function s__KillingTimers_deallocate(thisv: number): void
@@ -7229,9 +7229,9 @@ declare global {
 	function s__Escaper_setCoopInvul(thisv: number, invul: boolean): void
 	function s__Escaper_enableTrigCoopRevive(thisv: number): void
 	function s__Escaper_refreshCerclePosition(thisv: number): void
-	function SaveTerrainHeights___SaveTerrainCliffs_Actions(): void
+	function SaveTerrainHeights__SaveTerrainCliffs_Actions(): void
 	function StartSaveTerrainCliffs(): void
-	function SaveTerrainHeights___SaveTerrainHeights_Actions(): void
+	function SaveTerrainHeights__SaveTerrainHeights_Actions(): void
 	function StartSaveTerrainHeights(): void
 	function s__TerrainTypeDeath_create(label: string, terrainTypeId: number, killingEffectStr: string, timeToKill: number, toleranceDist: number): number
 	function s__TerrainTypeDeath_onDestroy(thisv: number): void
@@ -7284,11 +7284,11 @@ declare global {
 	function MeteorMaking_Actions(): void
 	function MonsterDelete_Actions(): void
 	function MonsterSpawnMaking_Actions(): void
-	function SaveTerrain___SaveTerrainsUsed(): void
-	function SaveTerrain___SaveMapDimensionsAndCenterOffset(): void
-	function SaveTerrain___GetTerrainId(x: number, l__SaveTerrain___y: number): string
+	function SaveTerrain__SaveTerrainsUsed(): void
+	function SaveTerrain__SaveMapDimensionsAndCenterOffset(): void
+	function SaveTerrain__GetTerrainId(x: number, l__SaveTerrain__y: number): string
 	function GererOrdreTerrains(): void
-	function SaveTerrain___SaveTerrain_Actions(): void
+	function SaveTerrain__SaveTerrain_Actions(): void
 	function StartSaveTerrain(): void
 	function s__Start_create(x1: number, y1: number, x2: number, y2: number): number
 	function s__Start_onDestroy(thisv: number): void
@@ -7348,7 +7348,7 @@ declare global {
 	function s__Level_setStartMessage(thisv: number, str: string): void
 	function s__Level_getStartMessage(thisv: number): string
 	function Make_GetActions(kind: string): Function
-	function MonsterInterface__InitHtMonster(): void
+	function MonsterInterface___InitHtMonster(): void
 	function GetNextMonsterId(): number
 	function MonsterIdHasBeenSetTo(monsterId: number): void
 	function MonsterHashtableSetMonsterId(monster: number, oldId: number, newId: number): void
@@ -7383,7 +7383,7 @@ declare global {
 	function KillMonsterOrCasterEach(): void
 	function TemporarilyDisableMonsterOrCasterEach(): void
 	function TemporarilyEnableMonsterOrCasterEach(): void
-	function ClearMob__InitClearMob(): void
+	function ClearMob___InitClearMob(): void
 	function s__ClearMob_getDisableDuration(thisv: number): number
 	function s__ClearMob_setDisableDuration(thisv: number, disableDuration: number): boolean
 	function s__ClearMob_getTriggerMob(thisv: number): number
@@ -7613,7 +7613,7 @@ declare global {
 	function s__MakeVisibilityModifier_isLastLocSavedUsed(thisv: number): boolean
 	function s__MakeVisibilityModifier_cancelLastAction(thisv: number): boolean
 	function s__MakeVisibilityModifier_redoLastAction(thisv: number): boolean
-	function MonsterMultiplePatrols__NewRegion(x: number, l__y: number): region
+	function MonsterMultiplePatrols___NewRegion(x: number, l__y: number): region
 	function MonsterMultiplePatrols_move_Actions(): void
 	function s__MonsterMultiplePatrols_count(): number
 	function s__MonsterMultiplePatrols_storeNewLoc(x: number, l__y: number): boolean
@@ -7673,8 +7673,8 @@ declare global {
 	function s__MonsterOrCaster_getUnit(thisv: number): unit
 	function s__MonsterOrCaster_copy(thisv: number): number
 	function s__MonsterOrCaster_getMonsterType(thisv: number): number
-	function MonsterSimplePatrol__CheckSimplePatrolMobsEnum(): void
-	function MonsterSimplePatrol__CheckSimplePatrolMobs_Actions(): void
+	function MonsterSimplePatrol___CheckSimplePatrolMobsEnum(): void
+	function MonsterSimplePatrol___CheckSimplePatrolMobs_Actions(): void
 	function Init_MonsterSimplePatrol(): void
 	function s__MonsterSimplePatrol_count(): number
 	function s__MonsterSimplePatrol_getId(thisv: number): number
@@ -8506,7 +8506,7 @@ declare global {
 	function sa__MakeClearMob_redoLastAction(): boolean
 	function sa___prototype2_TimerUtils___init(): boolean
 	function sa___prototype51_SoundUtils___HookStopSound(): boolean
-	function jasshelper__initstructs1517943906(): void
+	function jasshelper__initstructs14357671(): void
 	
 	
 }

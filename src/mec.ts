@@ -41,6 +41,27 @@ export const spawnMonster = ({
     )
 }
 
+export const spawnRock = ({
+    level,
+    monsterLabel,
+    x,
+    y,
+}: {
+    level: number
+    monsterLabel: string
+    x: number
+    y: number
+}) => {
+    s__MonsterNoMoveArray_new(
+        s__Level_monstersNoMove[level],
+        s__MonsterTypeArray_get(udg_monsterTypes, monsterLabel),
+        x,
+        y,
+        -1,
+        true
+    )
+}
+
 export const killEscapers = () => {
     // Code from s__Escaper_kill which doesn't work because it thinks the hero is already dead for some reason.
     s___EscaperArray_escapers.map((_, i) => {
