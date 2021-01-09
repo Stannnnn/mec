@@ -21,18 +21,29 @@ const main = async () => {
     const tmpFile = 'C:/Users/Stan/Node/mec/maps/tmp.w3x'
     const mapJ = './tmp.j'
 
+    if (existsSync('war3map.j')) {
+        unlinkSync('war3map.j')
+    }
+
     await DrakeMPQ().extract({ mpq: src, file: 'war3map.j', outputFile: mapJ })
 
     let contents = readFileSync(mapJ).toString('utf-8')
-    contents = contents.replace(new RegExp('!=-', 'g'), '!= -')
     contents = contents.replace(new RegExp('=-', 'g'), '= -')
-    contents = contents.replace(new RegExp('"\\\\\\\\\\\\\\\\"', 'g'), '"@BACKSLASH@@BACKSLASH@@BACKSLASH@@BACKSLASH@"')
-    contents = contents.replace(new RegExp('"\\\\\\\\"', 'g'), '"@BACKSLASH@@BACKSLASH@"')
+    contents = contents.replace(
+        new RegExp('([ "])\\\\\\\\\\\\\\\\([ "])', 'g'),
+        '$1@BACKSLASH@@BACKSLASH@@BACKSLASH@@BACKSLASH@$2'
+    )
+    contents = contents.replace(new RegExp('([ "])\\\\\\\\([ "])', 'g'), '$1@BACKSLASH@@BACKSLASH@$2')
+    contents = contents.replace(new RegExp('^endglobals', 'gm'), 'endglobals\n')
     writeFileSync(mapJ, contents)
 
     // .d.ts
     {
         const dts = 'C:/Users/Stan/Node/mec/src/war3map.d.ts'
+
+        if (existsSync(dts)) {
+            unlinkSync(dts)
+        }
 
         await simpleExec({
             cmd: [
@@ -46,24 +57,26 @@ const main = async () => {
             verbose: true,
         })
 
-        let contents = readFileSync(dts).toString('utf-8')
-        contents = contents.replace(new RegExp('//.*\n', 'g'), '')
-        contents = contents.replace(new RegExp(' = .*', 'g'), '')
-        contents = contents.replace(new RegExp('declare ', 'g'), '')
-        contents = contents.replace(new RegExp(';$', 'gm'), '')
-        contents = contents.replace(new RegExp('const ', 'g'), 'var ')
-        contents = contents.replace(new RegExp(' \\(', 'g'), '(')
-        contents = contents.replace(new RegExp('this:', 'g'), 'thisv:')
-        contents = contents.replace(new RegExp('new: string', 'g'), 'newv: string')
-        contents =
-            'export {}\n\ndeclare global {\n' +
-            contents
-                .split('\n')
-                .map(c => `\t${c}`)
-                .join('\n') +
-            '\n}\n'
+        if (existsSync(dts)) {
+            let contents = readFileSync(dts).toString('utf-8')
+            contents = contents.replace(new RegExp('//.*\n', 'g'), '')
+            contents = contents.replace(new RegExp(' = .*', 'g'), '')
+            contents = contents.replace(new RegExp('declare ', 'g'), '')
+            contents = contents.replace(new RegExp(';$', 'gm'), '')
+            contents = contents.replace(new RegExp('const ', 'g'), 'var ')
+            contents = contents.replace(new RegExp(' \\(', 'g'), '(')
+            contents = contents.replace(new RegExp('this:', 'g'), 'thisv:')
+            contents = contents.replace(new RegExp('new: string', 'g'), 'newv: string')
+            contents =
+                'export {}\n\ndeclare global {\n' +
+                contents
+                    .split('\n')
+                    .map(c => `\t${c}`)
+                    .join('\n') +
+                '\n}\n'
 
-        writeFileSync(dts, contents)
+            writeFileSync(dts, contents)
+        }
     }
 
     unlinkSync(mapJ)
