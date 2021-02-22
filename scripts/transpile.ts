@@ -1,7 +1,7 @@
-import { DrakeMPQ } from 'utility-node/dist/MPQ/DrakeMPQ'
-import { simpleExec } from 'utility-node/dist/SimpleExec'
+import { DrakeMPQ } from '@stan/utility-node/dist/MPQ/DrakeMPQ'
+import { simpleExec } from '@stan/utility-node/dist/SimpleExec'
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'fs-extra'
-import { getEnv } from 'utility-node/dist/Env'
+import { getEnv } from '@stan/utility-node/dist/Env'
 
 const transpilerFix = `-- TRANSPILER FIX
 local oldSubString = SubString
