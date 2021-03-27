@@ -2,3 +2,6 @@ dist
 node_modules
 project.log
 .env
+scripts/bla.ts
+test/out.json
+test/out.svg

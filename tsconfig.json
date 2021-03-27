@@ -43,7 +43,12 @@
         "jsx": "react",
         "skipLibCheck": true
     },
-    "include": ["src", "node_modules/w3ts-jsx/dist", "node_modules/w3ts-jsx/dist/node_modules/basic-pragma"],
+    "include": [
+        "src",
+        "node_modules/w3ts-jsx/dist",
+        "node_modules/w3ts-jsx/dist/node_modules/basic-pragma",
+        "test/test.utils.d.ts"
+    ],
     "exclude": [],
     "tstl": {
         "luaTarget": "5.3",

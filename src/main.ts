@@ -6,6 +6,8 @@ import { Themes } from 'Settings/themes'
 import { createEvent, forRange } from 'utils'
 import { Timer } from 'w3ts'
 import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
+import { IBlock, IRegion, World } from 'World/World'
+import { IPoint } from './World/World'
 
 /*
     [ ] = TODO
@@ -26,7 +28,10 @@ import { addScriptHook, W3TS_HOOK } from 'w3ts/hooks'
     [X] Random rocks on the map
     [ ] Multiple diagonal patrols on the same tile
     [ ] Tiles per patrol should support 0.5
-    [ ] Fix start loc on 1x1 slide
+    [X] Fix start loc on 1x1 slide
+    [X] Add seed for fixed levels
+    [X] Diagonal terrain support
+    [X] Start/end regions are based on block, should be based on center of grid
 */
 
 const BUILD_DATE = compiletime(() => new Date().toUTCString())
@@ -84,17 +89,25 @@ const tsMain = () => {
     let theme = themes.magic
     let difficultyLevel = { ...difficulty.newbie }
 
+    const diagonalPaths = true
+
     const getPatrolRandom = () => GetRandomInt(-4, 4)
 
     const { registerCommand } = Commands()
 
     registerCommand({
         cmd: 'magic',
-        exactMatchOnly: true,
+        exactMatchOnly: false,
         cb: () => {
             // renderInterface()
 
-            generateSlide(true)
+            const seed = GetEventPlayerChatString().split(' ')[1]
+
+            if (seed && S2I(seed)) {
+                generateSlide(true, seed)
+            } else {
+                generateSlide(true)
+            }
         },
     })
 
@@ -165,25 +178,66 @@ const tsMain = () => {
 
     let lastLevelInfo: string = ''
 
-    const generateSlide = (regenerate?: boolean) => {
+    const generateSlide = (regenerate?: boolean, inSeed?: string) => {
         const { monsterIds, walkTerrain, slideTerrain, deathTerrain } = theme
-        const { gridWidth, slideWidth, tilesPerPatrol, rockChance } = difficultyLevel
+        const { slideWidth, tilesPerPatrol, rockChance } = difficultyLevel
 
-        // Tiles around the corner of the map are only rendered for half
-        const mapOffsetX = GetRectMinX(worldRect) + mapTileOffset * tileSize + tileSize / 2
-        const mapOffsetY = GetRectMinY(worldRect) + mapTileOffset * tileSize + tileSize / 2
+        let { gridWidth } = difficultyLevel
 
-        const getTile = ({ tile, tileTo }: { tile: { x: number; y: number }; tileTo?: { x: number; y: number } }) => {
-            const x = mapOffsetX + tile.x * tileSize * gridWidth
-            const y = mapOffsetY + tile.y * tileSize * gridWidth
-
-            const xTo =
-                mapOffsetX + (tileTo ? tileTo.x : tile.x) * tileSize * gridWidth + tileSize * slideWidth - tileSize
-            const yTo =
-                mapOffsetY + (tileTo ? tileTo.y : tile.y) * tileSize * gridWidth + tileSize * slideWidth - tileSize
-
-            return { x, y, xTo, yTo }
+        if (diagonalPaths) {
+            gridWidth = Math.max(slideWidth + 1, gridWidth)
         }
+
+        let seed = Math.floor(Math.random() * 10000000)
+
+        if (inSeed) {
+            seed = S2I(inSeed)
+        }
+
+        SetRandomSeed(seed)
+
+        const mapOffsetX =
+            // ??
+            GetRectMinX(worldRect) +
+            // tileOffset
+            mapTileOffset * tileSize +
+            // Tiles around the corner of the map are only rendered for half
+            tileSize / 2 +
+            // Match world grid to wc3
+            GetRectWidthBJ(worldRect) / 4
+
+        const mapOffsetY =
+            GetRectMinY(worldRect) + mapTileOffset * tileSize + tileSize / 2 + GetRectHeightBJ(worldRect) / 4
+
+        const tilesX = Math.max(
+            2,
+            Math.min(
+                8,
+                Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / (gridWidth * slideWidth)),
+                difficultyLevel.tilesX
+            )
+        )
+
+        const tilesY = Math.max(
+            2,
+            Math.min(
+                8,
+                Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / (gridWidth * slideWidth)),
+                difficultyLevel.tilesY
+            )
+        )
+
+        // const getTile = ({ tile, tileTo }: { tile: { x: number; y: number }; tileTo?: { x: number; y: number } }) => {
+        //     const x = mapOffsetX + tile.x * tileSize * gridWidth
+        //     const y = mapOffsetY + tile.y * tileSize * gridWidth
+
+        //     const xTo =
+        //         mapOffsetX + (tileTo ? tileTo.x : tile.x) * tileSize * gridWidth + tileSize * slideWidth - tileSize
+        //     const yTo =
+        //         mapOffsetY + (tileTo ? tileTo.y : tile.y) * tileSize * gridWidth + tileSize * slideWidth - tileSize
+
+        //     return { x, y, xTo, yTo }
+        // }
 
         const getCenterTile = ({
             tile,
@@ -198,43 +252,39 @@ const tsMain = () => {
             }
         }
 
-        const createTile = ({
-            terrain,
-            tile,
-            tileTo,
-        }: {
-            terrain: number
-            tile: { x: number; y: number }
-            tileTo?: { x: number; y: number }
-        }) => {
-            const { x, y, xTo, yTo } = getTile({ tile, tileTo })
-
-            s__MakeTerrainCreateAction_create(terrain, x, y, xTo, yTo)
-
-            if (tileTo) {
-                const { x, y, xTo, yTo } = getTile({ tileTo: tile, tile: tileTo })
-
-                s__MakeTerrainCreateAction_create(terrain, x, y, xTo, yTo)
-            }
+        const createTile = ({ terrain, region }: { terrain: number; region: IRegion }) => {
+            region.chunks.forEach(chunk => {
+                chunk.blocks.forEach(block => {
+                    s__MakeTerrainCreateAction_create(
+                        terrain,
+                        block.topLeft.x,
+                        block.topLeft.y,
+                        block.topLeft.x,
+                        block.topLeft.y
+                    )
+                })
+            })
         }
 
-        const tilesX = Math.max(
-            2,
-            Math.min(
-                8,
-                Math.floor((GetRectWidthBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth),
-                difficultyLevel.tilesX
-            )
-        )
+        // const createTile = ({
+        //     terrain,
+        //     tile,
+        //     tileTo,
+        // }: {
+        //     terrain: number
+        //     tile: { x: number; y: number }
+        //     tileTo?: { x: number; y: number }
+        // }) => {
+        //     const { x, y, xTo, yTo } = getTile({ tile, tileTo })
 
-        const tilesY = Math.max(
-            2,
-            Math.min(
-                8,
-                Math.floor((GetRectHeightBJ(worldRect) / tileSize - mapTileOffset * 2) / gridWidth),
-                difficultyLevel.tilesY
-            )
-        )
+        //     // s__MakeTerrainCreateAction_create(terrain, x, y, xTo, yTo)
+
+        //     // if (tileTo) {
+        //     //     const { x, y, xTo, yTo } = getTile({ tileTo: tile, tile: tileTo })
+
+        //     //     s__MakeTerrainCreateAction_create(terrain, x, y, xTo, yTo)
+        //     // }
+        // }
 
         generatedEvents.forEach(t => DestroyTrigger(t))
         generatedEvents = []
@@ -269,6 +319,7 @@ const tsMain = () => {
         NB_MAX_TILES_MODIFIED = 1000
 
         lastLevelInfo = `Level info:
+        seed: ${I2S(seed)}
         gridWidth: ${gridWidth}
         slideWidth: ${slideWidth}
         tilesPerPatrol: ${tilesPerPatrol}
@@ -279,294 +330,336 @@ const tsMain = () => {
 
         print(lastLevelInfo)
 
-        let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY })
+        let path = hamiltonianPathGenerator({ width: tilesX, height: tilesY, diagonalPaths })
 
-        // Create terrain
-        {
-            let prev: { x: number; y: number }
+        const world = World({
+            tileSize,
+            gridWidth,
+            slideWidth,
+            mapOffsetX,
+            mapOffsetY,
+            gridTilesX: tilesX,
+            gridTilesY: tilesY,
+        })
 
-            path.data.forEach(d => {
+        let prev: IPoint
+
+        const regions = path.data
+            .map(d => {
                 if (!prev) {
                     prev = d
                     return
                 }
 
-                createTile({ terrain: slideTerrain, tile: prev, tileTo: d })
+                const region = world.getRegion({ x1: prev.x, y1: prev.y, x2: d.x, y2: d.y })
 
                 prev = d
+                return region
             })
-        }
+            .filter((v): v is IRegion => !!v)
 
-        createTile({ terrain: walkTerrain, tile: path.start })
-        createTile({ terrain: walkTerrain, tile: path.end })
+        world.render({
+            startRegion: world.getRegionFromPoint(path.start),
+            endRegion: world.getRegionFromPoint(path.end),
+            regions,
+            renderer: ({ startRegion, endRegion, regions }) => {
+                regions.map(region => {
+                    createTile({
+                        terrain: slideTerrain,
+                        region,
+                    })
+                })
+
+                createTile({ terrain: walkTerrain, region: startRegion })
+                createTile({ terrain: walkTerrain, region: endRegion })
+            },
+        })
 
         // Region
 
         s__Level_setNbLivesEarned(level, 100000)
 
-        const startTile = getTile({ tile: path.start })
-        s__Level_newStart(level, startTile.x + 64, startTile.y + 64, startTile.xTo - 64, startTile.yTo - 64)
+        const startTile = world.getRegionFromPoint(path.start)
 
-        // Force start position
-        SetRect(gg_rct_departLvl_0, startTile.x + 64, startTile.y + 64, startTile.xTo - 64, startTile.yTo - 64)
-        Init_Heroes()
-
-        const endTile = getTile({ tile: path.end })
-
-        generatedEvents.push(
-            createEvent({
-                events: [
-                    t =>
-                        TriggerRegisterEnterRectSimple(
-                            t,
-                            Rect(endTile.x + 64, endTile.y + 64, endTile.xTo - 64, endTile.yTo - 64)
-                        ),
-                ],
-                conditions: [() => GetUnitName(GetTriggerUnit()) === 'Slider'],
-                actions: [
-                    () => {
-                        print('Congrats kiddo')
-                        generateSlide(true)
-                    },
-                ],
-            })
+        s__Level_newStart(
+            level,
+            startTile.center.x + slideWidth / 4,
+            startTile.center.y + slideWidth / 4,
+            startTile.center.x - slideWidth / 4,
+            startTile.center.y - slideWidth / 4
         )
 
-        // Create monsters
-        {
-            let prev: { x: number; y: number }
-            let current: { x: number; y: number }
+        // Force start position
+        SetRect(
+            gg_rct_departLvl_0,
+            startTile.center.x + slideWidth / 4,
+            startTile.center.y + slideWidth / 4,
+            startTile.center.x - slideWidth / 4,
+            startTile.center.y - slideWidth / 4
+        )
+        Init_Heroes()
 
-            const patrolsToSpawnGrid = slideWidth
-            const patrolsToSpawnConnector = gridWidth - slideWidth
+        // const endTile = world.getBlock(path.end)
 
-            let i = 1
+        // generatedEvents.push(
+        //     createEvent({
+        //         events: [
+        //             t =>
+        //                 TriggerRegisterEnterRectSimple(
+        //                     t,
+        //                     Rect(
+        //                         endTile.topLeft.x +  (slideWidth/4),
+        //                         endTile.topLeft.y +  (slideWidth/4),
+        //                         endTile.botRight.x - (slideWidth/4),
+        //                         endTile.botRight.y - (slideWidth/4),
+        //                     )
+        //                 ),
+        //         ],
+        //         conditions: [() => GetUnitName(GetTriggerUnit()) === 'Slider'],
+        //         actions: [
+        //             () => {
+        //                 print('Congrats kiddo')
+        //                 generateSlide(true)
+        //             },
+        //         ],
+        //     })
+        // )
 
-            const shouldSpawn = () => {
-                if (i === tilesPerPatrol) {
-                    i = 1
-                    return true
-                }
+        // // Create monsters
+        // {
+        //     let prev: { x: number; y: number }
+        //     let current: { x: number; y: number }
 
-                i += 1
-                return false
-            }
+        //     const patrolsToSpawnGrid = slideWidth
+        //     const patrolsToSpawnConnector = gridWidth - slideWidth
 
-            path.data.slice(1, path.data.length).forEach(next => {
-                if (!current) {
-                    current = next
-                    return
-                }
+        //     let i = 1
 
-                if (!prev) {
-                    prev = current
-                    current = next
-                    return
-                }
+        //     const shouldSpawn = () => {
+        //         if (i === tilesPerPatrol) {
+        //             i = 1
+        //             return true
+        //         }
 
-                let direction: 'NN' | 'NE' | 'NW' | 'EN' | 'EE' | 'ES' | 'SE' | 'SS' | 'SW' | 'WN' | 'WS' | 'WW'
-                let directionFrom: 'N' | 'E' | 'S' | 'W'
-                let directionTo: 'N' | 'E' | 'S' | 'W'
+        //         i += 1
+        //         return false
+        //     }
 
-                if (prev.x < current.x) {
-                    directionFrom = 'E'
-                } else if (prev.x > current.x) {
-                    directionFrom = 'W'
-                } else if (prev.y < current.y) {
-                    directionFrom = 'N'
-                } else {
-                    directionFrom = 'S'
-                }
+        //     path.data.slice(1, path.data.length).forEach(next => {
+        //         if (!current) {
+        //             current = next
+        //             return
+        //         }
 
-                if (current.x < next.x) {
-                    directionTo = 'E'
-                } else if (current.x > next.x) {
-                    directionTo = 'W'
-                } else if (current.y < next.y) {
-                    directionTo = 'N'
-                } else {
-                    directionTo = 'S'
-                }
+        //         if (!prev) {
+        //             prev = current
+        //             current = next
+        //             return
+        //         }
 
-                // This is safe since direction type only excluded NS/SN/EW/WE (You can't go back to a tile you came from)
-                direction = (directionFrom + directionTo) as any
+        //         let direction: 'NN' | 'NE' | 'NW' | 'EN' | 'EE' | 'ES' | 'SE' | 'SS' | 'SW' | 'WN' | 'WS' | 'WW'
+        //         let directionFrom: 'N' | 'E' | 'S' | 'W'
+        //         let directionTo: 'N' | 'E' | 'S' | 'W'
 
-                const currentTile = getTile({ tile: current })
-                const prevTile = getTile({ tile: prev })
+        //         if (prev.x < current.x) {
+        //             directionFrom = 'E'
+        //         } else if (prev.x > current.x) {
+        //             directionFrom = 'W'
+        //         } else if (prev.y < current.y) {
+        //             directionFrom = 'N'
+        //         } else {
+        //             directionFrom = 'S'
+        //         }
 
-                const currentTileRadius = (slideWidth * tileSize) / 2
-                const prevTileRadius = (slideWidth * tileSize) / 2
+        //         if (current.x < next.x) {
+        //             directionTo = 'E'
+        //         } else if (current.x > next.x) {
+        //             directionTo = 'W'
+        //         } else if (current.y < next.y) {
+        //             directionTo = 'N'
+        //         } else {
+        //             directionTo = 'S'
+        //         }
 
-                const currentTileCenter = {
-                    x: currentTile.x + currentTileRadius,
-                    y: currentTile.y + currentTileRadius,
-                }
+        //         // This is safe since direction type only excluded NS/SN/EW/WE (You can't go back to a tile you came from)
+        //         direction = (directionFrom + directionTo) as any
 
-                const prevTileCenter = {
-                    x: prevTile.x + prevTileRadius,
-                    y: prevTile.y + prevTileRadius,
-                }
+        //         const currentTile = world.getBlock(current)
+        //         const prevTile = world.getBlock(prev)
 
-                let patrols: { x: number; y: number; x2: number; y2: number }[] = []
+        //         const currentTileRadius = (slideWidth * tileSize) / 2
+        //         const prevTileRadius = (slideWidth * tileSize) / 2
 
-                // Grid patrols
-                {
-                    // Rocks
-                    if (GetRandomInt(0, 100) > 100 - rockChance) {
-                        spawnRock({
-                            level,
-                            monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
-                            x: currentTileCenter.x,
-                            y: currentTileCenter.y,
-                        })
-                    }
+        //         const currentTileCenter = {
+        //             x: currentTile.center.x + currentTileRadius,
+        //             y: currentTile.center.y + currentTileRadius,
+        //         }
 
-                    forRange(patrolsToSpawnGrid, i => {
-                        const patrolWidth = slideWidth * tileSize
-                        const iOffset =
-                            // Offset based on i
-                            (patrolWidth / patrolsToSpawnGrid) * (i + 1) -
-                            // Initial offset
-                            patrolWidth / patrolsToSpawnGrid / 2
+        //         const prevTileCenter = {
+        //             x: prevTile.center.x + prevTileRadius,
+        //             y: prevTile.center.y + prevTileRadius,
+        //         }
 
-                        if (direction === 'EE' || direction === 'WW') {
-                            if (!shouldSpawn()) {
-                                return
-                            }
+        //         let patrols: { x: number; y: number; x2: number; y2: number }[] = []
 
-                            patrols.push({
-                                x: currentTile.x + iOffset,
-                                y: currentTileCenter.y - currentTileRadius - patrolOffset,
-                                x2: currentTile.x + iOffset,
-                                y2: currentTileCenter.y + currentTileRadius + patrolOffset,
-                            })
-                        } else if (direction === 'NN' || direction === 'SS') {
-                            if (!shouldSpawn()) {
-                                return
-                            }
+        //         // Grid patrols
+        //         {
+        //             // Rocks
+        //             if (GetRandomInt(0, 100) > 100 - rockChance) {
+        //                 spawnRock({
+        //                     level,
+        //                     monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+        //                     x: currentTileCenter.x,
+        //                     y: currentTileCenter.y,
+        //                 })
+        //             }
 
-                            patrols.push({
-                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
-                                y: currentTile.y + iOffset,
-                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
-                                y2: currentTile.y + iOffset,
-                            })
-                            // TODO; Was working on adding multiple patrols on diagonal..
-                        } else if (direction === 'NE' || direction === 'WS') {
-                            // 90 / patrolsToSpawnGrid * i
-                            if (i > 0) {
-                                return
-                            }
+        //             forRange(patrolsToSpawnGrid, i => {
+        //                 const patrolWidth = slideWidth * tileSize
+        //                 const iOffset =
+        //                     // Offset based on i
+        //                     (patrolWidth / patrolsToSpawnGrid) * (i + 1) -
+        //                     // Initial offset
+        //                     patrolWidth / patrolsToSpawnGrid / 2
 
-                            if (!shouldSpawn()) {
-                                return
-                            }
+        //                 if (direction === 'EE' || direction === 'WW') {
+        //                     if (!shouldSpawn()) {
+        //                         return
+        //                     }
 
-                            patrols.push({
-                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
-                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
-                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
-                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
-                            })
-                        } else if (direction === 'EN' || direction === 'SW') {
-                            if (i > 0) {
-                                return
-                            }
+        //                     patrols.push({
+        //                         x: currentTile.topLeft.x + iOffset,
+        //                         y: currentTileCenter.y - currentTileRadius - patrolOffset,
+        //                         x2: currentTile.topLeft.x + iOffset,
+        //                         y2: currentTileCenter.y + currentTileRadius + patrolOffset,
+        //                     })
+        //                 } else if (direction === 'NN' || direction === 'SS') {
+        //                     if (!shouldSpawn()) {
+        //                         return
+        //                     }
 
-                            if (!shouldSpawn()) {
-                                return
-                            }
+        //                     patrols.push({
+        //                         x: currentTileCenter.x - currentTileRadius - patrolOffset,
+        //                         y: currentTile.topLeft.y + iOffset,
+        //                         x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+        //                         y2: currentTile.topLeft.y + iOffset,
+        //                     })
+        //                     // TODO; Was working on adding multiple patrols on diagonal..
+        //                 } else if (direction === 'NE' || direction === 'WS') {
+        //                     // 90 / patrolsToSpawnGrid * i
+        //                     if (i > 0) {
+        //                         return
+        //                     }
 
-                            patrols.push({
-                                x: currentTileCenter.x - currentTileRadius - patrolOffset,
-                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
-                                x2: currentTileCenter.x + currentTileRadius + patrolOffset,
-                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
-                            })
-                        } else {
-                            if (i > 0) {
-                                return
-                            }
+        //                     if (!shouldSpawn()) {
+        //                         return
+        //                     }
 
-                            if (!shouldSpawn()) {
-                                return
-                            }
+        //                     patrols.push({
+        //                         x: currentTileCenter.x - currentTileRadius - patrolOffset,
+        //                         y: currentTileCenter.y + currentTileRadius + patrolOffset,
+        //                         x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+        //                         y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+        //                     })
+        //                 } else if (direction === 'EN' || direction === 'SW') {
+        //                     if (i > 0) {
+        //                         return
+        //                     }
 
-                            patrols.push({
-                                x: currentTileCenter.x + currentTileRadius + patrolOffset,
-                                y: currentTileCenter.y + currentTileRadius + patrolOffset,
-                                x2: currentTileCenter.x - currentTileRadius - patrolOffset,
-                                y2: currentTileCenter.y - currentTileRadius - patrolOffset,
-                            })
-                        }
-                    })
-                }
+        //                     if (!shouldSpawn()) {
+        //                         return
+        //                     }
 
-                // Connector patrols
-                {
-                    const diffTile = getCenterTile({ tile: prevTileCenter, tileTo: currentTileCenter })
+        //                     patrols.push({
+        //                         x: currentTileCenter.x - currentTileRadius - patrolOffset,
+        //                         y: currentTileCenter.y + currentTileRadius + patrolOffset,
+        //                         x2: currentTileCenter.x + currentTileRadius + patrolOffset,
+        //                         y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+        //                     })
+        //                 } else {
+        //                     if (i > 0) {
+        //                         return
+        //                     }
 
-                    if (GetRandomInt(0, 100) > 100 - rockChance) {
-                        spawnRock({
-                            level,
-                            monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
-                            x: diffTile.x,
-                            y: diffTile.y,
-                        })
-                    }
+        //                     if (!shouldSpawn()) {
+        //                         return
+        //                     }
 
-                    forRange(patrolsToSpawnConnector, i => {
-                        if (!shouldSpawn()) {
-                            return
-                        }
+        //                     patrols.push({
+        //                         x: currentTileCenter.x + currentTileRadius + patrolOffset,
+        //                         y: currentTileCenter.y + currentTileRadius + patrolOffset,
+        //                         x2: currentTileCenter.x - currentTileRadius - patrolOffset,
+        //                         y2: currentTileCenter.y - currentTileRadius - patrolOffset,
+        //                     })
+        //                 }
+        //             })
+        //         }
 
-                        const iOffset = tileSize * i - (patrolsToSpawnConnector / 2) * tileSize + tileSize / 2
+        //         // Connector patrols
+        //         {
+        //             const diffTile = getCenterTile({ tile: prevTileCenter, tileTo: currentTileCenter })
 
-                        if (directionFrom === 'N' || directionFrom === 'S') {
-                            patrols.push({
-                                x: diffTile.x - currentTileRadius - patrolOffset,
-                                y: diffTile.y + iOffset,
-                                x2: diffTile.x + currentTileRadius + patrolOffset,
-                                y2: diffTile.y + iOffset,
-                            })
-                        } else {
-                            patrols.push({
-                                x: diffTile.x + iOffset,
-                                y: diffTile.y - currentTileRadius - patrolOffset,
-                                x2: diffTile.x + iOffset,
-                                y2: diffTile.y + currentTileRadius + patrolOffset,
-                            })
-                        }
-                    })
-                }
+        //             if (GetRandomInt(0, 100) > 100 - rockChance) {
+        //                 spawnRock({
+        //                     level,
+        //                     monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+        //                     x: diffTile.x,
+        //                     y: diffTile.y,
+        //                 })
+        //             }
 
-                patrols.forEach(patrol => {
-                    activeTimers.push(
-                        new Timer().start(GetRandomReal(0, Math.min(5, slideWidth + 1)), false, () => {
-                            spawnMonster({
-                                level,
-                                monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
-                                x1: patrol.x + getPatrolRandom(),
-                                y1: patrol.y + getPatrolRandom(),
-                                x2: patrol.x2 + getPatrolRandom(),
-                                y2: patrol.y2 + getPatrolRandom(),
-                            })
-                        })
-                    )
-                })
+        //             forRange(patrolsToSpawnConnector, i => {
+        //                 if (!shouldSpawn()) {
+        //                     return
+        //                 }
 
-                prev = current
-                current = next
-            })
-        }
+        //                 const iOffset = tileSize * i - (patrolsToSpawnConnector / 2) * tileSize + tileSize / 2
+
+        //                 if (directionFrom === 'N' || directionFrom === 'S') {
+        //                     patrols.push({
+        //                         x: diffTile.x - currentTileRadius - patrolOffset,
+        //                         y: diffTile.y + iOffset,
+        //                         x2: diffTile.x + currentTileRadius + patrolOffset,
+        //                         y2: diffTile.y + iOffset,
+        //                     })
+        //                 } else {
+        //                     patrols.push({
+        //                         x: diffTile.x + iOffset,
+        //                         y: diffTile.y - currentTileRadius - patrolOffset,
+        //                         x2: diffTile.x + iOffset,
+        //                         y2: diffTile.y + currentTileRadius + patrolOffset,
+        //                     })
+        //                 }
+        //             })
+        //         }
+
+        //         patrols.forEach(patrol => {
+        //             activeTimers.push(
+        //                 new Timer().start(GetRandomReal(0, Math.min(5, slideWidth + 1)), false, () => {
+        //                     spawnMonster({
+        //                         level,
+        //                         monsterLabel: monsterIds[GetRandomInt(0, monsterIds.length - 1)],
+        //                         x1: patrol.x + getPatrolRandom(),
+        //                         y1: patrol.y + getPatrolRandom(),
+        //                         x2: patrol.x2 + getPatrolRandom(),
+        //                         y2: patrol.y2 + getPatrolRandom(),
+        //                     })
+        //                 })
+        //             )
+        //         })
+
+        //         prev = current
+        //         current = next
+        //     })
+        // }
 
         print('OK')
     }
 
-    // Need timer while debugging so that prints appear on f12
-    // new Timer().start(0.5, false, () => {
-    generateSlide()
-    // })
+    // Need timer while debugging so that prints appear on F12; remove in production for other timed issues!
+    new Timer().start(0.5, false, () => {
+        generateSlide()
+    })
 
     FogModifierStart(udg_viewAll)
 

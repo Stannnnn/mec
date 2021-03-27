@@ -1,6 +1,6 @@
 export const DifficultyLevels = () => ({
     newbie: {
-        gridWidth: 5,
+        gridWidth: 2,
         slideWidth: 4,
         tilesPerPatrol: 5,
         rockChance: 0,
@@ -8,7 +8,7 @@ export const DifficultyLevels = () => ({
         tilesY: 6,
     },
     easy: {
-        gridWidth: 5,
+        gridWidth: 2,
         slideWidth: 3,
         tilesPerPatrol: 4,
         rockChance: 5,
@@ -16,7 +16,7 @@ export const DifficultyLevels = () => ({
         tilesY: 6,
     },
     normal: {
-        gridWidth: 5,
+        gridWidth: 2,
         slideWidth: 2,
         tilesPerPatrol: 3,
         rockChance: 5,
@@ -24,7 +24,7 @@ export const DifficultyLevels = () => ({
         tilesY: 6,
     },
     hard: {
-        gridWidth: 4,
+        gridWidth: 2,
         slideWidth: 2,
         tilesPerPatrol: 2,
         rockChance: 5,
@@ -32,7 +32,7 @@ export const DifficultyLevels = () => ({
         tilesY: 7,
     },
     insane: {
-        gridWidth: 3,
+        gridWidth: 2,
         slideWidth: 2,
         tilesPerPatrol: 1,
         rockChance: 5,
